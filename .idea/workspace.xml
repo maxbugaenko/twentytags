@@ -44,9 +44,9 @@
       <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="35" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.47468355" vertical-offset="500" max-vertical-offset="1275">
+            <state line="34" column="0" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.5933544" vertical-offset="475" max-vertical-offset="1275">
               <folding>
-                <marker date="1395763065000" expanded="true" signature="1817:1825" placeholder="..." />
+                <marker date="1395765569000" expanded="true" signature="1817:1825" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1220,9 +1220,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="35" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.47468355" vertical-offset="500" max-vertical-offset="1275">
+        <state line="34" column="0" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.5933544" vertical-offset="475" max-vertical-offset="1275">
           <folding>
-            <marker date="1395763065000" expanded="true" signature="1817:1825" placeholder="..." />
+            <marker date="1395765569000" expanded="true" signature="1817:1825" placeholder="..." />
           </folding>
         </state>
       </provider>
