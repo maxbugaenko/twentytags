@@ -1,0 +1,197 @@
+<? $this->headTitle('category catalog') ?>
+
+<div class="subcaption">
+	<?=$this->category->name?>
+</div>
+
+<br/>
+<table width="100%" class="table table-condensed">
+	<thead>
+	<tr>
+		<th>
+			#
+		</th>
+		<th>
+			category name
+		</th>
+		<th>
+			category name eng
+		</th>
+		<th>
+			category parent
+		</th>
+		<th>
+			admin
+		</th>
+	</tr>
+	</thead>
+<? foreach ($this->paginator as $item) :?>
+	<tr>
+		<td>
+			<?=$item?>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'name'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->name, 'column'=>'name', 'table'=>'Category'))?>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'nameeng'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->name_eng, 'column'=>'name_eng', 'table'=>'Category'))?>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'par'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->parent, 'column'=>'parent', 'table'=>'Category'))?>
+		</td>
+		<td>
+			<a href="<?=$this->url(array('action'=>'category', "category"=>$item), 'fz__adm', true)?>">go to</a>
+		</td>
+	</tr>
+<? endforeach ?>
+</table>
+<br/><br/>
+<br/>
+<table width="100%" class="table table-condensed">
+	<thead>
+	<tr>
+		<th>
+			#
+		</th>
+		<th>
+			category			
+		</th>
+		<th>
+			name
+		</th>
+		<th>
+			picture
+		</th>
+		<th>
+			desc
+		</th>
+		<th>
+			website
+		</th>
+		<th>
+			producer
+		</th>
+		<th>
+			version
+		</th>
+		<th>
+			rating
+		</th>
+		<th>
+			apk
+		</th>
+		<th>
+			filesize
+		</th>
+		<th>
+			added
+		</th>
+		<th>
+			adm
+		</th>
+	</tr>
+	</thead>
+<? foreach ($this->apps as $item) :?>
+	<tr>
+		<td>         
+			<?=$item?>
+		</td>
+		<td>
+			<?=$item->category->name?>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'name'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->name, 'column'=>'name', 'table'=>'Application'))?>
+		</td>
+		<td>
+			<img src="<?=$this->url(array('controller'=>'index', 'action'=>'picture', 'id'=>$item), 'default', true)?>" width="50px"/>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'desc'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->description, 'column'=>'description', 'table'=>'Application'))?>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'web'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->website, 'column'=>'website', 'table'=>'Application'))?>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'prod'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->producer, 'column'=>'producer', 'table'=>'Application'))?>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'version'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->version, 'column'=>'version', 'table'=>'Application'))?>
+		</td>
+		<td>
+			<?=$this->partial('edit.phtml', array('element'=>'rating'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->rating, 'column'=>'rating', 'table'=>'Application'))?>
+		</td>
+		<td>
+			<?=$item->apk?>
+		</td>
+		<td>
+			<?=fsize($item->filesize)?>
+		</td>
+		<td>
+			<?=$item->added?>
+		</td>
+		<td>
+			<span id="delete<?=$item?>" onclick="del(<?=$item?>)" class="menu normal bolder" style="font-size:18px">delete app</span>
+			<span id="deleted<?=$item?>" class="menu normal bolder" style="display:none;font-size:18px">deleted</span>
+			<script type="text/javascript">	
+				function del(setting) {
+						var url = "<?=$this->url(array('controller'=>'adm', 'action'=>'deleteapp'), 'fz__adm', true)?>";
+						$.ajax({
+								url: url,
+								type: "POST",
+								data:  "app="+setting,
+								async:true,
+								success:function(data){
+									$("#delete"+setting).hide();
+									$("#deleted"+setting).show();
+								}}
+						);
+				}
+
+			</script>
+		</td>
+	</tr>
+<? endforeach ?>
+</table>
+<br/><br/>
+
+
+<?=$this->forma(2)
+     ->addBehavior('redirectUrl', '__fz/adm/category')
+     ->addField('text', 'name')
+         ->fieldLabel("name")
+         ->fieldAttrib('size', '30')
+         ->fieldAttrib('class', 'text')
+         ->fieldAttrib('maxlength', 30)
+     ->addField('text', 'parent')
+         ->fieldLabel("parent")
+         ->fieldAttrib('size', '30')
+         ->fieldAttrib('class', 'text')
+         ->fieldAttrib('maxlength', 30)
+         ->fieldValue($this->category)
+     ->addField('submit')
+        ->fieldAction(array('Model_Category', 'create'))
+         ->fieldValue('save')
+         ->fieldAttrib('class', 'button margin-top')
+?>   
+
+<?=$this->forma(22)
+     ->addBehavior('redirectUrl', '__fz/adm/category/category/'.$this->category)
+     ->addField('text', 'name')
+         ->fieldLabel("name")
+         ->fieldAttrib('size', '30')
+         ->fieldAttrib('class', 'text')
+         ->fieldAttrib('maxlength', 30)
+     ->addField('text', 'picture')
+         ->fieldLabel("link to picture")
+         ->fieldAttrib('class', 'text')
+     ->addField('text', 'apk')
+         ->fieldLabel("link to apk")
+         ->fieldAttrib('class', 'text')
+     ->addField('text', 'category')
+         ->fieldValue($this->category)
+     ->addField('submit')
+        ->fieldAction(array('Model_Application', 'create'))
+         ->fieldValue('save')
+         ->fieldAttrib('class', 'button margin-top')
+?>   
+

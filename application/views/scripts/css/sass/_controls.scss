@@ -1,0 +1,118 @@
+button.button-text {
+	transition: all 0.2s ease-out;
+	cursor: pointer;
+	margin: 0 auto;
+	width:100%;
+	color: white;
+	border: 0px;
+	background-color: $red;
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-family: $button-font;
+	text-align: center;
+	font-size: 1.2em;
+	outline: 0;
+	&:hover {
+		transition: all 0.1s ease-out;
+		background-color: $dark-red;
+        color:white;
+	}
+	&:active {
+		transition: all 0.1s ease-out;
+		background-color: $light-red;
+	}
+	i {
+		padding-right: 0.5em;
+	}
+}
+button.button-gray {
+  @extend button.button-text;
+  background-color: #D8D8D8;
+  color:gray;
+  &:hover {
+    color:white;
+    background-color: gray;
+  }
+  &:active {
+    color:gray;
+    background-color: #D8D8D8;
+  }
+}
+button.button-small {
+  @extend button.button-text;
+  font-size:17px;
+  padding:0.5em;
+}
+.button-icon {
+    padding:10px;
+    border-radius: 50%;
+	color: $red;
+	cursor: pointer;
+	font-size: 25px;
+	@include transition(all 0.3s linear);
+	&:hover {
+		@include transition(all 0.2s linear);
+        color: $dark-red;
+	}
+	&:active {
+		@include transition(all 0.1s ease);
+		color: $light-red;
+	}
+}
+
+.button-small {
+  @extend .button-icon;
+  padding:5px;
+  font-size: 20px;
+  border-radius: 0px;
+}
+
+input.input-text {
+	@include transition(all 0.5s ease);
+	font-size: 1em;
+	@include main-font();
+	padding: 0.5em;
+	border:1px solid lightgray;
+	border-radius: 5px;
+	color:gray;
+	outline: 0;
+	&:hover {
+		@include transition(all 0.5s ease);
+		box-shadow: 0px 0px 2px lightgray;
+	}
+	&:focus {
+		@include transition(all 0.4s ease);
+		box-shadow: inset 0px 0px 5px lightgray;
+	}
+}
+
+.search-input {
+  @extend .input-text;
+  float: right;
+  width:300px;
+  padding:0em;
+  border: 10px solid black;
+}
+
+a.red-link {
+  @include transition(all 0.2s ease);
+  color:black;
+  &:hover {
+    @include transition(all 0.2s ease);
+    color:$red;
+  }
+  &:hover {
+    @include transition(all 0.2s ease);
+    color:$light-red;
+  }
+}
+
+a.black-link {
+  @include transition(all 0.2s ease);
+  &:hover {
+    @include transition(all 0.2s ease);
+    color:black;
+  }
+}
+

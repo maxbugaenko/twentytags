@@ -1,0 +1,221 @@
+/**
+ *
+ * Copyright (c) 2009, twentytags.com
+ * All rights reserved. THIS IS PRIVATE SOFTWARE.
+ *
+ * Redistribution and use in source and binary forms, with or without modification, are PROHIBITED
+ * without prior written permission from the author. This product may NOT be used anywhere
+ * and on any computer except the server platform of twentytags.com. located at
+ * www.twentytags.com. If you received this code occasionally and without intent to use
+ * it, please report this incident to the author by email: privacy@twentytags.com
+ *
+ * @author Max Bugaenko <max.bugaenko@gmail.com>
+ * @copyright Copyright (c) twentytags.com, 2014
+ * @version $Id$
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+body {
+  background-color: #E6E6E6;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  padding: 0em;
+  margin: 0em;
+  overflow-x: hidden; }
+
+html {
+  overflow-x: hidden; }
+
+h1 {
+  font-size: 2.5em;
+  font-family: "Abel", sans-serif;
+  font-weight: 300; }
+
+a, a:visited {
+  text-decoration: none;
+  color: black; }
+
+.wait {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: lightgray; }
+
+.page-container, .slide-page-container-right {
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+  box-shadow: -1px 0px 5px #dd1338;
+  z-index: 10001;
+  overflow-x: hidden;
+  left: 0px; }
+
+.slide-page-container-right {
+  left: 240px; }
+
+button.button-text, button.button-gray, button.button-small {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  border: 0px;
+  background-color: #f1103a;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  outline: 0; }
+  button.button-text:hover, button.button-gray:hover, button.button-small:hover {
+    transition: all 0.1s ease-out;
+    background-color: #dd1338;
+    color: white; }
+  button.button-text:active, button.button-gray:active, button.button-small:active {
+    transition: all 0.1s ease-out;
+    background-color: #ff2e54; }
+  button.button-text i, button.button-gray i, button.button-small i {
+    padding-right: 0.5em; }
+
+button.button-gray {
+  background-color: #D8D8D8;
+  color: gray; }
+  button.button-gray:hover {
+    color: white;
+    background-color: gray; }
+  button.button-gray:active {
+    color: gray;
+    background-color: #D8D8D8; }
+
+button.button-small {
+  font-size: 17px;
+  padding: 0.5em; }
+
+.button-icon, .button-small {
+  padding: 10px;
+  border-radius: 50%;
+  color: #f1103a;
+  cursor: pointer;
+  font-size: 25px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .button-icon:hover, .button-small:hover {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    color: #dd1338; }
+  .button-icon:active, .button-small:active {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    color: #ff2e54; }
+
+.button-small {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 0px; }
+
+input.input-text, input.search-input {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  padding: 0.5em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  color: gray;
+  outline: 0; }
+  input.input-text:hover, input.search-input:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 2px lightgray; }
+  input.input-text:focus, input.search-input:focus {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    box-shadow: inset 0px 0px 5px lightgray; }
+
+.search-input {
+  float: right;
+  width: 300px;
+  padding: 0em;
+  border: 10px solid black; }
+
+a.red-link {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: black; }
+  a.red-link:hover {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: #f1103a; }
+  a.red-link:hover {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: #ff2e54; }
+
+a.black-link {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  a.black-link:hover {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: black; }
+
+.admin-container {
+  margin-top: 0em;
+  width: 100%;
+  color: black;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.98); }
+  .admin-container a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right: 1em; }
+    .admin-container a:hover {
+      text-decoration: underline; }
+
+form {
+  background-color: white;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 0px gray;
+  margin: 2em;
+  padding: 2em; }
+  form label {
+    font-size: 1.5em; }
+  form dd {
+    padding: 0px;
+    margin: 0px; }
+    form dd input {
+      font-size: 1.5em; }
+
+table {
+  width: 100%;
+  background-color: white; }
+  table th, table td {
+    vertical-align: top;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 1em; }
+  table tr {
+    border-bottom: 1px solid lightgray; }

@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `tag` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT "Unique ID of the tag",
+  `value` VARCHAR(255) NOT NULL COMMENT "tag value",
+  PRIMARY KEY (`id`),
+  UNIQUE (`id`),
+  UNIQUE (`value`)
+) AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ENGINE=InnoDB;
+
+

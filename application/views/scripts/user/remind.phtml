@@ -1,0 +1,48 @@
+<? if (!Model_User::isLoggedIn()):?>
+<h1>Восстановление пароля</h1>
+        <div id="loginForm" style="text-align:left;width:230px;margin-top:10px;z-index:1110;background:white;padding-left:50px;padding-bottom:50px;padding-top:10px;">
+
+           <?=$this->forma(5)   
+                ->addBehavior('redirectUrl', '')
+                ->addField('text', 'email')
+                    ->fieldLabel(_t("Email"), true)
+                    ->fieldAttrib('size', '20')
+                    ->fieldAttrib('class', 'ui-corner-all text')
+                    ->fieldAttrib('maxlength', 45)                
+                ->addField('submit')
+                    ->fieldAction(array('Model_User', 'remind'))
+                    ->fieldValue('Восстановить')
+                    ->fieldAttrib('class', 'button bigger margin-top')
+					//remind1
+					//user
+                ?>
+                <br/>    		    
+		</div>
+        <?
+           /* if ($this->forma(1)->getParam('email') != ""):
+        ?>
+            <script type="text/javascript">
+                $('#loginForm').show();
+            </script>
+        <?
+            endif;*/
+        ?>
+		
+<? /*elseif (FaZend_User::isLoggedIn()): 
+    $this->user = Model_User::me();
+?>
+        <div style="position:absolute;right:20px;top:5px;line-height:22px;text-align:right;z-index:1111;" class="normal black">
+            <font class="bigger black bolder"><?=$this->escape(Model_User::getCurrentUser()->email)?></font>
+            <a class="bigger menu blue" title="<?=_t('log out')?>" href="<?=$this->url(array('action'=>'logout'), 'fz__user', true)?>"><?=_t("log out")?></a>
+            <br/>
+			<a class="menu" title="<?=_t('my flats')?>" href="<?=$this->url(array('nickname'=>Model_User::me()->nickname, 'action'=>false), 'profile', true);?>"><?=_t("my flats")?></a> 
+			<a class="menu bolder" title="<?=_t('my flats')?>" href="<?=$this->url(array('controller'=>'profile', 'action'=>'creationrules'), 'default', true)?>"><?=_t("create appt")?></a><br/>
+			<? if (Model_User::isLoggedIn()): ?>
+	            <?if (Model_User::me()->isModerator()):?>
+	                <a href="<?=$this->url(array('controller'=>'adm','action'=>'pendingappts'), 'default', true);//=$this->url(array('controller'=>'user','action'=>'pendingappts'), 'fz__adm', true);?>"><?=_t("administrator")?></a><br/>
+	            <? endif; ?>
+			<? endif; ?>
+			
+        </div>
+<? */
+endif; ?>

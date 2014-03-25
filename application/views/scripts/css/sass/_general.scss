@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+$main-font: 'Open Sans', sans-serif;
+$title-font: 'Abel', sans-serif;
+$button-font: 'Abel', sans-serif;
+$red: #f1103a;
+$dark-red: #dd1338;
+$light-red: #FF2E54;
+
+body {
+	background-color: #E6E6E6;
+	@include main-font();
+	padding: 0em;
+	margin: 0em;
+    overflow-x: hidden;
+}
+html {
+  overflow-x: hidden;
+}
+h1 {
+	font-size: 2.5em;
+	@include title-font();
+}
+a, a:visited {
+  text-decoration: none;
+  color:black;
+}
+.wait {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color:lightgray;
+}
+.page-container {
+  @include transition(all 0.1s ease-in-out);
+  position:relative;
+  box-shadow: -1px 0px 5px $dark-red;
+  z-index: 10001;
+  overflow-x: hidden;
+  left:0px;
+}
+.slide-page-container-right {
+  @extend .page-container;
+  left:240px;
+}

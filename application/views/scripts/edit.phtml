@@ -1,0 +1,18 @@
+<<?=($this->tag == '')? "div" : "span"?>  id="<?=$this->element?>" class="<?=$this->class?>"><?=$this->text?></<?=($this->tag == '')? "div" : "span"?>>
+<script type="text/javascript">$("#<?=$this->element?>").editable("<?=$this->url(array('action'=>'update', 'table'=>$this->table, 'id'=>$this->id, 'column'=>$this->column), 'fz__adm', true);?>", {
+        type      : '<?=$this->type ? "textarea":"text"?>',
+        width      : '<?=$this->width ? $this->width:"" ?>',
+        cols	: '<?=$this->cols ? $this->cols:"" ?>',
+        height : '20px',
+        rows	: '<?=$this->rows ? $this->rows:""?>',
+        <?if ($this->noControls):?>
+        submit    : 'ok',
+        cancel    : 'cancel',
+        <?endif?>
+        buttonClass : 'button-small',
+        inputStyle : 'text',
+        indicator : '',
+        editableStyle : '<?=$this->class?>',
+        tooltip : '<?=$this->caption ? $this->caption :"+"?>',
+        placeholder   : '<?=$this->caption ? $this->caption :"+"?>'
+    });</script>

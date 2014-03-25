@@ -1,0 +1,45 @@
+<?php echo $this->doctype()?>
+<?php
+    $this->headMeta()
+        ->appendHttpEquiv('expires', 'Wed, 26 Feb 1997 08:21:57 GMT')
+        ->appendHttpEquiv('pragma', 'no-cache')
+        ->appendHttpEquiv('Cache-Control', 'no-cache')
+        ->appendHttpEquiv('Content-Type', 'text/html; charset=UTF-8');
+		$this->includeJS('jquery.js');
+        $this->includeJS('masonry.js');
+        $this->includeJS('follow.js');
+		$this->includeCSS('layout.css');
+?>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+	<?php echo $this->headTitle()?>
+	<?php echo $this->headMeta()?>
+	<?php echo $this->headLink()?>
+	<?php echo $this->headScript()?>
+	<?php echo $this->headStyle()?>
+	<style>
+		@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+	</style>
+</head> 
+<body>
+    <div class="menu-panel" id="menu-panel">
+        <h3><i class="fa fa-check-circle"></i> Popular</h3>
+        <ul class="menu">
+            <li class="current"><a href="#item1"><i class="fa fa-tasks"></i> I'm following</a></li>
+            <li class="current"><a href="#item1"><i class="fa fa-fire"></i> What's hot</a></li>
+            <li class="current"><a href="#item1"><i class="fa fa-rocket"></i> Startups</a></li>
+            <li><a href="#item2"><i class="fa fa-smile-o"></i> Entreprenuers</a></li>
+            <li><a href="#item3"><i class="fa fa-star"></i> Sportsmen</a></li>
+            <li><a href="#item4"><i class="fa fa-folder-open"></i> Global trends</a></li>
+        </ul>
+        <div class="legal-notes">
+            TWENTYTAGS.COM<br/>
+            COPYRIGHT 2014
+        </div>
+    </div>
+    <div class="page-container" id="page-container">
+        <?=$this->partial("header/header.phtml", array("user"=>$this->user, "mainTag"=>$this->mainTag))?>
+        <?=$this->layout()->content?>
+    </div>
+<body>
+</html>

@@ -1,0 +1,89 @@
+<table>
+    <thead>
+    <tr>
+        <th>
+            #
+        </th>
+        <th>
+            entity #
+        </th>
+        <th>
+            type
+        </th>
+        <th>
+            title
+        </th>
+        <th>
+            source
+        </th>
+        <th>
+            link
+        </th>
+        <th>
+            body
+        </th>
+        <th>
+            picture URL
+        </th>
+    </tr>
+    </thead>
+    <? foreach ($this->paginator as $item) :?>
+        <tr>
+            <td>
+                <?=$item?>
+            </td>
+            <td>
+                <?=$this->partial('edit.phtml', array('element'=>'ent'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->entity, 'column'=>'entity', 'table'=>'Alert'))?>
+            </td>
+            <td>
+                <?=$this->partial('edit.phtml', array('element'=>'typ'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->type, 'column'=>'type', 'table'=>'Alert'))?>
+            </td>
+            <td>
+                <?=$this->partial('edit.phtml', array('element'=>'title'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->title, 'column'=>'title', 'table'=>'Alert'))?>
+            </td>
+            <td>
+                <?=$this->partial('edit.phtml', array('element'=>'source'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->source, 'column'=>'source', 'table'=>'Alert'))?>
+            </td>
+            <td>
+                <?=$this->partial('edit.phtml', array('element'=>'link'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->link, 'column'=>'link', 'table'=>'Alert'))?>
+            </td>
+            <td>
+                <?=$this->partial('edit.phtml', array('element'=>'body'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->body, 'column'=>'body', 'table'=>'Alert'))?>
+            </td>
+            <td>
+                <img width="100px" src="<?=$this->staticFile("images/alerts/".$item->picture)?>">
+            </td>
+        </tr>
+    <? endforeach ?>
+</table>
+
+
+
+<?=$this->forma(1)
+    ->addBehavior('redirectUrl', '__fz/adm/alert')
+    ->addField('text', 'entity')
+        ->fieldLabel("#", true)
+        ->fieldAttrib('size', '40')
+    ->addField('text', 'type')
+        ->fieldLabel("type", true)
+        ->fieldAttrib('size', '40')
+    ->addField('text', 'title')
+        ->fieldLabel("title", true)
+        ->fieldAttrib('size', '40')
+    ->addField('text', 'source')
+        ->fieldLabel("source", true)
+        ->fieldAttrib('size', '40')
+    ->addField('text', 'link')
+        ->fieldLabel("link", true)
+        ->fieldAttrib('size', '40')
+    ->addField('text', 'body')
+        ->fieldLabel("body", true)
+        ->fieldAttrib('size', '40')
+    ->addField('text', 'picture')
+        ->fieldLabel("picture URL", true)
+        ->fieldAttrib('size', '40')
+        ->fieldAttrib('rows', 4)
+    ->addField('submit')
+        ->fieldAction(array('Model_Alert', 'create'))
+        ->fieldValue("create alert")
+?>

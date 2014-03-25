@@ -1,0 +1,29 @@
+<?php echo $this->doctype()?>
+<?php
+$this->headMeta()
+    ->appendHttpEquiv('expires', 'Wed, 26 Feb 1997 08:21:57 GMT')
+    ->appendHttpEquiv('pragma', 'no-cache')
+    ->appendHttpEquiv('Cache-Control', 'no-cache')
+    ->appendHttpEquiv('Content-Type', 'text/html; charset=UTF-8');
+$this->includeJS('jquery.js');
+$this->includeJS('jeditable.js');
+$this->includeCSS('admin.css');
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <?php echo $this->headTitle()?>
+    <?php echo $this->headMeta()?>
+    <?php echo $this->headLink()?>
+    <?php echo $this->headScript()?>
+    <?php echo $this->headStyle()?>
+    <style>
+        @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+    </style>
+</head>
+<body>
+<?=$this->render('adminmenu.phtml')?>
+<div>
+    <?=$this->layout()->content?>
+</div>
+<body>
+</html>

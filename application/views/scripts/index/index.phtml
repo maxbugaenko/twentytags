@@ -1,0 +1,48 @@
+<div class="list-container">
+    <div class="list"'>
+        <div class="column-width"></div>
+        <? foreach ($this->paginator as $item):?>
+            <div class="item">
+                <img src="<?=$this->staticFile("images/entities/".$item->picture)?>">
+                <div class="item-content">
+                    <div class="item-title">
+                        <a class="red-link" href="<?=$this->url(array("id"=>$item, dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
+                    </div>
+                    <div class="item-tags">
+                        <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
+                        <? foreach ($tagged as $tag):?>
+                            <a href="<?=$this->url(array("id"=>$tag, dashString($tag->value)=>""), "tags", false)?>"><b class="tag"><?=$tag->value?></b></a>
+                        <? endforeach?>
+                    </div>
+                    <div class="item-description">
+                        <?=$item->description?>
+                    </div>
+                    <div class="item-info">
+                        <?=($alertCount = Model_Alert::retrieveCountByEntity($item)) > 0 ? "<i class='fa fa-check-circle'></i> ". $alertCount." articles" : ""?>
+                        <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
+                            <div class="item-badge" title="<?=$todayAlertCount?> new articles today">
+                                <i class="fa fa-check-circle"></i> 5 today
+                            </div>
+                        <? endif ?>
+
+                    </div>
+                </div>
+                <? $isSaved = Model_Entity::isSaved($item);?>
+                <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
+                    <button id="follow-<?=$item?>" class="to-follow-button button-small <?=$isSaved ? "button-gray followed":""?>">
+                        <i class="fa fa-check-circle"></i> <?=$isSaved ? "Unfollow":"Follow"?>
+                    </button>
+                </div>
+            </div>
+        <?endforeach?>
+    </div>
+</div>
+<script>
+    $(".to-follow-button").FollowEntity();
+    window.onload = function(){
+        var $container = $('.list').masonry({
+            itemSelector: '.item',
+            columnWidth: '.column-width'
+        });
+    }
+</script>

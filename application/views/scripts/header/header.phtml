@@ -1,0 +1,41 @@
+<?
+require_once('Model/Facebook/facebook.php');
+$config = array(
+    'appId' => '706201236078444',
+    'secret' => 'fabe992657dcffefd59099502cdf0ce9',
+    'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
+);
+$facebook = new Facebook($config);
+?>
+
+<div class="menu-container" id="menu-container">
+    <div class="controls-section">
+        <?=$this->mainTag?> <i id="tags-button" class="button-icon fa fa-bars"></i>
+    </div>
+    <div class="logo-section">
+        <a href="http://localhost:901/twentytags"><i class="fa fa-check-circle"></i> TwentyTags</a>
+    </div>
+    <div class="profile-section">
+        <? if ($this->user):?>
+            <?=$this->user->name?>
+            <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
+            <i class="button-icon fa fa-tasks"></i>
+            <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="button-icon fa fa-share-square"></i>
+        <?else:?>
+            <?
+                $loginUrl = $facebook->getLoginUrl(array(
+                    "redirect_uri" => "http://localhost:901".$this->url(array("action"=>"login"), "login", false)
+                ));
+            ?>
+            Sign in
+            <i title="Sign up with Facebook" onclick="location.href='<?=$loginUrl?>'" class="button-icon fa fa-facebook-square"></i>
+        <?endif?>
+    </div>
+</div>
+<script>
+    $("#tags-button").click(function() {
+        $("#menu-panel").toggleClass("slide-menu-right");
+        $("#page-container").toggleClass("slide-page-container-right");
+        $("#menu-container").toggleClass("menu-container-slide-right");
+    });
+</script>

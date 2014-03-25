@@ -1,0 +1,126 @@
+.column-width {
+  width:20%;
+}
+.list-container {
+    @include box-sizing(border-box);
+    padding-top: 7em;
+	width: 95%;
+	margin: 0 auto;
+	.list {
+        @include box-sizing(border-box);
+		width: 100%;
+		overflow: hidden;
+        vertical-align: top;
+/*        @media screen and (max-width:2000px) {
+          @include column-count(5);
+        }
+        @media screen and (max-width:1300px) {
+          @include column-count(4);
+        }
+        @media screen and (max-width:1000px) {
+          @include column-count(3);
+        }
+        @media screen and (max-width:800px) {
+          @include column-count(2);
+        }
+        @media screen and (max-width:600px) {
+          @include column-count(1);
+        }
+        @include column-gap(0.5em);
+        @include column-fill(auto);
+        @include transition(all 0.8s ease-out);
+*/
+		.item {
+            width:20%;
+            @include box-sizing(border-box);
+			@include transition(all 0.6s ease-out);
+            float:left;
+            border:5px solid #E6E6E6;
+			padding: 1.4em;
+            position: relative;
+			border-radius: 0px;
+			background-color: white;
+            @include column-break-inside(avoid);
+            &:hover .item-follow-button {
+              -moz-animation: followButtonSlideUp forwards 0.2s ease-in-out;
+              -o-animation: followButtonSlideUp forwards 0.2s ease-in-out;
+              -webkit-opacity:1;
+            }
+			img {
+				width: 100%;
+			}
+			.item-content {
+				padding: 0em;
+				font-size: 1em;
+			}
+			.item-description {
+				margin-top: 0.4em;
+				margin-bottom: 2.5em;
+				font-size: 1.2em;
+				color:gray;
+			}
+			.item-title {
+                @include title-font();
+				margin-top: 0.4em;
+				font-size: 1.6em;
+				color:black;
+                cursor: pointer;
+			}
+			.item-info {
+				margin-top: 0.6em;
+				font-size: 1.1em;
+				color:gray;
+                @include title-font();
+			}
+			.item-tags {
+				margin-bottom: 1em;
+				color:#A4A4A4;
+			}
+			.item-tags b {
+                @include main-font();
+				font-size: 1.2em;
+				cursor: pointer;
+				margin-right: 0.3em;
+				border-bottom: 1px dotted #BDBDBD;
+				color:#BDBDBD;
+				border-radius: 2px;
+				margin-right:3px;
+                @include transition(all 0.2s ease);
+                &:hover {
+                  @include transition(all 0.2s ease);
+                  color:black;
+                }
+            }
+            .item-follow-button {
+                position: absolute;
+                bottom:10px;
+                right:10px;
+                opacity: 0;
+            }
+            .make-visible {
+              opacity:1;
+            }
+            .not-displayed {
+              display:none;
+            }
+            .displayed {
+              display:block;
+            }
+            .item-badge {
+              color:$dark-red;
+              @include title-font();
+            }
+		}
+	}
+}
+@include keyframes(followButtonSlideUp) {
+  from {
+    opacity: 0;
+    @include transform(translateY(40%));
+  }
+  to {
+    opacity: 1;
+    @include transform(translateY(0%));
+  }
+}
+

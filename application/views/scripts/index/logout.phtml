@@ -1,0 +1,11 @@
+<?
+require_once('Model/Facebook/facebook.php');
+$config = array(
+    'appId' => '706201236078444',
+    'secret' => 'fabe992657dcffefd59099502cdf0ce9',
+    'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
+);
+$facebook = new Facebook($config);
+$facebook->destroySession();
+Header("Location: http://localhost:901/twentytags");
+?>

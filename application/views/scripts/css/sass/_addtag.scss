@@ -1,0 +1,51 @@
+.window-container {
+	@include box-sizing(border-box);
+	padding-left:9em;
+	padding-right:9em;
+	padding-top:3em;
+	padding-bottom:3em;
+	margin-top: 7em;
+	width: 70%;
+	background-color: white;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	div {
+		font-size:1.5em;
+		color: gray;
+		font-weight: 100;
+	}
+	div:last-child {
+		margin-top: 2em;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		font-weight: 300;
+		color: lightgray;
+	}
+	&:before {
+		content: "";
+		z-index: -1;
+		position:absolute;
+		bottom:15px;
+		left:49%;
+		width: 50%;
+		height: 30px;
+		background-color: gray;
+		box-shadow: 0px 0px 30px gray;
+		@include transform(rotate(3deg))
+	}
+	&:after {
+		content: "";
+		z-index: -1;
+		position:absolute;
+		bottom:15px;
+		left:1%;
+		width: 50%;
+		height: 30px;
+		background-color: gray;
+		box-shadow: 0px 0px 30px gray;
+		@include transform(rotate(-3deg))
+	}
+}
