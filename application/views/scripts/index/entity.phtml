@@ -1,11 +1,16 @@
 <div class="entity-container">
     <div class="entity">
         <div class="item">
-            <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
+            <div class="item-image">
+                <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
+            </div>
             <div class="item-content">
                 <div class="item-title"><?=$this->entity->title?></div>
                 <div class="item-tags">
-                    <b class="tag">Game</b><b class="tag">Startup</b>
+                    <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
+                    <? foreach ($tagged as $tag):?>
+                        <a class="gray-link" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>
+                    <? endforeach?>
                 </div>
                 <div class="item-description">
                     <?=$this->entity->description?>

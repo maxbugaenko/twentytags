@@ -15,13 +15,13 @@
     line-height:1em;
     font-weight: 800;
     text-shadow: 0 1px rgba(255,255,255,0.2);
-    @include title-font();
+    @include header-font();
     padding:20px;
-    font-size:1em;
+    font-size:1.2em;
   }
   h3 {
     font-size: 2.8em;
-    @include title-font();
+    @include header-font();
     padding: 20px;
     line-height: 1em;
     color: #fff;
@@ -31,6 +31,11 @@
     list-style: none;
     padding-left: 0em;
     overflow-x: hidden;
+    li {
+      .current {
+        background: $dark-red;
+      }
+    }
     li a {
       display: block;
       color: #fff;

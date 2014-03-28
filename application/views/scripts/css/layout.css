@@ -13,13 +13,14 @@
  * @copyright Copyright (c) twentytags.com, 2014
  * @version $Id$
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 body {
   background-color: #E6E6E6;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
   padding: 0em;
   margin: 0em;
   overflow-x: hidden; }
@@ -29,8 +30,8 @@ html {
 
 h1 {
   font-size: 2.5em;
-  font-family: "Abel", sans-serif;
-  font-weight: 300; }
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400; }
 
 a, a:visited {
   text-decoration: none;
@@ -55,7 +56,7 @@ a, a:visited {
 .slide-page-container-right {
   left: 240px; }
 
-button.button-text, button.button-gray, button.button-small {
+button.button-text, button.button-large, button.button-gray, button.button-small {
   transition: all 0.2s ease-out;
   cursor: pointer;
   margin: 0 auto;
@@ -66,19 +67,23 @@ button.button-text, button.button-gray, button.button-small {
   padding: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
-  font-family: "Abel", sans-serif;
+  font-family: "Ubuntu Condensed", sans-serif;
   text-align: center;
   font-size: 1.2em;
+  border-radius: 3px;
   outline: 0; }
-  button.button-text:hover, button.button-gray:hover, button.button-small:hover {
+  button.button-text:hover, button.button-large:hover, button.button-gray:hover, button.button-small:hover {
     transition: all 0.1s ease-out;
     background-color: #dd1338;
     color: white; }
-  button.button-text:active, button.button-gray:active, button.button-small:active {
+  button.button-text:active, button.button-large:active, button.button-gray:active, button.button-small:active {
     transition: all 0.1s ease-out;
     background-color: #ff2e54; }
-  button.button-text i, button.button-gray i, button.button-small i {
-    padding-right: 0.5em; }
+  button.button-text i, button.button-large i, button.button-gray i, button.button-small i {
+    padding-right: 0.2em; }
+
+button.button-large {
+  font-size: 2em; }
 
 button.button-gray {
   background-color: #D8D8D8;
@@ -124,8 +129,8 @@ input.input-text, input.search-input {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-size: 1em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
   padding: 0.5em;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -148,21 +153,27 @@ input.input-text, input.search-input {
   padding: 0em;
   border: 10px solid black; }
 
-a.red-link {
+a.red-link, a.gray-link, a.link-underline {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: black; }
-  a.red-link:hover {
+  a.red-link:hover, a.gray-link:hover, a.link-underline:hover {
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     transition: all 0.2s ease;
     color: #f1103a; }
-  a.red-link:hover {
+  a.red-link:hover, a.gray-link:hover, a.link-underline:hover {
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     transition: all 0.2s ease;
     color: #ff2e54; }
+
+a.gray-link {
+  color: gray; }
+
+a.link-underline {
+  border-bottom: 1px dotted #BDBDBD; }
 
 a.black-link {
   -webkit-transition: all 0.2s ease;
@@ -246,19 +257,21 @@ a.black-link {
     order: 0;
     flex: 0 0 50%;
     align-self: auto;
-    font-family: "Abel", sans-serif;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
     font-size: 1.5em;
     text-align: left; }
   .menu-container .logo-section, .menu-container-slide-right .logo-section {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    line-height: 1.5em;
+    line-height: 1.2em;
     order: 1;
     flex: 0 0 25%;
     align-self: auto;
-    font-family: "Abel", sans-serif;
-    font-size: 2em;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
     white-space: nowrap;
     text-align: center;
     padding-left: 2em; }
@@ -274,7 +287,8 @@ a.black-link {
     order: 2;
     flex: 0 3 25%;
     align-self: auto;
-    font-family: "Abel", sans-serif;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
     color: gray;
     font-size: 1.5em;
     white-space: nowrap;
@@ -388,7 +402,7 @@ a.black-link {
       border: 5px solid #E6E6E6;
       padding: 1.4em;
       position: relative;
-      border-radius: 0px;
+      border-radius: 8px;
       background-color: white;
       -webkit-column-break-inside: avoid;
       -moz-column-break-inside: avoid;
@@ -399,50 +413,75 @@ a.black-link {
         -moz-animation: followButtonSlideUp forwards 0.2s ease-in-out;
         -o-animation: followButtonSlideUp forwards 0.2s ease-in-out;
         -webkit-opacity: 1; }
-      .list-container .list .item img {
-        width: 100%; }
+      .list-container .list .item .item-image {
+        min-height: 150px; }
+        .list-container .list .item .item-image img {
+          width: 100%; }
       .list-container .list .item .item-content {
         padding: 0em;
         font-size: 1em; }
       .list-container .list .item .item-description {
         margin-top: 0.4em;
         margin-bottom: 2.5em;
-        font-size: 1.2em;
-        color: gray; }
+        font-size: 1.1em;
+        color: gray;
+        line-height: 1.5em; }
       .list-container .list .item .item-title {
-        font-family: "Abel", sans-serif;
-        font-weight: 300;
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-weight: 400;
         margin-top: 0.4em;
         font-size: 1.6em;
         color: black;
         cursor: pointer; }
       .list-container .list .item .item-info {
         margin-top: 0.6em;
-        font-size: 1.1em;
+        font-size: 0.9em;
         color: gray;
-        font-family: "Abel", sans-serif;
+        width: auto;
+        font-family: "Ubuntu", sans-serif;
         font-weight: 300; }
+        .list-container .list .item .item-info .item-badge-total {
+          border-bottom-left-radius: 3px;
+          border-top-left-radius: 3px;
+          border-radius: 3px;
+          padding: 3px;
+          padding-left: 10px;
+          padding-right: 10px;
+          background-color: lightgray;
+          color: gray; }
+        .list-container .list .item .item-info .item-badge-today {
+          border-bottom-right-radius: 3px;
+          border-top-right-radius: 3px;
+          padding: 3px;
+          position: relative;
+          left: -2px;
+          padding-left: 6px;
+          padding-right: 6px;
+          background-color: #ff2e54;
+          color: white; }
+          .list-container .list .item .item-info .item-badge-today:after {
+            position: absolute;
+            content: "";
+            border-width: 6px 6px 6px 0px;
+            border-style: solid;
+            border-color: transparent #ff2e54;
+            z-index: 1000;
+            left: -4px;
+            top: 5px; }
       .list-container .list .item .item-tags {
         margin-bottom: 1em;
         color: #A4A4A4; }
-      .list-container .list .item .item-tags b {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 100;
+      .list-container .list .item .item-link {
+        font-size: 1.2em; }
+      .list-container .list .item .item-tags {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
         font-size: 1.2em;
         cursor: pointer;
         margin-right: 0.3em;
-        border-bottom: 1px dotted #BDBDBD;
-        color: #BDBDBD;
+        color: black;
         border-radius: 2px;
-        margin-right: 3px;
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        transition: all 0.2s ease; }
-        .list-container .list .item .item-tags b:hover {
-          -webkit-transition: all 0.2s ease;
-          -moz-transition: all 0.2s ease;
-          transition: all 0.2s ease;
-          color: black; }
+        margin-right: 3px; }
       .list-container .list .item .item-follow-button {
         position: absolute;
         bottom: 10px;
@@ -454,10 +493,6 @@ a.black-link {
         display: none; }
       .list-container .list .item .displayed {
         display: block; }
-      .list-container .list .item .item-badge {
-        color: #dd1338;
-        font-family: "Abel", sans-serif;
-        font-weight: 300; }
 
 @-webkit-keyframes followButtonSlideUp {
   from {
@@ -525,8 +560,10 @@ a.black-link {
       margin-bottom: 1.875em;
       /* 30px */
       border-bottom: 10px solid white; }
-      .entity-container .entity .item img {
-        width: 100%; }
+      .entity-container .entity .item .item-image {
+        min-height: 150px; }
+        .entity-container .entity .item .item-image img {
+          width: 100%; }
       .entity-container .entity .item .item-content {
         padding: 0em;
         font-size: 1em; }
@@ -534,12 +571,16 @@ a.black-link {
         margin-top: 0.4em;
         margin-bottom: 1.5em;
         font-size: 1.2em;
+        line-height: 1.4em;
         color: gray; }
       .entity-container .entity .item .item-title {
-        font-family: "Abel", sans-serif;
-        font-weight: 300;
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-weight: 400;
         margin-top: 0.4em;
-        font-size: 2.5em;
+        font-size: 2.2em;
+        line-height: 0.8em;
+        text-overflow: ellipsis;
+        overflow: hidden;
         color: black; }
       .entity-container .entity .item .item-info {
         margin-top: 0.6em;
@@ -547,11 +588,12 @@ a.black-link {
         color: #A4A4A4; }
       .entity-container .entity .item .item-tags {
         font-size: 1.2em;
+        margin-top: 0.5em;
         margin-bottom: 1em;
         color: #A4A4A4; }
       .entity-container .entity .item .item-tags b {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 100;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
         cursor: pointer;
         padding-right: 1px;
         border-bottom: 1px dotted #BDBDBD;
@@ -575,9 +617,10 @@ a.black-link {
       margin-left: auto;
       margin-right: auto;
       width: 70%;
-      color: lightgray; }
+      color: #bdbdbd; }
       .entity-container .alerts .message .message-title {
-        font-family: "Abel", sans-serif;
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-weight: 400;
         font-size: 4em; }
       .entity-container .alerts .message .message-description {
         font-size: 2em; }
@@ -599,18 +642,16 @@ a.black-link {
         padding: 1.5em;
         margin-bottom: 5px;
         background-color: white;
-        transition: all 0.6s ease-out;
-        -webkit-column-break-inside: avoid;
-        -moz-column-break-inside: avoid;
-        column-break-inside: avoid;
-        -moz-page-break-inside: avoid;
-        page-break-inside: avoid; }
+        transition: all 0.6s ease-out; }
         .entity-container .alerts .list .data .data-title {
-          font-family: "Abel", sans-serif;
-          font-size: 1.7em; }
+          font-family: "Ubuntu Condensed", sans-serif;
+          font-weight: 400;
+          font-size: 1.7em;
+          overflow: hidden;
+          text-overflow: ellipsis; }
         .entity-container .alerts .list .data .data-source {
           margin-top: 0em;
-          font-family: "Abel", sans-serif;
+          font-family: "Ubuntu Condensed", sans-serif;
           font-size: 1.2em;
           color: lightgray;
           text-overflow: ellipsis;
@@ -621,7 +662,9 @@ a.black-link {
           -moz-box-sizing: border-box;
           box-sizing: border-box;
           padding-top: 1.5em;
-          font-size: 1.2em;
+          font-size: 1.1em;
+          color: gray;
+          line-height: 1.5em;
           overflow: hidden;
           text-overflow: ellipsis;
           color: gray; }
@@ -629,11 +672,12 @@ a.black-link {
             position: relative; }
             .entity-container .alerts .list .data .data-description .data-img-video .play-icon {
               color: white;
-              font-size: 4em;
+              font-size: 100px;
               position: absolute;
-              opacity: 0.7;
+              opacity: 0.8;
+              text-shadow: 0px 0px 20px black;
               left: 40%;
-              top: 15%; }
+              top: 17%; }
           .entity-container .alerts .list .data .data-description img {
             width: 100%;
             margin-bottom: 1em; }
@@ -657,8 +701,8 @@ a.black-link {
   width: 240px;
   height: 100%;
   position: fixed;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
   z-index: 1000;
   top: 0;
   left: -240px;
@@ -669,14 +713,14 @@ a.black-link {
     line-height: 1em;
     font-weight: 800;
     text-shadow: 0 1px rgba(255, 255, 255, 0.2);
-    font-family: "Abel", sans-serif;
-    font-weight: 300;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
     padding: 20px;
-    font-size: 1em; }
+    font-size: 1.2em; }
   .menu-panel h3, .slide-menu-right h3 {
     font-size: 2.8em;
-    font-family: "Abel", sans-serif;
-    font-weight: 300;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
     padding: 20px;
     line-height: 1em;
     color: #fff;
@@ -685,6 +729,8 @@ a.black-link {
     list-style: none;
     padding-left: 0em;
     overflow-x: hidden; }
+    .menu-panel .menu li .current, .slide-menu-right .menu li .current {
+      background: #dd1338; }
     .menu-panel .menu li a, .slide-menu-right .menu li a {
       display: block;
       color: #fff;
@@ -711,3 +757,29 @@ a.black-link {
 
 .slide-menu-right {
   left: 0px; }
+
+.message-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 15%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  color: lightgray; }
+  .message-container .message-title {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    color: #bdbdbd; }
+  .message-container .message-description {
+    font-size: 2em;
+    color: #bdbdbd; }
+  .message-container .button-block {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2em;
+    width: 25%; }

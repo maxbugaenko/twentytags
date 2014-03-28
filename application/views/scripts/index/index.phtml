@@ -3,26 +3,40 @@
         <div class="column-width"></div>
         <? foreach ($this->paginator as $item):?>
             <div class="item">
-                <img src="<?=$this->staticFile("images/entities/".$item->picture)?>">
+                <div class="item-image">
+                    <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
+                        <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
+                    </a>
+                </div>
                 <div class="item-content">
                     <div class="item-title">
-                        <a class="red-link" href="<?=$this->url(array("id"=>$item, dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
+                        <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a><br/>
                     </div>
                     <div class="item-tags">
                         <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
                         <? foreach ($tagged as $tag):?>
-                            <a href="<?=$this->url(array("id"=>$tag, dashString($tag->value)=>""), "tags", false)?>"><b class="tag"><?=$tag->value?></b></a>
+                            <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>
                         <? endforeach?>
                     </div>
                     <div class="item-description">
-                        <?=$item->description?>
+                        <?=$item->description?>&#160;&#160;&#160;
+                        <? if ($item->link):?>
+                            <a class="gray-link" href="<?=$item->link?>">
+                                <i title="<?=$item->title?> on the web" class="fa fa-external-link-square"></i>
+                            </a>
+                        <?endif?>
                     </div>
                     <div class="item-info">
-                        <?=($alertCount = Model_Alert::retrieveCountByEntity($item)) > 0 ? "<i class='fa fa-check-circle'></i> ". $alertCount." articles" : ""?>
+                        <? $alertCount = Model_Alert::retrieveCountByEntity($item);?>
+                        <? if ($alertCount > 0):?>
+                            <span class="item-badge-total" title="<?=$alertCount?> updates total">
+                                <?=$alertCount?>
+                            </span>
+                        <?endif?>
                         <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
-                            <div class="item-badge" title="<?=$todayAlertCount?> new articles today">
-                                <i class="fa fa-check-circle"></i> 5 today
-                            </div>
+                            <span class="item-badge-today" title="<?=$todayAlertCount?> new articles today">
+                                <?=$todayAlertCount?>
+                            </span>
                         <? endif ?>
 
                     </div>

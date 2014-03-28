@@ -37,20 +37,6 @@ define('HDOM_INFO_ENDSPACE',7);
 define("ENTITY_IMAGES_PATH", realpath(dirname(__FILE__))."/../public/images/entities/");
 define("ALERT_IMAGES_PATH", realpath(dirname(__FILE__))."/../public/images/alerts/");
 
-
-function dashString($string) {
-    //Lower case everything
-    $string = strtolower($string);
-    //Make alphanumeric (removes all other characters)
-    $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
-    //Clean up multiple dashes or whitespaces
-    $string = preg_replace("/[\s-]+/", " ", $string);
-    //Convert whitespaces and underscore to dash
-    $string = preg_replace("/[\s_]/", "-", $string);
-    return $string;
-}
-
-
 // helper functions
 // -----------------------------------------------------------------------------
 // get html dom form file

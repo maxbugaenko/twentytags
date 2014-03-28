@@ -13,13 +13,16 @@ $facebook = new Facebook($config);
         <?=$this->mainTag?> <i id="tags-button" class="button-icon fa fa-bars"></i>
     </div>
     <div class="logo-section">
-        <a href="http://localhost:901/twentytags"><i class="fa fa-check-circle"></i> TwentyTags</a>
+        <a href="<?=$this->url(array(), "browse", false)?>"><i class="fa fa-check-circle"></i> TwentyTags</a>
     </div>
     <div class="profile-section">
         <? if ($this->user):?>
             <?=$this->user->name?>
             <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
-            <i class="button-icon fa fa-tasks"></i>
+            <?$followingUrl = $this->url(array(), "following", true);?>
+            <?$settingsUrl = $this->url(array(), "settings", true);?>
+            <i onclick="location.href='<?=$followingUrl?>'" class="button-icon fa fa-tasks"></i>
+            <i onclick="location.href='<?=$settingsUrl?>'" class="button-icon fa fa-cogs"></i>
             <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="button-icon fa fa-share-square"></i>
         <?else:?>
             <?

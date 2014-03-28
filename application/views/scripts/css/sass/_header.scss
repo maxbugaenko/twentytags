@@ -39,18 +39,18 @@
         order: 0;
         flex: 0 0 50%;
         align-self: auto;
-        font-family: $title-font;
+        @include header-font();
         font-size: 1.5em;
         text-align:left;
     }
     .logo-section {
       @include box-sizing(border-box);
-      line-height:1.5em;
+      line-height:1.2em;
       order: 1;
       flex: 0 0 25%;
       align-self: auto;
-      font-family: $title-font;
-      font-size: 2em;
+      @include header-font();
+      font-size: 2.2em;
       white-space: nowrap;
       text-align: center;
       padding-left:2em;
@@ -67,7 +67,7 @@
         order: 2;
         flex: 0 3 25%;
         align-self: auto;
-        font-family: $title-font;
+        @include header-font();
         color:gray;
         font-size: 1.5em;
         white-space: nowrap;

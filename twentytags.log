@@ -1,1379 +1,336 @@
-2014-03-24T10:13:33-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:03-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T10:24:38-05:00 ERR (3): [WARNING] file_get_contents(http://highbrowmagazine.com/3843-vladimir-putin-crimea-and-double-standards&ct=ga&cd=CAIyAA&usg=AFQjCNGaOjiKGThsD42a4R_R-AqlZI5TDg
+2014-03-27T05:04:17-05:00 ERR (3): [WARNING] file_get_contents(http://www.dailynewsegypt.com/2014/03/26/souq-com-raises-150m/&ct=ga&cd=CAIyAA&usg=AFQjCNFxtIaPz8eG2GUbCi1WPrUiADHZtQ
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T10:24:38-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:17-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T10:24:40-05:00 ERR (3): [WARNING] file_get_contents(http://www.bloomberg.com/video/no-way-putin-wins-crimea-and-loses-ukraine-kuchins-n1Dd40khSTWof66r7Z9jyw.html&ct=ga&cd=CAIyAA&usg=AFQjCNGpEeOXpM5KZxnuPl918tgsVHMvwQ
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T10:24:40-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T10:24:41-05:00 ERR (3): [WARNING] file_get_contents(http://www.theatlantic.com/international/archive/2014/03/vladimir-putin-russian-neocon/284602/&ct=ga&cd=CAIyAA&usg=AFQjCNFq7gi-jQ0sgk8G6JUZhgfcLHNTLg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T10:24:41-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T10:24:41-05:00 ERR (3): [WARNING] file_get_contents(http://themoderatevoice.com/192851/the-paler-the-west-the-more-luminous-vladimir-putin-die-zeit-germany/&ct=ga&cd=CAIyAA&usg=AFQjCNF_A_jHvHVHTuiNxRAUB_1dQc4CXg
+2014-03-27T05:04:26-05:00 ERR (3): [WARNING] file_get_contents(http://vimeo.com/90168629&ct=ga&cd=CAIyAA&usg=AFQjCNE1O5aRHly-9EKUeGFQHNCrrH7lEQ
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T10:24:41-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:26-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T10:24:43-05:00 ERR (3): [WARNING] file_get_contents(http://blogs.telegraph.co.uk/news/davidblair/100264780/ukraine-crisis-will-vladimir-putin-give-the-order-to-invade/&ct=ga&cd=CAIyAA&usg=AFQjCNHPOUjjRqSiNNhCIcXr8QyF5PrxFw
+2014-03-27T05:04:27-05:00 ERR (3): [WARNING] file_get_contents(http://www.voanews.com/content/obama-in-brussels-for-talks-with-eu-nato/1879388.html&ct=ga&cd=CAIyAA&usg=AFQjCNHvqikcgZ0vvx1lftvvn9qZ1LvoMg
 ): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T10:24:43-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:27-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T10:24:44-05:00 ERR (3): [WARNING] file_get_contents(http://www.rferl.org/content/putin-tasks-trusted-lieutenant-with-economic-development-of-crimea/25307596.html&ct=ga&cd=CAIyAA&usg=AFQjCNElv087o6-TInrzxZJcdROeoeis7Q
+2014-03-27T05:04:27-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/OWn55vojZ38/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (41)
+
+2014-03-27T05:04:27-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
+
+2014-03-27T05:04:27-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
+
+2014-03-27T05:04:27-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/GeCy4ljPIpM/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (41)
+
+2014-03-27T05:04:27-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
+
+2014-03-27T05:04:27-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
+
+2014-03-27T05:04:28-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/northamerica/usa/10724114/Barack-Obama-pays-tribute-to-US-troops-killed-in-WW1.html&ct=ga&cd=CAIyAA&usg=AFQjCNHPxWigj2MZmw5qVV3XdgZPweRxzA
 ): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T10:24:44-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:28-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T10:24:47-05:00 ERR (3): [WARNING] file_get_contents(http://blogs.wsj.com/washwire/2014/03/24/lawmakers-call-for-harsher-sanctions-against-putin/&ct=ga&cd=CAIyAA&usg=AFQjCNFUjcsDf47GFFYVC24EXWMp8Srrcw
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T10:24:47-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T10:24:48-05:00 ERR (3): [WARNING] file_get_contents(http://stream.wsj.com/story/latest-headlines/SS-2-63399/SS-2-489363/&ct=ga&cd=CAIyAA&usg=AFQjCNGvZvATSvy5D5yp1MLLBwm3Rl9nzg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T10:24:48-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T10:24:49-05:00 ERR (3): [WARNING] file_get_contents(http://www.mancunianmatters.co.uk/content/240368260-vladimir-putins-annex-crimea-unacceptable-and-only-tough-sanctions-will-stop-him&ct=ga&cd=CAIyAA&usg=AFQjCNFreD5Ug8DEgX0YV63RPzELsWUD_A
+2014-03-27T05:04:37-05:00 ERR (3): [WARNING] file_get_contents(http://tvnz.co.nz/world-news/barack-obama-meets-pope-francis-5877812&ct=ga&cd=CAIyAA&usg=AFQjCNGsX87uKexLFpIUhsHLZIaDdTpijw
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T10:24:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:37-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T10:24:50-05:00 ERR (3): [WARNING] file_get_contents(http://www.standard.co.uk/news/world/britain-should-make-a-military-statement-to-vladimir-putin-says-former-army-boss-9211845.html&ct=ga&cd=CAIyAA&usg=AFQjCNEuTEvV_6nQj7o9yzrkSkRxmvDWrQ
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T10:24:50-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T10:24:52-05:00 ERR (3): [WARNING] file_get_contents(http://www.1913intel.com/2014/03/24/the-danger-that-lurks-inside-vladimir-putins-brain-psychology-today/%3Futm_source%3Drss%26utm_medium%3Drss%26utm_campaign%3Dthe-danger-that-lurks-inside-vladimir-putins-brain-psychology-today&ct=ga&cd=CAIyAA&usg=AFQjCNEMYys2XmY3mihoVLCtIWxm2RthGw
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T10:24:52-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T10:24:53-05:00 ERR (3): [WARNING] file_get_contents(http://www.nydailynews.com/opinion/hitting-putin-feel-article-1.1729772&ct=ga&cd=CAIyAA&usg=AFQjCNHhFHD2yaVYYHleEra2R86lwlfqlQ
+2014-03-27T05:04:40-05:00 ERR (3): [WARNING] file_get_contents(http://www.sdjewishworld.com/2014/03/26/look-barack-obamas-record-rhetoric/&ct=ga&cd=CAIyAA&usg=AFQjCNF8VFHgx2ZHZHGwEA8-d_B0AGx0ew
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T10:24:53-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:40-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T10:24:56-05:00 ERR (3): [WARNING] file_get_contents(http://www.bostonglobe.com/opinion/editorials/2014/03/23/vladimir-putin-creates-bipartisanship-washington-needs/ffJZplutXrfLWZD83m2E6K/story.html&ct=ga&cd=CAIyAA&usg=AFQjCNH4e7COBMsetKAV2BTJdak77L7_aA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T10:24:56-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T10:24:57-05:00 ERR (3): [WARNING] file_get_contents(http://www.politico.com/magazine/story/2014/03/vladimir-putin-energy-war-104891.html%3Fml%3Dm_u3_1&ct=ga&cd=CAIyAA&usg=AFQjCNHWgEkscuDpAn-qvDx949RLarzpAQ
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T10:24:57-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T10:24:58-05:00 ERR (3): [WARNING] file_get_contents(http://www.forbes.com/sites/craigsilver/2014/03/23/putin-vs-palin-is-alaska-next-on-his-list/&ct=ga&cd=CAIyAA&usg=AFQjCNGoz9DAgtBXGxC3SDvBU3ho2-Jbew
+2014-03-27T05:04:43-05:00 ERR (3): [WARNING] file_get_contents(http://www.truthdig.com/report/item/barack_obama_the_least_transparent_president_in_history_20140326&ct=ga&cd=CAIyAA&usg=AFQjCNHz5VygyTaTjVR84Qr1HQVwcvNmAg
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T10:24:58-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:43-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T10:29:11-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/e/23/vladimir-putin
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #219.=0A=0AZend_Db_T=
-able_Row_Exception: Specified column &quot;description&quot; is not in t=
-he row=0A=0A/code/twentytags/library/Zend/Controller/Action.php (516)=0A=
-/code/twentytags/library/Zend/Controller/Dispatcher/Standard.php (308)=
-=0A/code/twentytags/library/Zend/Controller/Front.php (954)=0A/code/twen=
-tytags/library/Zend/Application/Bootstrap/Bootstrap.php (97)=0A/code/twe=
-ntytags/library/Zend/Application.php (366)=0A/code/twentytags/library/Fa=
-Zend/Application/index.php (40)=0A/code/twentytags/public/index.php (2)=
-=0A=0AArray=0A(=0A    [id] =3D&gt; 23=0A    [controller] =3D&gt; index=
-=0A    [action] =3D&gt; entity=0A)=0A=0A=0A#0 /code/twentytags/library/F=
-aZend/Db/Table/ActiveRow.php(424): Zend_Db_Table_Row_Abstract-&gt;__get(=
-'description')=0A#1 /code/twentytags/application/views/scripts/index/ent=
-ity.phtml(28): FaZend_Db_Table_ActiveRow-&gt;__get('description')=0A#2 /=
-code/twentytags/library/Zend/View.php(108): include('/code/twentytag...'=
-)=0A#3 /code/twentytags/library/Zend/View/Abstract.php(888): Zend_View-&=
-gt;_run('/code/twentytag...')=0A#4 /code/twentytags/library/Zend/Control=
-ler/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract-&gt;render('=
-index/entity.ph...')=0A#5 /code/twentytags/library/Zend/Controller/Actio=
-n/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRender=
-er-&gt;renderScript('index/entity.ph...', NULL)=0A#6 /code/twentytags/li=
-brary/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controll=
-er_Action_Helper_ViewRenderer-&gt;render()=0A#7 /code/twentytags/library=
-/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_He=
-lper_ViewRenderer-&gt;postDispatch()=0A#8 /code/twentytags/library/Zend/=
-Controller/Action.php(527): Zend_Controller_Action_HelperBroker-&gt;noti=
-fyPostDispatch()=0A#9 /code/twentytags/library/Zend/Controller/Dispatche=
-r/Standard.php(308): Zend_Controller_Action-&gt;dispatch('entityAction')=
-=0A#10 /code/twentytags/library/Zend/Controller/Front.php(954): Zend_Con=
-troller_Dispatcher_Standard-&gt;dispatch(Object(Zend_Controller_Request_=
-Http), Object(Zend_Controller_Response_Http))=0A#11 /code/twentytags/lib=
-rary/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front=
--&gt;dispatch()=0A#12 /code/twentytags/library/Zend/Application.php(366)=
-: Zend_Application_Bootstrap_Bootstrap-&gt;run()=0A#13 /code/twentytags/=
-library/FaZend/Application/index.php(40): Zend_Application-&gt;run()=0A#=
-14 /code/twentytags/public/index.php(2): include('/code/twentytag...')=
-=0A#15 {main}
-2014-03-24T10:29:11-05:00 ERR (3): Zend_Db_Table_Row_Exception: Specified column "description" is not in the row
-2014-03-24T10:29:13-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/e/23/vladimir-putin
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #596.=0A=0AZend_Db_T=
-able_Row_Exception: Specified column &quot;description&quot; is not in t=
-he row=0A=0A/code/twentytags/library/Zend/Controller/Action.php (516)=0A=
-/code/twentytags/library/Zend/Controller/Dispatcher/Standard.php (308)=
-=0A/code/twentytags/library/Zend/Controller/Front.php (954)=0A/code/twen=
-tytags/library/Zend/Application/Bootstrap/Bootstrap.php (97)=0A/code/twe=
-ntytags/library/Zend/Application.php (366)=0A/code/twentytags/library/Fa=
-Zend/Application/index.php (40)=0A/code/twentytags/public/index.php (2)=
-=0A=0AArray=0A(=0A    [id] =3D&gt; 23=0A    [controller] =3D&gt; index=
-=0A    [action] =3D&gt; entity=0A)=0A=0A=0A#0 /code/twentytags/library/F=
-aZend/Db/Table/ActiveRow.php(424): Zend_Db_Table_Row_Abstract-&gt;__get(=
-'description')=0A#1 /code/twentytags/application/views/scripts/index/ent=
-ity.phtml(28): FaZend_Db_Table_ActiveRow-&gt;__get('description')=0A#2 /=
-code/twentytags/library/Zend/View.php(108): include('/code/twentytag...'=
-)=0A#3 /code/twentytags/library/Zend/View/Abstract.php(888): Zend_View-&=
-gt;_run('/code/twentytag...')=0A#4 /code/twentytags/library/Zend/Control=
-ler/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract-&gt;render('=
-index/entity.ph...')=0A#5 /code/twentytags/library/Zend/Controller/Actio=
-n/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRender=
-er-&gt;renderScript('index/entity.ph...', NULL)=0A#6 /code/twentytags/li=
-brary/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controll=
-er_Action_Helper_ViewRenderer-&gt;render()=0A#7 /code/twentytags/library=
-/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_He=
-lper_ViewRenderer-&gt;postDispatch()=0A#8 /code/twentytags/library/Zend/=
-Controller/Action.php(527): Zend_Controller_Action_HelperBroker-&gt;noti=
-fyPostDispatch()=0A#9 /code/twentytags/library/Zend/Controller/Dispatche=
-r/Standard.php(308): Zend_Controller_Action-&gt;dispatch('entityAction')=
-=0A#10 /code/twentytags/library/Zend/Controller/Front.php(954): Zend_Con=
-troller_Dispatcher_Standard-&gt;dispatch(Object(Zend_Controller_Request_=
-Http), Object(Zend_Controller_Response_Http))=0A#11 /code/twentytags/lib=
-rary/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front=
--&gt;dispatch()=0A#12 /code/twentytags/library/Zend/Application.php(366)=
-: Zend_Application_Bootstrap_Bootstrap-&gt;run()=0A#13 /code/twentytags/=
-library/FaZend/Application/index.php(40): Zend_Application-&gt;run()=0A#=
-14 /code/twentytags/public/index.php(2): include('/code/twentytag...')=
-=0A#15 {main}
-2014-03-24T10:29:13-05:00 ERR (3): Zend_Db_Table_Row_Exception: Specified column "description" is not in the row
-2014-03-24T10:57:46-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/e/23/vladimir-putin
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #437.=0A=0AZend_Db_T=
-able_Row_Exception: Specified column &quot;description&quot; is not in t=
-he row=0A=0A/code/twentytags/library/Zend/Controller/Action.php (516)=0A=
-/code/twentytags/library/Zend/Controller/Dispatcher/Standard.php (308)=
-=0A/code/twentytags/library/Zend/Controller/Front.php (954)=0A/code/twen=
-tytags/library/Zend/Application/Bootstrap/Bootstrap.php (97)=0A/code/twe=
-ntytags/library/Zend/Application.php (366)=0A/code/twentytags/library/Fa=
-Zend/Application/index.php (40)=0A/code/twentytags/public/index.php (2)=
-=0A=0AArray=0A(=0A    [id] =3D&gt; 23=0A    [controller] =3D&gt; index=
-=0A    [action] =3D&gt; entity=0A)=0A=0A=0A#0 /code/twentytags/library/F=
-aZend/Db/Table/ActiveRow.php(424): Zend_Db_Table_Row_Abstract-&gt;__get(=
-'description')=0A#1 /code/twentytags/application/views/scripts/index/ent=
-ity.phtml(28): FaZend_Db_Table_ActiveRow-&gt;__get('description')=0A#2 /=
-code/twentytags/library/Zend/View.php(108): include('/code/twentytag...'=
-)=0A#3 /code/twentytags/library/Zend/View/Abstract.php(888): Zend_View-&=
-gt;_run('/code/twentytag...')=0A#4 /code/twentytags/library/Zend/Control=
-ler/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract-&gt;render('=
-index/entity.ph...')=0A#5 /code/twentytags/library/Zend/Controller/Actio=
-n/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRender=
-er-&gt;renderScript('index/entity.ph...', NULL)=0A#6 /code/twentytags/li=
-brary/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controll=
-er_Action_Helper_ViewRenderer-&gt;render()=0A#7 /code/twentytags/library=
-/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_He=
-lper_ViewRenderer-&gt;postDispatch()=0A#8 /code/twentytags/library/Zend/=
-Controller/Action.php(527): Zend_Controller_Action_HelperBroker-&gt;noti=
-fyPostDispatch()=0A#9 /code/twentytags/library/Zend/Controller/Dispatche=
-r/Standard.php(308): Zend_Controller_Action-&gt;dispatch('entityAction')=
-=0A#10 /code/twentytags/library/Zend/Controller/Front.php(954): Zend_Con=
-troller_Dispatcher_Standard-&gt;dispatch(Object(Zend_Controller_Request_=
-Http), Object(Zend_Controller_Response_Http))=0A#11 /code/twentytags/lib=
-rary/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front=
--&gt;dispatch()=0A#12 /code/twentytags/library/Zend/Application.php(366)=
-: Zend_Application_Bootstrap_Bootstrap-&gt;run()=0A#13 /code/twentytags/=
-library/FaZend/Application/index.php(40): Zend_Application-&gt;run()=0A#=
-14 /code/twentytags/public/index.php(2): include('/code/twentytag...')=
-=0A#15 {main}
-2014-03-24T10:57:46-05:00 ERR (3): Zend_Db_Table_Row_Exception: Specified column "description" is not in the row
-[24-Mar-2014 10:59:46 EST] PHP Parse error:  syntax error, unexpected T_ENDIF in /code/twentytags/application/views/scripts/index/entity.phtml on line 35
-[24-Mar-2014 10:59:47 EST] PHP Parse error:  syntax error, unexpected T_ENDIF in /code/twentytags/application/views/scripts/index/entity.phtml on line 35
-2014-03-24T11:37:02-05:00 ERR (3): [WARNING] file_get_contents(http://highbrowmagazine.com/3843-vladimir-putin-crimea-and-double-standards&ct=ga&cd=CAIyAA&usg=AFQjCNGaOjiKGThsD42a4R_R-AqlZI5TDg
+2014-03-27T05:04:43-05:00 ERR (3): [WARNING] file_get_contents(http://www.amny.com/opinion/editorial/president-barack-obama-voiced-fears-of-nyc-1.7514203&ct=ga&cd=CAIyAA&usg=AFQjCNHJbxPNpkE09-bQSRn4-U3dvIFNng
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T11:37:02-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:43-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T11:37:03-05:00 ERR (3): [WARNING] file_get_contents(http://www.bloomberg.com/video/no-way-putin-wins-crimea-and-loses-ukraine-kuchins-n1Dd40khSTWof66r7Z9jyw.html&ct=ga&cd=CAIyAA&usg=AFQjCNGpEeOXpM5KZxnuPl918tgsVHMvwQ
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:03-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:37:04-05:00 ERR (3): [WARNING] file_get_contents(http://www.theatlantic.com/international/archive/2014/03/vladimir-putin-russian-neocon/284602/&ct=ga&cd=CAIyAA&usg=AFQjCNFq7gi-jQ0sgk8G6JUZhgfcLHNTLg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:04-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:37:05-05:00 ERR (3): [WARNING] file_get_contents(http://themoderatevoice.com/192851/the-paler-the-west-the-more-luminous-vladimir-putin-die-zeit-germany/&ct=ga&cd=CAIyAA&usg=AFQjCNF_A_jHvHVHTuiNxRAUB_1dQc4CXg
+2014-03-27T05:04:45-05:00 ERR (3): [WARNING] file_get_contents(http://www.theguardian.com/world/2014/mar/26/barack-obama-putin-withering-civics-lesson-crimea&ct=ga&cd=CAIyAA&usg=AFQjCNE0hVAovnt2KZ1bbnHI1qGq9KsM8w
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T11:37:05-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:45-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T11:37:05-05:00 ERR (3): [WARNING] file_get_contents(http://blogs.telegraph.co.uk/news/davidblair/100264780/ukraine-crisis-will-vladimir-putin-give-the-order-to-invade/&ct=ga&cd=CAIyAA&usg=AFQjCNHPOUjjRqSiNNhCIcXr8QyF5PrxFw
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:05-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:37:08-05:00 ERR (3): [WARNING] file_get_contents(http://www.rferl.org/content/putin-tasks-trusted-lieutenant-with-economic-development-of-crimea/25307596.html&ct=ga&cd=CAIyAA&usg=AFQjCNElv087o6-TInrzxZJcdROeoeis7Q
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:08-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:37:09-05:00 ERR (3): [WARNING] file_get_contents(http://blogs.wsj.com/washwire/2014/03/24/lawmakers-call-for-harsher-sanctions-against-putin/&ct=ga&cd=CAIyAA&usg=AFQjCNFUjcsDf47GFFYVC24EXWMp8Srrcw
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:09-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:37:10-05:00 ERR (3): [WARNING] file_get_contents(http://stream.wsj.com/story/latest-headlines/SS-2-63399/SS-2-489363/&ct=ga&cd=CAIyAA&usg=AFQjCNGvZvATSvy5D5yp1MLLBwm3Rl9nzg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:10-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:37:11-05:00 ERR (3): [WARNING] file_get_contents(http://www.mancunianmatters.co.uk/content/240368260-vladimir-putins-annex-crimea-unacceptable-and-only-tough-sanctions-will-stop-him&ct=ga&cd=CAIyAA&usg=AFQjCNFreD5Ug8DEgX0YV63RPzELsWUD_A
+2014-03-27T05:04:45-05:00 ERR (3): [WARNING] file_get_contents(http://www.theguardian.com/world/2014/mar/26/obama-no-cold-war-crimea&ct=ga&cd=CAIyAA&usg=AFQjCNEhLMjL2UCNnB-ZwJWBfd1tc6Bl9A
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T11:37:11-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:45-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T11:37:12-05:00 ERR (3): [WARNING] file_get_contents(http://www.standard.co.uk/news/world/britain-should-make-a-military-statement-to-vladimir-putin-says-former-army-boss-9211845.html&ct=ga&cd=CAIyAA&usg=AFQjCNEuTEvV_6nQj7o9yzrkSkRxmvDWrQ
+2014-03-27T05:04:46-05:00 ERR (3): [WARNING] file_get_contents(http://www.channel4.com/news/ukraine-barack-obama-usa-european-union-trade-russia-gas&ct=ga&cd=CAIyAA&usg=AFQjCNGIfRwhM0OuqUI64qOgstYG9eJnLg
 ): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T11:37:12-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:46-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T11:37:14-05:00 ERR (3): [WARNING] file_get_contents(http://www.1913intel.com/2014/03/24/the-danger-that-lurks-inside-vladimir-putins-brain-psychology-today/%3Futm_source%3Drss%26utm_medium%3Drss%26utm_campaign%3Dthe-danger-that-lurks-inside-vladimir-putins-brain-psychology-today&ct=ga&cd=CAIyAA&usg=AFQjCNEMYys2XmY3mihoVLCtIWxm2RthGw
+2014-03-27T05:04:49-05:00 ERR (3): [WARNING] file_get_contents(http://www.politico.com/story/2014/03/barack-obama-democrats-immigration-105047.html&ct=ga&cd=CAIyAA&usg=AFQjCNH1MfKvYB58pZz_RjXSFdnFXn44CA
 ): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T11:37:14-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T11:37:14-05:00 ERR (3): [WARNING] file_get_contents(http://www.nydailynews.com/opinion/hitting-putin-feel-article-1.1729772&ct=ga&cd=CAIyAA&usg=AFQjCNHhFHD2yaVYYHleEra2R86lwlfqlQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:14-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:37:17-05:00 ERR (3): [WARNING] file_get_contents(http://www.bostonglobe.com/opinion/editorials/2014/03/23/vladimir-putin-creates-bipartisanship-washington-needs/ffJZplutXrfLWZD83m2E6K/story.html&ct=ga&cd=CAIyAA&usg=AFQjCNH4e7COBMsetKAV2BTJdak77L7_aA
+2014-03-27T05:04:55-05:00 ERR (3): [WARNING] file_get_contents(http://www.theblaze.com/stories/2014/03/26/barack-obama-and-dinesh-dsouza-finally-meet/&ct=ga&cd=CAIyAA&usg=AFQjCNGiHM9lZRL5Igk3aIqo8vYPgkLBdg
 ): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T11:37:17-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:04:55-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T11:37:18-05:00 ERR (3): [WARNING] file_get_contents(http://www.politico.com/magazine/story/2014/03/vladimir-putin-energy-war-104891.html%3Fml%3Dm_u3_1&ct=ga&cd=CAIyAA&usg=AFQjCNHWgEkscuDpAn-qvDx949RLarzpAQ
+2014-03-27T05:05:00-05:00 ERR (3): [WARNING] file_get_contents(http://economictimes.indiatimes.com/news/international/business/barack-obama-dont-rush-to-judgment-on-us-eu-trade-deal/articleshow/32735758.cms&ct=ga&cd=CAIyAA&usg=AFQjCNEhmxkPcre0GGBKvN_1SCAwKI5_wg
 ): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-24T11:37:18-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:05:00-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-24T11:37:19-05:00 ERR (3): [WARNING] file_get_contents(http://www.forbes.com/sites/craigsilver/2014/03/23/putin-vs-palin-is-alaska-next-on-his-list/&ct=ga&cd=CAIyAA&usg=AFQjCNGoz9DAgtBXGxC3SDvBU3ho2-Jbew
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:19-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:37:19-05:00 ERR (3): [WARNING] file_get_contents(http://stream.wsj.com/story/latest-headlines/SS-2-63399/SS-2-489037/&ct=ga&cd=CAIyAA&usg=AFQjCNGqDJqdoL6HwwP4bbpyeovYAGnPdg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:37:19-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:18-05:00 ERR (3): [WARNING] file_get_contents(http://grahamcluley.com/2014/03/bitcoin-phishing/&ct=ga&cd=CAIyAA&usg=AFQjCNHsCGF9r88HKwRY5yp-0v_DZQ9-nQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:18-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:19-05:00 ERR (3): [WARNING] file_get_contents(http://wunc.org/post/whats-your-virtual-wallet-durham-bakery-accepts-bitcoin&ct=ga&cd=CAIyAA&usg=AFQjCNHhsjO9J8ZM-MSdJHlXiD_ool3RLg
-): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:19-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:20-05:00 ERR (3): [WARNING] file_get_contents(http://www.forexnews.com/blog/2014/03/24/bitcoin-long-term-update-daily-chart-last-2-months-bitstamp/&ct=ga&cd=CAIyAA&usg=AFQjCNHQS77ZINSYJARTMxsdJyjF3pbMwA
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:20-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:21-05:00 ERR (3): [WARNING] file_get_contents(http://www.coindesk.com/krakens-audit-proves-holds-100-bitcoins-reserve/&ct=ga&cd=CAIyAA&usg=AFQjCNEDfkpY2dGr2MKl571przONn7V49w
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:21-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:27-05:00 ERR (3): [WARNING] file_get_contents(http://www.crainscleveland.com/article/20140323/SUB1/303239993/0/FRONTPAGE&ct=ga&cd=CAIyAA&usg=AFQjCNEwkCbb0adIEOlmA8hUjOaU_LRflw
-): failed to open stream: Unable to find the socket transport "ssl" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:27-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:27-05:00 ERR (3): [WARNING] file_get_contents(http://www.investing.com/analysis/bitcoin-nearing-end-of-triangle-pattern.-breakout-imminent-207032&ct=ga&cd=CAIyAA&usg=AFQjCNGDoZfPvCYgKcF_gLn2QYO6Wnpf0w
-): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:27-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:31-05:00 ERR (3): [WARNING] file_get_contents(http://www.freemalaysiatoday.com/category/business/2014/03/24/first-bitcoin-vending-machine-in-msia/&ct=ga&cd=CAIyAA&usg=AFQjCNEQPFOkPxBvJCzC3LCJT_WYQGCU7g
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:31-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:33-05:00 ERR (3): [WARNING] file_get_contents(http://www.pcworld.com/article/2111000/small-bitcoin-exchange-vircurex-teeters-after-large-withdrawals.html&ct=ga&cd=CAIyAA&usg=AFQjCNHFdNktfYlRJj1jfviWP5F3WGS2lA
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:33-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:42-05:00 ERR (3): [WARNING] file_get_contents(http://qz.com/191258/quartz-daily-brief-asia-edition-spaniards-protest-brazils-oil-mess-tech-bubbles-peak-punctuation/&ct=ga&cd=CAIyAA&usg=AFQjCNERUOf-HqtX9dokZ8FsbI5tunSwBg
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:42-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:48-05:00 ERR (3): [WARNING] file_get_contents(http://www.besttechie.com/2014/03/23/weekend-wrap-up-google-unveils-android-wear-mt-gox-finds-200000-bitcoins/&ct=ga&cd=CAIyAA&usg=AFQjCNF-niVp-IEmnetbSFoCoMal11Nx5g
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:48-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:49-05:00 ERR (3): [WARNING] file_get_contents(http://guardianlv.com/2014/03/bitcoin-found-as-global-talk-of-regulation-continues/&ct=ga&cd=CAIyAA&usg=AFQjCNE1zOQObEhPwsf-t6J-PY3qm9OA6Q
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T11:48:49-05:00 ERR (3): [WARNING] file_get_contents(http://timesofindia.indiatimes.com/City/Ahmedabad/Indian-laws-yet-to-define-virtual-currency-Experts/articleshow/32567127.cms&ct=ga&cd=CAIyAA&usg=AFQjCNFqeYp77pOyffPDiOCzi4Gz9AakMg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T11:48:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:15-05:00 ERR (3): [WARNING] file_get_contents(http://readwrite.com/2014/03/24/president-barack-obama-quora-first-verified-account&ct=ga&cd=CAIyAA&usg=AFQjCNFfa-tCN_JIuwNkbziDGITLFvSqyg
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:15-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:24-05:00 ERR (3): [WARNING] file_get_contents(http://www.washingtonpost.com/national/feds-inmate-sent-obama-threat-to-wrong-address/2014/03/24/de2f9d84-b364-11e3-bab2-b9602293021d_story.html&ct=ga&cd=CAIyAA&usg=AFQjCNHLA8JQTJhjE7AqF4Zc5C7COexMHQ
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:24-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:25-05:00 ERR (3): [WARNING] file_get_contents(http://www.politico.com/story/2014/03/charles-krauthammer-obama-pretends-104943.html%3Fhp%3Dr3&ct=ga&cd=CAIyAA&usg=AFQjCNHNqqXI04lvQA77lAKtT9JahSAUMA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:25-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:30-05:00 ERR (3): [WARNING] file_get_contents(http://www.ottawacitizen.com/news/Russia%2Bdominates%2Btrip%2Bagenda%2BPresident%2BBarack%2BObama%2Bseeks/9653874/story.html&ct=ga&cd=CAIyAA&usg=AFQjCNHVYctBnd2orOV3vV19YFUhmOAAOA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:30-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:30-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/europe/russia/10718358/President-Barack-Obama-sets-forward-path-for-Russia-sanctions-at-G7-meetings.html&ct=ga&cd=CAIyAA&usg=AFQjCNGh4iSIoXhjwC50niQG_pmm5ZQY1w
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:30-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:31-05:00 ERR (3): [WARNING] file_get_contents(http://www.expatica.com/be/news/belgian-news/Lifesize-Barack-Obama-in-speculaas-_288469.html&ct=ga&cd=CAIyAA&usg=AFQjCNEKGq5cV4SB1noVMCYsV3L_08jM2Q
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:31-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:33-05:00 ERR (3): [WARNING] file_get_contents(http://www.baltimoresun.com/news/opinion/oped/bs-ed-marsden-obama-russia-sanctions-20140324,0,236822.story%3Ftrack%3Drss&ct=ga&cd=CAIyAA&usg=AFQjCNH7kun2vhy8HztLAuHz4Zf1Q3wuDg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:33-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:36-05:00 ERR (3): [WARNING] file_get_contents(http://economictimes.indiatimes.com/news/international/world-news/europe-not-east-west-battleground-barack-obama/articleshow/32595106.cms&ct=ga&cd=CAIyAA&usg=AFQjCNFgJSOWzMFJt2a_FQiRbwITNiWaHw
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:36-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:49-05:00 ERR (3): [WARNING] file_get_contents(http://www.theindependent.com/news/world/obama-europe-not-east-west-battleground/article_a72bbcdf-aa8a-5a16-9a8c-f14524280d0b.html&ct=ga&cd=CAIyAA&usg=AFQjCNG1ZCze6DqpwcWJbl-c5n0mcNbhzQ
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:49-05:00 ERR (3): [WARNING] file_get_contents(http://www.theguardian.com/world/2014/mar/24/barack-obama-seeks-european-support-for-harder-line-on-russia-sanctions&ct=ga&cd=CAIyAA&usg=AFQjCNGDjEPq_2Nam89G8-G4UFbMT2-REQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:51-05:00 ERR (3): [WARNING] file_get_contents(http://dailycaller.com/2014/03/24/obama-pressures-uganda-to-aid-gays/&ct=ga&cd=CAIyAA&usg=AFQjCNGpiqjudA-KI07Ntm6Yiffz9oA7NA
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:51-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:51-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DmRncEBdELac/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:51-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:51-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:52-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DyhnkTwNNjeI/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:52-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:52-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:52-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DfskDZAg-nkI/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:52-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:52-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:52-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3D74l1y-9-Bb8/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:52-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:52-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:52-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/europe/russia/10718358/President-Barack-Obama-sets-forward-path-for-Russia-sanctions-at-G7-meetings.html&ct=ga&cd=CAIyAA&usg=AFQjCNGh4iSIoXhjwC50niQG_pmm5ZQY1w
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:52-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:53-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3Daf_4GpFDxLo/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:53-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:53-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:53-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DrEgmE1lLSvI/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:53-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:53-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:53-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3Dsy4LMa2vEfw/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:53-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:53-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:54-05:00 ERR (3): [WARNING] file_get_contents(http://www.dw.de/obama-touches-down-in-the-netherlands-ukraine-crisis-set-to-overshadow-nuclear-talks/a-17516056&ct=ga&cd=CAIyAA&usg=AFQjCNH1LSWoqtwAOCeRm1cjKh46lhFJiA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:50:54-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:50:54-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3D6qV7gnz54Nc/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:54-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:54-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:54-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DWgl10B5btM8/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:54-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:54-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:54-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DRE7DzSso4mg/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:54-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:54-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:54-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3D2_KMQGPVfto/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:54-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:54-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:55-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DPx2ferf7Xu4/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:55-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:55-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:55-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3Dgl5cb-Y93AM/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:55-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:55-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:55-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DP8W3BGNVhkA/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:55-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:55-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:55-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3D_KFMsP8nsX8/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:55-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:55-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:56-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3DVZZaawmHisA/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:56-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:56-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:56-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3Dc04Wdeufnro/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:56-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:56-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:50:56-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/http://www.youtube.com/watch%3Fv%3D1o9BEwWQFF0/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:50:56-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:50:56-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:52:29-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/p://www.youtube.com/watch%3Fv%3DmRncEBdELac&ct/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:52:29-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:52:29-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:52:29-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/p://www.youtube.com/watch%3Fv%3DyhnkTwNNjeI&ct/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:52:29-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:52:29-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:52:30-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/p://www.youtube.com/watch%3Fv%3DfskDZAg-nkI&ct/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:52:30-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:52:30-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:52:30-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/p://www.youtube.com/watch%3Fv%3D74l1y-9-Bb8&ct/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:52:30-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:52:30-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:52:30-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/europe/russia/10718358/President-Barack-Obama-sets-forward-path-for-Russia-sanctions-at-G7-meetings.html&ct=ga&cd=CAIyAA&usg=AFQjCNGh4iSIoXhjwC50niQG_pmm5ZQY1w
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:52:30-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:52:31-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/p://www.youtube.com/watch%3Fv%3Daf_4GpFDxLo&ct/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:52:31-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:52:31-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:52:31-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/p://www.youtube.com/watch%3Fv%3DrEgmE1lLSvI&ct/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:52:31-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:52:31-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:52:31-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/p://www.youtube.com/watch%3Fv%3Dsy4LMa2vEfw&ct/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:52:31-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:52:31-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:52:32-05:00 ERR (3): [WARNING] file_get_contents(http://www.dw.de/obama-touches-down-in-the-netherlands-ukraine-crisis-set-to-overshadow-nuclear-talks/a-17516056&ct=ga&cd=CAIyAA&usg=AFQjCNH1LSWoqtwAOCeRm1cjKh46lhFJiA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T12:52:32-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T12:52:32-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/p://www.youtube.com/watch%3Fv%3D6qV7gnz54Nc&ct/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:52:32-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:52:32-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:54:51-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/mRncEBdELac&ct=ga&cd=CAIyAA&usg=AFQjCNEJJD/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:54:51-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:54:51-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:54:51-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/yhnkTwNNjeI&ct=ga&cd=CAIyAA&usg=AFQjCNFdfR/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:54:51-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:54:51-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:54:51-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/fskDZAg-nkI&ct=ga&cd=CAIyAA&usg=AFQjCNGsFO/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:54:51-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:54:51-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:54:51-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/74l1y-9-Bb8&ct=ga&cd=CAIyAA&usg=AFQjCNEYHX/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:54:51-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:54:51-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:57:08-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/mRncEBdELac&ct=ga&cd=CAIyAA&usg=AFQjCNEJJD/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:57:08-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:57:08-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:57:08-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/yhnkTwNNjeI&ct=ga&cd=CAIyAA&usg=AFQjCNFdfR/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:57:08-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:57:08-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:57:08-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/fskDZAg-nkI&ct=ga&cd=CAIyAA&usg=AFQjCNGsFO/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:57:08-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:57:08-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T12:57:09-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/74l1y-9-Bb8&ct=ga&cd=CAIyAA&usg=AFQjCNEYHX/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T12:57:09-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T12:57:09-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T13:12:51-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/europe/russia/10718358/President-Barack-Obama-sets-forward-path-for-Russia-sanctions-at-G7-meetings.html&ct=ga&cd=CAIyAA&usg=AFQjCNGh4iSIoXhjwC50niQG_pmm5ZQY1w
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:12:51-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:12:53-05:00 ERR (3): [WARNING] file_get_contents(http://www.dw.de/obama-touches-down-in-the-netherlands-ukraine-crisis-set-to-overshadow-nuclear-talks/a-17516056&ct=ga&cd=CAIyAA&usg=AFQjCNH1LSWoqtwAOCeRm1cjKh46lhFJiA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:12:53-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:12:55-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/gl5cb-Y93AM/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T13:12:55-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T13:12:55-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T13:13:00-05:00 ERR (3): [WARNING] file_get_contents(http://readwrite.com/2014/03/24/president-barack-obama-quora-first-verified-account&ct=ga&cd=CAIyAA&usg=AFQjCNFfa-tCN_JIuwNkbziDGITLFvSqyg
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:00-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:13:17-05:00 ERR (3): [WARNING] file_get_contents(http://www.washingtonpost.com/national/feds-inmate-sent-obama-threat-to-wrong-address/2014/03/24/de2f9d84-b364-11e3-bab2-b9602293021d_story.html&ct=ga&cd=CAIyAA&usg=AFQjCNHLA8JQTJhjE7AqF4Zc5C7COexMHQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:17-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:13:22-05:00 ERR (3): [WARNING] file_get_contents(http://www.ottawacitizen.com/news/Russia+dominates+trip+agenda+President+Barack+Obama+seeks/9653874/story.html&ct=ga&cd=CAIyAA&usg=AFQjCNHVYctBnd2orOV3vV19YFUhmOAAOA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:22-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:13:23-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/europe/russia/10718358/President-Barack-Obama-sets-forward-path-for-Russia-sanctions-at-G7-meetings.html&ct=ga&cd=CAIyAA&usg=AFQjCNGh4iSIoXhjwC50niQG_pmm5ZQY1w
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:23-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:13:23-05:00 ERR (3): [WARNING] file_get_contents(http://www.expatica.com/be/news/belgian-news/Lifesize-Barack-Obama-in-speculaas-_288469.html&ct=ga&cd=CAIyAA&usg=AFQjCNEKGq5cV4SB1noVMCYsV3L_08jM2Q
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:23-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:13:28-05:00 ERR (3): [WARNING] file_get_contents(http://economictimes.indiatimes.com/news/international/world-news/europe-not-east-west-battleground-barack-obama/articleshow/32595106.cms&ct=ga&cd=CAIyAA&usg=AFQjCNFgJSOWzMFJt2a_FQiRbwITNiWaHw
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:28-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:13:31-05:00 ERR (3): [WARNING] file_get_contents(http://www.theindependent.com/news/world/obama-europe-not-east-west-battleground/article_a72bbcdf-aa8a-5a16-9a8c-f14524280d0b.html&ct=ga&cd=CAIyAA&usg=AFQjCNG1ZCze6DqpwcWJbl-c5n0mcNbhzQ
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:31-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:13:32-05:00 ERR (3): [WARNING] file_get_contents(http://www.theguardian.com/world/2014/mar/24/barack-obama-seeks-european-support-for-harder-line-on-russia-sanctions&ct=ga&cd=CAIyAA&usg=AFQjCNGDjEPq_2Nam89G8-G4UFbMT2-REQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:32-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:13:33-05:00 ERR (3): [WARNING] file_get_contents(http://dailycaller.com/2014/03/24/obama-pressures-uganda-to-aid-gays/&ct=ga&cd=CAIyAA&usg=AFQjCNGpiqjudA-KI07Ntm6Yiffz9oA7NA
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:13:33-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:15:49-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/europe/russia/10718358/President-Barack-Obama-sets-forward-path-for-Russia-sanctions-at-G7-meetings.html&ct=ga&cd=CAIyAA&usg=AFQjCNGh4iSIoXhjwC50niQG_pmm5ZQY1w
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:15:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:15:51-05:00 ERR (3): [WARNING] file_get_contents(http://www.dw.de/obama-touches-down-in-the-netherlands-ukraine-crisis-set-to-overshadow-nuclear-talks/a-17516056&ct=ga&cd=CAIyAA&usg=AFQjCNH1LSWoqtwAOCeRm1cjKh46lhFJiA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:15:51-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:15:53-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/gl5cb-Y93AM/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-24T13:15:53-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-24T13:15:53-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-24T13:15:57-05:00 ERR (3): [WARNING] file_get_contents(http://readwrite.com/2014/03/24/president-barack-obama-quora-first-verified-account&ct=ga&cd=CAIyAA&usg=AFQjCNFfa-tCN_JIuwNkbziDGITLFvSqyg
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:15:57-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:16:04-05:00 ERR (3): [WARNING] file_get_contents(http://www.washingtonpost.com/national/feds-inmate-sent-obama-threat-to-wrong-address/2014/03/24/de2f9d84-b364-11e3-bab2-b9602293021d_story.html&ct=ga&cd=CAIyAA&usg=AFQjCNHLA8JQTJhjE7AqF4Zc5C7COexMHQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:16:04-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:16:10-05:00 ERR (3): [WARNING] file_get_contents(http://www.ottawacitizen.com/news/Russia+dominates+trip+agenda+President+Barack+Obama+seeks/9653874/story.html&ct=ga&cd=CAIyAA&usg=AFQjCNHVYctBnd2orOV3vV19YFUhmOAAOA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:16:10-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:16:11-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/europe/russia/10718358/President-Barack-Obama-sets-forward-path-for-Russia-sanctions-at-G7-meetings.html&ct=ga&cd=CAIyAA&usg=AFQjCNGh4iSIoXhjwC50niQG_pmm5ZQY1w
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:16:11-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:16:11-05:00 ERR (3): [WARNING] file_get_contents(http://www.expatica.com/be/news/belgian-news/Lifesize-Barack-Obama-in-speculaas-_288469.html&ct=ga&cd=CAIyAA&usg=AFQjCNEKGq5cV4SB1noVMCYsV3L_08jM2Q
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:16:11-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:16:14-05:00 ERR (3): [WARNING] file_get_contents(http://economictimes.indiatimes.com/news/international/world-news/europe-not-east-west-battleground-barack-obama/articleshow/32595106.cms&ct=ga&cd=CAIyAA&usg=AFQjCNFgJSOWzMFJt2a_FQiRbwITNiWaHw
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:16:14-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:16:17-05:00 ERR (3): [WARNING] file_get_contents(http://www.theindependent.com/news/world/obama-europe-not-east-west-battleground/article_a72bbcdf-aa8a-5a16-9a8c-f14524280d0b.html&ct=ga&cd=CAIyAA&usg=AFQjCNG1ZCze6DqpwcWJbl-c5n0mcNbhzQ
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:16:17-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:16:17-05:00 ERR (3): [WARNING] file_get_contents(http://www.theguardian.com/world/2014/mar/24/barack-obama-seeks-european-support-for-harder-line-on-russia-sanctions&ct=ga&cd=CAIyAA&usg=AFQjCNGDjEPq_2Nam89G8-G4UFbMT2-REQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:16:17-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-24T13:16:19-05:00 ERR (3): [WARNING] file_get_contents(http://dailycaller.com/2014/03/24/obama-pressures-uganda-to-aid-gays/&ct=ga&cd=CAIyAA&usg=AFQjCNGpiqjudA-KI07Ntm6Yiffz9oA7NA
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-24T13:16:19-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T02:08:13-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 122 and defined, at /code/twentytags/application/Model/Saved.php (28)
-
-2014-03-25T07:59:31-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/ECpLkNhPX9Y/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-25T07:59:31-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-25T07:59:31-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-25T07:59:32-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/G--lBtBGOwY/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-25T07:59:32-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-25T07:59:32-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-25T07:59:33-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:33-05:00 ERR (3): [WARNING] file_get_contents(http://www.theroot.com/articles/politics/2014/03/president_barack_obama_starts_four_country_european_trip_with_russia_as.html&ct=ga&cd=CAIyAA&usg=AFQjCNEEp8APaoNhMi7cF1kCejqOfNe5ww
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:33-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:34-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/FB5fmLXSUVs/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (41)
-
-2014-03-25T07:59:34-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
-
-2014-03-25T07:59:34-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
-
-2014-03-25T07:59:37-05:00 ERR (3): [WARNING] file_get_contents(http://news.yahoo.com/video/obama-us-eu-united-imposing-141615378.html&ct=ga&cd=CAIyAA&usg=AFQjCNHnWNc8FWaL2AuHGS3Tr1HZ9lSNMw
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:37-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:38-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:38-05:00 ERR (3): [WARNING] file_get_contents(http://theweek.com/article/index/258612/why-barack-obama-is-the-biggest-obstacle-to-a-hillary-clinton-presidency&ct=ga&cd=CAIyAA&usg=AFQjCNFTWKnZxp8UwNAH_fGzE5X7_zzQcg
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:38-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:43-05:00 ERR (3): [WARNING] file_get_contents(http://abcnews.go.com/Politics/wireStory/crimea-crisis-puts-us-spying-spotlight-23046420&ct=ga&cd=CAIyAA&usg=AFQjCNGRRfPWJBWJj-sVBfCHIEghrgHxww
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:43-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:44-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:44-05:00 ERR (3): [WARNING] file_get_contents(http://www.telegraph.co.uk/news/worldnews/europe/ukraine/10719280/Barack-Obama-cannot-abdicate-from-his-role-in-Europe.html&ct=ga&cd=CAIyAA&usg=AFQjCNFPWCHCe5fOVa17nEleD_ziPefbSg
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:44-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:45-05:00 ERR (3): [WARNING] file_get_contents(http://www.dnaindia.com/world/report-barack-obama-to-propose-ending-nsa-bulk-collection-of-phone-records-official-1972029&ct=ga&cd=CAIyAA&usg=AFQjCNHjDTvZY3Jn3qq_SK19bvgJm2v2cg
-): failed to open stream: HTTP request failed! HTTP/1.0 503 Service Unavailable
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:45-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:46-05:00 ERR (3): [WARNING] file_get_contents(http://www.boston.com/news/politics/2014/03/24/report-obama-propose-changes-nsa-data-collection/ndun21AxXS9KLRNKQrX1QI/story.html&ct=ga&cd=CAIyAA&usg=AFQjCNFZ-pdz_RZAULnBzZHq9MG4DW12eA
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:46-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:47-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:47-05:00 ERR (3): [WARNING] file_get_contents(http://www.belfasttelegraph.co.uk/debateni/blogs/us-notebook-no-sitdown-with-barack-obama-but-robinson-and-mcguinness-heartened-by-polls-showing-hillary-clinton-as-clear-frontrunner-for-president-30121332.html&ct=ga&cd=CAIyAA&usg=AFQjCNH_mrh8SON5ftzgHVLVtoX86sUppA
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:47-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:57-05:00 ERR (3): [WARNING] file_get_contents(http://www.theeasterntribune.com/story/4187/barack-obama-is-quoras-first-verified-user/&ct=ga&cd=CAIyAA&usg=AFQjCNG3iSdh5qn63ldx1Czx-9c2xHIPHA
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:57-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T07:59:59-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:59-05:00 ERR (3): [WARNING] file_get_contents(http://www.huffingtonpost.com/ian-reifowitz/did-rand-paul-just-accuse-obama_b_5017035.html&ct=ga&cd=CAIyAA&usg=AFQjCNEhJtyVtlb_AaxgkXxUybwIDS77OQ
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T07:59:59-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:00:00-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:00:00-05:00 ERR (3): [WARNING] file_get_contents(http://www.theguardian.com/world/2014/mar/24/barack-obama-visit-brussels-cost-belgium-10m&ct=ga&cd=CAIyAA&usg=AFQjCNEVgsFZO-b_ulntQMR8MMSIzBZnfQ
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:00:00-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:00:01-05:00 ERR (3): [WARNING] file_get_contents(http://www.washingtonpost.com/blogs/the-fix/wp/2014/03/24/1000-words/&ct=ga&cd=CAIyAA&usg=AFQjCNFcWvN7rUplXD9n-VDGqmPbErmKug
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:00:01-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:00:03-05:00 ERR (3): [WARNING] file_get_contents(http://online.wsj.com/news/articles/SB10001424052702303949704579459182229070114&ct=ga&cd=CAIyAA&usg=AFQjCNFZrH-bjR8HX27pO3FtBMSwL9rYGA
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:00:03-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:00:04-05:00 ERR (3): [WARNING] file_get_contents(http://www.businessinsider.com/barack-obama-tournament-bracket-2014-3&ct=ga&cd=CAIyAA&usg=AFQjCNH_38CEci-Tu0F5D9DjlBmi43wZ_Q
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:00:04-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:00:06-05:00 ERR (3): [WARNING] file_get_contents(http://www.latintimes.com/why-was-barack-obama-lili-estefans-house-photo-161455&ct=ga&cd=CAIyAA&usg=AFQjCNE5f-25u0IaMweMgR_F1GMAjLsgKQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:00:06-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:00:18-05:00 ERR (3): [WARNING] file_get_contents(http://www.boston.com/2014/03/24/white-house-notebook-obama-praises-art-backdrop/xEJ6rSYYU3yAbP7V2KFp6K/story.html&ct=ga&cd=CAIyAA&usg=AFQjCNGR1xoUxg601am8Y6wQ6gL_rsjBKQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:00:18-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:07:30-05:00 ERR (3): [WARNING] file_get_contents(http://www.politico.com/story/2014/03/barack-obama-vladimir-putin-ally-ukraine-crimea-104977.html&ct=ga&cd=CAIyAA&usg=AFQjCNFFSI9_prDpqCS0a64Ve3W0Ve-Fwg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:07:30-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:07:32-05:00 ERR (3): [WARNING] file_get_contents(http://www.washingtonpost.com/news/morning-mix/wp/2014/03/25/putins-next-possible-conquests-explained-in-three-charts/&ct=ga&cd=CAIyAA&usg=AFQjCNHqdnPaQTBn_-jLuiMvbm0rZ9SA3A
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:07:32-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:07:34-05:00 ERR (3): [WARNING] file_get_contents(http://www.therepublic.com/w/US--TV-Letterman-Jimmy-Carter&ct=ga&cd=CAIyAA&usg=AFQjCNEl-0_57UD7Ul-3mg4g7GAaMv_erQ
-): failed to open stream: HTTP request failed! HTTP/1.1 410 Gone
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:07:34-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:07:34-05:00 ERR (3): [WARNING] file_get_contents(http://www.independent.co.uk/news/uk/politics/andy-mcsmiths-diary-let-us-hope-vladimir-putin-was-simply-joshing-about-an-invasion-of-alaska-9213282.html&ct=ga&cd=CAIyAA&usg=AFQjCNEqp_Boo6vPfZUkb1ROu2SGZYcUJA
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:07:34-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:07:40-05:00 ERR (3): [WARNING] file_get_contents(http://time.com/36163/vladimir-putin-russia-ukraine-crimea/&ct=ga&cd=CAIyAA&usg=AFQjCNG_zyKUHQKaofK6A16NAaslQWevtQ
-): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:07:40-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:07:44-05:00 ERR (3): [WARNING] file_get_contents(http://www.abc.net.au/news/2014-03-25/hillary-clinton-putin-hitler-comparison-checks-out/5325608&ct=ga&cd=CAIyAA&usg=AFQjCNFh2e5K5KS8yzbZ4KFLhZzEIe7VYg
-): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
-, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:07:44-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:07:55-05:00 ERR (3): [WARNING] file_get_contents(http://wtaq.com/news/articles/2014/mar/24/putin-uses-olympics-cash-to-start-soviet-style-fitness-program/&ct=ga&cd=CAIyAA&usg=AFQjCNHoFnFuiO4fR5kQwPeuuNH2RwK_mQ
+2014-03-27T05:05:01-05:00 ERR (3): [WARNING] file_get_contents(http://www.politifact.com/truth-o-meter/statements/2014/mar/26/barack-obama/barack-obama-says-high-schoolers-are-graduating-al/&ct=ga&cd=CAIyAA&usg=AFQjCNH3A-H7WrpG9TWIIkFrNpwhZBKZQg
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 NOT FOUND
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T08:07:55-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:05:01-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T08:08:08-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:08:08-05:00 ERR (3): [WARNING] file_get_contents(http://news.xinhuanet.com/english/world/2014-03/25/c_126310150.htm&ct=ga&cd=CAIyAA&usg=AFQjCNG70qpTay1PwUf63ymz7F3xpNHk-g
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
-
-2014-03-25T08:08:08-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
-
-2014-03-25T08:08:13-05:00 ERR (3): [WARNING] file_get_contents(http://www.independent.co.uk/news/world/europe/crimea-crisis-putin-adviser-proposes-division-of-ukraine-along-nazisoviet-lines-and-says-its-never-too-late-to-correct-historical-errors-9212925.html&ct=ga&cd=CAIyAA&usg=AFQjCNGyJA8PRX2kZpSH8YpPduRHo-2fhw
+2014-03-27T05:05:09-05:00 ERR (3): [WARNING] file_get_contents(http://newyork.cbslocal.com/2014/03/26/obama-nuclear-blast-in-nyc-bigger-concern-than-russia/&ct=ga&cd=CAIyAA&usg=AFQjCNGGkWeYJLCRCI_1SrG70XuRIppmQg
 ): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T08:08:13-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:05:09-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T08:08:14-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
+2014-03-27T05:05:11-05:00 ERR (3): [WARNING] file_get_contents(http://www.powerlineblog.com/archives/2014/03/deep-thoughts-by-barack-obama.php&ct=ga&cd=CAIyAA&usg=AFQjCNH-m88YrnPrJoM22XZ23Y4DvQq8iA
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T08:08:14-05:00 ERR (3): [WARNING] file_get_contents(http://blogs.wsj.com/emergingeurope/2014/03/24/putin-revives-soviet-era-program-to-get-russians-in-shape/&ct=ga&cd=CAIyAA&usg=AFQjCNHUOc76EQOKr7pAvHrqWPKZvN1wpA
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
+2014-03-27T05:05:11-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T08:08:14-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:05:12-05:00 ERR (3): [WARNING] file_get_contents(http://www.politico.com/story/2014/03/mitt-romney-hillary-clinton-barack-obama-ukraine-russia-105038.html&ct=ga&cd=CAIyAA&usg=AFQjCNF5t4Ef6OWOptlomdvfs5eNSIhQKg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T08:08:15-05:00 ERR (3): [WARNING] file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
+2014-03-27T05:05:12-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T08:08:15-05:00 ERR (3): [WARNING] file_get_contents(http://www.dnaindia.com/world/report-bric-countries-oppose-ban-on-vladimir-putin-attending-g20-summit-1971940&ct=ga&cd=CAIyAA&usg=AFQjCNEc2dlHlf8uMN6sRbNdhDPhwXQ7eA
-): failed to open stream: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known, at /code/twentytags/application/Model/Static/Functions.php (26)
+2014-03-27T05:23:35-05:00 ERR (3): [WARNING] file_get_contents(http://www.nationaljournal.com/politics/is-vladimir-putin-coming-for-the-north-pole-next-20140327&ct=ga&cd=CAIyAA&usg=AFQjCNGMdaWIAwriYqUa-HTebrveJ8XuCg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T08:08:15-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:23:35-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T08:08:18-05:00 ERR (3): [WARNING] file_get_contents(http://highbrowmagazine.com/3843-vladimir-putin-crimea-and-double-standards&ct=ga&cd=CAIyAA&usg=AFQjCNGaOjiKGThsD42a4R_R-AqlZI5TDg
+2014-03-27T05:23:40-05:00 ERR (3): [WARNING] file_get_contents(http://www.herald-dispatch.com/opinions/x56130960/Mark-Caserta-Dictators-like-Vladimir-Putin-only-respect-strength&ct=ga&cd=CAIyAA&usg=AFQjCNEni_wdMR8MNxngNIePpCDm-5s0cw
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T08:08:18-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:23:40-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T08:08:19-05:00 ERR (3): [WARNING] file_get_contents(http://www.forbes.com/sites/briandomitrovic/2014/03/24/the-weak-dollar-is-putins-enabler/&ct=ga&cd=CAIyAA&usg=AFQjCNHYiAdv7T0Z7WsZAwuGuuTaRd7H6A
+2014-03-27T05:23:40-05:00 ERR (3): [WARNING] file_get_contents(http://www.timesofoman.com/Columns/Article-1807.aspx&ct=ga&cd=CAIyAA&usg=AFQjCNE0B94A2Cz3gOkYdu2LvFs7pT9iJA
 ): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
 , at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T08:08:19-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+2014-03-27T05:23:40-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T08:40:36-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 122 and defined, at /code/twentytags/application/Model/Saved.php (28)
+2014-03-27T05:23:42-05:00 ERR (3): [WARNING] file_get_contents(http://knlive.ctvnews.ca/the-real-putin-brilliant-never-laughs-or-blinks-says-journalist-about-dinner-with-him-1.1747975&ct=ga&cd=CAIyAA&usg=AFQjCNGzzmt_fUkGdmvZqamdvyJJhXCR6Q
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
 
-[25-Mar-2014 08:57:32 EST] PHP Parse error:  syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$' in /code/twentytags/application/views/scripts/adm/entity.phtml on line 33
-2014-03-25T09:32:52-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: 127.0.0.1 internal PHP error, rev.local, /twentytags/__fz/adm/tagit
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #956.=0A=0AZend_Db_T=
-able_Row_Exception: Specified column &quot;original&quot; is not in the=
- row=0A=0A/code/twentytags/library/Zend/Controller/Action.php (516)=0A/c=
-ode/twentytags/library/Zend/Controller/Dispatcher/Standard.php (308)=0A/=
-code/twentytags/library/Zend/Controller/Front.php (954)=0A/code/twentyta=
-gs/library/Zend/Application/Bootstrap/Bootstrap.php (97)=0A/code/twentyt=
-ags/library/Zend/Application.php (366)=0A/code/twentytags/library/FaZend=
-/Application/index.php (40)=0A/code/twentytags/public/index.php (2)=0A=
-=0AArray=0A(=0A    [action] =3D&gt; tagit=0A    [module] =3D&gt; default=
-=0A    [controller] =3D&gt; adm=0A    [entity] =3D&gt; 29=0A    [tag]=
- =3D&gt; 1=0A)=0A=0A=0A#0 /code/twentytags/library/FaZend/Db/Table/Activ=
-eRow.php(503): Zend_Db_Table_Row_Abstract-&gt;__set('original', '0')=0A#=
-1 /code/twentytags/application/Model/Tag.php(164): FaZend_Db_Table_Activ=
-eRow-&gt;__set('original', '0')=0A#2 /code/twentytags/application/Model/=
-Entity.php(823): Model_Tag::add('1')=0A#3 /code/twentytags/application/c=
-ontrollers/AdmController.php(66): Model_Entity::tagEntity(Object(Model_E=
-ntity), Object(Model_Tag))=0A#4 /code/twentytags/library/Zend/Controller=
-/Action.php(516): AdmController-&gt;tagitAction()=0A#5 /code/twentytags/=
-library/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Ac=
-tion-&gt;dispatch('tagitAction')=0A#6 /code/twentytags/library/Zend/Cont=
-roller/Front.php(954): Zend_Controller_Dispatcher_Standard-&gt;dispatch(=
-Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Ht=
-tp))=0A#7 /code/twentytags/library/Zend/Application/Bootstrap/Bootstrap.=
-php(97): Zend_Controller_Front-&gt;dispatch()=0A#8 /code/twentytags/libr=
-ary/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap-&gt;=
-run()=0A#9 /code/twentytags/library/FaZend/Application/index.php(40): Ze=
-nd_Application-&gt;run()=0A#10 /code/twentytags/public/index.php(2): inc=
-lude('/code/twentytag...')=0A#11 {main}
-2014-03-25T09:32:52-05:00 ERR (3): Zend_Db_Table_Row_Exception: Specified column "original" is not in the row
-2014-03-25T09:33:30-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/__fz/adm/tagit/entity/29/tag/1
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #745.=0A=0AZend_Db_T=
-able_Row_Exception: Specified column &quot;original&quot; is not in the=
- row=0A=0A/code/twentytags/library/Zend/Controller/Action.php (516)=0A/c=
-ode/twentytags/library/Zend/Controller/Dispatcher/Standard.php (308)=0A/=
-code/twentytags/library/Zend/Controller/Front.php (954)=0A/code/twentyta=
-gs/library/Zend/Application/Bootstrap/Bootstrap.php (97)=0A/code/twentyt=
-ags/library/Zend/Application.php (366)=0A/code/twentytags/library/FaZend=
-/Application/index.php (40)=0A/code/twentytags/public/index.php (2)=0A=
-=0AArray=0A(=0A    [action] =3D&gt; tagit=0A    [entity] =3D&gt; 29=0A =
-   [tag] =3D&gt; 1=0A    [module] =3D&gt; default=0A    [controller] =3D=
-&gt; adm=0A)=0A=0A=0A#0 /code/twentytags/library/FaZend/Db/Table/ActiveR=
-ow.php(503): Zend_Db_Table_Row_Abstract-&gt;__set('original', '0')=0A#1=
- /code/twentytags/application/Model/Tag.php(164): FaZend_Db_Table_Active=
-Row-&gt;__set('original', '0')=0A#2 /code/twentytags/application/Model/E=
-ntity.php(823): Model_Tag::add('1')=0A#3 /code/twentytags/application/co=
-ntrollers/AdmController.php(66): Model_Entity::tagEntity(Object(Model_En=
-tity), Object(Model_Tag))=0A#4 /code/twentytags/library/Zend/Controller/=
-Action.php(516): AdmController-&gt;tagitAction()=0A#5 /code/twentytags/l=
-ibrary/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Act=
-ion-&gt;dispatch('tagitAction')=0A#6 /code/twentytags/library/Zend/Contr=
-oller/Front.php(954): Zend_Controller_Dispatcher_Standard-&gt;dispatch(O=
-bject(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Htt=
-p))=0A#7 /code/twentytags/library/Zend/Application/Bootstrap/Bootstrap.p=
-hp(97): Zend_Controller_Front-&gt;dispatch()=0A#8 /code/twentytags/libra=
-ry/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap-&gt;r=
-un()=0A#9 /code/twentytags/library/FaZend/Application/index.php(40): Zen=
-d_Application-&gt;run()=0A#10 /code/twentytags/public/index.php(2): incl=
-ude('/code/twentytag...')=0A#11 {main}
-2014-03-25T09:33:30-05:00 ERR (3): Zend_Db_Table_Row_Exception: Specified column "original" is not in the row
-2014-03-25T09:55:05-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 122 and defined, at /code/twentytags/application/Model/Saved.php (28)
+2014-03-27T05:23:42-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T10:24:37-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/t/30/startups
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #782.=0A=0AZend_View=
-_Exception: script 'index/bytag.phtml' not found in path (/code/twentyta=
-gs/application/views/scripts/:/code/twentytags/library/FaZend/app/views/=
-scripts/:/code/twentytags/application/views/scripts/)=0A=0A/code/twentyt=
-ags/library/Zend/Controller/Action.php (516)=0A/code/twentytags/library/=
-Zend/Controller/Dispatcher/Standard.php (308)=0A/code/twentytags/library=
-/Zend/Controller/Front.php (954)=0A/code/twentytags/library/Zend/Applica=
-tion/Bootstrap/Bootstrap.php (97)=0A/code/twentytags/library/Zend/Applic=
-ation.php (366)=0A/code/twentytags/library/FaZend/Application/index.php=
- (40)=0A/code/twentytags/public/index.php (2)=0A=0AArray=0A(=0A    [id]=
- =3D&gt; 30=0A    [controller] =3D&gt; index=0A    [action] =3D&gt; byta=
-g=0A)=0A=0A=0A#0 /code/twentytags/library/Zend/View/Abstract.php(884): Z=
-end_View_Abstract-&gt;_script('index/bytag.pht...')=0A#1 /code/twentytag=
-s/library/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View=
-_Abstract-&gt;render('index/bytag.pht...')=0A#2 /code/twentytags/library=
-/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Ac=
-tion_Helper_ViewRenderer-&gt;renderScript('index/bytag.pht...', NULL)=0A=
-#3 /code/twentytags/library/Zend/Controller/Action/Helper/ViewRenderer.p=
-hp(960): Zend_Controller_Action_Helper_ViewRenderer-&gt;render()=0A#4 /c=
-ode/twentytags/library/Zend/Controller/Action/HelperBroker.php(277): Zen=
-d_Controller_Action_Helper_ViewRenderer-&gt;postDispatch()=0A#5 /code/tw=
-entytags/library/Zend/Controller/Action.php(527): Zend_Controller_Action=
-_HelperBroker-&gt;notifyPostDispatch()=0A#6 /code/twentytags/library/Zen=
-d/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action-&gt;di=
-spatch('bytagAction')=0A#7 /code/twentytags/library/Zend/Controller/Fron=
-t.php(954): Zend_Controller_Dispatcher_Standard-&gt;dispatch(Object(Zend=
-_Controller_Request_Http), Object(Zend_Controller_Response_Http))=0A#8 /=
-code/twentytags/library/Zend/Application/Bootstrap/Bootstrap.php(97): Ze=
-nd_Controller_Front-&gt;dispatch()=0A#9 /code/twentytags/library/Zend/Ap=
-plication.php(366): Zend_Application_Bootstrap_Bootstrap-&gt;run()=0A#10=
- /code/twentytags/library/FaZend/Application/index.php(40): Zend_Applica=
-tion-&gt;run()=0A#11 /code/twentytags/public/index.php(2): include('/cod=
-e/twentytag...')=0A#12 {main}
-2014-03-25T10:24:37-05:00 ERR (3): Zend_View_Exception: script 'index/bytag.phtml' not found in path (/code/twentytags/application/views/scripts/:/code/twentytags/library/FaZend/app/views/scripts/:/code/twentytags/application/views/scripts/)
-[25-Mar-2014 10:36:47 EST] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /code/twentytags/application/Model/Entity.php on line 810
-2014-03-25T10:36:59-05:00 ERR (3): [OTHER] Argument 1 passed to Zend_Paginator_Adapter_Iterator::__construct() must implement interface Iterator, null given, called in /code/twentytags/library/FaZend/Paginator.php on line 45 and defined, at /code/twentytags/library/Zend/Paginator/Adapter/Iterator.php (60)
+2014-03-27T05:23:43-05:00 ERR (3): [WARNING] file_get_contents(http://news.investors.com/ibd-editorials-perspective/032614-694724-ukraine-stands-in-vladimir-putin-russia-path.htm&ct=ga&cd=CAIyAA&usg=AFQjCNHwEZ9NYvtSc67edlhGy4IL8xTDcg
+): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+, at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T10:36:59-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/t/30/startups
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #377.=0A=0AZend_Pagi=
-nator_Exception: Iterator must implement Countable=0A=0A/code/twentytags=
-/library/Zend/Controller/Action.php (516)=0A/code/twentytags/library/Zen=
-d/Controller/Dispatcher/Standard.php (308)=0A/code/twentytags/library/Ze=
-nd/Controller/Front.php (954)=0A/code/twentytags/library/Zend/Applicatio=
-n/Bootstrap/Bootstrap.php (97)=0A/code/twentytags/library/Zend/Applicati=
-on.php (366)=0A/code/twentytags/library/FaZend/Application/index.php (40=
-)=0A/code/twentytags/public/index.php (2)=0A=0AArray=0A(=0A    [id] =3D&=
-gt; 30=0A    [controller] =3D&gt; index=0A    [action] =3D&gt; index=0A)=
-=0A=0A=0A#0 /code/twentytags/library/FaZend/Paginator.php(45): Zend_Pagi=
-nator_Adapter_Iterator-&gt;__construct(NULL)=0A#1 /code/twentytags/appli=
-cation/controllers/IndexController.php(48): FaZend_Paginator::addPaginat=
-or(NULL, Object(Zend_View), false)=0A#2 /code/twentytags/library/Zend/Co=
-ntroller/Action.php(516): IndexController-&gt;indexAction()=0A#3 /code/t=
-wentytags/library/Zend/Controller/Dispatcher/Standard.php(308): Zend_Con=
-troller_Action-&gt;dispatch('indexAction')=0A#4 /code/twentytags/library=
-/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard-&gt=
-;dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_R=
-esponse_Http))=0A#5 /code/twentytags/library/Zend/Application/Bootstrap/=
-Bootstrap.php(97): Zend_Controller_Front-&gt;dispatch()=0A#6 /code/twent=
-ytags/library/Zend/Application.php(366): Zend_Application_Bootstrap_Boot=
-strap-&gt;run()=0A#7 /code/twentytags/library/FaZend/Application/index.p=
-hp(40): Zend_Application-&gt;run()=0A#8 /code/twentytags/public/index.ph=
-p(2): include('/code/twentytag...')=0A#9 {main}
-2014-03-25T10:36:59-05:00 ERR (3): Zend_Paginator_Exception: Iterator must implement Countable
-2014-03-25T10:37:02-05:00 ERR (3): [OTHER] Argument 1 passed to Zend_Paginator_Adapter_Iterator::__construct() must implement interface Iterator, null given, called in /code/twentytags/library/FaZend/Paginator.php on line 45 and defined, at /code/twentytags/library/Zend/Paginator/Adapter/Iterator.php (60)
+2014-03-27T05:23:43-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T10:37:02-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/t/30/startups
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #219.=0A=0AZend_Pagi=
-nator_Exception: Iterator must implement Countable=0A=0A/code/twentytags=
-/library/Zend/Controller/Action.php (516)=0A/code/twentytags/library/Zen=
-d/Controller/Dispatcher/Standard.php (308)=0A/code/twentytags/library/Ze=
-nd/Controller/Front.php (954)=0A/code/twentytags/library/Zend/Applicatio=
-n/Bootstrap/Bootstrap.php (97)=0A/code/twentytags/library/Zend/Applicati=
-on.php (366)=0A/code/twentytags/library/FaZend/Application/index.php (40=
-)=0A/code/twentytags/public/index.php (2)=0A=0AArray=0A(=0A    [id] =3D&=
-gt; 30=0A    [controller] =3D&gt; index=0A    [action] =3D&gt; index=0A)=
-=0A=0A=0A#0 /code/twentytags/library/FaZend/Paginator.php(45): Zend_Pagi=
-nator_Adapter_Iterator-&gt;__construct(NULL)=0A#1 /code/twentytags/appli=
-cation/controllers/IndexController.php(48): FaZend_Paginator::addPaginat=
-or(NULL, Object(Zend_View), false)=0A#2 /code/twentytags/library/Zend/Co=
-ntroller/Action.php(516): IndexController-&gt;indexAction()=0A#3 /code/t=
-wentytags/library/Zend/Controller/Dispatcher/Standard.php(308): Zend_Con=
-troller_Action-&gt;dispatch('indexAction')=0A#4 /code/twentytags/library=
-/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard-&gt=
-;dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_R=
-esponse_Http))=0A#5 /code/twentytags/library/Zend/Application/Bootstrap/=
-Bootstrap.php(97): Zend_Controller_Front-&gt;dispatch()=0A#6 /code/twent=
-ytags/library/Zend/Application.php(366): Zend_Application_Bootstrap_Boot=
-strap-&gt;run()=0A#7 /code/twentytags/library/FaZend/Application/index.p=
-hp(40): Zend_Application-&gt;run()=0A#8 /code/twentytags/public/index.ph=
-p(2): include('/code/twentytag...')=0A#9 {main}
-2014-03-25T10:37:02-05:00 ERR (3): Zend_Paginator_Exception: Iterator must implement Countable
-2014-03-25T10:37:37-05:00 ERR (3): [OTHER] Argument 1 passed to Zend_Paginator_Adapter_Iterator::__construct() must implement interface Iterator, instance of FaZend_Db_Wrapper given, called in /code/twentytags/library/FaZend/Paginator.php on line 45 and defined, at /code/twentytags/library/Zend/Paginator/Adapter/Iterator.php (60)
+2014-03-27T05:23:45-05:00 ERR (3): [WARNING] file_get_contents(http://www.jta.org/2014/03/26/news-opinion/world/chief-russian-rabbi-slams-ukrainian-jews-for-criticizing-putin&ct=ga&cd=CAIyAA&usg=AFQjCNEhdmWnBFnzVk8luf_epPqwLTqQXw
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T10:37:37-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/t/30/startups
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #973.=0A=0AZend_Pagi=
-nator_Exception: Iterator must implement Countable=0A=0A/code/twentytags=
-/library/Zend/Controller/Action.php (516)=0A/code/twentytags/library/Zen=
-d/Controller/Dispatcher/Standard.php (308)=0A/code/twentytags/library/Ze=
-nd/Controller/Front.php (954)=0A/code/twentytags/library/Zend/Applicatio=
-n/Bootstrap/Bootstrap.php (97)=0A/code/twentytags/library/Zend/Applicati=
-on.php (366)=0A/code/twentytags/library/FaZend/Application/index.php (40=
-)=0A/code/twentytags/public/index.php (2)=0A=0AArray=0A(=0A    [id] =3D&=
-gt; 30=0A    [controller] =3D&gt; index=0A    [action] =3D&gt; index=0A)=
-=0A=0A=0A#0 /code/twentytags/library/FaZend/Paginator.php(45): Zend_Pagi=
-nator_Adapter_Iterator-&gt;__construct(Object(FaZend_Db_Wrapper))=0A#1 /=
-code/twentytags/application/controllers/IndexController.php(48): FaZend_=
-Paginator::addPaginator(Object(FaZend_Db_Wrapper), Object(Zend_View), fa=
-lse)=0A#2 /code/twentytags/library/Zend/Controller/Action.php(516): Inde=
-xController-&gt;indexAction()=0A#3 /code/twentytags/library/Zend/Control=
-ler/Dispatcher/Standard.php(308): Zend_Controller_Action-&gt;dispatch('i=
-ndexAction')=0A#4 /code/twentytags/library/Zend/Controller/Front.php(954=
-): Zend_Controller_Dispatcher_Standard-&gt;dispatch(Object(Zend_Controll=
-er_Request_Http), Object(Zend_Controller_Response_Http))=0A#5 /code/twen=
-tytags/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Contro=
-ller_Front-&gt;dispatch()=0A#6 /code/twentytags/library/Zend/Application=
-.php(366): Zend_Application_Bootstrap_Bootstrap-&gt;run()=0A#7 /code/twe=
-ntytags/library/FaZend/Application/index.php(40): Zend_Application-&gt;r=
-un()=0A#8 /code/twentytags/public/index.php(2): include('/code/twentytag=
-...')=0A#9 {main}
-2014-03-25T10:37:37-05:00 ERR (3): Zend_Paginator_Exception: Iterator must implement Countable
-2014-03-25T10:37:45-05:00 ERR (3): [OTHER] Object of class FaZend_Db_Wrapper could not be converted to string, at /code/twentytags/application/Model/Entity.php (815)
+2014-03-27T05:23:45-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T10:37:45-05:00 ERR (3): [OTHER] Argument 1 passed to Zend_Paginator_Adapter_Iterator::__construct() must implement interface Iterator, null given, called in /code/twentytags/library/FaZend/Paginator.php on line 45 and defined, at /code/twentytags/library/Zend/Paginator/Adapter/Iterator.php (60)
+2014-03-27T05:23:45-05:00 ERR (3): [WARNING] file_get_contents(http://www.voanews.com/content/what-prompted-putins-annexation-of-crimea/1879884.html&ct=ga&cd=CAIyAA&usg=AFQjCNFOGKqsUy0q3Ieu1k1p3PQqgu_8Tw
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T10:37:45-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/t/30/startups
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #892.=0A=0AZend_Pagi=
-nator_Exception: Iterator must implement Countable=0A=0A/code/twentytags=
-/library/Zend/Controller/Action.php (516)=0A/code/twentytags/library/Zen=
-d/Controller/Dispatcher/Standard.php (308)=0A/code/twentytags/library/Ze=
-nd/Controller/Front.php (954)=0A/code/twentytags/library/Zend/Applicatio=
-n/Bootstrap/Bootstrap.php (97)=0A/code/twentytags/library/Zend/Applicati=
-on.php (366)=0A/code/twentytags/library/FaZend/Application/index.php (40=
-)=0A/code/twentytags/public/index.php (2)=0A=0AArray=0A(=0A    [id] =3D&=
-gt; 30=0A    [controller] =3D&gt; index=0A    [action] =3D&gt; index=0A)=
-=0A=0A=0A#0 /code/twentytags/library/FaZend/Paginator.php(45): Zend_Pagi=
-nator_Adapter_Iterator-&gt;__construct(NULL)=0A#1 /code/twentytags/appli=
-cation/controllers/IndexController.php(48): FaZend_Paginator::addPaginat=
-or(NULL, Object(Zend_View), false)=0A#2 /code/twentytags/library/Zend/Co=
-ntroller/Action.php(516): IndexController-&gt;indexAction()=0A#3 /code/t=
-wentytags/library/Zend/Controller/Dispatcher/Standard.php(308): Zend_Con=
-troller_Action-&gt;dispatch('indexAction')=0A#4 /code/twentytags/library=
-/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard-&gt=
-;dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_R=
-esponse_Http))=0A#5 /code/twentytags/library/Zend/Application/Bootstrap/=
-Bootstrap.php(97): Zend_Controller_Front-&gt;dispatch()=0A#6 /code/twent=
-ytags/library/Zend/Application.php(366): Zend_Application_Bootstrap_Boot=
-strap-&gt;run()=0A#7 /code/twentytags/library/FaZend/Application/index.p=
-hp(40): Zend_Application-&gt;run()=0A#8 /code/twentytags/public/index.ph=
-p(2): include('/code/twentytag...')=0A#9 {main}
-2014-03-25T10:37:45-05:00 ERR (3): Zend_Paginator_Exception: Iterator must implement Countable
-2014-03-25T10:37:46-05:00 ERR (3): [OTHER] Object of class FaZend_Db_Wrapper could not be converted to string, at /code/twentytags/application/Model/Entity.php (815)
+2014-03-27T05:23:45-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
-2014-03-25T10:37:46-05:00 ERR (3): [OTHER] Argument 1 passed to Zend_Paginator_Adapter_Iterator::__construct() must implement interface Iterator, null given, called in /code/twentytags/library/FaZend/Paginator.php on line 45 and defined, at /code/twentytags/library/Zend/Paginator/Adapter/Iterator.php (60)
+2014-03-27T05:23:49-05:00 ERR (3): [WARNING] file_get_contents(http://www.politico.com/story/2014/03/barack-obama-vladimir-putin-ukraine-105067.html&ct=ga&cd=CAIyAA&usg=AFQjCNG8H0rDAzIg24ncHKvJCWvd5ZdOow
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
 
-2014-03-25T10:37:46-05:00 INFO (6): Email sending skipped:
-	From: max.bugaenko@gmail.com
-	To: bugs@fazend.com
-	Subject: localhost internal PHP error, rev.local, /twentytags/t/30/startups
-	Message (from new line):
-ATTN: admin,=0A=0AAn exception was raised in FaZend application, which w=
-as not caught inside. The report below will help you to understand the c=
-ause of this situation and resolve it. The exception was also logged int=
-o error_log file. Error code indicated to the user: #464.=0A=0AZend_Pagi=
-nator_Exception: Iterator must implement Countable=0A=0A/code/twentytags=
-/library/Zend/Controller/Action.php (516)=0A/code/twentytags/library/Zen=
-d/Controller/Dispatcher/Standard.php (308)=0A/code/twentytags/library/Ze=
-nd/Controller/Front.php (954)=0A/code/twentytags/library/Zend/Applicatio=
-n/Bootstrap/Bootstrap.php (97)=0A/code/twentytags/library/Zend/Applicati=
-on.php (366)=0A/code/twentytags/library/FaZend/Application/index.php (40=
-)=0A/code/twentytags/public/index.php (2)=0A=0AArray=0A(=0A    [id] =3D&=
-gt; 30=0A    [controller] =3D&gt; index=0A    [action] =3D&gt; index=0A)=
-=0A=0A=0A#0 /code/twentytags/library/FaZend/Paginator.php(45): Zend_Pagi=
-nator_Adapter_Iterator-&gt;__construct(NULL)=0A#1 /code/twentytags/appli=
-cation/controllers/IndexController.php(48): FaZend_Paginator::addPaginat=
-or(NULL, Object(Zend_View), false)=0A#2 /code/twentytags/library/Zend/Co=
-ntroller/Action.php(516): IndexController-&gt;indexAction()=0A#3 /code/t=
-wentytags/library/Zend/Controller/Dispatcher/Standard.php(308): Zend_Con=
-troller_Action-&gt;dispatch('indexAction')=0A#4 /code/twentytags/library=
-/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard-&gt=
-;dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_R=
-esponse_Http))=0A#5 /code/twentytags/library/Zend/Application/Bootstrap/=
-Bootstrap.php(97): Zend_Controller_Front-&gt;dispatch()=0A#6 /code/twent=
-ytags/library/Zend/Application.php(366): Zend_Application_Bootstrap_Boot=
-strap-&gt;run()=0A#7 /code/twentytags/library/FaZend/Application/index.p=
-hp(40): Zend_Application-&gt;run()=0A#8 /code/twentytags/public/index.ph=
-p(2): include('/code/twentytag...')=0A#9 {main}
-2014-03-25T10:37:46-05:00 ERR (3): Zend_Paginator_Exception: Iterator must implement Countable
-[25-Mar-2014 10:51:07 EST] PHP Parse error:  syntax error, unexpected ')' in /code/twentytags/application/Model/Entity.php on line 814
+2014-03-27T05:23:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T05:23:50-05:00 ERR (3): [WARNING] file_get_contents(http://seattletimes.com/html/politics/2023225961_apxcongressukraine.html&ct=ga&cd=CAIyAA&usg=AFQjCNH2a-ODjHp_kONALMDDUkHsfhyC3A
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T05:23:50-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T05:23:51-05:00 ERR (3): [WARNING] file_get_contents(http://www.usnews.com/news/articles/2014/03/26/vladimir-putin-the-untouchable-leader&ct=ga&cd=CAIyAA&usg=AFQjCNENs0SAMRO-MEpTl6wsClKQyUPbBg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T05:23:51-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T05:24:02-05:00 ERR (3): [WARNING] file_get_contents(http://www.upi.com/Odd_News/2014/03/26/Glenn-Beck-says-he-prayed-to-God-for-Vladmir-Putin-to-die/8401395854999/&ct=ga&cd=CAIyAA&usg=AFQjCNEOmklQzAjI8ZhctysssiqE9sl5Kg
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T05:24:02-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T05:24:03-05:00 ERR (3): [WARNING] file_get_contents(http://dealbreaker.com/2014/03/people-with-money-riding-on-it-dont-expect-vladimir-putin-to-become-more-reasonable-any-time-soon/&ct=ga&cd=CAIyAA&usg=AFQjCNG9_Ya30hK5HhLcHhNM7YPwH9ridA
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T05:24:03-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T05:24:03-05:00 ERR (3): [WARNING] file_get_contents(http://online.wsj.com/news/articles/SB10001424052702303325204579463444197301398&ct=ga&cd=CAIyAA&usg=AFQjCNFvgXtJNaT15ceZ2R9V9eUXbJ1BkA
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T05:24:03-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T05:24:04-05:00 ERR (3): [WARNING] file_get_contents(http://www.ottawacitizen.com/Stephen+Harper+accuses+Vladimir+Putin+being+stuck+back+USSR/9663693/story.html&ct=ga&cd=CAIyAA&usg=AFQjCNGJ9Yt_QfICp809NQMzRXSShVsujg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T05:24:04-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:07-05:00 ERR (3): [WARNING] file_get_contents(http://www.digitaljournal.com/pr/1813447&ct=ga&cd=CAIyAA&usg=AFQjCNGjcJsSzcwJVDj1pbDTkW2N9eRtzg
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:07-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:19-05:00 ERR (3): [WARNING] file_get_contents(http://www.dailynewsegypt.com/2014/03/26/souq-com-raises-150m/&ct=ga&cd=CAIyAA&usg=AFQjCNFxtIaPz8eG2GUbCi1WPrUiADHZtQ
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:19-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:24-05:00 ERR (3): [WARNING] file_get_contents(http://rt.com/news/obama-crimea-iraq-invasion-565/&ct=ga&cd=CAIyAA&usg=AFQjCNF9rlRUG1lpaE1T5k3shuJ8XuuSQA
+): failed to open stream: HTTP request failed! HTTP/1.1 404
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:24-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:25-05:00 ERR (3): [WARNING] file_get_contents(http://www.dw.de/obama-this-is-not-another-cold-war-we-are-entering-into/a-17522473&ct=ga&cd=CAIyAA&usg=AFQjCNHW-Mr72zJ6ZAd7l59C68aBFeNykw
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:25-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:27-05:00 ERR (3): [WARNING] file_get_contents(http://www.cbc.ca/player/News/TV+Shows/The+National/World/ID/2444918053/&ct=ga&cd=CAIyAA&usg=AFQjCNEoxQWYSGKmRAnSI_4zm8imq8eJWA
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:27-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:31-05:00 ERR (3): [WARNING] file_get_contents(http://vimeo.com/90168629&ct=ga&cd=CAIyAA&usg=AFQjCNE1O5aRHly-9EKUeGFQHNCrrH7lEQ
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:31-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:32-05:00 ERR (3): [WARNING] file_get_contents(http://www.voanews.com/content/obama-in-brussels-for-talks-with-eu-nato/1879388.html&ct=ga&cd=CAIyAA&usg=AFQjCNHvqikcgZ0vvx1lftvvn9qZ1LvoMg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:32-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:33-05:00 ERR (3): [WARNING] file_get_contents(http://www.upi.com/Top_News/US/2014/03/27/Barack-Obama-and-Pope-Francis-meet-for-the-first-time/1121395918544/&ct=ga&cd=CAIyAA&usg=AFQjCNHgO_rSxv2mtMDSXRbcN3NG92plHg
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:33-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:35-05:00 ERR (3): [WARNING] file_get_contents(http://tvnz.co.nz/world-news/barack-obama-meets-pope-francis-5877812&ct=ga&cd=CAIyAA&usg=AFQjCNGsX87uKexLFpIUhsHLZIaDdTpijw
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:35-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:35-05:00 ERR (3): [WARNING] file_get_contents(http://www.cbc.ca/news/world/pope-francis-barack-obama-to-meet-at-the-vatican-1.2588194&ct=ga&cd=CAIyAA&usg=AFQjCNFaSFsFaUDADdEQ2aFRltThNMTSpw
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:35-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:41-05:00 ERR (3): [WARNING] file_get_contents(http://www.sdjewishworld.com/2014/03/26/look-barack-obamas-record-rhetoric/&ct=ga&cd=CAIyAA&usg=AFQjCNF8VFHgx2ZHZHGwEA8-d_B0AGx0ew
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:41-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:43-05:00 ERR (3): [WARNING] file_get_contents(http://www.truthdig.com/report/item/barack_obama_the_least_transparent_president_in_history_20140326&ct=ga&cd=CAIyAA&usg=AFQjCNHz5VygyTaTjVR84Qr1HQVwcvNmAg
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:43-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:44-05:00 ERR (3): [WARNING] file_get_contents(http://www.amny.com/opinion/editorial/president-barack-obama-voiced-fears-of-nyc-1.7514203&ct=ga&cd=CAIyAA&usg=AFQjCNHJbxPNpkE09-bQSRn4-U3dvIFNng
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:44-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:45-05:00 ERR (3): [WARNING] file_get_contents(http://www.theguardian.com/world/2014/mar/26/barack-obama-putin-withering-civics-lesson-crimea&ct=ga&cd=CAIyAA&usg=AFQjCNE0hVAovnt2KZ1bbnHI1qGq9KsM8w
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:45-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:45-05:00 ERR (3): [WARNING] file_get_contents(http://www.theguardian.com/world/2014/mar/26/obama-no-cold-war-crimea&ct=ga&cd=CAIyAA&usg=AFQjCNEhLMjL2UCNnB-ZwJWBfd1tc6Bl9A
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:45-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:46-05:00 ERR (3): [WARNING] file_get_contents(http://www.channel4.com/news/ukraine-barack-obama-usa-european-union-trade-russia-gas&ct=ga&cd=CAIyAA&usg=AFQjCNGIfRwhM0OuqUI64qOgstYG9eJnLg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:46-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:50-05:00 ERR (3): [WARNING] file_get_contents(http://www.politico.com/story/2014/03/barack-obama-democrats-immigration-105047.html&ct=ga&cd=CAIyAA&usg=AFQjCNH1MfKvYB58pZz_RjXSFdnFXn44CA
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:50-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:56-05:00 ERR (3): [WARNING] file_get_contents(http://www.theblaze.com/stories/2014/03/26/barack-obama-and-dinesh-dsouza-finally-meet/&ct=ga&cd=CAIyAA&usg=AFQjCNGiHM9lZRL5Igk3aIqo8vYPgkLBdg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:56-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:59-05:00 ERR (3): [WARNING] file_get_contents(http://www.politifact.com/truth-o-meter/statements/2014/mar/26/barack-obama/barack-obama-says-high-schoolers-are-graduating-al/&ct=ga&cd=CAIyAA&usg=AFQjCNH3A-H7WrpG9TWIIkFrNpwhZBKZQg
+): failed to open stream: HTTP request failed! HTTP/1.1 404 NOT FOUND
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:59-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:52:59-05:00 ERR (3): [WARNING] file_get_contents(http://economictimes.indiatimes.com/news/international/business/barack-obama-dont-rush-to-judgment-on-us-eu-trade-deal/articleshow/32735758.cms&ct=ga&cd=CAIyAA&usg=AFQjCNEhmxkPcre0GGBKvN_1SCAwKI5_wg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:52:59-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-27T07:53:06-05:00 ERR (3): [WARNING] file_get_contents(http://newyork.cbslocal.com/2014/03/26/obama-nuclear-blast-in-nyc-bigger-concern-than-russia/&ct=ga&cd=CAIyAA&usg=AFQjCNGGkWeYJLCRCI_1SrG70XuRIppmQg
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-27T07:53:06-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T02:51:16-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 150 and defined, at /code/twentytags/application/Model/Saved.php (28)
+

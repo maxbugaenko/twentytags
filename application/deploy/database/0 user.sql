@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `nickname` VARCHAR(50) DEFAULT 'user' NOT NULL COMMENT "Unique nickname for public",
   `name` VARCHAR(100) DEFAULT 'user' NOT NULL COMMENT "Name of the user",
   `admin` INT UNSIGNED COMMENT "Is admin",
+  `notification` INT UNSIGNED COMMENT "Notification on/off",
   PRIMARY KEY (`id`),
   UNIQUE (`nickname`),
   UNIQUE (`email`)

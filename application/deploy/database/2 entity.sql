@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS `entity` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT "Unique ID of the entity",
   `title` TEXT NOT NULL COMMENT "Entity title",
+  `link` TEXT NOT NULL COMMENT "Entity link",
   `picture` TEXT "Photo filename",
   `description` TEXT NOT NULL COMMENT "Entity desciption",
   `cached` TIMESTAMP COMMENT "When this entity was cached?",

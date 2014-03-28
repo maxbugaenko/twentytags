@@ -39,17 +39,38 @@ class IndexController extends FaZend_Controller_Action {
 	* @return void
 	*/
 	public function indexAction() {
-        $tag = new Model_Tag((int)$this->getRequest()->getParam('id'));
-        if ($tag->exists()) {
-            $this->view->mainTag = $tag->value;
-            $iterator = Model_Entity::retrieveByTag($tag);
+        $route = Zend_Controller_Front::getInstance()->getRouter()->getCurrentRouteName();
+        if ($route == "following") {
+            $this->view->mainTag = "I'm following";
+            $iterator = Model_Entity::retrieveSavedByUser(Model_User::me());
+            if (count($iterator) == 0) {
+                $this->redirect("emptyprofile");
+            }
         } else {
-            $this->view->mainTag = "What's hot";
-            $iterator = Model_Entity::retrieveAll();
+            $tag = new Model_Tag((int)$this->getRequest()->getParam('id'));
+            if ($tag->exists()) {
+                $this->view->mainTag = $tag->value;
+                $iterator = Model_Entity::retrieveByTag($tag);
+            } else {
+                $this->view->mainTag = "What's hot";
+                $iterator = Model_Entity::retrieveAll();
+            }
         }
         FaZend_Paginator::addPaginator($iterator, $this->view, $this->_getParamOrFalse('page'));
         $this->view->paginator->setItemCountPerPage(100);
 	}
+    /**
+     * Empty profile page
+     * @return void
+     */
+    public function emptyprofileAction() {
+    }
+    /**
+     * Empty profile page
+     * @return void
+     */
+    public function settingsAction() {
+    }
     /**
      * Logs out facebook user
      * @return void

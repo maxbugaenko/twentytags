@@ -1,12 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
-$main-font: 'Open Sans', sans-serif;
-$title-font: 'Abel', sans-serif;
-$button-font: 'Abel', sans-serif;
+$main-font: 'Ubuntu', sans-serif;
+$title-font: 'Ubuntu Condensed', sans-serif;
+$button-font: 'Ubuntu Condensed', sans-serif;
+$header-font: 'Ubuntu Condensed', sans-serif;
 $red: #f1103a;
 $dark-red: #dd1338;
 $light-red: #FF2E54;
+$gray: #BDBDBD;
 
 body {
 	background-color: #E6E6E6;

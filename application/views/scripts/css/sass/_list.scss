@@ -38,7 +38,7 @@
             border:5px solid #E6E6E6;
 			padding: 1.4em;
             position: relative;
-			border-radius: 0px;
+			border-radius: 8px;
 			background-color: white;
             @include column-break-inside(avoid);
             &:hover .item-follow-button {
@@ -46,9 +46,12 @@
               -o-animation: followButtonSlideUp forwards 0.2s ease-in-out;
               -webkit-opacity:1;
             }
-			img {
-				width: 100%;
-			}
+            .item-image {
+              min-height: 150px;
+              img {
+                width: 100%;
+              }
+            }
 			.item-content {
 				padding: 0em;
 				font-size: 1em;
@@ -56,8 +59,9 @@
 			.item-description {
 				margin-top: 0.4em;
 				margin-bottom: 2.5em;
-				font-size: 1.2em;
+				font-size: 1.1em;
 				color:gray;
+                line-height: 1.5em;
 			}
 			.item-title {
                 @include title-font();
@@ -68,28 +72,57 @@
 			}
 			.item-info {
 				margin-top: 0.6em;
-				font-size: 1.1em;
+				font-size: 0.9em;
 				color:gray;
-                @include title-font();
+                width:auto;
+                @include main-font();
+               .item-badge-total {
+                  border-bottom-left-radius: 3px;
+                  border-top-left-radius: 3px;
+                  border-radius: 3px;
+                  padding:3px;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  background-color: lightgray;
+                  color:gray;
+                }
+              .item-badge-today {
+                  border-bottom-right-radius: 3px;
+                  border-top-right-radius: 3px;
+                  padding:3px;
+                  position: relative;
+                  left:-2px;
+                  padding-left: 6px;
+                  padding-right: 6px;
+                  background-color: $light-red;
+                  color:white;
+                  &:after {
+                    position: absolute;
+                    content:"";
+                    border-width: 6px 6px 6px 0px;
+                    border-style: solid;
+                    border-color: transparent $light-red;
+                    z-index: 1000;
+                    left:-4px;
+                    top:5px;
+                  }
+              }
 			}
 			.item-tags {
 				margin-bottom: 1em;
 				color:#A4A4A4;
 			}
-			.item-tags b {
+            .item-link {
+              font-size: 1.2em;
+            }
+			.item-tags {
                 @include main-font();
 				font-size: 1.2em;
 				cursor: pointer;
 				margin-right: 0.3em;
-				border-bottom: 1px dotted #BDBDBD;
-				color:#BDBDBD;
+				color:black;
 				border-radius: 2px;
 				margin-right:3px;
-                @include transition(all 0.2s ease);
-                &:hover {
-                  @include transition(all 0.2s ease);
-                  color:black;
-                }
             }
             .item-follow-button {
                 position: absolute;
@@ -105,10 +138,6 @@
             }
             .displayed {
               display:block;
-            }
-            .item-badge {
-              color:$dark-red;
-              @include title-font();
             }
 		}
 	}

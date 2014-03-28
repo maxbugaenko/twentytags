@@ -1,0 +1,26 @@
+.message-container {
+  @include box-sizing(border-box);
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 15%;
+  text-align: center;
+  margin-left: auto;
+  margin-right:auto;
+  width:70%;
+  color:lightgray;
+  .message-title {
+    @include header-font();
+    font-size: 4em;
+    color:$gray;
+  }
+  .message-description {
+    font-size:2em;
+    color:$gray;
+  }
+  .button-block {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2em;
+    width:25%;
+  }
+}

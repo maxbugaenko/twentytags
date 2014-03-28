@@ -25,12 +25,15 @@
     <div class="menu-panel" id="menu-panel">
         <h3><i class="fa fa-check-circle"></i> Popular</h3>
         <ul class="menu">
-            <li class="current"><a href="#item1"><i class="fa fa-tasks"></i> I'm following</a></li>
-            <li class="current"><a href="#item1"><i class="fa fa-fire"></i> What's hot</a></li>
-            <li class="current"><a href="#item1"><i class="fa fa-rocket"></i> Startups</a></li>
-            <li><a href="#item2"><i class="fa fa-smile-o"></i> Entreprenuers</a></li>
-            <li><a href="#item3"><i class="fa fa-star"></i> Sportsmen</a></li>
-            <li><a href="#item4"><i class="fa fa-folder-open"></i> Global trends</a></li>
+            <? if (Model_User::isLoggedIn()):?>
+                <li><a class="<?=$this->mainTag == "I'm following" ? "current":""?>" href="<?=$this->url(array(), "following", false)?>"><i class="fa fa-tasks"></i> I'm following</a></li>
+            <?endif?>
+            <li><a class="<?=$this->mainTag == "What's hot" ? "current":""?>" href="<?=$this->url(array(), "browse", false)?>"><i class="fa fa-fire"></i> What's hot</a></li>
+            <li><a class="<?=$this->mainTag == "Startups" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Startups")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-rocket"></i> Startups</a></li>
+            <li><a class="<?=$this->mainTag == "Entreprenuers" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Entreprenuers")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-smile-o"></i> Entreprenuers</a></li>
+            <li><a class="<?=$this->mainTag == "Known people" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Known people")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-smile-o"></i> Known people</a></li>
+            <li><a class="<?=$this->mainTag == "Sportsmen" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Sportsmen")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-star"></i> Sportsmen</a></li>
+            <li><a class="<?=$this->mainTag == "Global trends" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Global trends")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-folder-open"></i> Global trends</a></li>
         </ul>
         <div class="legal-notes">
             TWENTYTAGS.COM<br/>

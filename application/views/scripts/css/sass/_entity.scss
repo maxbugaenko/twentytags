@@ -31,8 +31,11 @@
       background-color: white;
       margin-bottom: 1.875em; /* 30px */
       border-bottom: 10px solid white;
-      img {
-        width: 100%;
+      .item-image {
+        min-height: 150px;
+        img {
+          width: 100%;
+        }
       }
       .item-content {
         padding: 0em;
@@ -42,12 +45,16 @@
         margin-top: 0.4em;
         margin-bottom: 1.5em;
         font-size: 1.2em;
+        line-height: 1.4em;
         color:gray;
       }
       .item-title {
         @include title-font();
         margin-top: 0.4em;
-        font-size: 2.5em;
+        font-size: 2.2em;
+        line-height: 0.8em;
+        text-overflow: ellipsis;
+        overflow: hidden;
         color:black;
       }
       .item-info {
@@ -57,6 +64,7 @@
       }
       .item-tags {
         font-size: 1.2em;
+        margin-top: 0.5em;
         margin-bottom: 1em;
         color:#A4A4A4;
       }
@@ -88,9 +96,9 @@
       margin-left: auto;
       margin-right:auto;
       width:70%;
-      color:lightgray;
+      color:$gray;
       .message-title {
-        font-family:$title-font;
+        @include header-font();
         font-size: 4em;
       }
       .message-description {
@@ -114,10 +122,12 @@
         margin-bottom:5px;
         background-color: white;
         transition: all 0.6s ease-out;
-        @include column-break-inside(avoid);
+        //@include column-break-inside(avoid);
         .data-title {
-          font-family: $title-font;
+          @include title-font();
           font-size: 1.7em;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .data-source {
           margin-top: 0em;
@@ -131,7 +141,9 @@
         .data-description {
           @include box-sizing(border-box);
           padding-top: 1.5em;
-          font-size: 1.2em;
+          font-size: 1.1em;
+          color:gray;
+          line-height: 1.5em;
           overflow: hidden;
           text-overflow: ellipsis;
           color:gray;
@@ -139,11 +151,12 @@
             position: relative;
             .play-icon {
               color:white;
-              font-size:4em;
+              font-size:100px;
               position: absolute;
-              opacity: 0.7;
+              opacity: 0.8;
+              text-shadow:0px 0px 20px black;
               left:40%;
-              top:15%;
+              top:17%;
             }
           }
           img {

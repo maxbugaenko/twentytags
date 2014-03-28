@@ -12,6 +12,7 @@ button.button-text {
 	font-family: $button-font;
 	text-align: center;
 	font-size: 1.2em;
+    border-radius: 3px;
 	outline: 0;
 	&:hover {
 		transition: all 0.1s ease-out;
@@ -23,8 +24,12 @@ button.button-text {
 		background-color: $light-red;
 	}
 	i {
-		padding-right: 0.5em;
+		padding-right: 0.2em;
 	}
+}
+button.button-large {
+  @extend button.button-text;
+  font-size:2em;
 }
 button.button-gray {
   @extend button.button-text;
@@ -107,6 +112,14 @@ a.red-link {
     color:$light-red;
   }
 }
+a.gray-link {
+  @extend a.red-link;
+  color:gray;
+}
+a.link-underline {
+  @extend a.red-link;
+  border-bottom: 1px dotted #BDBDBD;
+}
 
 a.black-link {
   @include transition(all 0.2s ease);
@@ -115,4 +128,3 @@ a.black-link {
     color:black;
   }
 }
-
