@@ -26,23 +26,28 @@ class Model_Provider_GoogleAlerts extends Model_Provider_Provider {
             echo "parsing feed from: {$source->source}";
             $feedXML = simplexml_load_file($source->source);
             foreach($feedXML->entry as $k => $data){
-                echo "\n";
-                echo "date: ".$data->published."\n";
-                echo "title: " . $title = strip_tags($data->title)."\n";
-                echo "link: " . $link = urldecode(substr($data->link->attributes()->href, strpos($data->link->attributes()->href, "q=")+2))."\n";
-                echo "hash: ".$hash = hash("md5", $link)."\n";
-                echo "content: " . $body = strip_tags($data->content)."\n";
+                $title = strip_tags($data->title);
+                echo "\n\n";
+                $title = $title."\n";
+                $link = $link = urldecode(substr($data->link->attributes()->href, strpos($data->link->attributes()->href, "q=")+2));
+                $hash = hash("md5", $link);
+                $body = strip_tags($data->content);
+                echo "link: " . $link ."\n";
+                echo "hash: ".$hash."\n";
+                echo "content: " . $body ."\n";
                 $hostData = parse_url($link);
                 print_r($hostData);
                 if (strpos($link, "youtube.com")) {
+                    $webSource = "youtube";
                     $alertType = "video";
                     $params = explode("&", $hostData["query"]);
                     list($v, $videoId) = explode("=", $params[0]);
                     echo "video ID: ".$videoId."\n";
                     echo "thumb link: ".$imageLink = "http://img.youtube.com/vi/".$videoId."/0.jpg";
                     $imageFilename = Model_Static_Functions::saveImageFromUrl(ALERT_IMAGES_PATH, $imageLink);
-                    echo "source: ".$webSource = "youtube";
+                    echo "source: ".$webSource."\n";
                 } else {
+                    $webSource = $hostData["host"];
                     $alertType = "text";
                     $imageLink = Model_Static_Functions::getOgImage($link);
                     echo "image: ".$imageLink."\n";
@@ -51,11 +56,12 @@ class Model_Provider_GoogleAlerts extends Model_Provider_Provider {
                     } else {
                         $imageFilename = "";
                     }
-                    echo "source: ".$webSource = $hostData["host"];
+                    echo "image filename: ".$imageFilename."\n";
+                    echo "source: ".$webSource."\n";
                 }
                 try {
                     Model_Alert::findByHash($hash);
-                    echo "Alert with such hash (by link) already exists\n";
+                    echo "\nAlert with such hash (by link) already exists\n";
                 } catch (Model_Alert_NoSuchHashException $e) {
                     $alert = new Model_Alert();
                     $alert->entity = $this->entity;
