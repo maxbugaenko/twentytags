@@ -25,9 +25,6 @@
     <div class="menu-panel" id="menu-panel">
         <h3><i class="fa fa-check-circle"></i> Popular</h3>
         <ul class="menu">
-            <? if (Model_User::isLoggedIn()):?>
-                <li><a class="<?=$this->mainTag == "I'm following" ? "current":""?>" href="<?=$this->url(array(), "following", false)?>"><i class="fa fa-tasks"></i> I'm following</a></li>
-            <?endif?>
             <li><a class="<?=$this->mainTag == "What's hot" ? "current":""?>" href="<?=$this->url(array(), "browse", false)?>"><i class="fa fa-fire"></i> What's hot</a></li>
             <li><a class="<?=$this->mainTag == "Startups" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Startups")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-rocket"></i> Startups</a></li>
             <li><a class="<?=$this->mainTag == "Entreprenuers" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Entreprenuers")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-smile-o"></i> Entreprenuers</a></li>
@@ -41,6 +38,8 @@
         </div>
     </div>
     <div class="page-container" id="page-container">
+        <?=$this->partial("header/header.phtml", array("user"=>$this->user, "mainTag"=>$this->mainTag))?>
+        <?=$this->layout()->content?>
     </div>
 <body>
 </html>
