@@ -334,3 +334,144 @@
 
 2014-03-28T02:51:16-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 150 and defined, at /code/twentytags/application/Model/Saved.php (28)
 
+2014-03-28T03:03:49-05:00 ERR (3): [WARNING] file_get_contents(http://www.dailynewsegypt.com/2014/03/26/souq-com-raises-150m/&ct=ga&cd=CAIyAA&usg=AFQjCNFxtIaPz8eG2GUbCi1WPrUiADHZtQ
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:03:49-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:17-05:00 ERR (3): [WARNING] file_get_contents(http://img.youtube.com/vi/1_eNxh4QsxA/0.jpg): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (41)
+
+2014-03-28T03:06:17-05:00 ERR (3): [NOTICE] exif_imagetype(): Read error!, at /code/twentytags/application/Model/Static/Functions.php (44)
+
+2014-03-28T03:06:17-05:00 ERR (3): [NOTICE] Undefined variable: extension, at /code/twentytags/application/Model/Static/Functions.php (50)
+
+2014-03-28T03:06:18-05:00 ERR (3): [WARNING] file_get_contents(http://rt.com/news/obama-kosovo-russia-mistake-705/&ct=ga&cd=CAIyAA&usg=AFQjCNFn9LjIKV3iUyROiQc1vn5_d6kFyQ
+): failed to open stream: HTTP request failed! HTTP/1.1 404
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:18-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:19-05:00 ERR (3): [WARNING] file_get_contents(http://www.voanews.com/content/obama-in-rome-for-talks-with-pope-italian-leaders/1880257.html&ct=ga&cd=CAIyAA&usg=AFQjCNErAFTiHAar26xO-MTPNbc76Zv8Tw
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:19-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:31-05:00 ERR (3): [WARNING] file_get_contents(http://au.tv.yahoo.com/sunrise/video/watch/22217456/barack-obama-meets-pope-francis/&ct=ga&cd=CAIyAA&usg=AFQjCNHrKhgp4q9DkKiHbtf4lm3miVleYw
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:31-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:33-05:00 ERR (3): [WARNING] file_get_contents(http://fox6now.com/2014/03/27/president-obama-pope-francis-meet-for-first-time/&ct=ga&cd=CAIyAA&usg=AFQjCNFUlCv1Xe-GwM9s3BQl-kjz4IQj1Q
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:33-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:35-05:00 ERR (3): [WARNING] file_get_contents(http://time.com/39916/barack-obama-pope-francis-vatican-meeting/&ct=ga&cd=CAIyAA&usg=AFQjCNHYJsTgqbMzXfdqMbQCqB-zdv2TRg
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:35-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:37-05:00 ERR (3): [WARNING] file_get_contents(http://cjonline.com/news/2014-03-27/lawmakers-president-barack-obama-debate-how-address-student-debt&ct=ga&cd=CAIyAA&usg=AFQjCNEsYURTq2hLOtXwGclnrbk-0VQVxQ
+): failed to open stream: HTTP request failed! HTTP/1.0 403 Forbidden
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:37-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:38-05:00 ERR (3): [WARNING] file_get_contents(http://www.upi.com/Top_News/US/2014/03/27/Barack-Obama-and-Pope-Francis-meet-for-the-first-time/1121395918544/&ct=ga&cd=CAIyAA&usg=AFQjCNHgO_rSxv2mtMDSXRbcN3NG92plHg
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:38-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:38-05:00 ERR (3): [WARNING] file_get_contents(http://www.cbc.ca/news/world/barack-obama-pope-francis-meet-in-vatican-1.2588251&ct=ga&cd=CAIyAA&usg=AFQjCNFxGyl37Fz-nM63QlvZQhzi1hFkNw
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:38-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:40-05:00 ERR (3): [WARNING] file_get_contents(http://tvnz.co.nz/world-news/barack-obama-meets-pope-francis-5877812&ct=ga&cd=CAIyAA&usg=AFQjCNGsX87uKexLFpIUhsHLZIaDdTpijw
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:40-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+2014-03-28T03:06:40-05:00 ERR (3): [WARNING] file_get_contents(http://www.cbc.ca/news/world/pope-francis-barack-obama-to-meet-at-the-vatican-1.2588194&ct=ga&cd=CAIyAA&usg=AFQjCNFaSFsFaUDADdEQ2aFRltThNMTSpw
+): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-28T03:06:40-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+
+[28-Mar-2014 04:37:26 EST] PHP Parse error:  syntax error, unexpected ',' in /code/twentytags/application/cli/PostUpdates.php on line 59
+2014-03-28T04:38:23-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:38:23-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:38:23-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (50)
+
+2014-03-28T04:38:23-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/100000002697570/apprequests?message='Some message from TwentyTags'&data='Some data'&&method=post): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (50)
+
+2014-03-28T04:38:48-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:38:48-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:39:06-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:39:06-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:40:54-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:40:54-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:41:15-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:41:15-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:42:04-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:42:04-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:42:06-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:42:06-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:56:37-05:00 ERR (3): [WARNING] file_get_contents(http://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:57:29-05:00 ERR (3): [WARNING] file_get_contents(http://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:58:21-05:00 ERR (3): [WARNING] file_get_contents(): Unable to find the wrapper "https" - did you forget to enable it when you configured PHP?, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:58:21-05:00 ERR (3): [WARNING] file_get_contents(https://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: No such file or directory, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+2014-03-28T04:58:34-05:00 ERR (3): [WARNING] file_get_contents(http://graph.facebook.com/oauth/access_token?client_id=706201236078444&client_secret=fabe992657dcffefd59099502cdf0ce9&grant_type=client_credentials): failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+, at /code/twentytags/application/cli/PostUpdates.php (40)
+
+[28-Mar-2014 05:08:14 EST] PHP Fatal error:  Uncaught OAuthException: (#200) Only web canvas apps can send app notifications
+  thrown in /code/twentytags/application/Model/Facebook/base_facebook.php on line 1340
+2014-03-28T08:29:20-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 165 and defined, at /code/twentytags/application/Model/Saved.php (28)
+
+2014-03-28T08:29:24-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 165 and defined, at /code/twentytags/application/Model/Saved.php (28)
+
+2014-03-28T08:33:22-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 165 and defined, at /code/twentytags/application/Model/Saved.php (28)
+
+2014-03-28T08:33:23-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 165 and defined, at /code/twentytags/application/Model/Saved.php (28)
+
+2014-03-28T08:33:51-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 165 and defined, at /code/twentytags/application/Model/Saved.php (28)
+
+2014-03-28T08:33:52-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 165 and defined, at /code/twentytags/application/Model/Saved.php (28)
+
+2014-03-28T08:33:56-05:00 ERR (3): [OTHER] Argument 1 passed to Model_Saved::retrieveByEntityAndUser() must be an instance of Model_Entity, string given, called in /code/twentytags/application/controllers/IndexController.php on line 165 and defined, at /code/twentytags/application/Model/Saved.php (28)
+
+2014-03-29T04:38:53-05:00 ERR (3): [WARNING] file_get_contents(http://www.digitaljournal.com/pr/1818900&ct=ga&cd=CAIyAA&usg=AFQjCNHQCoCZjorshMz6dFwn0UC2XJ500A
+): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+, at /code/twentytags/application/Model/Static/Functions.php (26)
+
+2014-03-29T04:38:53-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
+

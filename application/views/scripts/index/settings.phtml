@@ -1,12 +1,12 @@
 <div class="message-container">
     <div class="message-title">
-       Notifications
+       Notifications <?=Model_User::me()->notification == 1 ? "On":"Off"?>
     </div>
     <div class="message-description">
         We will post updates you're following to your Facebook feed if you wish. Turn this
         off if you don't want it
     </div>
     <div class="button-block">
-        <button onclick="location.href='<?=$this->url(array(), "browse", false)?>'" class="button-text button-large">Turn on</button>
+        <button onclick="location.href='<?=$this->url(array("controller"=>"index", "action"=>"turn", "mode"=>Model_User::me()->notification == 1 ? "0":"1"), "default", false)?>'" class="button-text button-large">Turn <?=Model_User::me()->notification == 1 ? "off":"on"?></button>
     </div>
 </div>

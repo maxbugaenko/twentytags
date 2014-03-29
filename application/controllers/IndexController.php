@@ -138,6 +138,21 @@ class IndexController extends FaZend_Controller_Action {
         $saved->save();
         echo "OK";
     }
+
+    /**
+     * Turns notifications on/off
+     * @return void
+     */
+    public function turnAction() {
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        $mode = $this->getRequest()->getParam("mode");
+        $user = Model_User::me();
+        $user->notification = $mode;
+        $user->save();
+        $this->redirect("settings");
+    }
+
     /**
      * Logs out facebook user
      * @return void

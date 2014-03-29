@@ -819,7 +819,20 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
         return $ret;
     }
 
-	
+    /**
+     * Retrieves alerts count by entity
+     */
+    public static function retrieveTodayUpdatedEntityByUser (Model_User $user) {
+        return self::retrieve(false)
+            ->join ('saved', 'saved.entity = entity.id', array())
+            ->join ('alert', 'alert.entity = saved.entity', array())
+            ->where('alert.added > ?', new Zend_Db_Expr('CURRENT_DATE()'))
+            ->where("alert.added < ?", new Zend_Db_Expr("CURRENT_DATE() + INTERVAL 1 DAY"))
+            ->where('saved.user = ?', $user)
+            ->setRowClass('Model_Entity')
+            ->fetchAll();
+    }
+
 
 
 }

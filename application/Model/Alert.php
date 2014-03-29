@@ -76,7 +76,7 @@ class Model_Alert extends FaZend_Db_Table_ActiveRow_alert {
     public static function retrieveTodayCountByEntity (Model_Entity $entity) {
         return count(self::retrieve()
             ->where('alert.entity = ?', $entity)
-            ->where('alert.added> ?', new Zend_Db_Expr('CURRENT_DATE()'))
+            ->where('alert.added > ?', new Zend_Db_Expr('CURRENT_DATE()'))
             ->where("alert.added < ?", new Zend_Db_Expr("CURRENT_DATE() + INTERVAL 1 DAY"))
             ->setRowClass('Model_Alert')
             ->fetchAll());
