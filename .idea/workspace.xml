@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Entity.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="824" column="59" selection-start="24484" selection-end="24516" vertical-scroll-proportion="-11.15625" vertical-offset="19868" max-vertical-offset="20725">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PostUpdates.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/cli/PostUpdates.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,10 +82,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.03955696" vertical-offset="0" max-vertical-offset="1375">
+            <state line="1" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="-0.78125" vertical-offset="0" max-vertical-offset="1375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.03875969" vertical-offset="0" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
@@ -130,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/Model/GoogleApi/Google/Http/Batch.php" />
         <option value="$PROJECT_DIR$/application/Model/GoogleApi/Google/Http/CacheParser.php" />
         <option value="$PROJECT_DIR$/application/Model/GoogleApi/Google/Http/MediaFileUpload.php" />
         <option value="$PROJECT_DIR$/application/Model/GoogleApi/Google/Http/Request.php" />
@@ -181,6 +180,7 @@
         <option value="$PROJECT_DIR$/application/config/app.ini" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
+        <option value="$PROJECT_DIR$/public/index.php" />
       </list>
     </option>
   </component>
@@ -231,6 +231,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="twentytags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twentytags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twentytags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,13 +411,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/Model/GoogleApi/Google/Service/Storage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="77850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/Model/GoogleApi/Google/Service/SQLAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="60825">
@@ -758,7 +765,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.03955696" vertical-offset="0" max-vertical-offset="1375">
+        <state line="1" column="0" selection-start="0" selection-end="25" vertical-scroll-proportion="-0.78125" vertical-offset="0" max-vertical-offset="1375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.03875969" vertical-offset="0" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
