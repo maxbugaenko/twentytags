@@ -475,3 +475,15 @@
 
 2014-03-29T04:38:53-05:00 ERR (3): [WARNING] DOMDocument::loadHTML(): Empty string supplied as input, at /code/twentytags/application/Model/Static/Functions.php (28)
 
+2014-03-29T12:29:02-05:00 ERR (3): [WARNING] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Operation timed out (trying to connect via tcp://127.0.0.2:3306), at /code/twentytags/library/Zend/Db/Adapter/Pdo/Abstract.php (129)
+
+[29-Mar-2014 12:29:02 EST] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Operation timed out' in /code/twentytags/library/Zend/Db/Adapter/Pdo/Abstract.php:129
+Stack trace:
+#0 /code/twentytags/library/Zend/Db/Adapter/Pdo/Abstract.php(129): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 /code/twentytags/library/Zend/Db/Adapter/Pdo/Mysql.php(109): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 /code/twentytags/library/Zend/Db/Adapter/Abstract.php(459): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 /code/twentytags/library/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SHOW TABLES', Array)
+#4 /code/twentytags/library/Zend/Db/Adapter/Abstract.php(793): Zend_Db_Adapter_Pdo_Abstract->query('SHOW TABLES', Array)
+#5 /code/twentytags/library/Zend/Db/Adapter/Pdo/Mysql.php(127): Zend_Db_Adapter_Abstract->fetchCol('SHOW TABLES')
+#6 /code/twentytags/library/FaZend/Db/Deployer.php(142): Zend_Db_Adapter_Pdo_Mysql->listTables()
+#7 /code/twentytags/library/FaZend/Application/Resource/Fz/deployer.ph in /code/twentytags/library/Zend/Db/Adapter/Pdo/Abstract.php on line 144
