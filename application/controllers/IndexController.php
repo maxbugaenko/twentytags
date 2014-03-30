@@ -28,13 +28,13 @@ class IndexController extends FaZend_Controller_Action {
      **/
     public function preDispatch(){
         $this->_helper->layout->setLayout('layout');
-        echo "fuck";
-        exit;
         if (Model_User::isLoggedIn()) {
             $this->view->user = Model_User::me();
         } else {
             $this->view->user = null;
         }
+        echo "fuck";
+        exit;
     }
     /**
 	* Lists all available entities
