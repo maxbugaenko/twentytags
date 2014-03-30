@@ -497,7 +497,7 @@ a.black-link {
       .list-container .list .item .item-image {
         min-height: 150px; }
         .list-container .list .item .item-image img {
-          width: 100%; }
+          max-width: 100%; }
       .list-container .list .item .item-content {
         padding: 0em;
         font-size: 1em; }
