@@ -549,14 +549,12 @@ a.black-link {
             z-index: 1000;
             left: -4px;
             top: 5px; }
-      .list-container .list .item .item-tags {
-        margin-bottom: 1em;
-        color: #A4A4A4; }
       .list-container .list .item .item-link {
         font-size: 1.2em; }
       .list-container .list .item .item-tags {
         font-family: "Ubuntu", sans-serif;
         font-weight: 300;
+        margin-bottom: 1em;
         font-size: 1.2em;
         cursor: pointer;
         margin-right: 0.3em;

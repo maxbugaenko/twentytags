@@ -17,7 +17,7 @@
                     <div class="item-tags">
                         <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
                         <? foreach ($tagged as $tag):?>
-                            <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>
+                            <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
                         <? endforeach?>
                     </div>
                     <div class="item-description">

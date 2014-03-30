@@ -123,15 +123,12 @@
                   }
               }
 			}
-			.item-tags {
-				margin-bottom: 1em;
-				color:#A4A4A4;
-			}
             .item-link {
               font-size: 1.2em;
             }
 			.item-tags {
                 @include main-font();
+                margin-bottom: 1em;
 				font-size: 1.2em;
 				cursor: pointer;
 				margin-right: 0.3em;
