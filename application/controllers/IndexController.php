@@ -58,7 +58,6 @@ class IndexController extends FaZend_Controller_Action {
         }
         FaZend_Paginator::addPaginator($iterator, $this->view, $this->_getParamOrFalse('page'));
         $this->view->paginator->setItemCountPerPage(100);
-        echo $this->view->mainTag;exit;
 	}
     /**
      * Empty profile page
