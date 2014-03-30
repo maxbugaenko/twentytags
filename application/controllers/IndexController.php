@@ -39,8 +39,6 @@ class IndexController extends FaZend_Controller_Action {
 	* @return void
 	*/
 	public function indexAction() {
-        echo "fuck";
-        exit;
         $route = Zend_Controller_Front::getInstance()->getRouter()->getCurrentRouteName();
         if ($route == "following") {
             $this->view->mainTag = "I'm following";
@@ -60,6 +58,8 @@ class IndexController extends FaZend_Controller_Action {
         }
         FaZend_Paginator::addPaginator($iterator, $this->view, $this->_getParamOrFalse('page'));
         $this->view->paginator->setItemCountPerPage(100);
+        echo "fuck";
+        exit;
 	}
     /**
      * Empty profile page
