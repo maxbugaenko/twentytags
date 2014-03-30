@@ -33,14 +33,14 @@ class IndexController extends FaZend_Controller_Action {
         } else {
             $this->view->user = null;
         }
-        echo "fuck";
-        exit;
     }
     /**
 	* Lists all available entities
 	* @return void
 	*/
 	public function indexAction() {
+        echo "fuck";
+        exit;
         $route = Zend_Controller_Front::getInstance()->getRouter()->getCurrentRouteName();
         if ($route == "following") {
             $this->view->mainTag = "I'm following";
