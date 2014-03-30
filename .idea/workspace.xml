@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="0 user.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/deploy/database/0 user.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="58" selection-start="0" selection-end="620" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="2 entity.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/deploy/database/2 entity.sql">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,10 +86,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.9208861" vertical-offset="618" max-vertical-offset="4075">
+            <state line="60" column="0" selection-start="2139" selection-end="2139" vertical-scroll-proportion="-18.1875" vertical-offset="568" max-vertical-offset="4025">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.8022152" vertical-offset="568" max-vertical-offset="1300">
               <folding />
             </state>
           </provider>
@@ -171,9 +171,9 @@
         <option value="$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php" />
         <option value="$PROJECT_DIR$/application/auto_prepend.php" />
         <option value="$PROJECT_DIR$/application/config/app.ini" />
-        <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
       </list>
     </option>
   </component>
@@ -979,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="785" selection-end="785" vertical-scroll-proportion="-2.34375" vertical-offset="475" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/deploy/database/0 user.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="58" selection-start="0" selection-end="620" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
@@ -1051,7 +1044,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.9208861" vertical-offset="618" max-vertical-offset="4075">
+        <state line="60" column="0" selection-start="2139" selection-end="2139" vertical-scroll-proportion="-18.1875" vertical-offset="568" max-vertical-offset="4025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.8022152" vertical-offset="568" max-vertical-offset="1300">
           <folding />
         </state>
       </provider>
