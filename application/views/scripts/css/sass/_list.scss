@@ -1,6 +1,20 @@
 .column-width {
   width:20%;
 }
+@include keyframes(showImageSlowly) {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.run-image-animation {
+  @include animation-name(showImageSlowly);
+  @include animation-duration(0.5s);
+  @include animation-timing-function(ease);
+  @include animation-fill-mode(forwards);
+}
 .list-container {
     @include box-sizing(border-box);
     padding-top: 7em;
@@ -49,6 +63,7 @@
             .item-image {
               min-height: 150px;
               img {
+                opacity: 0;
                 width: 100%;
               }
             }
