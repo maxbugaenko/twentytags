@@ -28,7 +28,7 @@ class UpdateAlerts extends FaZend_Cli_Abstract {
         Model_Static_Functions::checkZombie("UpdateAlerts.flag");
         $entities = Model_Entity::retrieveEntitiesToUpdate(20);
         if (count($entities) == 0) {
-            echo "Nothing to update";
+            echo "Nothing to update\n";
             exit;
         }
         foreach ($entities as $entity) {
