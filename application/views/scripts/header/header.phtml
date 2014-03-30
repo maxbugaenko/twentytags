@@ -27,7 +27,7 @@ $facebook = new Facebook($config);
         <?else:?>
             <?
                 $loginUrl = $facebook->getLoginUrl(array(
-                    "redirect_uri" => "http://localhost:901".$this->url(array("action"=>"login"), "login", false)
+                    "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login"), "login", false)
                 ));
             ?>
             Sign in
