@@ -41,37 +41,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entity.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="entity.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="55" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1925">
+            <state line="0" column="55" selection-start="55" selection-end="55" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1925">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alert.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/adm/alert.phtml">
+      <file leaf-file-name="GetAlerts.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/cli/GetAlerts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2375">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="575">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entity.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/adm/entity.phtml">
+      <file leaf-file-name="PostUpdates.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/cli/PostUpdates.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="20" selection-start="218" selection-end="218" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="2125">
+            <state line="42" column="28" selection-start="1657" selection-end="1657" vertical-scroll-proportion="-14.28125" vertical-offset="593" max-vertical-offset="1350">
+              <folding>
+                <element signature="e#6#665#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchYoutube.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/cli/SearchYoutube.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1175">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/settings.phtml">
+      <file leaf-file-name="UpdateAlerts.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlerts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="0" selection-end="46" vertical-scroll-proportion="-0.78125" vertical-offset="0" max-vertical-offset="450">
+            <state line="40" column="42" selection-start="1552" selection-end="1552" vertical-scroll-proportion="-17.03125" vertical-offset="105" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Functions.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/Model/Static/Functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="39" selection-start="2552" selection-end="2552" vertical-scroll-proportion="0.6044304" vertical-offset="1318" max-vertical-offset="2300">
               <folding />
             </state>
           </provider>
@@ -90,24 +110,6 @@
         <entry file="file://$PROJECT_DIR$/application/views/scripts/header/header.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="2" selection-start="246" selection-end="246" vertical-scroll-proportion="-0.78125" vertical-offset="125" max-vertical-offset="1225">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_list.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="1762" selection-end="1762" vertical-scroll-proportion="-10.9375" vertical-offset="1250" max-vertical-offset="4400">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="333" selection-end="457" vertical-scroll-proportion="-10.9375" vertical-offset="250" max-vertical-offset="2525">
               <folding />
             </state>
           </provider>
@@ -136,7 +138,6 @@
         <option value="$PROJECT_DIR$/application/Model/GoogleApi/Google/Service/Exception.php" />
         <option value="$PROJECT_DIR$/application/cli/SearchYoutube.php" />
         <option value="$PROJECT_DIR$/application/Model/Provider/YoutubeAlerts.php" />
-        <option value="$PROJECT_DIR$/application/cli/UpdateAlerts.php" />
         <option value="$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php" />
         <option value="$PROJECT_DIR$/application/Model/Provider/Provider.php" />
         <option value="$PROJECT_DIR$/application/Model/Source.php" />
@@ -169,11 +170,12 @@
         <option value="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
-        <option value="$PROJECT_DIR$/application/Model/Static/Functions.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/settings.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
+        <option value="$PROJECT_DIR$/application/cli/UpdateAlerts.php" />
+        <option value="$PROJECT_DIR$/application/Model/Static/Functions.php" />
       </list>
     </option>
   </component>
@@ -630,13 +632,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/Model/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="53" selection-start="5677" selection-end="5703" vertical-scroll-proportion="-10.15625" vertical-offset="4550" max-vertical-offset="6175">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/login.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
@@ -735,15 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/cli/PostUpdates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="28" selection-start="1657" selection-end="1657" vertical-scroll-proportion="-14.28125" vertical-offset="593" max-vertical-offset="1350">
-          <folding>
-            <element signature="e#6#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/FaZend/Application/prolog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="23" selection-start="4518" selection-end="4518" vertical-scroll-proportion="-14.28125" vertical-offset="3068" max-vertical-offset="4100">
@@ -809,13 +795,6 @@
             <element signature="e#6#654#0" expanded="true" />
             <marker date="1396100318000" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/cli/GetAlerts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,23 +877,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlerts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="7" selection-start="984" selection-end="984" vertical-scroll-proportion="-11.71875" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="824" column="59" selection-start="24484" selection-end="24516" vertical-scroll-proportion="-616.40625" vertical-offset="500" max-vertical-offset="20725">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/Model/Static/Functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="58" selection-start="1803" selection-end="1803" vertical-scroll-proportion="-13.5" vertical-offset="818" max-vertical-offset="1850">
           <folding />
         </state>
       </provider>
@@ -992,6 +957,43 @@
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="55" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cli/GetAlerts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cli/SearchYoutube.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cli/PostUpdates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="28" selection-start="1657" selection-end="1657" vertical-scroll-proportion="-14.28125" vertical-offset="593" max-vertical-offset="1350">
+          <folding>
+            <element signature="e#6#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlerts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="42" selection-start="1552" selection-end="1552" vertical-scroll-proportion="-17.03125" vertical-offset="105" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Model/Static/Functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="39" selection-start="2552" selection-end="2552" vertical-scroll-proportion="0.6044304" vertical-offset="1318" max-vertical-offset="2300">
           <folding />
         </state>
       </provider>

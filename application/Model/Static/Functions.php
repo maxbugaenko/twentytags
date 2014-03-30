@@ -64,6 +64,24 @@ class Model_Static_Functions {
         $string = preg_replace("/[\s_]/", "-", $string);
         return $string;
     }
+    public static function checkZombie($txt, $doCreate = true) {
+        if (fopen('/flags/'.$txt, 'r')) {
+            echo $txt." already started\n";
+            echo "Kill ".$txt." in /flags\n";
+            echo "Finished with errors";
+            exit;
+        } else {
+            if ($doCreate) {
+                $f = fopen('/flags/'.$txt, 'a+');
+                fclose($f);
+                return false;
+            }
+        }
 
+    }
+
+    public static function killZombie ($txt) {
+        unlink('/flags/'.$txt);
+    }
 }
 ?>

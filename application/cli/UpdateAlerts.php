@@ -25,6 +25,7 @@ class UpdateAlerts extends FaZend_Cli_Abstract {
      * @return int exit code
      */
     public function execute() {
+        Model_Static_Functions::checkZombie("UpdateAlerts.flag");
         try {
             $entity = Model_Entity::retrieveEntityToUpdate();
             // updating alerts from Google Alerts
@@ -37,6 +38,6 @@ class UpdateAlerts extends FaZend_Cli_Abstract {
         } catch (Model_Entity_NoSuchEntityException $e) {
             echo "Nothing to update\n";
         }
-
+        Model_Static_Functions::killZombie("UpdateAlerts.flag");
     }
 }
