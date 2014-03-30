@@ -73,7 +73,7 @@
       <file leaf-file-name="UpdateAlerts.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlerts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="1" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.8449612" vertical-offset="105" max-vertical-offset="800">
+            <state line="31" column="17" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.49612403" vertical-offset="105" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -997,7 +997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlerts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="1" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.8449612" vertical-offset="105" max-vertical-offset="800">
+        <state line="31" column="17" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.49612403" vertical-offset="105" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

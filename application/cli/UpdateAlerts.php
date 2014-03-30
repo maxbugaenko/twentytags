@@ -27,6 +27,10 @@ class UpdateAlerts extends FaZend_Cli_Abstract {
     public function execute() {
         Model_Static_Functions::checkZombie("UpdateAlerts.flag");
         $entities = Model_Entity::retrieveEntitiesToUpdate(20);
+        if (count($entities) == 0) {
+            echo "Nothing to update";
+            exit;
+        }
         foreach ($entities as $entity) {
             // updating alerts from Google Alerts
             new Model_Provider_GoogleAlerts("google", $entity);
