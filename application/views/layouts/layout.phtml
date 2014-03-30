@@ -22,11 +22,11 @@
 	</style>
 </head> 
 <body>
-<? echo $this->user; echo $this->mainTag; exit;?>
     <div class="menu-panel" id="menu-panel">
         <h3><i class="fa fa-check-circle"></i> Popular</h3>
         <ul class="menu">
             <? if (Model_User::isLoggedIn()):?>
+                <? echo $this->user; echo $this->mainTag; exit;?>
                 <li><a class="<?=$this->mainTag == "I'm following" ? "current":""?>" href="<?=$this->url(array(), "following", false)?>"><i class="fa fa-tasks"></i> I'm following</a></li>
             <?endif?>
             <li><a class="<?=$this->mainTag == "What's hot" ? "current":""?>" href="<?=$this->url(array(), "browse", false)?>"><i class="fa fa-fire"></i> What's hot</a></li>
