@@ -13,6 +13,7 @@
   @include animation-name(showImageSlowly);
   @include animation-duration(0.5s);
   @include animation-timing-function(ease);
+  @include animation-delay(0.2s);
   @include animation-fill-mode(forwards);
 }
 .list-container {
@@ -63,7 +64,6 @@
             .item-image {
               min-height: 150px;
               img {
-                opacity: 0;
                 width: 100%;
               }
             }

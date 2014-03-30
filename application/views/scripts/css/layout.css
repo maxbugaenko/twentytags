@@ -431,6 +431,9 @@ a.black-link {
   -webkit-animation-timing-function: ease;
   -moz-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
@@ -494,7 +497,6 @@ a.black-link {
       .list-container .list .item .item-image {
         min-height: 150px; }
         .list-container .list .item .item-image img {
-          opacity: 0;
           width: 100%; }
       .list-container .list .item .item-content {
         padding: 0em;
