@@ -22,7 +22,7 @@ $facebook = new Facebook($config);
             <?$followingUrl = $this->url(array(), "following", true);?>
             <?$settingsUrl = $this->url(array(), "settings", true);?>
             <i onclick="location.href='<?=$followingUrl?>'" class="button-icon fa fa-tasks"></i>
-            <i onclick="location.href='<?=$settingsUrl?>'" class="button-icon fa fa-cogs"></i>
+            <i onclick="location.href='<?=$settingsUrl?>'" class="button-icon fa fa-pencil-square-o"></i>
             <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="button-icon fa fa-share-square"></i>
         <?else:?>
             <?
