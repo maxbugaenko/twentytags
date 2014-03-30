@@ -48,7 +48,7 @@ class Model_Static_Functions {
             case 3: $extension = ".png"; break;
         }
         $finalFilename = $filename.$extension;
-        exec("mv ".$path.$filename." ".$path.$finalFilename);
+        rename($path . $filename, $path . $finalFilename);
         return $finalFilename;
     }
     public static function dashString($string) {
