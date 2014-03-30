@@ -213,6 +213,34 @@ a.black-link {
 
   to {
     opacity: 1; } }
+@-webkit-keyframes slideFromBottom {
+  from {
+    -webkit-transform: translateY(140%);
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@-moz-keyframes slideFromBottom {
+  from {
+    -moz-transform: translateY(140%);
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@-o-keyframes slideFromBottom {
+  from {
+    -o-transform: translateY(140%);
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(140%);
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
 .menu-container, .menu-container-slide-right {
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -274,10 +302,22 @@ a.black-link {
     font-size: 2.2em;
     white-space: nowrap;
     text-align: center;
-    padding-left: 2em; }
+    padding-left: 2em;
+    position: relative; }
     .menu-container .logo-section i, .menu-container-slide-right .logo-section i {
       color: #f1103a; }
     .menu-container .logo-section a, .menu-container-slide-right .logo-section a, .menu-container .logo-section a:visited, .menu-container-slide-right .logo-section a:visited {
+      left: 0px;
+      position: absolute;
+      -webkit-animation-name: slideFromBottom;
+      -moz-animation-name: slideFromBottom;
+      animation-name: slideFromBottom;
+      -webkit-animation-duration: 0.5s;
+      -moz-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      -webkit-animation-timing-function: ease;
+      -moz-animation-timing-function: ease;
+      animation-timing-function: ease;
       color: black;
       text-decoration: none; }
   .menu-container .profile-section, .menu-container-slide-right .profile-section {
