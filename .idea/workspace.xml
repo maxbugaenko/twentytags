@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2139" selection-end="2139" vertical-scroll-proportion="-15.84375" vertical-offset="643" max-vertical-offset="4025">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="layout.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,19 +70,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateAlerts.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UpdateAlerts.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlerts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="42" selection-start="1552" selection-end="1552" vertical-scroll-proportion="-17.03125" vertical-offset="105" max-vertical-offset="850">
+            <state line="40" column="1" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.8449612" vertical-offset="105" max-vertical-offset="800">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Functions.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Entity.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="584" column="26" selection-start="16900" selection-end="16900" vertical-scroll-proportion="-9.46875" vertical-offset="14297" max-vertical-offset="20975">
+              <folding>
+                <element signature="e#50#698#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/Model/Static/Functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="39" selection-start="2552" selection-end="2552" vertical-scroll-proportion="0.6044304" vertical-offset="1318" max-vertical-offset="2300">
+            <state line="68" column="39" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-11.9375" vertical-offset="1318" max-vertical-offset="2300">
               <folding />
             </state>
           </provider>
@@ -158,7 +160,6 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
         <option value="$PROJECT_DIR$/application/deploy/database/0 user.sql" />
         <option value="$PROJECT_DIR$/application/Model/Alert.php" />
-        <option value="$PROJECT_DIR$/application/Model/Entity.php" />
         <option value="$PROJECT_DIR$/application/cli/PostUpdates.php" />
         <option value="$PROJECT_DIR$/application/bootstrap.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -174,8 +175,9 @@
         <option value="$PROJECT_DIR$/application/views/scripts/index/settings.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
-        <option value="$PROJECT_DIR$/application/cli/UpdateAlerts.php" />
         <option value="$PROJECT_DIR$/application/Model/Static/Functions.php" />
+        <option value="$PROJECT_DIR$/application/Model/Entity.php" />
+        <option value="$PROJECT_DIR$/application/cli/UpdateAlerts.php" />
       </list>
     </option>
   </component>
@@ -877,13 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="824" column="59" selection-start="24484" selection-end="24516" vertical-scroll-proportion="-616.40625" vertical-offset="500" max-vertical-offset="20725">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/layout.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="-15.0625" vertical-offset="143" max-vertical-offset="775">
@@ -984,16 +979,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlerts.php">
+    <entry file="file://$PROJECT_DIR$/application/Model/Static/Functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="42" selection-start="1552" selection-end="1552" vertical-scroll-proportion="-17.03125" vertical-offset="105" max-vertical-offset="850">
+        <state line="68" column="39" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-11.9375" vertical-offset="1318" max-vertical-offset="2300">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/Model/Static/Functions.php">
+    <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="39" selection-start="2552" selection-end="2552" vertical-scroll-proportion="0.6044304" vertical-offset="1318" max-vertical-offset="2300">
+        <state line="584" column="26" selection-start="16900" selection-end="16900" vertical-scroll-proportion="-9.46875" vertical-offset="14297" max-vertical-offset="20975">
+          <folding>
+            <element signature="e#50#698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlerts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="1" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.8449612" vertical-offset="105" max-vertical-offset="800">
           <folding />
         </state>
       </provider>

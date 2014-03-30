@@ -579,20 +579,15 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
      * @return void
      * @author fatboy
      **/
-    public static function retrieveEntityToUpdate(){
-        try {
-            return self::retrieve()
-                ->where('entity.status = ?', Model_Entity::ENTITY_APPROVED)
-                ->where('entity.updated < ?', new Zend_Db_Expr('NOW() - INTERVAL 1 HOUR'))
-                ->orWhere('entity.updated is NULL')
-                ->order('entity.id desc')
-                ->limit(1)
-                ->setRowClass('Model_Entity')
-                ->fetchRow();
-        } catch (Model_Entity_NotFoundException $e) {
-            FaZend_Exception::raise('Model_Entity_NoSuchEntityException',
-            "No entity to update", 'Exception');
-	    }
+    public static function retrieveEntitiesToUpdate($limit){
+        return self::retrieve()
+            ->where('entity.status = ?', Model_Entity::ENTITY_APPROVED)
+            ->where('entity.updated < ?', new Zend_Db_Expr('NOW() - INTERVAL 1 HOUR'))
+            ->orWhere('entity.updated is NULL')
+            ->order('entity.id desc')
+            ->limit($limit)
+            ->setRowClass('Model_Entity')
+            ->fetchAll();
     }
 
 

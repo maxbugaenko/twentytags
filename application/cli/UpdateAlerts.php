@@ -26,8 +26,8 @@ class UpdateAlerts extends FaZend_Cli_Abstract {
      */
     public function execute() {
         Model_Static_Functions::checkZombie("UpdateAlerts.flag");
-        try {
-            $entity = Model_Entity::retrieveEntityToUpdate();
+        $entities = Model_Entity::retrieveEntitiesToUpdate(20);
+        foreach ($entities as $entity) {
             // updating alerts from Google Alerts
             new Model_Provider_GoogleAlerts("google", $entity);
             // updating alerts from YouTube
@@ -35,8 +35,6 @@ class UpdateAlerts extends FaZend_Cli_Abstract {
             echo "Saving update time ... \n";
             $entity->updated = new Zend_Db_Expr("NOW()");
             $entity->save();
-        } catch (Model_Entity_NoSuchEntityException $e) {
-            echo "Nothing to update\n";
         }
         Model_Static_Functions::killZombie("UpdateAlerts.flag");
     }
