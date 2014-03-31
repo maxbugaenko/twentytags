@@ -407,6 +407,30 @@ a.black-link {
     -o-transform: rotate(-3deg);
     transform: rotate(-3deg); }
 
+@-webkit-keyframes showContainerSlow {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@-moz-keyframes showContainerSlow {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@-o-keyframes showContainerSlow {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@keyframes showContainerSlow {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
 @-webkit-keyframes showImageSlowly {
   from {
     opacity: 0; }
@@ -455,8 +479,21 @@ a.black-link {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-animation-name: showContainerSlow;
+  -moz-animation-name: showContainerSlow;
+  animation-name: showContainerSlow;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   padding-top: 7em;
   width: 95%;
+  opacity: 0;
   margin: 0 auto; }
   .list-container .list {
     -webkit-box-sizing: border-box;

@@ -1,3 +1,13 @@
+@include keyframes(showContainerSlow) {
+  from {
+    //@include transform(translateY(-40%));
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @include keyframes(showImageSlowly) {
   from {
     opacity:0;
@@ -18,8 +28,13 @@
 }
 .list-container {
     @include box-sizing(border-box);
+    @include animation-name(showContainerSlow);
+    @include animation-duration(1s);
+    @include animation-timing-function(ease);
+    @include animation-fill-mode(forwards);
     padding-top: 7em;
 	width: 95%;
+    opacity: 0;
 	margin: 0 auto;
 	.list {
         @include box-sizing(border-box);
