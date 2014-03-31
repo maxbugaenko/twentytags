@@ -427,6 +427,9 @@ a.black-link {
 
   to {
     opacity: 1; } }
+.login-urls {
+  display: none; }
+
 .run-image-animation {
   -webkit-animation-name: showImageSlowly;
   -moz-animation-name: showImageSlowly;
@@ -859,13 +862,12 @@ a.black-link {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 95%;
   margin: 0 auto;
   padding-top: 15%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 60%;
   color: lightgray; }
   .message-container .message-title {
     font-family: "Ubuntu Condensed", sans-serif;

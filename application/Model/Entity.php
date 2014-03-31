@@ -34,13 +34,14 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 	 * @param string name
 	 * @return Model_Entity
 	*/
-	public static function create ($title, $description, $picture) {
+	public static function create ($title, $description, $link, $picture) {
 	    validate()
 	        ->notEmpty($title, array(), "Enter title")
             ->notEmpty($description, array(), "Enter description")
             ->notEmpty($picture, array(), "Enter picture URL");
 		$entity = new Model_Entity();
 		$entity->title = $title;
+        $entity->link = $link;
 		$entity->description = $description;
         $filename = Model_Static_Functions::saveImageFromUrl(ENTITY_IMAGES_PATH, $picture);
 		$entity->picture = $filename;

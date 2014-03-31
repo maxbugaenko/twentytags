@@ -109,6 +109,14 @@ class IndexController extends FaZend_Controller_Action {
                     $user->save();
                 }
                 $user->logIn();
+                $follow = new Model_Entity((int)$this->getRequest()->getParam("follow"));
+                if ($follow->exists()) {
+                    $saved = new Model_Saved();
+                    $saved->user = $user;
+                    $saved->entity = $follow;
+                    $saved->save();
+                    $this->redirect("following");
+                }
             } catch(FacebookApiException $e) {
                 ;
             }

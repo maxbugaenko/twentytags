@@ -9,6 +9,10 @@
     opacity: 1;
   }
 }
+.login-urls {
+  display: none;
+}
+
 .run-image-animation {
   @include animation-name(showImageSlowly);
   @include animation-duration(0.5s);

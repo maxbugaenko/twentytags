@@ -27,6 +27,8 @@
             </td>
             <td>
                 <?=$this->partial('edit.phtml', array('element'=>'desc'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->description, 'column'=>'description', 'table'=>'Entity'))?>
+                <br/>
+                <?=$this->partial('edit.phtml', array('element'=>'link'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->link, 'column'=>'link', 'table'=>'Entity'))?>
             </td>
             <td>
                 <b>Tagged as</b><br/>
@@ -55,6 +57,10 @@
         ->fieldLabel("Entity description", true)
         ->fieldAttrib('size', '240')
         ->fieldAttrib('rows', 7)
+    ->addField('textarea', 'link')
+        ->fieldLabel("Entity link", true)
+        ->fieldAttrib('size', '240')
+        ->fieldAttrib('rows', 3)
     ->addField('textarea', 'picture')
         ->fieldLabel("Entity picture URL", true)
         ->fieldAttrib('size', '240')

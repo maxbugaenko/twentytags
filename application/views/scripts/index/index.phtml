@@ -1,8 +1,19 @@
 <?$title = $this->mainTag == "What's hot" ? "What's hot":$this->mainTag;?>
 <?$this->headTitle("TwentyTags - ".$title)?>
+<?
+    require_once('Model/Facebook/facebook.php');
+    $config = array(
+        'appId' => '706201236078444',
+        'secret' => 'fabe992657dcffefd59099502cdf0ce9',
+        'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
+    );
+    $facebook = new Facebook($config);
+?>
+
 <div class="list-container">
     <div class="list"'>
         <div class="column-width"></div>
+        <? if (!$this->user) $isLogged = "user-not-logged";?>
         <? foreach ($this->paginator as $item):?>
             <div class="item">
                 <div class="item-image">
@@ -45,7 +56,17 @@
                 </div>
                 <? $isSaved = Model_Entity::isSaved($item);?>
                 <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
-                    <button id="follow-<?=$item?>" class="to-follow-button button-small <?=$isSaved ? "button-gray followed":""?>">
+                    <button id="follow-<?=$item?>" class="to-follow-button button-small <?=$isLogged?> <?=$isSaved ? "button-gray followed":""?>">
+                        <? if (!$this->user):?>
+                            <div class="login-urls" id="login-url-<?=$item?>">
+                                <?
+                                    $loginUrl = $facebook->getLoginUrl(array(
+                                        "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$item), "login", false)
+                                    ));
+                                    echo $loginUrl;
+                                ?>
+                            </div>
+                        <?endif?>
                         <i class="fa fa-check-circle"></i> <?=$isSaved ? "Unfollow":"Follow"?>
                     </button>
                 </div>
