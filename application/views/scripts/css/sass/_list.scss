@@ -1,6 +1,3 @@
-.column-width {
-  width:20%;
-}
 @include keyframes(showImageSlowly) {
   from {
     opacity:0;
@@ -12,7 +9,6 @@
 .login-urls {
   display: none;
 }
-
 .run-image-animation {
   @include animation-name(showImageSlowly);
   @include animation-duration(0.5s);
@@ -28,7 +24,7 @@
 	.list {
         @include box-sizing(border-box);
 		width: 100%;
-		//overflow: hidden;
+  		overflow: hidden;
         vertical-align: top;
         @media screen and (max-width:2000px) {
           @include column-count(5);
@@ -45,20 +41,20 @@
         @media screen and (max-width:600px) {
           @include column-count(1);
         }
-        @include column-gap(0.1em);
+        @include column-gap(0.8em);
         @include column-fill(auto);
         @include transition(all 0.8s ease-out);
 		.item {
-            //width:20%;
             @include box-sizing(border-box);
 			@include transition(all 0.6s ease-out);
             @include column-break-inside(avoid);
-            //float:left;
             border:5px solid #E6E6E6;
 			padding: 1.4em;
             position: relative;
 			border-radius: 8px;
+            max-width:100%;
 			background-color: white;
+            display:inline-block;
             &:hover .item-follow-button {
               -moz-animation: followButtonSlideUp forwards 0.2s ease-in-out;
               -o-animation: followButtonSlideUp forwards 0.2s ease-in-out;

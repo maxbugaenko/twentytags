@@ -10,7 +10,7 @@
                 <div class="item-tags">
                     <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
                     <? foreach ($tagged as $tag):?>
-                        <a class="gray-link" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>
+                        <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
                     <? endforeach?>
                 </div>
                 <div class="item-info">
@@ -30,7 +30,6 @@
         <?if (count($this->dates) > 0):?>
             <?foreach ($this->dates as $date):?>
                 <?$alerts = Model_Alert::retrieveByEntityAndDate($this->entity, $date->dates);?>
-                <div class="list-date"><?=date("F jS, Y",strtotime($date->dates))?></div>
                 <div class="list">
                     <? foreach ($alerts as $item):?>
                         <div class="data">
@@ -50,7 +49,6 @@
                             </div>
                             <div class="data-source">
                                 <? if ($item->source != "youtube"):?><?=$item->source?><br/><?endif?>
-                                <?=date("F jS, Y",strtotime($item->added));?>
                             </div>
                             <div class="data-controls">
                                 <i class="button-icon fa fa-sort-asc"></i>

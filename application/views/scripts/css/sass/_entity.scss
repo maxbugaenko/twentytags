@@ -57,6 +57,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         color:black;
+        padding-bottom:0.1em;
       }
       .item-info {
         margin-top: 0.6em;
@@ -116,6 +117,7 @@
       color:black;
       border-radius: 5px;
       text-align: center;
+      margin-top: 0em;
       margin-bottom: 1em;
       position:relative;
       &:after {
@@ -133,11 +135,14 @@
     }
     .list {
       width: 100%;
+      border:1px solid red;
       overflow: hidden;
       position: relative;
       @include column-count(3);
       @include column-gap(1em);
       @include column-fill(auto);
+      height:auto;
+      margin-bottom: 1em;
       .data {
         @include box-sizing(border-box);
         border-radius:8px;

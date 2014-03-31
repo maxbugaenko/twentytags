@@ -1,6 +1,6 @@
 @include keyframes(showSlow) {
   from {
-    @include transform(translateY(-40%));
+    //@include transform(translateY(-40%));
     opacity:0;
   }
   to {
@@ -9,7 +9,7 @@
 }
 @include keyframes(slideFromBottom) {
   from {
-    @include transform(translateY(140%));
+    //@include transform(translateY(140%));
     opacity:0;
   }
   to {
@@ -71,9 +71,9 @@
       a, a:visited {
         left:0px;
         position: absolute;
-        @include animation-name(slideFromBottom);
-        @include animation-duration(0.5s);
-        @include animation-timing-function(ease);
+        //@include animation-name(slideFromBottom);
+        //@include animation-duration(2s);
+        //@include animation-timing-function(ease);
         color:black;
         text-decoration: none;
       }
