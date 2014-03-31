@@ -57,7 +57,7 @@ button.button-small {
 .button-icon {
     padding:10px;
     border-radius: 50%;
-	color: $red;
+	color: $dark-gray;
 	cursor: pointer;
 	font-size: 25px;
 	@include transition(all 0.3s linear);

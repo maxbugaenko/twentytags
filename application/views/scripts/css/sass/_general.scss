@@ -2,17 +2,54 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
+@font-face {
+  font-family:"HNC";
+  font-weight:100;
+  src:url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedUltraLight-b1643142.woff) format("woff"),
+  url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedUltraLight-911598d6.ttf) format("truetype")
+}
+@font-face{font-family:"HNC";
+  font-weight:200;
+  src:url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedThin-e8fd1378.woff) format("woff"),
+  url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedThin-f9094e63.ttf) format("truetype")
+}
+@font-face{
+  font-family:"HNC";font-weight:300;
+  src:url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedLight-bcd62347.woff) format("woff"),
+  url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedLight-3a6fcb2e.ttf) format("truetype")
+}
+@font-face{
+  font-family:"HNC";
+  font-weight:400;
+  src:url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensed-a8bae095.woff) format("woff"),
+  url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensed-59790d27.ttf) format("truetype")
+}
+@font-face{
+  font-family:"HNC";
+  font-weight:600;
+  src:url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedMedium-63796dcb.woff) format("woff"),
+  url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedMedium-930f0aa0.ttf) format("truetype")
+}
+@font-face{
+  font-family:"HNC";
+  font-weight:700;
+  src:url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedBold-572a7194.woff) format("woff"),
+  url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedBold-b45199ea.ttf)
+}
+
 $main-font: 'Ubuntu', sans-serif;
-$title-font: 'Ubuntu Condensed', sans-serif;
-$button-font: 'Ubuntu Condensed', sans-serif;
-$header-font: 'Ubuntu Condensed', sans-serif;
+$title-font: 'HNC', sans-serif;
+$button-font: 'HNC', sans-serif;
+$header-font: 'HNC', sans-serif;
 $red: #f1103a;
 $dark-red: #dd1338;
 $light-red: #FF2E54;
 $gray: #BDBDBD;
+$dark-gray: #424242;
+
 
 body {
-	background-color: #E6E6E6;
+	background-color: #e6e6e6;
 	@include main-font();
 	padding: 0em;
 	margin: 0em;

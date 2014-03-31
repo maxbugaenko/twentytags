@@ -5,12 +5,12 @@
 
 @mixin title-font() {
 	font-family: $title-font;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 @mixin header-font() {
   font-family: $header-font;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @mixin button-font() {
