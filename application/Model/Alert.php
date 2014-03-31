@@ -82,6 +82,29 @@ class Model_Alert extends FaZend_Db_Table_ActiveRow_alert {
             ->fetchAll());
     }
     /**
+     * Retrieves distinct dates of all alerts
+     * of a specific entity
+     */
+    public static function retrieveDistinctDatesByEntity(Model_Entity $entity) {
+        return self::retrieve(false)
+            ->from ("alert", array("dates" => new Zend_Db_Expr("distinct(date_format(added, '%Y-%m-%d'))")))
+            ->where('alert.entity = ?', $entity)
+            ->setRowClass('Model_Alert')
+            ->fetchAll();
+    }
+    /**
+     * Retrieves distinct dates of all alerts
+     * of a specific entity
+     */
+    public static function retrieveByEntityAndDate(Model_Entity $entity, $date) {
+        return self::retrieve()
+            ->where('alert.added > ?', new Zend_Db_Expr('DATE("'.$date.'")'))
+            ->where("alert.added < ?", new Zend_Db_Expr('DATE("'.$date.'") + INTERVAL 1 DAY'))
+            ->where('alert.entity = ?', $entity)
+            ->setRowClass('Model_Alert')
+            ->fetchAll();
+    }
+    /**
      * Finds alert by hash
      */
     public static function findByHash ($hash) {

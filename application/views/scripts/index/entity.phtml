@@ -13,6 +13,10 @@
                         <a class="gray-link" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>
                     <? endforeach?>
                 </div>
+                <div class="item-info">
+                    <i class="button-icon fa fa-facebook-square"></i>
+                    <i class="button-icon fa fa-google-plus-square"></i>
+                </div>
                 <div class="item-description">
                     <?=$this->entity->description?>
                 </div>
@@ -22,36 +26,39 @@
             </div>
         </div>
     </div>
-    <div class="alerts <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
-        <?if (count($this->alerts) > 0):?>
-            <div class="list">
-                    <div class="alert-width"></div>
-                <? foreach ($this->alerts as $item):?>
-                    <div class="data">
-                        <div class="data-title">
-                            <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
+    <div class="alerts <?if (count($this->dates) == 0) { echo "add-no-alerts-margin"; }?>">
+        <?if (count($this->dates) > 0):?>
+            <?foreach ($this->dates as $date):?>
+                <?=$date?>
+                <?$alerts = Model_Alert::retrieveByEntityAndDate($this->entity, $date);?>
+                <div class="list">
+                    <? foreach ($alerts as $item):?>
+                        <div class="data">
+                            <div class="data-title">
+                                <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
+                            </div>
+                            <div class="data-description <?=$item->body == "" ? "no-margin-bottom":"margin-bottom"?>">
+                                <? if ($item->picture):?>
+                                    <div class="<?=$item->source == "youtube" ? "data-img-video" : ""?>" >
+                                        <? if ($item->source == "youtube"):?>
+                                            <div class="play-icon"><i class="fa fa-play"></i></div>
+                                        <? endif;?>
+                                        <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>">
+                                    </div>
+                                <?endif?>
+                                <?=$item->body;?>
+                            </div>
+                            <div class="data-source">
+                                <? if ($item->source != "youtube"):?><?=$item->source?><br/><?endif?>
+                                <?=date("F jS, Y",strtotime($item->added));?>
+                            </div>
+                            <div class="data-controls">
+                                <i class="button-icon fa fa-sort-asc"></i>
+                            </div>
                         </div>
-                        <div class="data-description <?=$item->body == "" ? "no-margin-bottom":"margin-bottom"?>">
-                            <? if ($item->picture):?>
-                                <div class="<?=$item->source == "youtube" ? "data-img-video" : ""?>" >
-                                    <? if ($item->source == "youtube"):?>
-                                        <div class="play-icon"><i class="fa fa-play"></i></div>
-                                    <? endif;?>
-                                    <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>">
-                                </div>
-                            <?endif?>
-                            <?=$item->body;?>
-                        </div>
-                        <div class="data-source">
-                            <? if ($item->source != "youtube"):?><?=$item->source?><br/><?endif?>
-                            <?=date("F jS, Y",strtotime($item->added));?>
-                        </div>
-                        <div class="data-controls">
-                            <i class="button-icon fa fa-thumbs-down"></i>
-                        </div>
-                    </div>
-                <?endforeach?>
-            </div>
+                    <?endforeach?>
+                </div>
+            <?endforeach?>
         <?else:?>
             <div class="message">
                 <div class="message-title"><i class="fa fa-clock-o"></i><br/>There is no updates yet</div>
@@ -63,10 +70,10 @@
     </div>
 </div>
 <script>
-    window.onload = function(){
+    /*window.onload = function(){
         var $container = $('.list').masonry({
             itemSelector: '.data',
             columnWidth: '.alert-width'
         });
-    }
+    }*/
 </script>

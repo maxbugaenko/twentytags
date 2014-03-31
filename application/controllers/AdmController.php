@@ -66,5 +66,20 @@ class AdmController extends Fazend_Controller_Action {
         Model_Tagged::create($entity, $tag);
         echo "OK";
     }
-
+    /**
+     * Update table action. Made for editables back-end
+     * @return void
+     * @author fatboy
+     **/
+    public function updateAction(){
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        $class = "Model_".$this->getRequest()->getParam('table');
+        $id = new $class((int)$this->getRequest()->getParam('id'));
+        $column = $this->getRequest()->getParam('column');
+        $data = $this->getRequest()->getPost();
+        $id->{$column} = $data['value'];
+        $id->save();
+        echo $data['value'];
+    }
 }
