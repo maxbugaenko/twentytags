@@ -124,6 +124,12 @@ class IndexController extends FaZend_Controller_Action {
         $this->view->alerts = Model_Alert::retrieveByEntity($entity);
     }
     /**
+     * Add tag page
+     * @return void
+     */
+    public function addtagAction() {
+    }
+    /**
      * Logs out facebook user
      * @return void
      */

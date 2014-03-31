@@ -1,0 +1,14 @@
+<?$this->headTitle("TwentyTags - Add tag")?>
+<div class="message-container">
+    <div class="message-title">
+        Add your own tag
+    </div>
+    <div class="message-description">
+        Add any tag you would like to get updates about. We will review it and
+        add it very soon
+    </div>
+    <div class="button-block">
+        <input type="text" class="input-text input-large" placeholder="Enter tag ... ">
+        <button onclick="location.href='<?=$this->url(array("controller"=>"index", "action"=>"turn", "mode"=>Model_User::me()->notification == 1 ? "0":"1"), "default", false)?>'" class="button-text button-large button-crop">Add</button>
+    </div>
+</div>

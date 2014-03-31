@@ -56,7 +56,7 @@ a, a:visited {
 .slide-page-container-right {
   left: 240px; }
 
-button.button-text, button.button-large, button.button-gray, button.button-small {
+button.button-text, button.button-large, button.button-crop, button.button-gray, button.button-small {
   transition: all 0.2s ease-out;
   cursor: pointer;
   margin: 0 auto;
@@ -72,18 +72,21 @@ button.button-text, button.button-large, button.button-gray, button.button-small
   font-size: 1.2em;
   border-radius: 3px;
   outline: 0; }
-  button.button-text:hover, button.button-large:hover, button.button-gray:hover, button.button-small:hover {
+  button.button-text:hover, button.button-large:hover, button.button-crop:hover, button.button-gray:hover, button.button-small:hover {
     transition: all 0.1s ease-out;
     background-color: #dd1338;
     color: white; }
-  button.button-text:active, button.button-large:active, button.button-gray:active, button.button-small:active {
+  button.button-text:active, button.button-large:active, button.button-crop:active, button.button-gray:active, button.button-small:active {
     transition: all 0.1s ease-out;
     background-color: #ff2e54; }
-  button.button-text i, button.button-large i, button.button-gray i, button.button-small i {
+  button.button-text i, button.button-large i, button.button-crop i, button.button-gray i, button.button-small i {
     padding-right: 0.2em; }
 
 button.button-large {
   font-size: 2em; }
+
+button.button-crop {
+  width: auto; }
 
 button.button-gray {
   background-color: #D8D8D8;
@@ -124,7 +127,7 @@ button.button-small {
   font-size: 20px;
   border-radius: 0px; }
 
-input.input-text, input.search-input {
+input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -136,16 +139,19 @@ input.input-text, input.search-input {
   border-radius: 5px;
   color: gray;
   outline: 0; }
-  input.input-text:hover, input.search-input:hover {
+  input.input-text:hover, input.input-large:hover, input.search-input:hover {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
     box-shadow: 0px 0px 2px lightgray; }
-  input.input-text:focus, input.search-input:focus {
+  input.input-text:focus, input.input-large:focus, input.search-input:focus {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
     box-shadow: inset 0px 0px 5px lightgray; }
+
+input.input-large {
+  font-size: 2em; }
 
 .search-input {
   float: right;
@@ -870,23 +876,44 @@ a.black-link {
     font-size: 2em;
     color: #bdbdbd; }
   .message-container .button-block {
+    padding-top: 1em;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 2em;
-    width: 25%; }
+    text-align: center;
+    width: 70%; }
 
 .modal-window {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 20%;
   width: 50%;
   max-width: 630px;
   min-width: 320px;
   height: auto;
   z-index: 2000;
-  visibility: hidden;
+  visibility: visible;
   backface-visibility: hidden;
   transform: translateX(-50%) translateY(-50%); }
+  .modal-window .modal-content {
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 1.4em; }
+    .modal-window .modal-content h3 {
+      font-family: "Ubuntu Condensed", sans-serif;
+      font-weight: 400;
+      background-color: #bdbdbd;
+      font-size: 2em;
+      padding: 1em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      margin: 0em; }
+    .modal-window .modal-content div {
+      padding: 3em;
+      padding-top: 1.5em;
+      padding-bottom: 3em; }
 
 .modal-show {
   visibility: visible; }
@@ -895,10 +922,10 @@ a.black-link {
   position: fixed;
   width: 100%;
   height: 100%;
-  visibility: hidden;
+  visibility: visible;
   top: 0;
   left: 0;
   z-index: 1000;
-  opacity: 0;
+  opacity: 1;
   background: rgba(143, 27, 15, 0.8);
   transition: all 0.3s; }
