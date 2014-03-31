@@ -29,8 +29,8 @@
     <div class="alerts <?if (count($this->dates) == 0) { echo "add-no-alerts-margin"; }?>">
         <?if (count($this->dates) > 0):?>
             <?foreach ($this->dates as $date):?>
-                <?=$date?>
-                <?$alerts = Model_Alert::retrieveByEntityAndDate($this->entity, $date);?>
+                <?$alerts = Model_Alert::retrieveByEntityAndDate($this->entity, $date->dates);?>
+                <div class="list-date"><?=date("F jS, Y",strtotime($date->dates))?></div>
                 <div class="list">
                     <? foreach ($alerts as $item):?>
                         <div class="data">

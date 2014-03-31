@@ -106,9 +106,35 @@
         font-size:2em;
       }
     }
+    .list-date {
+      padding:0.7em;
+      margin-left:0.2em;
+      margin-right:0.2em;
+      background-color: white;
+      @include title-font();
+      font-size:1.5em;
+      color:black;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 1em;
+      position:relative;
+      &:after {
+        position: absolute;
+        content:"";
+        border-width: 20px 20px 20px 20px;
+        border-style: solid;
+        border-color: white;
+        z-index: -10;
+        left:50%;
+        bottom:-6px;
+        @include box-shadow(0px 0px 15px white);
+        @include transform(rotate(45deg));
+      }
+    }
     .list {
       width: 100%;
       overflow: hidden;
+      position: relative;
       @include column-count(3);
       @include column-gap(1em);
       @include column-fill(auto);
@@ -123,7 +149,7 @@
         margin-bottom:5px;
         background-color: white;
         transition: all 0.6s ease-out;
-        //@include column-break-inside(avoid);
+        @include column-break-inside(avoid);
         .data-title {
           @include title-font();
           font-size: 1.7em;

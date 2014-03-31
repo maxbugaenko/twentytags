@@ -89,6 +89,7 @@ class Model_Alert extends FaZend_Db_Table_ActiveRow_alert {
         return self::retrieve(false)
             ->from ("alert", array("dates" => new Zend_Db_Expr("distinct(date_format(added, '%Y-%m-%d'))")))
             ->where('alert.entity = ?', $entity)
+            ->order("dates desc")
             ->setRowClass('Model_Alert')
             ->fetchAll();
     }
