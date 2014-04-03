@@ -34,7 +34,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 	 * @param string name
 	 * @return Model_Entity
 	*/
-	public static function create ($title, $description, $link, $picture) {
+	public static function create ($title, $description, $link, $picture, $keyword) {
 	    validate()
 	        ->notEmpty($title, array(), "Enter title")
             ->notEmpty($description, array(), "Enter description")
@@ -46,8 +46,8 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
         $filename = Model_Static_Functions::saveImageFromUrl(ENTITY_IMAGES_PATH, $picture);
 		$entity->picture = $filename;
 		$entity->save();
-        Model_GAlerts_GAlertsManager::createAlert($title, "news");
-        Model_GAlerts_GAlertsManager::createAlert($title, "videos");
+        Model_GAlerts_GAlertsManager::createAlert($keyword, "news");
+        Model_GAlerts_GAlertsManager::createAlert($keyword, "videos");
         $feeds = Model_GAlerts_GAlertsManager::retrieveFeedsByTerm($title);
         foreach ($feeds as $feed => $url) {
             $source = new Model_Source();
