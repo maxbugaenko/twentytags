@@ -1,32 +1,42 @@
-button.header-button {
+.header-button {
   cursor: pointer;
-  padding:0.4em;
-  width:2em;
-  font-size:1.3em;
-  @media screen and (max-width:600px) {
-    padding:0.2em;
-    padding-top: 0.4em;
-    width:2em;
-    font-size:0.7em;
-  }
-  color:white;
+  padding:0.2em;
+  padding-top: 0.4em;
+  width:1.4em;
+  font-size:1em;
+  text-align: center;
+  color:gray;
   outline: 0;
   border:0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
+  border-right-radius: 5px;
   -webkit-font-smoothing:antialiased;
   position: relative;
+  background-color: #e6e6e6;
+  box-shadow:0px 5px #d6d6d6;
   &:hover {
     top:-2px;
+    box-shadow:0px 7px #d6d6d6;
   }
   &:active {
     @include transition(all 0.1s);
+    box-shadow:0px 0px #d6d6d6;
     top:5px;
   }
 }
+.header-button-large {
+  @extend .header-button;
+  width:100%;
+  padding-top:0.3em;
+  padding-bottom:0.3em;
+  font-size:1.5em;
+  @include header-font();
+}
+
 .facebook {
-  @extend .icon-button;
+  @extend .header-button;
   background-color: #44619c;
+  color: white;
   box-shadow:0px 5px #35528c;
   &:hover {
     box-shadow:0px 7px #35528c;
@@ -35,6 +45,31 @@ button.header-button {
     box-shadow:0px 0px #35528c;
   }
 }
+.twitter {
+  @extend .header-button;
+  color: white;
+  background-color: #509abf;
+  box-shadow:0px 5px #074f73;
+  &:hover {
+    box-shadow:0px 7px #074f73;
+  }
+  &:active {
+    box-shadow:0px 0px #074f73;
+  }
+}
+.google {
+  @extend .header-button;
+  color: white;
+  background-color: #d42020;
+  box-shadow:0px 5px #a60000;
+  &:hover {
+    box-shadow:0px 7px #a60000;
+  }
+  &:active {
+    box-shadow:0px 0px #a60000;
+  }
+}
+
 
 button.button-text {
   transition: all 0.2s ease-out;

@@ -14,14 +14,15 @@
                     <? endforeach?>
                 </div>
                 <div class="item-info">
-                    <i class="button-icon fa fa-facebook-square"></i>
-                    <i class="button-icon fa fa-google-plus-square"></i>
+                    <i class="header-button facebook fa fa-facebook-square"></i>
+                    <i class="header-button twitter fa fa-twitter"></i>
+                    <i class="header-button google fa fa-google-plus-square"></i>
                 </div>
                 <div class="item-description">
                     <?=$this->entity->description?>
                 </div>
                 <div class="item-info">
-                    <button class="button-text"><i class="fa fa-check-square"></i>Follow</button>
+                    <button class="header-button google header-button-large"><i class="fa fa-check-square"></i> Follow</button>
                 </div>
             </div>
         </div>
@@ -33,25 +34,17 @@
                 <div class="list">
                     <? foreach ($alerts as $item):?>
                         <div class="data">
+                            <? if ($item->source == "youtube"):?>
+                                <div class="youtube">
+                                    <i class="fa fa-youtube"></i>
+                                </div>
+                            <? endif;?>
                             <div class="data-title">
                                 <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
-                            </div>
-                            <div class="data-description <?=$item->body == "" ? "no-margin-bottom":"margin-bottom"?>">
-                                <? if ($item->picture):?>
-                                    <div class="<?=$item->source == "youtube" ? "data-img-video" : ""?>" >
-                                        <? if ($item->source == "youtube"):?>
-                                            <div class="play-icon"><i class="fa fa-play"></i></div>
-                                        <? endif;?>
-                                        <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>">
-                                    </div>
-                                <?endif?>
-                                <?=$item->body;?>
-                            </div>
-                            <div class="data-source">
-                                <? if ($item->source != "youtube"):?><?=$item->source?><br/><?endif?>
+                                <span class="body"><?=$item->body?></span> <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
                             </div>
                             <div class="data-controls">
-                                <i class="button-icon fa fa-sort-asc"></i>
+                                <i class="header-button fa fa-sort-asc"></i>
                             </div>
                         </div>
                     <?endforeach?>
@@ -67,11 +60,3 @@
         <?endif?>
     </div>
 </div>
-<script>
-    /*window.onload = function(){
-        var $container = $('.list').masonry({
-            itemSelector: '.data',
-            columnWidth: '.alert-width'
-        });
-    }*/
-</script>

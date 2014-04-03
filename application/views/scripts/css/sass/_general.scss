@@ -1,7 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500&subset=latin,cyrillic-ext);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(http://fonts.googleapis.com/css?family=Antic+Didone);
 @font-face {
   font-family:"HNC";
   font-weight:100;
@@ -41,6 +39,7 @@ $main-font: 'Ubuntu', sans-serif;
 $title-font: 'HNC', sans-serif;
 $button-font: 'HNC', sans-serif;
 $header-font: 'HNC', sans-serif;
+$alert-font: 'Antic+Didone', serif;
 $red: #f1103a;
 $dark-red: #dd1338;
 $light-red: #FF2E54;

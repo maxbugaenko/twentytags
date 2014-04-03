@@ -1,0 +1,14 @@
+<div class="data-description <?=$item->body == "" ? "no-margin-bottom":"margin-bottom"?>">
+    <? if ($item->picture):?>
+        <div class="<?=$item->source == "youtube" ? "data-img-video" : ""?>" >
+            <? if ($item->source == "youtube"):?>
+                <div class="play-icon"><i class="fa fa-play"></i></div>
+            <? endif;?>
+            <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>">
+        </div>
+    <?endif?>
+    <?=$item->body;?>
+    <div class="data-source">
+        <? if ($item->source != "youtube"):?><?=$item->source?><br/><?endif?>
+    </div>
+</div>

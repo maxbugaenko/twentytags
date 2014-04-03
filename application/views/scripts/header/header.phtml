@@ -10,7 +10,7 @@ $facebook = new Facebook($config);
 
 <div class="menu-container" id="menu-container">
     <div class="controls-section">
-        <?=$this->mainTag?> <i id="tags-button" class="button-icon fa fa-bars"></i>
+        <?=$this->mainTag?> <i id="tags-button" class="header-button fa fa-bars"></i>
     </div>
     <div class="logo-section">
         <a href="<?=$this->url(array(), "browse", false)?>">
@@ -24,9 +24,9 @@ $facebook = new Facebook($config);
             <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
             <?$followingUrl = $this->url(array(), "following", true);?>
             <?$addTagUrl = $this->url(array(), "addtag", true);?>
-            <i onclick="location.href='<?=$followingUrl?>'" class="button-icon fa fa-tasks"></i>
-            <i onclick="location.href='<?=$addTagUrl?>'" class="button-icon fa fa-plus"></i>
-            <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="button-icon fa fa-share-square"></i>
+            <i onclick="location.href='<?=$followingUrl?>'" class="header-button fa fa-tasks"></i>
+            <i onclick="location.href='<?=$addTagUrl?>'" class="header-button fa fa-plus"></i>
+            <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="header-button fa fa-external-link"></i>
         <?else:?>
             <?
                 $loginUrl = $facebook->getLoginUrl(array(
@@ -34,7 +34,7 @@ $facebook = new Facebook($config);
                 ));
             ?>
             Sign in
-            <i title="Sign up with Facebook" onclick="location.href='<?=$loginUrl?>'" class="button-icon fa fa-facebook-square"></i>
+            <i title="Sign up with Facebook" onclick="location.href='<?=$loginUrl?>'" class="header-button fa fa-facebook-square"></i>
         <?endif?>
     </div>
 </div>

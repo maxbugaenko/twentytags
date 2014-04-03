@@ -10,7 +10,7 @@
 
 .entity-container {
   @include box-sizing(border-box);
-  width:85%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 7em;
@@ -23,15 +23,14 @@
 
   .entity {
     order: 0;
-    flex: 0 0 25%;
+    flex: 0 0 30%;
     align-self: auto;
     .item {
       transition: all 0.6s ease-out;
       padding: 1.5em;
-      background-color: white;
+      background-color: #f5f5f5;
       border-radius:5px;
       margin-bottom: 1.875em; /* 30px */
-      border-bottom: 10px solid white;
       .item-image {
         min-height: 150px;
         img {
@@ -50,54 +49,48 @@
         color:gray;
       }
       .item-title {
-        @include title-font();
+        @include header-font();
         margin-top: 0.4em;
         font-size: 2.2em;
-        line-height: 0.8em;
         text-overflow: ellipsis;
         overflow: hidden;
-        color:black;
-        padding-bottom:0.1em;
+        color:$dark-gray;
+        padding-bottom:0em;
       }
       .item-info {
         margin-top: 0.6em;
+        margin-bottom: 1.6em;
         font-size: 1.2em;
         color:#A4A4A4;
       }
       .item-tags {
-        font-size: 1.2em;
-        margin-top: 0.5em;
+        font-size: 1.5em;
+        margin-top: 0em;
         margin-bottom: 1em;
+        @include title-font();
         color:#A4A4A4;
-      }
-      .item-tags b {
-        @include main-font();
-        cursor: pointer;
-        padding-right: 1px;
-        border-bottom: 1px dotted #BDBDBD;
-        color:#BDBDBD;
-        border-radius: 2px;
-        margin-right:3px;
       }
     }
 
   }
   .add-no-alerts-margin {
-    background-color: white;
+    background-color: #f5f5f5;
     margin-left: 1em;
+    border-radius:8px;
   }
   .alerts {
     @include box-sizing(border-box);
     padding-left: 1em;
     order: 1;
-    flex: 0 0 75%;
+    flex: 0 0 70%;
     align-self: auto;
     .message {
       padding-top: 20%;
       text-align: center;
       margin-left: auto;
       margin-right:auto;
-      width:70%;
+      border-radius:8px;
+      width:90%;
       color:$gray;
       .message-title {
         @include header-font();
@@ -135,31 +128,50 @@
     }
     .list {
       width: 100%;
-      border:1px solid red;
       overflow: hidden;
       position: relative;
-      @include column-count(3);
-      @include column-gap(1em);
-      @include column-fill(auto);
+      //@include column-count(3);
+      //@include column-gap(1em);
+      //@include column-fill(auto);
       height:auto;
       margin-bottom: 1em;
       .data {
         @include box-sizing(border-box);
+        display: block;
         border-radius:8px;
         z-index: 0;
         position: relative;
-        border:5px solid #E6E6E6;
         border-top:0px;
         padding: 1.5em;
         margin-bottom:5px;
-        background-color: white;
+        background-color: #f5f5f5;
         transition: all 0.6s ease-out;
-        @include column-break-inside(avoid);
+        @include box-shadow(0px 1px 1px lightgray);
+        //@include column-break-inside(avoid);
+        .youtube {
+          position:absolute;
+          top:15px;
+          right:15px;
+          color:$dark-red;
+          font-size:2em;
+        }
         .data-title {
           @include title-font();
-          font-size: 1.7em;
+          color:$dark-gray;
+          font-size: 2em;
+          width:90%;
           overflow: hidden;
           text-overflow: ellipsis;
+          .body {
+            @include title-font();
+            color:gray;
+            font-size:0.7em;
+          }
+          .date {
+            @include title-font();
+            color:lightgray;
+            font-size:0.6em;
+          }
         }
         .data-source {
           margin-top: 0em;
@@ -168,18 +180,24 @@
           color:lightgray;
           text-overflow: ellipsis;
           overflow: hidden;
+          padding-bottom: 0.2em;
           white-space: nowrap;
         }
         .data-description {
           @include box-sizing(border-box);
-          padding-top: 1.5em;
-          font-size: 1.1em;
+          padding-top: 0.8em;
+          font-size: 1.3em;
           color:gray;
-          line-height: 1.5em;
+          line-height: 1.2em;
           overflow: hidden;
+          border: 1px solid red;
           text-overflow: ellipsis;
           color:gray;
           .data-img-video {
+            float:left;
+            border: 1px solid red;
+            width:150px;
+            margin-right: 2em;
             position: relative;
             .play-icon {
               color:white;
@@ -192,8 +210,11 @@
             }
           }
           img {
-            width:100%;
+            float:left;
+            margin-right: 1.5em;
+            width:150px;
             margin-bottom:1em;
+            border-radius:5px;
           }
         }
         .data-date {
@@ -203,8 +224,8 @@
         }
         .data-controls {
           position: absolute;
-          right:10px;
-          bottom:10px;
+          right:15px;
+          bottom:15px;
         }
         .data-icon {
           width: 20px;

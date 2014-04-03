@@ -14,9 +14,7 @@
  * @version $Id$
 */
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500&subset=latin,cyrillic-ext);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(http://fonts.googleapis.com/css?family=Antic+Didone);
 @font-face {
   font-family: "HNC";
   font-weight: 100;
