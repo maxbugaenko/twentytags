@@ -80,77 +80,6 @@ a, a:visited {
 .slide-page-container-right {
   left: 240px; }
 
-button.button-text, button.button-large, button.button-crop, button.button-gray, button.button-small {
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-  margin: 0 auto;
-  width: 100%;
-  color: white;
-  border: 0px;
-  background-color: #f1103a;
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-family: "HNC", sans-serif;
-  text-align: center;
-  font-size: 1.2em;
-  border-radius: 3px;
-  outline: 0; }
-  button.button-text:hover, button.button-large:hover, button.button-crop:hover, button.button-gray:hover, button.button-small:hover {
-    transition: all 0.1s ease-out;
-    background-color: #dd1338;
-    color: white; }
-  button.button-text:active, button.button-large:active, button.button-crop:active, button.button-gray:active, button.button-small:active {
-    transition: all 0.1s ease-out;
-    background-color: #ff2e54; }
-  button.button-text i, button.button-large i, button.button-crop i, button.button-gray i, button.button-small i {
-    padding-right: 0.2em; }
-
-button.button-large {
-  font-size: 2em; }
-
-button.button-crop {
-  width: auto; }
-
-button.button-gray {
-  background-color: #D8D8D8;
-  color: gray; }
-  button.button-gray:hover {
-    color: white;
-    background-color: gray; }
-  button.button-gray:active {
-    color: gray;
-    background-color: #D8D8D8; }
-
-button.button-small {
-  font-size: 17px;
-  padding: 0.5em; }
-
-.button-icon, .button-small {
-  padding: 10px;
-  border-radius: 50%;
-  color: #424242;
-  cursor: pointer;
-  font-size: 25px;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  transition: all 0.3s linear; }
-  .button-icon:hover, .button-small:hover {
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    color: #dd1338; }
-  .button-icon:active, .button-small:active {
-    -webkit-transition: all 0.1s ease;
-    -moz-transition: all 0.1s ease;
-    transition: all 0.1s ease;
-    color: #ff2e54; }
-
-.button-small {
-  padding: 5px;
-  font-size: 20px;
-  border-radius: 0px; }
-
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -182,38 +111,6 @@ input.input-large {
   width: 300px;
   padding: 0em;
   border: 10px solid black; }
-
-a.red-link, a.gray-link, a.link-underline {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  color: black; }
-  a.red-link:hover, a.gray-link:hover, a.link-underline:hover {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    color: #f1103a; }
-  a.red-link:hover, a.gray-link:hover, a.link-underline:hover {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    color: #ff2e54; }
-
-a.gray-link {
-  color: gray; }
-
-a.link-underline {
-  border-bottom: 1px dotted #BDBDBD; }
-
-a.black-link {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
-  a.black-link:hover {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    color: black; }
 
 .admin-container {
   margin-top: 0em;
