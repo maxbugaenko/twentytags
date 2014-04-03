@@ -18,9 +18,9 @@
 }
 
 .menu-container {
-    @include transition(all 0.1s ease-in-out);
     @include animation-name(showSlow);
     @include animation-duration(0.5s);
+    @include transition(all 0.1s ease-in-out);
     @include animation-timing-function(ease);
     @include box-sizing(border-box);
 	margin-top: 0em;
