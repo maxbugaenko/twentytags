@@ -33,6 +33,11 @@
   @include header-font();
 }
 
+.to-top {
+  @extend .header-button;
+  background-color: white;
+  color: gray;
+}
 .facebook {
   @extend .header-button;
   background-color: #44619c;

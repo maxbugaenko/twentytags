@@ -78,7 +78,7 @@ a, a:visited {
 .slide-page-container-right {
   left: 240px; }
 
-.header-button, .header-button-large, .facebook, .twitter, .google {
+.header-button, .header-button-large, .to-top, .facebook, .twitter, .google {
   cursor: pointer;
   padding: 0.2em;
   padding-top: 0.4em;
@@ -94,10 +94,10 @@ a, a:visited {
   position: relative;
   background-color: #e6e6e6;
   box-shadow: 0px 5px #d6d6d6; }
-  .header-button:hover, .header-button-large:hover, .facebook:hover, .twitter:hover, .google:hover {
+  .header-button:hover, .header-button-large:hover, .to-top:hover, .facebook:hover, .twitter:hover, .google:hover {
     top: -2px;
     box-shadow: 0px 7px #d6d6d6; }
-  .header-button:active, .header-button-large:active, .facebook:active, .twitter:active, .google:active {
+  .header-button:active, .header-button-large:active, .to-top:active, .facebook:active, .twitter:active, .google:active {
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     transition: all 0.1s;
@@ -111,6 +111,10 @@ a, a:visited {
   font-size: 1.5em;
   font-family: "HNC", sans-serif;
   font-weight: 400; }
+
+.to-top {
+  background-color: white;
+  color: gray; }
 
 .facebook {
   background-color: #44619c;
@@ -745,6 +749,12 @@ a.black-link {
 
 .margin-bottom {
   margin-bottom: 1.5em; }
+
+.toTop {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 100px; }
 
 .entity-container {
   -webkit-box-sizing: border-box;

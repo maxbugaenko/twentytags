@@ -1,4 +1,9 @@
 <?$this->headTitle("TwentyTags - ".$this->entity->title)?>
+<div class="toTop">
+    <button id="to-top-button" class="header-button header-button-large to-top">
+        <i class="fa fa-angle-double-up"></i> Up
+    </button>
+</div>
 <div class="entity-container">
     <div class="entity">
         <div class="item">
@@ -60,3 +65,18 @@
         <?endif?>
     </div>
 </div>
+<script>
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+            $('.toTop').fadeIn();
+        } else {
+            $('.toTop').fadeOut();
+        }
+    });
+    $(document).ready (function() {
+        $("#to-top-button").click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        });
+    });
+</script>

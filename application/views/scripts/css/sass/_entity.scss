@@ -7,7 +7,12 @@
 .margin-bottom {
   margin-bottom: 1.5em;
 }
-
+.toTop {
+  position: fixed;
+  bottom:40px;
+  left:40px;
+  width:100px;
+}
 .entity-container {
   @include box-sizing(border-box);
   width: 70%;
