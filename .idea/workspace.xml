@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/layout.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="" />
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
