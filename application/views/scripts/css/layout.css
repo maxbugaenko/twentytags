@@ -752,6 +752,7 @@ a.black-link {
 
 .toTop {
   position: fixed;
+  display: none;
   bottom: 40px;
   left: 40px;
   width: 100px; }
