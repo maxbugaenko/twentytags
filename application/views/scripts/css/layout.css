@@ -70,7 +70,6 @@ a, a:visited {
   -moz-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   position: relative;
-  box-shadow: -1px 0px 5px #dd1338;
   z-index: 10001;
   overflow-x: hidden;
   left: 0px; }
@@ -525,23 +524,6 @@ a.black-link {
 .login-urls {
   display: none; }
 
-.run-image-animation {
-  -webkit-animation-name: showImageSlowly;
-  -moz-animation-name: showImageSlowly;
-  animation-name: showImageSlowly;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
 .list-container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -933,12 +915,10 @@ a.black-link {
           color: gray;
           line-height: 1.2em;
           overflow: hidden;
-          border: 1px solid red;
           text-overflow: ellipsis;
           color: gray; }
           .entity-container .alerts .list .data .data-description .data-img-video {
             float: left;
-            border: 1px solid red;
             width: 150px;
             margin-right: 2em;
             position: relative; }
