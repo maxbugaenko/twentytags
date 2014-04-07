@@ -3,7 +3,7 @@
         <? foreach ($this->alerts as $item):?>
                 <div class="alert-container">
                     <div class="entity">
-                        <?=$item->entity->title?><br/>
+                        <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>"><?=$item->entity->title?></a>
                         <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
                         <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
                     </div>
