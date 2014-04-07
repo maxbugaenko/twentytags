@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php" afterPath="$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/layout.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/layout.css" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_list.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_list.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="228" selection-end="228" vertical-scroll-proportion="-10.9375" vertical-offset="0" max-vertical-offset="4550">
+            <state line="77" column="0" selection-start="2114" selection-end="2114" vertical-scroll-proportion="0.8025682" vertical-offset="1425" max-vertical-offset="4575">
               <folding />
             </state>
           </provider>
@@ -88,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleAlerts.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GoogleAlerts.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="22" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.40983605" vertical-offset="175" max-vertical-offset="1825">
+            <state line="32" column="22" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-7.8125" vertical-offset="175" max-vertical-offset="1825">
               <folding />
             </state>
           </provider>
@@ -100,7 +102,7 @@
       <file leaf-file-name="_feed.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="35" selection-start="826" selection-end="826" vertical-scroll-proportion="-17.125" vertical-offset="402" max-vertical-offset="2350">
+            <state line="39" column="0" selection-start="763" selection-end="839" vertical-scroll-proportion="-17.90625" vertical-offset="402" max-vertical-offset="2350">
               <folding />
             </state>
           </provider>
@@ -169,16 +171,16 @@
         <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
         <option value="$PROJECT_DIR$/application/config/app.ini" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
         <option value="$PROJECT_DIR$/application/config/routes.ini" />
         <option value="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
         <option value="$PROJECT_DIR$/application/Model/Alert.php" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/layout.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
         <option value="$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
       </list>
     </option>
   </component>
@@ -997,20 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="35" selection-start="826" selection-end="826" vertical-scroll-proportion="-17.125" vertical-offset="402" max-vertical-offset="2350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="228" selection-end="228" vertical-scroll-proportion="-10.9375" vertical-offset="0" max-vertical-offset="4550">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="210" selection-start="1089" selection-end="1275" vertical-scroll-proportion="-15.625" vertical-offset="100" max-vertical-offset="2225">
@@ -1034,7 +1022,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="22" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.40983605" vertical-offset="175" max-vertical-offset="1825">
+        <state line="32" column="22" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-7.8125" vertical-offset="175" max-vertical-offset="1825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="763" selection-end="839" vertical-scroll-proportion="-17.90625" vertical-offset="402" max-vertical-offset="2350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="2114" selection-end="2114" vertical-scroll-proportion="0.8025682" vertical-offset="1425" max-vertical-offset="4575">
           <folding />
         </state>
       </provider>
