@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php" afterPath="$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,24 +43,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="77" selection-start="1318" selection-end="1318" vertical-scroll-proportion="-7.8125" vertical-offset="450" max-vertical-offset="4600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/layout.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="13" selection-start="841" selection-end="841" vertical-scroll-proportion="-16.0625" vertical-offset="86" max-vertical-offset="875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_entity.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,10 +70,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feed.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="feed.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="471" selection-end="471" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="800">
+            <state line="6" column="28" selection-start="471" selection-end="471" vertical-scroll-proportion="-4.6875" vertical-offset="0" max-vertical-offset="800">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GAlertsManager.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoogleAlerts.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="22" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.40983605" vertical-offset="175" max-vertical-offset="1825">
               <folding />
             </state>
           </provider>
@@ -145,7 +145,6 @@
         <option value="$PROJECT_DIR$/application/bootstrap.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php" />
         <option value="$PROJECT_DIR$/application/auto_prepend.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/settings.phtml" />
         <option value="$PROJECT_DIR$/application/Model/Static/Functions.php" />
@@ -179,6 +178,7 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
+        <option value="$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php" />
       </list>
     </option>
   </component>
@@ -527,6 +527,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Provider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twentytags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twentytags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GAlerts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twentytags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twentytags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="deploy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -698,16 +742,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/Zend/Cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="7.03125" vertical-offset="225" max-vertical-offset="5950" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/auto_prepend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="-2.34375" vertical-offset="0" max-vertical-offset="250" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="1" selection-start="1507" selection-end="1507" vertical-scroll-proportion="-39.84375" vertical-offset="0" max-vertical-offset="1475" />
@@ -986,7 +1020,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="471" selection-end="471" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="800">
+        <state line="6" column="28" selection-start="471" selection-end="471" vertical-scroll-proportion="-4.6875" vertical-offset="0" max-vertical-offset="800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Model/Provider/GoogleAlerts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="22" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.40983605" vertical-offset="175" max-vertical-offset="1825">
           <folding />
         </state>
       </provider>

@@ -29,7 +29,8 @@ class Model_Provider_GoogleAlerts extends Model_Provider_Provider {
                 $title = strip_tags($data->title);
                 echo "\n\n";
                 $title = $title."\n";
-                $link = $link = urldecode(substr($data->link->attributes()->href, strpos($data->link->attributes()->href, "q=")+2));
+                $link = urldecode(substr($data->link->attributes()->href, strpos($data->link->attributes()->href, "q=")+2));
+                $link = substr($link, 0, strpos($link, "&ct=ga"));
                 $hash = hash("md5", $link);
                 $body = strip_tags($data->content);
                 echo "link: " . $link ."\n";
