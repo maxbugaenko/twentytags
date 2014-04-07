@@ -180,7 +180,7 @@ input.input-text, input.input-large, input.search-input {
     box-shadow: 0px 0px 5px lightgray; }
 
 input.input-large {
-  font-size: 2em; }
+  font-size: 30px; }
 
 .search-input {
   float: right;
@@ -704,9 +704,7 @@ a.black-link {
         font-size: 0.8em; }
       .feed-container .alert-container .entity img {
         margin-top: 10px;
-        max-width: 50%;
-        border-radius: 5px;
-        box-shadow: 0 5px 0 lightgray; }
+        max-width: 50%; }
     .feed-container .alert-container .data {
       order: 0;
       flex: 0 0 80%;

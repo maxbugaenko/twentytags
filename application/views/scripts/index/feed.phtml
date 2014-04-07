@@ -1,4 +1,9 @@
 <?$this->headTitle("TwentyTags - Feed")?>
+<div class="toTop">
+    <button id="to-top-button" class="header-button header-button-large to-top">
+        <i class="fa fa-angle-double-up"></i> Up
+    </button>
+</div>
 <div class="feed-container">
         <? foreach ($this->alerts as $item):?>
                 <div class="alert-container">
@@ -25,3 +30,19 @@
                 </div>
         <?endforeach?>
 </div>
+
+<script>
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+            $('.toTop').fadeIn();
+        } else {
+            $('.toTop').fadeOut();
+        }
+    });
+    $(document).ready (function() {
+        $("#to-top-button").click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+        });
+    });
+</script>

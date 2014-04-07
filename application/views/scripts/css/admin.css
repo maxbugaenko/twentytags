@@ -104,7 +104,7 @@ input.input-text, input.input-large, input.search-input {
     box-shadow: 0px 0px 5px lightgray; }
 
 input.input-large {
-  font-size: 2em; }
+  font-size: 30px; }
 
 .search-input {
   float: right;
