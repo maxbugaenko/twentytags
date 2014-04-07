@@ -61,6 +61,22 @@ class Model_Alert extends FaZend_Db_Table_ActiveRow_alert {
     }
 
     /**
+     * Retrieves options by name
+     */
+    public static function retrieveByUser (Model_User $user, $offset) {
+        $ret = self::retrieve()
+            ->join('entity', 'entity.id = alert.entity', array())
+            ->join('saved', 'saved.entity = entity.id', array())
+            ->where('saved.user = ?', $user)
+            ->limit(50, $offset)
+            ->order('alert.added desc')
+            ->setRowClass('Model_Alert')
+            ->fetchAll();
+        return $ret;
+    }
+
+
+    /**
      * Retrieves alerts count by entity
      */
     public static function retrieveCountByEntity (Model_Entity $entity) {

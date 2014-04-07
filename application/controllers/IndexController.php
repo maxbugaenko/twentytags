@@ -34,6 +34,15 @@ class IndexController extends FaZend_Controller_Action {
             $this->view->user = null;
         }
     }
+
+    /**
+     * Lists all available entities
+     * @return void
+     */
+    public function feedAction() {
+        $this->view->alerts = Model_Alert::retrieveByUser(Model_User::me(), 0);
+    }
+
     /**
 	* Lists all available entities
 	* @return void

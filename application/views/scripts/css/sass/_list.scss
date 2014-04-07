@@ -25,7 +25,7 @@
     @include animation-timing-function(ease);
     @include animation-fill-mode(forwards);
     padding-top: 7em;
-	width: 95%;
+	width: 70%;
     opacity: 0;
 	margin: 0 auto;
 	.list {
@@ -33,11 +33,12 @@
 		width: 100%;
   		overflow: hidden;
         vertical-align: top;
-        @media screen and (max-width:2000px) {
+/*        @media screen and (max-width:2000px) {
           @include column-count(5);
         }
         @media screen and (max-width:1300px) {
           @include column-count(4);
+
         }
         @media screen and (max-width:1000px) {
           @include column-count(3);
@@ -50,6 +51,7 @@
         }
         @include column-gap(1.5em);
         @include column-fill(auto);
+        */
         @include transition(all 0.8s ease-out);
 		.item {
             @include box-sizing(border-box);
@@ -81,14 +83,15 @@
 			.item-description {
 				margin-top: 0.4em;
 				margin-bottom: 2.5em;
-				font-size: 1.1em;
+                @include title-font();
+				font-size: 1.5em;
 				color:gray;
                 line-height: 1.5em;
 			}
 			.item-title {
-                @include title-font();
+                @include header-font();
 				margin-top: 0.4em;
-				font-size: 1.6em;
+				font-size: 2em;
 				color:black;
                 cursor: pointer;
 			}

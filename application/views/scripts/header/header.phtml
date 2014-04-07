@@ -23,8 +23,10 @@ $facebook = new Facebook($config);
             <?=$this->user->name?>
             <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
             <?$followingUrl = $this->url(array(), "following", true);?>
+            <?$feedUrl = $this->url(array(), "feed", true);?>
             <?$addTagUrl = $this->url(array(), "addtag", true);?>
-            <i onclick="location.href='<?=$followingUrl?>'" class="header-button fa fa-tasks"></i>
+            <i onclick="location.href='<?=$feedUrl?>'" class="header-button fa fa-repeat"></i>
+            <i onclick="location.href='<?=$followingUrl?>'" class="header-button fa fa-th"></i>
             <i onclick="location.href='<?=$addTagUrl?>'" class="header-button fa fa-plus"></i>
             <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="header-button fa fa-external-link"></i>
         <?else:?>

@@ -1,0 +1,24 @@
+<div class="feed-container">
+        <? foreach ($this->alerts as $item):?>
+                <div class="alert-container">
+                    <div class="entity">
+                        <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
+                        <?=$item->entity->title?>
+                    </div>
+                    <div class="data">
+                        <? if ($item->source == "youtube"):?>
+                            <div class="youtube">
+                                <i class="fa fa-youtube"></i>
+                         </div>
+                        <? endif;?>
+                        <div class="data-title">
+                            <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
+                            <span class="body"><?=$item->body?></span> <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
+                        </div>
+                        <div class="data-controls">
+                         <i class="header-button fa fa-sort-asc"></i>
+                        </div>
+                    </div>
+                </div>
+        <?endforeach?>
+</div>
