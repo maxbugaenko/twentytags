@@ -22,7 +22,13 @@
                 </div>
                 <div class="item-content">
                     <div class="item-title">
-                        <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a><br/>
+                        <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
+                        <? if ($item->link):?>
+                            <a class="gray-link" href="<?=$item->link?>">
+                                <i title="<?=$item->title?> on the web" class="fa fa-arrow-right"></i>
+                            </a>
+                        <?endif?>
+                        <br/>
                     </div>
                     <div class="item-tags">
                         <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
@@ -32,11 +38,6 @@
                     </div>
                     <div class="item-description">
                         <?=$item->description?>&#160;&#160;&#160;
-                        <? if ($item->link):?>
-                            <a class="gray-link" href="<?=$item->link?>">
-                                <i title="<?=$item->title?> on the web" class="fa fa-arrow-right"></i>
-                            </a>
-                        <?endif?>
                     </div>
                     <div class="item-info">
                         <? $alertCount = Model_Alert::retrieveCountByEntity($item);?>
