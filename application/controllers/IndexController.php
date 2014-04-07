@@ -216,4 +216,28 @@ class IndexController extends FaZend_Controller_Action {
         $saved->delete();
         echo "OK";
     }
+
+    /**
+     * Logs out facebook user
+     * @return void
+     */
+    public function sitemapAction() {
+        $dom = new DOMDocument('1.0');
+        $dom->formatOutput = true;
+        $root = $dom->createElement('urlset');
+        $root->setAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
+        $dom->appendChild($root);
+
+        foreach(Model_Entity::retrieveAll() as $entity) {
+            $url = $dom->createElement('url');
+            $url->appendChild(
+                $dom->createElement('loc', WEBSITE_URL . $this->view->url(array("id"=>$entity, Model_Static_Functions::dashString($entity->title)=>""), "entity", false))
+            );
+            $root->appendChild($url);
+            unset($url);
+        }
+
+        $this->_returnXML($dom->saveXML());
+    }
+
 }

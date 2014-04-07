@@ -1,4 +1,10 @@
 <?$this->headTitle("TwentyTags - ".$this->entity->title)?>
+<?
+$this->headMeta()
+    ->appendName('keywords', $this->escape($this->entity->title))
+    ->appendName('description', $this->escape("News about ".$this->entity->title));
+?>
+
 <div class="toTop">
     <button id="to-top-button" class="header-button header-button-large to-top">
         <i class="fa fa-angle-double-up"></i> Up
