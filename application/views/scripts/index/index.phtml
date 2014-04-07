@@ -55,7 +55,7 @@
                 </div>
                 <? $isSaved = Model_Entity::isSaved($item);?>
                 <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
-                    <button id="follow-<?=$item?>" class="to-follow-button header-button-auto <?=$isLogged?> <?=$isSaved ? " followed":""?>">
+                    <button id="follow-<?=$item?>" class="to-follow-button header-button-small <?=$isLogged?> <?=$isSaved ? " followed":""?>">
                         <? if (!$this->user):?>
                             <div class="login-urls" id="login-url-<?=$item?>">
                                 <?

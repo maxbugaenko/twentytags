@@ -82,11 +82,10 @@ input.input-text, input.input-large, input.search-input {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-size: 1em;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "HNC", sans-serif;
   font-weight: 300;
   padding: 0.5em;
-  border: 1px solid lightgray;
-  border-radius: 5px;
+  border: 0;
   color: gray;
   outline: 0; }
   input.input-text:hover, input.input-large:hover, input.search-input:hover {
@@ -98,7 +97,7 @@ input.input-text, input.input-large, input.search-input {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    box-shadow: inset 0px 0px 5px lightgray; }
+    box-shadow: 0px 0px 5px lightgray; }
 
 input.input-large {
   font-size: 2em; }

@@ -24,26 +24,26 @@
     top:5px;
   }
 }
+
+.header-button-red {
+  @extend .google;
+}
+
 .header-button-large {
   @extend .header-button;
-  width:100%;
-  padding-top:0.3em;
-  padding-bottom:0.3em;
-  font-size:1.5em;
+  width:auto;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size:2.5em;
   @include header-font();
 }
 
-.header-button-auto {
+.header-button-small {
   @extend .header-button-large;
-  font-size: 18px;
-  padding-left: .6em;
-  padding-right: .6em;
-  width: auto;
-}
-
-.header-button-auto-pressed {
-  @extend .header-button-auto;
-  box-shadow: 0px 0px 20px black;
+  @include header-font();
+  font-size:1.2em;
 }
 
 
@@ -52,6 +52,7 @@
   background-color: white;
   color: gray;
 }
+
 .facebook {
   @extend .header-button;
   background-color: #44619c;
@@ -64,108 +65,33 @@
     box-shadow:0px 0px #35528c;
   }
 }
+
 .twitter {
   @extend .header-button;
   color: white;
   background-color: #509abf;
   box-shadow:0px 5px #074f73;
+
   &:hover {
     box-shadow:0px 7px #074f73;
   }
+
   &:active {
     box-shadow:0px 0px #074f73;
   }
 }
+
 .google {
   @extend .header-button;
   color: white;
   background-color: #d42020;
   box-shadow:0px 5px #a60000;
+
   &:hover {
     box-shadow:0px 7px #a60000;
   }
+
   &:active {
     box-shadow:0px 0px #a60000;
   }
-}
-
-
-button.button-text {
-  transition: all 0.2s ease-out;
-  cursor: pointer;
-  margin: 0 auto;
-  width:100%;
-  color: white;
-  border: 0px;
-  background-color: $red;
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-family: $button-font;
-  text-align: center;
-  font-size: 1.2em;
-  border-radius: 3px;
-  outline: 0;
-  &:hover {
-    transition: all 0.1s ease-out;
-    background-color: $dark-red;
-    color:white;
-  }
-  &:active {
-    transition: all 0.1s ease-out;
-    background-color: $light-red;
-  }
-  i {
-    padding-right: 0.2em;
-  }
-}
-button.button-large {
-  @extend button.button-text;
-  font-size:2em;
-}
-button.button-crop {
-  @extend button.button-text;
-  width: auto;
-}
-
-button.button-gray {
-  @extend button.button-text;
-  background-color: #D8D8D8;
-  color:gray;
-  &:hover {
-    color:white;
-    background-color: gray;
-  }
-  &:active {
-    color:gray;
-    background-color: #D8D8D8;
-  }
-}
-button.button-small {
-  @extend button.button-text;
-  font-size:17px;
-  padding:0.5em;
-}
-.button-icon {
-  padding:10px;
-  border-radius: 50%;
-  color: $dark-gray;
-  cursor: pointer;
-  font-size: 25px;
-  @include transition(all 0.3s linear);
-  &:hover {
-    @include transition(all 0.2s linear);
-    color: $dark-red;
-  }
-  &:active {
-    @include transition(all 0.1s ease);
-    color: $light-red;
-  }
-}
-
-.button-small {
-  @extend .button-icon;
-  padding:5px;
-  font-size: 20px;
-  border-radius: 0px;
 }

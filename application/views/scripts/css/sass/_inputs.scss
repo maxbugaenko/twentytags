@@ -1,10 +1,10 @@
 input.input-text {
 	@include transition(all 0.5s ease);
 	font-size: 1em;
-	@include main-font();
+	@include title-font();
 	padding: 0.5em;
-	border:1px solid lightgray;
-	border-radius: 5px;
+	border: 0;
+//	border-radius: 5px;
 	color:gray;
 	outline: 0;
 	&:hover {
@@ -13,7 +13,7 @@ input.input-text {
 	}
 	&:focus {
 		@include transition(all 0.4s ease);
-		box-shadow: inset 0px 0px 5px lightgray;
+		box-shadow: 0px 0px 5px lightgray;
 	}
 }
 input.input-large {

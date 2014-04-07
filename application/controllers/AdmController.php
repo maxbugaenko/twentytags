@@ -46,6 +46,16 @@ class AdmController extends Fazend_Controller_Action {
     }
 
     /*
+     * Entity administration
+     * */
+    public function moderationAction() {
+        $iterator = Model_Entity::retrieveForModeration();
+        FaZend_Paginator::addPaginator($iterator, $this->view, $this->_getParamOrFalse('page'));
+        $this->view->paginator->setItemCountPerPage(100);
+    }
+
+
+    /*
      * Alert administration
      * */
     public function alertAction() {

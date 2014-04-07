@@ -5,7 +5,7 @@
   text-align: center;
   margin-left: auto;
   margin-right:auto;
-  width:60%;
+  width:50%;
   color:lightgray;
   .message-title {
     @include header-font();
@@ -13,6 +13,7 @@
     color:$gray;
   }
   .message-description {
+    @include title-font();
     font-size:2em;
     color:$gray;
   }
@@ -23,4 +24,12 @@
     text-align: center;
     width:70%;
   }
+
+  #error-message {
+    margin-top: 1em;
+    @include title-font();
+    color: $dark-red;
+    font-size:2em;
+  }
+
 }

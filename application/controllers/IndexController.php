@@ -146,6 +146,32 @@ class IndexController extends FaZend_Controller_Action {
      */
     public function addtagAction() {
     }
+
+    /**
+     * Add tag page
+     * @return void
+     */
+    public function addusertagAction() {
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        $user = Model_User::me();
+        $tag = $this->getRequest()->getParam("tag");
+        if ($tag != "") {
+            $entity = new Model_Entity();
+            $entity->title = $tag;
+            $entity->description = "-";
+            $entity->status = 0;
+            $entity->save();
+            $saved = new Model_Saved();
+            $saved->user = Model_User::me();
+            $saved->entity = $entity;
+            $saved->save();
+            echo "OK";
+        } else {
+           echo "Your tag is empty";
+        }
+    }
+
     /**
      * Logs out facebook user
      * @return void

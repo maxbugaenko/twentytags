@@ -59,6 +59,40 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 		return $entity;
 	}
 
+    /**
+     * Create one Entity record
+     *
+     * @param class Model_Class
+     * @param string title
+     * @param string name
+     * @return Model_Entity
+     */
+    public static function moderate ($id, $title, $description, $link, $picture, $keyword) {
+        validate()
+            ->notEmpty($title, array(), "Enter title")
+            ->notEmpty($description, array(), "Enter description")
+            ->notEmpty($picture, array(), "Enter picture URL");
+        $entity = new Model_Entity((int)$id);
+        $entity->title = $title;
+        $entity->link = $link;
+        $entity->description = $description;
+        $filename = Model_Static_Functions::saveImageFromUrl(ENTITY_IMAGES_PATH, $picture);
+        $entity->picture = $filename;
+        $entity->save();
+        Model_GAlerts_GAlertsManager::createAlert($keyword, "news");
+        Model_GAlerts_GAlertsManager::createAlert($keyword, "videos");
+        $feeds = Model_GAlerts_GAlertsManager::retrieveFeedsByTerm($title);
+        foreach ($feeds as $feed => $url) {
+            $source = new Model_Source();
+            $source->entity = $entity;
+            $source->provider = "google";
+            $source->source = $url;
+            $source->save();
+        }
+        return $entity;
+    }
+
+
 	/**
 	 * Updates one Entity record
 	 *
@@ -526,6 +560,21 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 			->setRowClass('Model_Entity')
 			->fetchAll();
 	}
+
+    /**
+     * Retrieves all entities stored in the database
+     * for creating the XML sitemap
+     *
+     * @return array Array of all entities
+     */
+    public static function retrieveForModeration() {
+        return self::retrieve()
+            ->where('entity.status = ?', 0)
+            ->order('entity.id desc')
+            ->setRowClass('Model_Entity')
+            ->fetchAll();
+    }
+
 
 
 	/**
