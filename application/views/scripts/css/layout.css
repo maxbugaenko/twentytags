@@ -77,7 +77,7 @@ a, a:visited {
 .slide-page-container-right {
   left: 240px; }
 
-.header-button, .header-button-large, .to-top, .facebook, .twitter, .google {
+.header-button, .header-button-large, .header-button-auto, .header-button-auto-pressed, .to-top, .facebook, .twitter, .google {
   cursor: pointer;
   padding: 0.2em;
   padding-top: 0.4em;
@@ -93,23 +93,32 @@ a, a:visited {
   position: relative;
   background-color: #e6e6e6;
   box-shadow: 0px 5px #d6d6d6; }
-  .header-button:hover, .header-button-large:hover, .to-top:hover, .facebook:hover, .twitter:hover, .google:hover {
+  .header-button:hover, .header-button-large:hover, .header-button-auto:hover, .header-button-auto-pressed:hover, .to-top:hover, .facebook:hover, .twitter:hover, .google:hover {
     top: -2px;
     box-shadow: 0px 7px #d6d6d6; }
-  .header-button:active, .header-button-large:active, .to-top:active, .facebook:active, .twitter:active, .google:active {
+  .header-button:active, .header-button-large:active, .header-button-auto:active, .header-button-auto-pressed:active, .to-top:active, .facebook:active, .twitter:active, .google:active {
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     transition: all 0.1s;
     box-shadow: 0px 0px #d6d6d6;
     top: 5px; }
 
-.header-button-large {
+.header-button-large, .header-button-auto, .header-button-auto-pressed {
   width: 100%;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   font-size: 1.5em;
   font-family: "HNC", sans-serif;
   font-weight: 400; }
+
+.header-button-auto, .header-button-auto-pressed {
+  font-size: 18px;
+  padding-left: .6em;
+  padding-right: .6em;
+  width: auto; }
+
+.header-button-auto-pressed {
+  box-shadow: 0px 0px 20px black; }
 
 .to-top {
   background-color: white;
@@ -562,9 +571,9 @@ a.black-link {
     transition: all 0.8s ease-out; }
     @media screen and (max-width: 2000px) {
       .list-container .list {
-        -webkit-column-count: 5;
-        -moz-column-count: 5;
-        column-count: 5; } }
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4; } }
     @media screen and (max-width: 1300px) {
       .list-container .list {
         -webkit-column-count: 4;
@@ -638,10 +647,10 @@ a.black-link {
         cursor: pointer; }
       .list-container .list .item .item-info {
         margin-top: 0.6em;
-        font-size: 0.9em;
+        font-size: 1.1em;
         color: gray;
         width: auto;
-        font-family: "Ubuntu", sans-serif;
+        font-family: "HNC", sans-serif;
         font-weight: 300; }
         .list-container .list .item .item-info .item-badge-total {
           border-bottom-left-radius: 3px;
@@ -653,6 +662,8 @@ a.black-link {
           background-color: lightgray;
           color: gray; }
         .list-container .list .item .item-info .item-badge-today {
+          font-family: "HNC", sans-serif;
+          font-weight: 400;
           border-bottom-right-radius: 3px;
           border-top-right-radius: 3px;
           padding: 3px;
@@ -660,17 +671,17 @@ a.black-link {
           left: -2px;
           padding-left: 6px;
           padding-right: 6px;
-          background-color: #ff2e54;
+          background-color: #424242;
           color: white; }
           .list-container .list .item .item-info .item-badge-today:after {
             position: absolute;
             content: "";
             border-width: 6px 6px 6px 0px;
             border-style: solid;
-            border-color: transparent #ff2e54;
+            border-color: transparent #424242;
             z-index: 1000;
-            left: -4px;
-            top: 5px; }
+            left: -6px;
+            top: 7px; }
       .list-container .list .item .item-link {
         font-size: 1.2em; }
       .list-container .list .item .item-tags {
@@ -685,7 +696,7 @@ a.black-link {
         margin-right: 3px; }
       .list-container .list .item .item-follow-button {
         position: absolute;
-        bottom: 10px;
+        bottom: 20px;
         right: 10px;
         opacity: 0; }
       .list-container .list .item .make-visible {

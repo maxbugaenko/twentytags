@@ -34,7 +34,7 @@
   		overflow: hidden;
         vertical-align: top;
         @media screen and (max-width:2000px) {
-          @include column-count(5);
+          @include column-count(4);
         }
         @media screen and (max-width:1300px) {
           @include column-count(4);
@@ -98,10 +98,11 @@
 			}
 			.item-info {
 				margin-top: 0.6em;
-				font-size: 0.9em;
+				font-size: 1.1em;
 				color:gray;
                 width:auto;
-                @include main-font();
+                @include title-font();
+
                .item-badge-total {
                   border-bottom-left-radius: 3px;
                   border-top-left-radius: 3px;
@@ -113,6 +114,7 @@
                   color:gray;
                 }
               .item-badge-today {
+                  @include header-font();
                   border-bottom-right-radius: 3px;
                   border-top-right-radius: 3px;
                   padding:3px;
@@ -120,17 +122,17 @@
                   left:-2px;
                   padding-left: 6px;
                   padding-right: 6px;
-                  background-color: $light-red;
+                  background-color: $dark-gray;
                   color:white;
                   &:after {
                     position: absolute;
                     content:"";
                     border-width: 6px 6px 6px 0px;
                     border-style: solid;
-                    border-color: transparent $light-red;
+                    border-color: transparent $dark-gray;
                     z-index: 1000;
-                    left:-4px;
-                    top:5px;
+                    left:-6px;
+                    top:7px;
                   }
               }
 			}
@@ -149,7 +151,7 @@
             }
             .item-follow-button {
                 position: absolute;
-                bottom:10px;
+                bottom:20px;
                 right:10px;
                 opacity: 0;
             }

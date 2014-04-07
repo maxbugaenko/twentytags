@@ -34,7 +34,7 @@
                         <?=$item->description?>&#160;&#160;&#160;
                         <? if ($item->link):?>
                             <a class="gray-link" href="<?=$item->link?>">
-                                <i title="<?=$item->title?> on the web" class="fa fa-external-link-square"></i>
+                                <i title="<?=$item->title?> on the web" class="fa fa-arrow-right"></i>
                             </a>
                         <?endif?>
                     </div>
@@ -55,7 +55,7 @@
                 </div>
                 <? $isSaved = Model_Entity::isSaved($item);?>
                 <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
-                    <button id="follow-<?=$item?>" class="to-follow-button button-small <?=$isLogged?> <?=$isSaved ? "button-gray followed":""?>">
+                    <button id="follow-<?=$item?>" class="to-follow-button header-button-auto <?=$isLogged?> <?=$isSaved ? " followed":""?>">
                         <? if (!$this->user):?>
                             <div class="login-urls" id="login-url-<?=$item?>">
                                 <?
@@ -66,7 +66,7 @@
                                 ?>
                             </div>
                         <?endif?>
-                        <i class="fa fa-check-circle"></i> <?=$isSaved ? "Unfollow":"Follow"?>
+                        <?=$isSaved ? "Unfollow":"Follow"?>
                     </button>
                 </div>
             </div>

@@ -19,11 +19,11 @@
                         if (data == "OK") {
                             $("#item-follow-button-" + entityID).toggleClass("make-visible");
                             $("#follow-"+entityID).toggleClass("followed");
-                            $("#follow-"+entityID).toggleClass("button-gray");
+                            //$("#follow-"+entityID).toggleClass("header-button-auto-pressed");
                             if ($("#follow-"+entityID).hasClass("followed")) {
-                                $("#follow-"+entityID).html("<i class='fa fa-check-circle'></i> Unfollow");
+                                $("#follow-"+entityID).html("Unfollow");
                             } else {
-                                $("#follow-"+entityID).html("<i class='fa fa-check-circle'></i> Follow");
+                                $("#follow-"+entityID).html("Follow");
                             }
                         }
                     }

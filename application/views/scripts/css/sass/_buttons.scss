@@ -33,6 +33,20 @@
   @include header-font();
 }
 
+.header-button-auto {
+  @extend .header-button-large;
+  font-size: 18px;
+  padding-left: .6em;
+  padding-right: .6em;
+  width: auto;
+}
+
+.header-button-auto-pressed {
+  @extend .header-button-auto;
+  box-shadow: 0px 0px 20px black;
+}
+
+
 .to-top {
   @extend .header-button;
   background-color: white;
