@@ -48,9 +48,10 @@
         font-size: 1em;
       }
       .item-description {
+        @include title-font();
         margin-top: 0.4em;
         margin-bottom: 1.5em;
-        font-size: 1.2em;
+        font-size: 1.5em;
         line-height: 1.4em;
         color:gray;
       }

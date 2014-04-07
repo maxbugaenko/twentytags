@@ -77,7 +77,7 @@ a, a:visited {
 .slide-page-container-right {
   left: 240px; }
 
-.header-button, .header-button-large, .header-button-small, .to-top, .facebook, .twitter, .google, .header-button-red {
+.header-button, .header-button-large, .header-button-small, .header-button-wide, .to-top, .facebook, .twitter, .google, .header-button-red {
   cursor: pointer;
   padding: 0.2em;
   padding-top: 0.4em;
@@ -93,23 +93,23 @@ a, a:visited {
   position: relative;
   background-color: #e6e6e6;
   box-shadow: 0px 5px #d6d6d6; }
-  .header-button:hover, .header-button-large:hover, .header-button-small:hover, .to-top:hover, .facebook:hover, .twitter:hover, .google:hover, .header-button-red:hover {
+  .header-button:hover, .header-button-large:hover, .header-button-small:hover, .header-button-wide:hover, .to-top:hover, .facebook:hover, .twitter:hover, .google:hover, .header-button-red:hover {
     top: -2px;
     box-shadow: 0px 7px #d6d6d6; }
-  .header-button:active, .header-button-large:active, .header-button-small:active, .to-top:active, .facebook:active, .twitter:active, .google:active, .header-button-red:active {
+  .header-button:active, .header-button-large:active, .header-button-small:active, .header-button-wide:active, .to-top:active, .facebook:active, .twitter:active, .google:active, .header-button-red:active {
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     transition: all 0.1s;
     box-shadow: 0px 0px #d6d6d6;
     top: 5px; }
 
-.header-button-large, .header-button-small {
+.header-button-large, .header-button-small, .header-button-wide {
   width: auto;
   padding-top: .3em;
   padding-bottom: .3em;
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 2.5em;
+  font-size: 35px;
   font-family: "HNC", sans-serif;
   font-weight: 400; }
 
@@ -117,6 +117,9 @@ a, a:visited {
   font-family: "HNC", sans-serif;
   font-weight: 400;
   font-size: 1.2em; }
+
+.header-button-wide {
+  width: 100%; }
 
 .to-top {
   background-color: white;
@@ -787,9 +790,11 @@ a.black-link {
         padding: 0em;
         font-size: 1em; }
       .entity-container .entity .item .item-description {
+        font-family: "HNC", sans-serif;
+        font-weight: 300;
         margin-top: 0.4em;
         margin-bottom: 1.5em;
-        font-size: 1.2em;
+        font-size: 1.5em;
         line-height: 1.4em;
         color: gray; }
       .entity-container .entity .item .item-title {
