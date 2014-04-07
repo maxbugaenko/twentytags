@@ -159,7 +159,8 @@ class IndexController extends FaZend_Controller_Action {
         if ($tag != "") {
             $entity = new Model_Entity();
             $entity->title = $tag;
-            $entity->description = "-";
+            $entity->picture = "question.png";
+            $entity->description = "Under moderation";
             $entity->status = 0;
             $entity->save();
             $saved = new Model_Saved();

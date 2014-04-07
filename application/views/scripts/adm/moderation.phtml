@@ -1,5 +1,5 @@
-<? foreach ($this->paginator as $item) :?>
-    <?=$this->forma(time())
+<? foreach ($this->entities as $item) :?>
+    <?=$this->forma(1)
         ->addBehavior('redirectUrl', '__fz/adm/moderation')
     ->addField('hidden', 'id')
         ->fieldValue($item)
@@ -26,6 +26,6 @@
         ->fieldAttrib('rows', 2)
     ->addField('submit')
         ->fieldAction(array('Model_Entity', 'moderate'))
-        ->fieldValue("create entity")
+        ->fieldValue("create entity");
 ?>
 <?endforeach?>

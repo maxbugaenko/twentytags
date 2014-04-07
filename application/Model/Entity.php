@@ -78,6 +78,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
         $entity->description = $description;
         $filename = Model_Static_Functions::saveImageFromUrl(ENTITY_IMAGES_PATH, $picture);
         $entity->picture = $filename;
+        $entity->status = 1;
         $entity->save();
         Model_GAlerts_GAlertsManager::createAlert($keyword, "news");
         Model_GAlerts_GAlertsManager::createAlert($keyword, "videos");
@@ -571,6 +572,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
         return self::retrieve()
             ->where('entity.status = ?', 0)
             ->order('entity.id desc')
+            ->limit(1)
             ->setRowClass('Model_Entity')
             ->fetchAll();
     }
