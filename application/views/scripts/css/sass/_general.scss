@@ -82,3 +82,9 @@ a, a:visited {
   @extend .page-container;
   left:240px;
 }
+
+img {
+  border-radius: 5px;
+  @include box-shadow(0 5px 0 lightgray);
+}
+

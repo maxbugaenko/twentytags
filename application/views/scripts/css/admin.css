@@ -77,6 +77,10 @@ a, a:visited {
 .slide-page-container-right {
   left: 240px; }
 
+img {
+  border-radius: 5px;
+  box-shadow: 0 5px 0 lightgray; }
+
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;

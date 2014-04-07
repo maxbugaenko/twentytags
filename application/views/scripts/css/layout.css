@@ -77,6 +77,10 @@ a, a:visited {
 .slide-page-container-right {
   left: 240px; }
 
+img {
+  border-radius: 5px;
+  box-shadow: 0 5px 0 lightgray; }
+
 .header-button, .header-button-large, .header-button-small, .header-button-wide, .to-top, .facebook, .twitter, .google, .header-button-red {
   cursor: pointer;
   padding: 0.2em;
@@ -87,6 +91,7 @@ a, a:visited {
   color: gray;
   outline: 0;
   border: 0px;
+  white-space: nowrap;
   border-radius: 5px;
   border-right-radius: 5px;
   -webkit-font-smoothing: antialiased;
@@ -554,9 +559,7 @@ a.black-link {
       .list-container .list .item .item-image {
         min-height: 150px; }
         .list-container .list .item .item-image img {
-          max-width: 100%;
-          border-radius: 5px;
-          box-shadow: 0 5px 0 lightgray; }
+          max-width: 100%; }
       .list-container .list .item .item-content {
         padding: 0em;
         font-size: 1em; }
