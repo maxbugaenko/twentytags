@@ -739,9 +739,16 @@ a.black-link {
       font-weight: 400;
       font-size: 1.5em;
       padding-right: 1em; }
+      .feed-container .alert-container .entity .date {
+        font-family: "HNC", sans-serif;
+        font-weight: 300;
+        color: lightgray;
+        font-size: 0.8em; }
       .feed-container .alert-container .entity img {
-        float: right;
-        max-width: 30%; }
+        margin-top: 10px;
+        border-radius: 5px;
+        max-width: 50%;
+        box-shadow: 0 5px 0 lightgray; }
     .feed-container .alert-container .data {
       order: 0;
       flex: 0 0 80%;
@@ -769,11 +776,6 @@ a.black-link {
           font-weight: 300;
           color: gray;
           font-size: 0.7em; }
-        .feed-container .alert-container .data .data-title .date {
-          font-family: "HNC", sans-serif;
-          font-weight: 300;
-          color: lightgray;
-          font-size: 0.6em; }
       .feed-container .alert-container .data .data-source {
         margin-top: 0em;
         font-family: "HNC", sans-serif;

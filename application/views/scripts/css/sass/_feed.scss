@@ -26,9 +26,17 @@
       font-size: 1.5em;
       padding-right: 1em;
 
+      .date {
+        @include title-font();
+        color:lightgray;
+        font-size:0.8em;
+      }
+
       img {
-        float:right;
-        max-width: 30%;
+        margin-top: 10px;
+        border-radius: 5px;
+        max-width: 50%;
+        @include box-shadow(0 5px 0 lightgray);
       }
     }
     .data {
@@ -62,12 +70,6 @@
           @include title-font();
           color:gray;
           font-size:0.7em;
-        }
-
-        .date {
-          @include title-font();
-          color:lightgray;
-          font-size:0.6em;
         }
       }
 
