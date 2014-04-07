@@ -844,6 +844,8 @@ a.black-link {
         font-weight: 400;
         font-size: 4em; }
       .entity-container .alerts .message .message-description {
+        font-family: "HNC", sans-serif;
+        font-weight: 300;
         font-size: 2em; }
     .entity-container .alerts .list-date {
       padding: 0.7em;
