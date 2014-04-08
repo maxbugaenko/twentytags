@@ -3,6 +3,10 @@
 $this->headMeta()
     ->appendName('keywords', $this->escape($this->entity->title))
     ->appendName('description', $this->escape("News about ".$this->entity->title));
+$this->headAnything()->addHtml('<meta property="og:title" content="'.$this->escape($this->entity->title).'">');
+$this->headAnything()->addHtml('<meta property="og:description" content="'.$this->escape($this->entity->description).'">');
+$this->headAnything()->addHtml('<meta property="og:image" content="'.$this->staticFile("images/entities/".$this->entity->picture).'">');
+
 ?>
 
 <div class="toTop">
@@ -25,9 +29,19 @@ $this->headMeta()
                     <? foreach ($tagged as $tag):?>
                         <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
                     <? endforeach?><br/><br/>
-                    <i class="header-button facebook fa fa-facebook-square"></i>
-                    <i class="header-button twitter fa fa-twitter"></i>
-                    <i class="header-button google fa fa-google-plus-square"></i>
+
+                    <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
+                       href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
+                        <i class="facebook fa fa-facebook-square"></i>
+                    </a>
+                    <a target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')"
+                       href="https://twitter.com/share">
+                        <i class="header-button twitter fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" onclick="return !window.open(this.href, 'Google+', 'width=640,height=300')"
+                       href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
+                        <i class="header-button google fa fa-google-plus-square"></i>
+                    </a>
                 </div>
                 <div class="item-description">
                     <?=$this->entity->description?>
