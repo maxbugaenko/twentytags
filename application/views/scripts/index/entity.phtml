@@ -24,9 +24,7 @@ $this->headMeta()
                     <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
                     <? foreach ($tagged as $tag):?>
                         <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
-                    <? endforeach?>
-                </div>
-                <div class="item-info">
+                    <? endforeach?><br/><br/>
                     <i class="header-button facebook fa fa-facebook-square"></i>
                     <i class="header-button twitter fa fa-twitter"></i>
                     <i class="header-button google fa fa-google-plus-square"></i>
@@ -45,13 +43,14 @@ $this->headMeta()
                 <div class="list">
                     <? foreach ($alerts as $item):?>
                         <div class="data">
-                            <? if ($item->source == "youtube"):?>
-                                <div class="youtube">
-                                    <i class="fa fa-youtube"></i>
-                                </div>
-                            <? endif;?>
                             <div class="data-title">
                                 <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
+                                <? if ($item->source == "youtube"):?>
+                                    <span class="youtube">
+                                        <i class="fa fa-youtube"></i>
+                                    </span>
+                                <? endif;?>
+
                             </div>
                             <div class="body">
                                 <?=$item->body?> <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>

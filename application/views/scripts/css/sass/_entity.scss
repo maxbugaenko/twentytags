@@ -76,7 +76,7 @@
 
   }
   .add-no-alerts-margin {
-    background-color: #f5f5f5;
+    //background-color: #f5f5f5;
     margin-left: 1em;
     border-radius:8px;
   }
@@ -124,13 +124,6 @@
         transition: all 0.6s ease-out;
         border-bottom: 1px solid lightgray;
         //@include column-break-inside(avoid);
-        .youtube {
-          position:absolute;
-          top:15px;
-          right:15px;
-          color:$dark-red;
-          font-size:2em;
-        }
         .data-title {
           @include title-font();
           color:$dark-gray;
@@ -139,6 +132,11 @@
           overflow: hidden;
           text-overflow: ellipsis;
           text-transform: capitalize;
+
+          .youtube {
+            color:$dark-red;
+            font-size:1em;
+          }
         }
         .body {
           @include main-font();
@@ -203,7 +201,7 @@
         .data-controls {
           position: absolute;
           right:15px;
-          bottom:15px;
+          top: 10px;
         }
         .data-icon {
           width: 20px;

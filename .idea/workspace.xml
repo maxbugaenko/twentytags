@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/layout.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/layout.css" />
     </list>
     <ignored path="twentytags.iws" />
@@ -32,25 +31,34 @@
       <file leaf-file-name="entity.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="-7.8125" vertical-offset="150" max-vertical-offset="2375">
+            <state line="50" column="42" selection-start="2554" selection-end="2554" vertical-scroll-proportion="-15.9375" vertical-offset="740" max-vertical-offset="2350">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_list.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_list.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="25" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.6388443" vertical-offset="2377" max-vertical-offset="4725">
+            <state line="111" column="25" selection-start="3214" selection-end="3214" vertical-scroll-proportion="-12.4375" vertical-offset="2377" max-vertical-offset="4725">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_feed.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_entity2.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_entity2.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3950">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_feed.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="923" selection-end="923" vertical-scroll-proportion="3.96875" vertical-offset="1252" max-vertical-offset="2325">
+            <state line="49" column="17" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.39807382" vertical-offset="977" max-vertical-offset="2325">
               <folding />
             </state>
           </provider>
@@ -59,7 +67,7 @@
       <file leaf-file-name="_entity.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="-10.9375" vertical-offset="825" max-vertical-offset="5525">
+            <state line="203" column="16" selection-start="4619" selection-end="4619" vertical-scroll-proportion="-13.28125" vertical-offset="4650" max-vertical-offset="5475">
               <folding />
             </state>
           </provider>
@@ -69,15 +77,6 @@
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="63" selection-start="803" selection-end="803" vertical-scroll-proportion="-10.15625" vertical-offset="0" max-vertical-offset="1425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_links.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_links.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="1" selection-start="479" selection-end="479" vertical-scroll-proportion="-17.90625" vertical-offset="127" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -177,12 +176,12 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_buttons.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_inputs.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_message.scss" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
       </list>
     </option>
   </component>
@@ -724,11 +723,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/deploy/database/18 alert.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/layouts/admin.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="-15.0625" vertical-offset="243" max-vertical-offset="875" />
@@ -976,30 +970,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="923" selection-end="923" vertical-scroll-proportion="3.96875" vertical-offset="1252" max-vertical-offset="2325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="-33.59375" vertical-offset="275" max-vertical-offset="2525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="-7.8125" vertical-offset="150" max-vertical-offset="2375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="-10.9375" vertical-offset="825" max-vertical-offset="5525">
           <folding />
         </state>
       </provider>
@@ -1020,7 +993,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="25" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.6388443" vertical-offset="2377" max-vertical-offset="4725">
+        <state line="111" column="25" selection-start="3214" selection-end="3214" vertical-scroll-proportion="-12.4375" vertical-offset="2377" max-vertical-offset="4725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_entity2.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="42" selection-start="2554" selection-end="2554" vertical-scroll-proportion="-15.9375" vertical-offset="740" max-vertical-offset="2350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="203" column="16" selection-start="4619" selection-end="4619" vertical-scroll-proportion="-13.28125" vertical-offset="4650" max-vertical-offset="5475">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="17" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.39807382" vertical-offset="977" max-vertical-offset="2325">
           <folding />
         </state>
       </provider>

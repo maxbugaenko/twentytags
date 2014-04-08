@@ -694,7 +694,7 @@ a.black-link {
       .feed-container .alert-container .data .data-controls {
         position: absolute;
         right: 0;
-        top: 0; }
+        top: 10px; }
       .feed-container .alert-container .data .youtube {
         color: #dd1338; }
       .feed-container .alert-container .data .data-title {
@@ -792,7 +792,6 @@ a.black-link {
         font-weight: 300;
         color: #A4A4A4; }
   .entity-container .add-no-alerts-margin {
-    background-color: #f5f5f5;
     margin-left: 1em;
     border-radius: 8px; }
   .entity-container .alerts {
@@ -837,12 +836,6 @@ a.black-link {
         margin-bottom: 5px;
         transition: all 0.6s ease-out;
         border-bottom: 1px solid lightgray; }
-        .entity-container .alerts .list .data .youtube {
-          position: absolute;
-          top: 15px;
-          right: 15px;
-          color: #dd1338;
-          font-size: 2em; }
         .entity-container .alerts .list .data .data-title {
           font-family: "HNC", sans-serif;
           font-weight: 300;
@@ -852,6 +845,9 @@ a.black-link {
           overflow: hidden;
           text-overflow: ellipsis;
           text-transform: capitalize; }
+          .entity-container .alerts .list .data .data-title .youtube {
+            color: #dd1338;
+            font-size: 1em; }
         .entity-container .alerts .list .data .body {
           font-family: "Cambria", sans-serif;
           font-weight: 300;
@@ -910,7 +906,7 @@ a.black-link {
         .entity-container .alerts .list .data .data-controls {
           position: absolute;
           right: 15px;
-          bottom: 15px; }
+          top: 10px; }
         .entity-container .alerts .list .data .data-icon {
           width: 20px;
           vertical-align: middle; }
