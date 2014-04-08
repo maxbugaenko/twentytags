@@ -67,6 +67,8 @@
       position: relative;
       img {
         vertical-align: middle;
+        border-radius: 5px;
+        box-shadow: 0 5px 0 lightgray;
         width:30px;
       }
       span {
