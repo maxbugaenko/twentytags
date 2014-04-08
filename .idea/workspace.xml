@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,19 +61,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entity.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="entity.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="57" selection-start="2919" selection-end="2919" vertical-scroll-proportion="-14.84375" vertical-offset="725" max-vertical-offset="2700">
+            <state line="12" column="47" selection-start="675" selection-end="675" vertical-scroll-proportion="0.4918033" vertical-offset="0" max-vertical-offset="2700">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addtag.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="addtag.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtag.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="61" selection-start="486" selection-end="486" vertical-scroll-proportion="0.45081967" vertical-offset="0" max-vertical-offset="975">
+            <state line="11" column="61" selection-start="486" selection-end="486" vertical-scroll-proportion="-8.59375" vertical-offset="0" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -177,8 +177,8 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_buttons.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/empty.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
       </list>
     </option>
   </component>
@@ -1022,16 +1022,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtag.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="57" selection-start="2919" selection-end="2919" vertical-scroll-proportion="-14.84375" vertical-offset="725" max-vertical-offset="2700">
+        <state line="11" column="61" selection-start="486" selection-end="486" vertical-scroll-proportion="-8.59375" vertical-offset="0" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtag.phtml">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="61" selection-start="486" selection-end="486" vertical-scroll-proportion="0.45081967" vertical-offset="0" max-vertical-offset="975">
+        <state line="12" column="47" selection-start="675" selection-end="675" vertical-scroll-proportion="0.4918033" vertical-offset="0" max-vertical-offset="2700">
           <folding />
         </state>
       </provider>
