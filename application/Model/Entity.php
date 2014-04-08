@@ -568,6 +568,20 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
      *
      * @return array Array of all entities
      */
+    public static function retrieveWithAlerts () {
+        return self::retrieve()
+            ->where("entity.alerts > ?", 0)
+            ->order('entity.id desc')
+            ->setRowClass('Model_Entity')
+            ->fetchAll();
+    }
+
+    /**
+     * Retrieves all entities stored in the database
+     * for creating the XML sitemap
+     *
+     * @return array Array of all entities
+     */
     public static function retrieveForModeration() {
         return self::retrieve()
             ->where('entity.status = ?', 0)
@@ -642,8 +656,26 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
             ->fetchAll();
     }
 
+    /**
+     * Retrieves entities that
+     * have to be updated
+     *
+     * @return void
+     * @author fatboy
+     **/
+    public static function retrieveEntitiesAlertsToUpdate($limit){
+        return self::retrieve()
+            ->where('entity.status = ?', Model_Entity::ENTITY_APPROVED)
+            ->where('entity.alertsupdated < ?', new Zend_Db_Expr('NOW() - INTERVAL 1 HOUR'))
+            ->orWhere('entity.alertsupdated is NULL')
+            ->order('entity.id desc')
+            ->limit($limit)
+            ->setRowClass('Model_Entity')
+            ->fetchAll();
+    }
 
-	public static function retrieveByKeyword($limit = 100) {
+
+    public static function retrieveByKeyword($limit = 100) {
         $keyword = Model_Search_Query::getKeyword();
     	return self::retrieve(false)
     	    ->from('entity', array('entity.*', 'score' => new Zend_Db_Expr('MATCH (entitycache.title,entitycache.original,entitycache.tags) AGAINST ("'.$keyword.'")')))

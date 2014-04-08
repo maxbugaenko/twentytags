@@ -20,10 +20,9 @@
                         <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
                     </a>
                     <div class="item-info">
-                        <? $alertCount = Model_Alert::retrieveCountByEntity($item);?>
-                        <? if ($alertCount > 0):?>
+                        <? if ($item->alerts > 0):?>
                             <span class="item-badge-total" title="<?=$alertCount?> updates total">
-                                <?=$alertCount?>
+                                <?=$item->alerts?>
                             </span>
                         <?endif?>
                         <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
