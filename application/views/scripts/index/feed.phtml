@@ -11,7 +11,9 @@
 <!--                        <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>"><?=$item->entity->title?></a>
                         <br/>-->
                         <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
-                        <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
+                        <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>">
+                            <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
+                        </a>
                     </div>
                     <div class="data">
                         <div class="data-title">

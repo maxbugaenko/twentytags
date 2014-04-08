@@ -6,7 +6,7 @@ $this->headMeta()
 ?>
 
 <div class="toTop">
-    <button id="to-top-button" class="header-button header-button-large to-top">
+    <button id="to-top-button" class="header-button header-button-small">
         <i class="fa fa-angle-double-up"></i> Up
     </button>
 </div>
@@ -17,7 +17,9 @@ $this->headMeta()
                 <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
             </div>
             <div class="item-content">
-                <div class="item-title"><?=$this->entity->title?></div>
+                <div class="item-title">
+                    <?=$this->entity->title?>
+                </div>
                 <div class="item-tags">
                     <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
                     <? foreach ($tagged as $tag):?>
@@ -32,9 +34,7 @@ $this->headMeta()
                 <div class="item-description">
                     <?=$this->entity->description?>
                 </div>
-                <div class="item-info">
-                    <button class="header-button google header-button-wide"><i class="fa fa-check-square"></i> Follow</button>
-                </div>
+                <button class="header-button google header-button-wide"><i class="fa fa-check-square"></i> Follow</button>
             </div>
         </div>
     </div>
@@ -52,7 +52,9 @@ $this->headMeta()
                             <? endif;?>
                             <div class="data-title">
                                 <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
-                                <span class="body"><?=$item->body?></span> <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
+                            </div>
+                            <div class="body">
+                                <?=$item->body?> <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
                             </div>
                             <div class="data-controls">
                                 <i class="header-button fa fa-sort-asc"></i>

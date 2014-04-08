@@ -544,7 +544,8 @@ a.black-link {
         align-self: auto;
         padding-right: 2em; }
         .list-container .list .item .item-image .item-info {
-          font-size: 1.5em;
+          margin-top: 1em;
+          font-size: 1.2em;
           color: gray;
           width: auto;
           font-family: "HNC", sans-serif;
@@ -557,7 +558,7 @@ a.black-link {
             color: #424242; }
           .list-container .list .item .item-image .item-info .item-badge-today {
             font-family: "HNC", sans-serif;
-            font-weight: 400;
+            font-weight: 300;
             padding: 3px;
             position: relative;
             left: -2px;
@@ -573,7 +574,7 @@ a.black-link {
               border-color: transparent #424242;
               z-index: 1000;
               left: -6px;
-              top: 10px; }
+              top: 8px; }
         .list-container .list .item .item-image img {
           max-width: 100%; }
       .list-container .list .item .item-content {
@@ -759,21 +760,17 @@ a.black-link {
     .entity-container .entity .item {
       transition: all 0.6s ease-out;
       padding: 1.5em;
-      background-color: #f5f5f5;
-      border-radius: 5px;
-      margin-bottom: 1.875em;
-      /* 30px */ }
+      border-right: 1px solid lightgray; }
       .entity-container .entity .item .item-image {
         min-height: 150px; }
         .entity-container .entity .item .item-image img {
           width: 100%; }
       .entity-container .entity .item .item-content {
-        padding: 0em;
-        font-size: 1em; }
+        padding: 0em; }
       .entity-container .entity .item .item-description {
-        font-family: "HNC", sans-serif;
+        font-family: "Cambria", sans-serif;
         font-weight: 300;
-        margin-top: 0.4em;
+        margin-top: 1.4em;
         margin-bottom: 1.5em;
         font-size: 1.5em;
         line-height: 1.4em;
@@ -781,17 +778,12 @@ a.black-link {
       .entity-container .entity .item .item-title {
         font-family: "HNC", sans-serif;
         font-weight: 400;
-        margin-top: 0.4em;
+        margin-top: 0em;
         font-size: 2.2em;
         text-overflow: ellipsis;
         overflow: hidden;
         color: #424242;
         padding-bottom: 0em; }
-      .entity-container .entity .item .item-info {
-        margin-top: 0.6em;
-        margin-bottom: 1.6em;
-        font-size: 1.2em;
-        color: #A4A4A4; }
       .entity-container .entity .item .item-tags {
         font-size: 1.5em;
         margin-top: 0em;
@@ -827,35 +819,6 @@ a.black-link {
         font-family: "HNC", sans-serif;
         font-weight: 300;
         font-size: 2em; }
-    .entity-container .alerts .list-date {
-      padding: 0.7em;
-      margin-left: 0.2em;
-      margin-right: 0.2em;
-      background-color: white;
-      font-family: "HNC", sans-serif;
-      font-weight: 300;
-      font-size: 1.5em;
-      color: black;
-      border-radius: 5px;
-      text-align: center;
-      margin-top: 0em;
-      margin-bottom: 1em;
-      position: relative; }
-      .entity-container .alerts .list-date:after {
-        position: absolute;
-        content: "";
-        border-width: 20px 20px 20px 20px;
-        border-style: solid;
-        border-color: white;
-        z-index: -10;
-        left: 50%;
-        bottom: -6px;
-        box-shadow: 0px 0px 15px white;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg); }
     .entity-container .alerts .list {
       width: 100%;
       overflow: hidden;
@@ -870,12 +833,10 @@ a.black-link {
         z-index: 0;
         position: relative;
         border-top: 0px;
-        border-radius: 8px;
         padding: 1.5em;
         margin-bottom: 5px;
-        background-color: #f5f5f5;
         transition: all 0.6s ease-out;
-        box-shadow: 0px 1px 1px lightgray; }
+        border-bottom: 1px solid lightgray; }
         .entity-container .alerts .list .data .youtube {
           position: absolute;
           top: 15px;
@@ -889,17 +850,20 @@ a.black-link {
           font-size: 2em;
           width: 90%;
           overflow: hidden;
-          text-overflow: ellipsis; }
-          .entity-container .alerts .list .data .data-title .body {
-            font-family: "HNC", sans-serif;
-            font-weight: 300;
-            color: gray;
-            font-size: 0.7em; }
-          .entity-container .alerts .list .data .data-title .date {
+          text-overflow: ellipsis;
+          text-transform: capitalize; }
+        .entity-container .alerts .list .data .body {
+          font-family: "Cambria", sans-serif;
+          font-weight: 300;
+          color: gray;
+          padding-top: 1em;
+          font-size: 1.4em;
+          line-height: 1.3em; }
+          .entity-container .alerts .list .data .body .date {
             font-family: "HNC", sans-serif;
             font-weight: 300;
             color: lightgray;
-            font-size: 0.6em; }
+            font-size: 1em; }
         .entity-container .alerts .list .data .data-source {
           margin-top: 0em;
           font-family: "HNC", sans-serif;

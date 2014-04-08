@@ -79,7 +79,8 @@
               padding-right: 2em;
 
               .item-info {
-                font-size: 1.5em;
+                margin-top: 1em;
+                font-size: 1.2em;
                 color:gray;
                 width:auto;
                 @include title-font();
@@ -92,7 +93,7 @@
                   color:$dark-gray;
                 }
                 .item-badge-today {
-                  @include header-font();
+                  @include title-font();
                   padding:3px;
                   position: relative;
                   left:-2px;
@@ -108,7 +109,7 @@
                     border-color: transparent $dark-gray;
                     z-index: 1000;
                     left:-6px;
-                    top:10px;
+                    top:8px;
                   }
                 }
               }
