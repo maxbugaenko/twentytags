@@ -15,24 +15,23 @@
         <? if (!$this->user) $isLogged = "user-not-logged";?>
         <? foreach ($this->paginator as $item):?>
             <div class="item">
-                <div class="item-info">
-                    <? $alertCount = Model_Alert::retrieveCountByEntity($item);?>
-                    <? if ($alertCount > 0):?>
-                        <span class="item-badge-total" title="<?=$alertCount?> updates total">
-                                <?=$alertCount?>
-                            </span>
-                    <?endif?>
-                    <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
-                        <span class="item-badge-today" title="<?=$todayAlertCount?> new articles today">
-                                <?=$todayAlertCount?>
-                            </span>
-                    <? endif ?>
-
-                </div>
                 <div class="item-image">
                     <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
                         <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
                     </a>
+                    <div class="item-info">
+                        <? $alertCount = Model_Alert::retrieveCountByEntity($item);?>
+                        <? if ($alertCount > 0):?>
+                            <span class="item-badge-total" title="<?=$alertCount?> updates total">
+                                <?=$alertCount?>
+                            </span>
+                        <?endif?>
+                        <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
+                            <span class="item-badge-today" title="<?=$todayAlertCount?> new articles today">
+                                <?=$todayAlertCount?>
+                            </span>
+                        <? endif ?>
+                    </div>
                 </div>
                 <div class="item-content">
                     <div class="item-title">

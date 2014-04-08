@@ -102,6 +102,7 @@ input.input-text, input.input-large, input.search-input {
   font-weight: 300;
   padding: 0.5em;
   border: 0;
+  border: 1px solid lightgray;
   color: gray;
   outline: 0; }
   input.input-text:hover, input.input-large:hover, input.search-input:hover {

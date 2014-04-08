@@ -59,7 +59,7 @@
             max-width:100%;
             width: 95%;
             background-color: #fff;
-            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
 //            display:inline-block;
             display: flex;
             flex-direction: row;
@@ -72,48 +72,47 @@
               -o-animation: followButtonSlideUp forwards 0.2s ease-in-out;
               -webkit-opacity:1;
             }
-            .item-info {
-              position: absolute;
-              top:40px;
-              right:10px;
-              font-size: 1.5em;
-              color:gray;
-              width:auto;
-              @include title-font();
-
-              .item-badge-total {
-                padding:3px;
-                padding-left: 10px;
-                padding-right: 10px;
-                background-color: lightgray;
-                color:$dark-gray;
-              }
-              .item-badge-today {
-                @include header-font();
-                padding:3px;
-                position: relative;
-                left:-2px;
-                padding-left: 6px;
-                padding-right: 6px;
-                background-color: $dark-gray;
-                color:white;
-                &:after {
-                  position: absolute;
-                  content:"";
-                  border-width: 6px 6px 6px 0px;
-                  border-style: solid;
-                  border-color: transparent $dark-gray;
-                  z-index: 1000;
-                  left:-6px;
-                  top:7px;
-                }
-              }
-            }
             .item-image {
               order: 0;
               flex: 0 0 20%;
               align-self: auto;
               padding-right: 2em;
+
+              .item-info {
+                font-size: 1.5em;
+                color:gray;
+                width:auto;
+                @include title-font();
+
+                .item-badge-total {
+                  padding:3px;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  background-color: lightgray;
+                  color:$dark-gray;
+                }
+                .item-badge-today {
+                  @include header-font();
+                  padding:3px;
+                  position: relative;
+                  left:-2px;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  background-color: $dark-gray;
+                  color:white;
+                  &:after {
+                    position: absolute;
+                    content:"";
+                    border-width: 6px 6px 6px 0px;
+                    border-style: solid;
+                    border-color: transparent $dark-gray;
+                    z-index: 1000;
+                    left:-6px;
+                    top:10px;
+                  }
+                }
+              }
+
               img {
                 max-width: 100%;
               }
@@ -155,7 +154,7 @@
             }
             .item-follow-button {
                 position: absolute;
-                bottom:20px;
+                top:20px;
                 right:10px;
                 opacity: 0;
             }
