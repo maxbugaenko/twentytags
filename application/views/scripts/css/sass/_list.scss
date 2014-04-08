@@ -28,30 +28,11 @@
 		width: 100%;
   		overflow: hidden;
         vertical-align: top;
-/*        @media screen and (max-width:2000px) {
-          @include column-count(4);
-        }
-        @media screen and (max-width:1300px) {
-          @include column-count(4);
-
-        }
-        @media screen and (max-width:1000px) {
-          @include column-count(3);
-        }
-        @media screen and (max-width:800px) {
-          @include column-count(2);
-        }
-        @media screen and (max-width:600px) {
-          @include column-count(1);
-        }
-        @include column-gap(0em);
-        @include column-fill(auto);
-        */
         @include transition(all 0.8s ease-out);
+
 		.item {
             @include box-sizing(border-box);
 			@include transition(all 0.6s ease-out);
-//            @include column-break-inside(avoid);
             @include main-font();
 			padding: 1.4em;
             margin: 1em;
