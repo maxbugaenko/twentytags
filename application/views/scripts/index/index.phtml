@@ -15,6 +15,20 @@
         <? if (!$this->user) $isLogged = "user-not-logged";?>
         <? foreach ($this->paginator as $item):?>
             <div class="item">
+                <div class="item-info">
+                    <? $alertCount = Model_Alert::retrieveCountByEntity($item);?>
+                    <? if ($alertCount > 0):?>
+                        <span class="item-badge-total" title="<?=$alertCount?> updates total">
+                                <?=$alertCount?>
+                            </span>
+                    <?endif?>
+                    <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
+                        <span class="item-badge-today" title="<?=$todayAlertCount?> new articles today">
+                                <?=$todayAlertCount?>
+                            </span>
+                    <? endif ?>
+
+                </div>
                 <div class="item-image">
                     <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
                         <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
@@ -24,13 +38,18 @@
                     <div class="item-title">
                         <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
                         <? if ($item->link):?>
-                            <a class="gray-link" href="<?=$item->link?>">
+<!--                            <a class="gray-link" href="<?=$item->link?>">
                                 <i title="<?=$item->title?> on the web" class="fa fa-arrow-right"></i>
                             </a>
+                            -->
                         <?endif?>
-                        <br/>
                     </div>
                     <div class="item-tags">
+                        <? if ($item->link):?>
+                            <a class="red-link" href="<?=$item->link?>">
+                                <?=$item->link?>
+                            </a><br/>
+                        <?endif?>
                         <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
                         <? foreach ($tagged as $tag):?>
                             <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
@@ -38,20 +57,6 @@
                     </div>
                     <div class="item-description">
                         <?=$item->description?>&#160;&#160;&#160;
-                    </div>
-                    <div class="item-info">
-                        <? $alertCount = Model_Alert::retrieveCountByEntity($item);?>
-                        <? if ($alertCount > 0):?>
-                            <span class="item-badge-total" title="<?=$alertCount?> updates total">
-                                <?=$alertCount?>
-                            </span>
-                        <?endif?>
-                        <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
-                            <span class="item-badge-today" title="<?=$todayAlertCount?> new articles today">
-                                <?=$todayAlertCount?>
-                            </span>
-                        <? endif ?>
-
                     </div>
                 </div>
                 <? $isSaved = Model_Entity::isSaved($item);?>

@@ -20,20 +20,15 @@
 }
 .list-container {
     @include box-sizing(border-box);
-//    @include animation-name(showContainerSlow);
-//    @include animation-duration(1s);
-//    @include animation-timing-function(ease);
-//    @include animation-fill-mode(forwards);
     padding-top: 7em;
-	width: 90%;
-//    opacity: 0;
+	width: 60%;
 	margin: 0 auto;
 	.list {
         @include box-sizing(border-box);
 		width: 100%;
   		overflow: hidden;
         vertical-align: top;
-        @media screen and (max-width:2000px) {
+/*        @media screen and (max-width:2000px) {
           @include column-count(4);
         }
         @media screen and (max-width:1300px) {
@@ -51,37 +46,82 @@
         }
         @include column-gap(0em);
         @include column-fill(auto);
+        */
         @include transition(all 0.8s ease-out);
 		.item {
             @include box-sizing(border-box);
 			@include transition(all 0.6s ease-out);
-            @include column-break-inside(avoid);
+//            @include column-break-inside(avoid);
             @include main-font();
 			padding: 1.4em;
             margin: 1em;
             position: relative;
-//			border-radius: 3px;
             max-width:100%;
             width: 95%;
-            //margin-bottom:0.5em;
-            //border: 1px solid lightgray;
-            border-left: 1px solid lightgray;
-            //@include box-shadow(0px 1px 1px lightgray);
-			//background-color: #f5f5f5;
             background-color: #fff;
-            display:inline-block;
+            border-top: 1px solid lightgray;
+//            display:inline-block;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: stretch;
             &:hover .item-follow-button {
               -moz-animation: followButtonSlideUp forwards 0.2s ease-in-out;
               -o-animation: followButtonSlideUp forwards 0.2s ease-in-out;
               -webkit-opacity:1;
             }
+            .item-info {
+              position: absolute;
+              top:40px;
+              right:10px;
+              font-size: 1.5em;
+              color:gray;
+              width:auto;
+              @include title-font();
+
+              .item-badge-total {
+                padding:3px;
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: lightgray;
+                color:$dark-gray;
+              }
+              .item-badge-today {
+                @include header-font();
+                padding:3px;
+                position: relative;
+                left:-2px;
+                padding-left: 6px;
+                padding-right: 6px;
+                background-color: $dark-gray;
+                color:white;
+                &:after {
+                  position: absolute;
+                  content:"";
+                  border-width: 6px 6px 6px 0px;
+                  border-style: solid;
+                  border-color: transparent $dark-gray;
+                  z-index: 1000;
+                  left:-6px;
+                  top:7px;
+                }
+              }
+            }
             .item-image {
-              min-height: 150px;
+              order: 0;
+              flex: 0 0 20%;
+              align-self: auto;
+              padding-right: 2em;
               img {
                 max-width: 100%;
               }
             }
 			.item-content {
+                order: 0;
+                flex: 0 0 80%;
+                align-self: auto;
 				padding: 0em;
 				font-size: 1em;
 			}
@@ -89,7 +129,7 @@
 				margin-top: 0.4em;
 				margin-bottom: 2.5em;
                 @include main-font();
-				font-size: 1.2em;
+				font-size: 1.4em;
 				color:gray;
                 line-height: 1.3em;
 			}
@@ -99,46 +139,6 @@
 				font-size: 2em;
 				color:black;
                 cursor: pointer;
-			}
-			.item-info {
-				margin-top: 0.6em;
-				font-size: 1.1em;
-				color:gray;
-                width:auto;
-                @include title-font();
-
-               .item-badge-total {
-                  border-bottom-left-radius: 3px;
-                  border-top-left-radius: 3px;
-                  border-radius: 3px;
-                  padding:3px;
-                  padding-left: 10px;
-                  padding-right: 10px;
-                  background-color: lightgray;
-                  color:gray;
-                }
-              .item-badge-today {
-                  @include header-font();
-                  border-bottom-right-radius: 3px;
-                  border-top-right-radius: 3px;
-                  padding:3px;
-                  position: relative;
-                  left:-2px;
-                  padding-left: 6px;
-                  padding-right: 6px;
-                  background-color: $dark-gray;
-                  color:white;
-                  &:after {
-                    position: absolute;
-                    content:"";
-                    border-width: 6px 6px 6px 0px;
-                    border-style: solid;
-                    border-color: transparent $dark-gray;
-                    z-index: 1000;
-                    left:-6px;
-                    top:7px;
-                  }
-              }
 			}
             .item-link {
               font-size: 1.2em;
