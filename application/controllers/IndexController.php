@@ -41,6 +41,9 @@ class IndexController extends FaZend_Controller_Action {
      */
     public function feedAction() {
         $this->view->alerts = Model_Alert::retrieveByUser(Model_User::me(), 0);
+        if (count($this->view->alerts) == 0) {
+            $this->redirect("empty");
+        }
     }
 
     /**
@@ -53,7 +56,7 @@ class IndexController extends FaZend_Controller_Action {
             $this->view->mainTag = "I'm following";
             $iterator = Model_Entity::retrieveSavedByUser(Model_User::me());
             if (count($iterator) == 0) {
-                $this->redirect("emptyprofile");
+                $this->redirect("empty");
             }
         } else {
             $tag = new Model_Tag((int)$this->getRequest()->getParam('id'));
@@ -72,7 +75,7 @@ class IndexController extends FaZend_Controller_Action {
      * Empty profile page
      * @return void
      */
-    public function emptyprofileAction() {
+    public function emptyAction() {
     }
     /**
      * Empty profile page

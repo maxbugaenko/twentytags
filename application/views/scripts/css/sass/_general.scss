@@ -35,7 +35,51 @@
   url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedBold-b45199ea.ttf)
 }
 
-$main-font: 'Ubuntu', sans-serif;
+@font-face {
+  font-family: 'Cambria-BoldItalic';
+  src: url('http://img.yegor256.com/fonts/2A901D_0_0.eot');
+  src: url('http://img.yegor256.com/fonts/2A901D_0_0.eot?#iefix')
+  format('embedded-opentype'),
+  url('http://img.yegor256.com/fonts/2A901D_0_0.woff')
+  format('woff'),
+  url('http://img.yegor256.com/fonts/2A901D_0_0.ttf')
+  format('truetype');
+}
+
+@font-face {
+  font-family: 'Cambria-Bold';
+  src: url('http://img.yegor256.com/fonts/2A901D_1_0.eot');
+  src: url('http://img.yegor256.com/fonts/2A901D_1_0.eot?#iefix')
+  format('embedded-opentype'),
+  url('http://img.yegor256.com/fonts/2A901D_1_0.woff')
+  format('woff'),
+  url('http://img.yegor256.com/fonts/2A901D_1_0.ttf')
+  format('truetype');
+}
+
+@font-face {
+  font-family: 'Cambria';
+  src: url('http://img.yegor256.com/fonts/2A901D_2_0.eot');
+  src: url('http://img.yegor256.com/fonts/2A901D_2_0.eot?#iefix')
+  format('embedded-opentype'),
+  url('http://img.yegor256.com/fonts/2A901D_2_0.woff')
+  format('woff'),
+  url('http://img.yegor256.com/fonts/2A901D_2_0.ttf')
+  format('truetype');
+}
+
+@font-face {
+  font-family: 'Cambria-Italic';
+  src: url('http://img.yegor256.com/fonts/2A901D_3_0.eot');
+  src: url('http://img.yegor256.com/fonts/2A901D_3_0.eot?#iefix')
+  format('embedded-opentype'),
+  url('http://img.yegor256.com/fonts/2A901D_3_0.woff')
+  format('woff'),
+  url('http://img.yegor256.com/fonts/2A901D_3_0.ttf')
+  format('truetype');
+}
+
+$main-font: 'Cambria', sans-serif;
 $title-font: 'HNC', sans-serif;
 $button-font: 'HNC', sans-serif;
 $header-font: 'HNC', sans-serif;
@@ -48,7 +92,8 @@ $dark-gray: #424242;
 
 
 body {
-	background-color: #e6e6e6;
+	//background-color: #e6e6e6;
+    background-color: #fff;
 	@include main-font();
 	padding: 0em;
 	margin: 0em;
@@ -84,7 +129,7 @@ a, a:visited {
 }
 
 img {
-  border-radius: 5px;
-  @include box-shadow(0 5px 0 lightgray);
+  //border-radius: 5px;
+  //@include box-shadow(0 5px 0 lightgray);
 }
 

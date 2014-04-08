@@ -4,7 +4,7 @@
   width: 240px;
   height: 100%;
   position: fixed;
-  @include main-font();
+  @include title-font();
   z-index: 1000;
   top: 0;
   left: -240px;
@@ -39,8 +39,7 @@
     li a {
       display: block;
       color: #fff;
-      font-size: 1.2em;
-      font-weight: 400;
+      font-size: 1.5em;
       line-height: 3;
       padding: 0 20px;
       cursor: pointer;

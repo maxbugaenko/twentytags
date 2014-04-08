@@ -39,9 +39,25 @@
   font-family: "HNC";
   font-weight: 700;
   src: url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedBold-572a7194.woff) format("woff"), url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedBold-b45199ea.ttf); }
+@font-face {
+  font-family: 'Cambria-BoldItalic';
+  src: url("http://img.yegor256.com/fonts/2A901D_0_0.eot");
+  src: url("http://img.yegor256.com/fonts/2A901D_0_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_0_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Cambria-Bold';
+  src: url("http://img.yegor256.com/fonts/2A901D_1_0.eot");
+  src: url("http://img.yegor256.com/fonts/2A901D_1_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_1_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_1_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Cambria';
+  src: url("http://img.yegor256.com/fonts/2A901D_2_0.eot");
+  src: url("http://img.yegor256.com/fonts/2A901D_2_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_2_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_2_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Cambria-Italic';
+  src: url("http://img.yegor256.com/fonts/2A901D_3_0.eot");
+  src: url("http://img.yegor256.com/fonts/2A901D_3_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_3_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_3_0.ttf") format("truetype"); }
 body {
-  background-color: #e6e6e6;
-  font-family: "Ubuntu", sans-serif;
+  background-color: #fff;
+  font-family: "Cambria", sans-serif;
   font-weight: 300;
   padding: 0em;
   margin: 0em;
@@ -76,10 +92,6 @@ a, a:visited {
 
 .slide-page-container-right {
   left: 240px; }
-
-img {
-  border-radius: 5px;
-  box-shadow: 0 5px 0 lightgray; }
 
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;
