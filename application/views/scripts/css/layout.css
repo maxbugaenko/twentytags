@@ -71,7 +71,8 @@ h1 {
   font-family: "HNC", sans-serif;
   font-weight: 300; }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: black; }
 
@@ -88,39 +89,39 @@ a, a:visited {
   position: relative;
   z-index: 10001;
   overflow-x: hidden;
-  left: 0px; }
+  left: 0; }
 
 .slide-page-container-right {
   left: 240px; }
 
-.header-button, .header-button-large, .header-button-small, .header-button-wide, .facebook, .twitter, .google, .header-button-red {
+.btn-icon, .btn-large, .btn-small, .btn-wide, .facebook, .twitter, .google, .btn-red {
   cursor: pointer;
-  padding: 0.2em;
-  padding-top: 0.4em;
-  width: 1.4em;
-  font-size: 1em;
+  padding: .2em;
+  padding-top: .4em;
   text-align: center;
   color: gray;
   outline: 0;
-  border: 0px;
+  border: 0;
   white-space: nowrap;
   border-radius: 5px;
   border-right-radius: 5px;
-  -webkit-font-smoothing: antialiased;
   position: relative;
   background-color: #e6e6e6;
-  box-shadow: 0px 5px #d6d6d6; }
-  .header-button:hover, .header-button-large:hover, .header-button-small:hover, .header-button-wide:hover, .facebook:hover, .twitter:hover, .google:hover, .header-button-red:hover {
+  box-shadow: 0 5px #d6d6d6; }
+  .btn-icon:hover, .btn-large:hover, .btn-small:hover, .btn-wide:hover, .facebook:hover, .twitter:hover, .google:hover, .btn-red:hover {
     top: -2px;
-    box-shadow: 0px 7px #d6d6d6; }
-  .header-button:active, .header-button-large:active, .header-button-small:active, .header-button-wide:active, .facebook:active, .twitter:active, .google:active, .header-button-red:active {
+    box-shadow: 0 7px #d6d6d6; }
+  .btn-icon:active, .btn-large:active, .btn-small:active, .btn-wide:active, .facebook:active, .twitter:active, .google:active, .btn-red:active {
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     transition: all 0.1s;
-    box-shadow: 0px 0px #d6d6d6;
+    box-shadow: 0 0 #d6d6d6;
     top: 5px; }
 
-.header-button-large, .header-button-small, .header-button-wide {
+.btn-icon {
+  width: 40px; }
+
+.btn-large, .btn-small {
   width: auto;
   padding-top: .3em;
   padding-bottom: .3em;
@@ -130,12 +131,12 @@ a, a:visited {
   font-family: "HNC", sans-serif;
   font-weight: 400; }
 
-.header-button-small {
-  font-family: "HNC", sans-serif;
-  font-weight: 400;
-  font-size: 1.2em; }
+.btn-small {
+  font-size: 1.2em;
+  padding-left: .5em;
+  padding-right: .5em; }
 
-.header-button-wide {
+.btn-wide {
   width: 100%; }
 
 .facebook {
@@ -156,13 +157,13 @@ a, a:visited {
   .twitter:active {
     box-shadow: 0px 0px #074f73; }
 
-.google, .header-button-red {
+.google, .btn-red {
   color: white;
   background-color: #d42020;
   box-shadow: 0px 5px #a60000; }
-  .google:hover, .header-button-red:hover {
+  .google:hover, .btn-red:hover {
     box-shadow: 0px 7px #a60000; }
-  .google:active, .header-button-red:active {
+  .google:active, .btn-red:active {
     box-shadow: 0px 0px #a60000; }
 
 input.input-text, input.input-large, input.search-input {

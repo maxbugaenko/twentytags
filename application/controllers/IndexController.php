@@ -239,7 +239,6 @@ class IndexController extends FaZend_Controller_Action {
             $root->appendChild($url);
             unset($url);
         }
-
         $this->_returnXML($dom->saveXML());
     }
 

@@ -71,7 +71,8 @@ h1 {
   font-family: "HNC", sans-serif;
   font-weight: 300; }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: black; }
 
@@ -88,7 +89,7 @@ a, a:visited {
   position: relative;
   z-index: 10001;
   overflow-x: hidden;
-  left: 0px; }
+  left: 0; }
 
 .slide-page-container-right {
   left: 240px; }

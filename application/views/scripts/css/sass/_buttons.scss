@@ -1,59 +1,64 @@
-.header-button {
+%btn {
   cursor: pointer;
-  padding:0.2em;
-  padding-top: 0.4em;
-  width:1.4em;
-  font-size:1em;
+  padding: .2em;
+  padding-top: .4em;
   text-align: center;
-  color:gray;
+  color: gray;
   outline: 0;
-  border:0px;
+  border: 0;
   white-space: nowrap;
   border-radius: 5px;
   border-right-radius: 5px;
-  -webkit-font-smoothing:antialiased;
   position: relative;
   background-color: #e6e6e6;
-  box-shadow:0px 5px #d6d6d6;
+  box-shadow: 0 5px #d6d6d6;
+
   &:hover {
-    top:-2px;
-    box-shadow:0px 7px #d6d6d6;
+    top: -2px;
+    box-shadow: 0 7px #d6d6d6;
   }
+
   &:active {
-    @include transition(all 0.1s);
-    box-shadow:0px 0px #d6d6d6;
-    top:5px;
+    @include transition(all .1s);
+    box-shadow: 0 0 #d6d6d6;
+    top: 5px;
   }
 }
 
-.header-button-red {
+.btn-icon {
+  @extend %btn;
+  width: 40px;
+}
+
+.btn-red {
   @extend .google;
 }
 
-.header-button-large {
-  @extend .header-button;
-  width:auto;
+.btn-large {
+  @extend %btn;
+  width: auto;
   padding-top: .3em;
   padding-bottom: .3em;
   padding-left: 1em;
   padding-right: 1em;
-  font-size:35px;
+  font-size: 35px;
   @include header-font();
 }
 
-.header-button-small {
-  @extend .header-button-large;
-  @include header-font();
-  font-size:1.2em;
+.btn-small {
+  @extend .btn-large;
+  font-size: 1.2em;
+  padding-left: .5em;
+  padding-right: .5em;
 }
 
-.header-button-wide {
-  @extend .header-button-large;
+.btn-wide {
+  @extend %btn;
   width: 100%;
 }
 
 .facebook {
-  @extend .header-button;
+  @extend %btn;
   background-color: #44619c;
   color: white;
   box-shadow:0px 5px #35528c;
@@ -66,7 +71,7 @@
 }
 
 .twitter {
-  @extend .header-button;
+  @extend %btn;
   color: white;
   background-color: #509abf;
   box-shadow:0px 5px #074f73;
@@ -81,7 +86,7 @@
 }
 
 .google {
-  @extend .header-button;
+  @extend %btn;
   color: white;
   background-color: #d42020;
   box-shadow:0px 5px #a60000;
