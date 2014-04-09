@@ -134,6 +134,7 @@ class IndexController extends FaZend_Controller_Action {
             }
         }
     }
+
     /**
      * Logs out facebook user
      * @return void
@@ -143,6 +144,7 @@ class IndexController extends FaZend_Controller_Action {
         $this->view->entity = $entity;
         $this->view->dates = Model_Alert::retrieveDistinctDatesByEntity($entity);
     }
+
     /**
      * Add tag page
      * @return void
