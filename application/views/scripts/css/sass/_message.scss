@@ -1,36 +1,16 @@
 .message-container {
-  @include box-sizing(border-box);
   margin: 0 auto;
   padding-top: 15%;
   padding-bottom: 5%;
   text-align: center;
-  margin-left: auto;
-  margin-right:auto;
-  width:50%;
-  color:lightgray;
-  .message-title {
-    @include header-font();
-    font-size: 4em;
-    color:$gray;
-  }
-  .message-description {
-    @include title-font();
-    font-size:2em;
-    color:$gray;
-  }
+  width: 50%;
+
   .button-block {
     padding-top: 1em;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     width:70%;
-  }
-
-  #error-message {
-    margin-top: 1em;
-    @include title-font();
-    color: $dark-gray;
-    font-size:2em;
   }
 
 }

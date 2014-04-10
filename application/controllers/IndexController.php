@@ -54,22 +54,20 @@ class IndexController extends FaZend_Controller_Action {
         $route = Zend_Controller_Front::getInstance()->getRouter()->getCurrentRouteName();
         if ($route == "following") {
             $this->view->mainTag = "I'm following";
-            $iterator = Model_Entity::retrieveSavedByUser(Model_User::me());
-            if (count($iterator) == 0) {
+            $this->view->entities = Model_Entity::retrieveSavedByUser(Model_User::me());
+            if (count($$this->view->entities) == 0) {
                 $this->redirect("empty");
             }
         } else {
             $tag = new Model_Tag((int)$this->getRequest()->getParam('id'));
             if ($tag->exists()) {
                 $this->view->mainTag = $tag->value;
-                $iterator = Model_Entity::retrieveByTag($tag);
+                $this->view->entities = Model_Entity::retrieveByTag($tag);
             } else {
                 $this->view->mainTag = "What's hot";
-                $iterator = Model_Entity::retrieveAll();
+                $this->view->entities = Model_Entity::retrieveAll();
             }
         }
-        FaZend_Paginator::addPaginator($iterator, $this->view, $this->_getParamOrFalse('page'));
-        $this->view->paginator->setItemCountPerPage(100);
 	}
     /**
      * Empty profile page
@@ -142,7 +140,7 @@ class IndexController extends FaZend_Controller_Action {
     public function entityAction() {
         $entity = new Model_Entity((int)$this->getRequest()->getParam("id"));
         $this->view->entity = $entity;
-        $this->view->dates = Model_Alert::retrieveDistinctDatesByEntity($entity);
+        $this->view->alerts = Model_Alert::retrieveByEntity($entity);
     }
 
     /**

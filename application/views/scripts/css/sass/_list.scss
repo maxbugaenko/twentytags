@@ -1,164 +1,61 @@
-@include keyframes(showContainerSlow) {
-  from {
-    //@include transform(translateY(-40%));
-    opacity:0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@include keyframes(showImageSlowly) {
-  from {
-    opacity:0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .login-urls {
   display: none;
 }
+
 .list-container {
-    @include box-sizing(border-box);
     padding-top: 7em;
 	width: 60%;
 	margin: 0 auto;
-	.list {
-        @include box-sizing(border-box);
-		width: 100%;
-  		overflow: hidden;
-        vertical-align: top;
-        @include transition(all 0.8s ease-out);
 
 		.item {
-            @include box-sizing(border-box);
-			@include transition(all 0.6s ease-out);
-            @include main-font();
-			padding: 1.4em;
-            margin: 1em;
             position: relative;
-            max-width:100%;
-            width: 95%;
-            background-color: #fff;
-            border-bottom: 1px solid lightgray;
-//            display:inline-block;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: flex-start;
             align-content: stretch;
             align-items: stretch;
+            border-bottom: 1px solid lightgray;
+
             &:hover .item-follow-button {
-              -moz-animation: followButtonSlideUp forwards 0.2s ease-in-out;
-              -o-animation: followButtonSlideUp forwards 0.2s ease-in-out;
-              -webkit-opacity:1;
+              opacity:1;
             }
+
             .item-image {
               order: 0;
               flex: 0 0 20%;
               align-self: auto;
               padding-right: 2em;
-
-              .item-info {
-                margin-top: 1em;
-                font-size: 1.2em;
-                color:gray;
-                width:auto;
-                @include title-font();
-
-                .item-badge-total {
-                  padding:3px;
-                  padding-left: 10px;
-                  padding-right: 10px;
-                  background-color: lightgray;
-                  color:$dark-gray;
-                }
-                .item-badge-today {
-                  @include title-font();
-                  padding:3px;
-                  position: relative;
-                  left:-2px;
-                  padding-left: 10px;
-                  padding-right: 10px;
-                  background-color: $dark-gray;
-                  color:white;
-                  &:after {
-                    position: absolute;
-                    content:"";
-                    border-width: 6px 6px 6px 0px;
-                    border-style: solid;
-                    border-color: transparent $dark-gray;
-                    z-index: 1000;
-                    left:-6px;
-                    top:8px;
-                  }
-                }
-              }
+              padding-top: 2em;
 
               img {
                 max-width: 100%;
               }
             }
+
 			.item-content {
                 order: 0;
                 flex: 0 0 80%;
                 align-self: auto;
-				padding: 0em;
-				font-size: 1em;
 			}
-			.item-description {
-				margin-top: 0.4em;
-				margin-bottom: 2.5em;
-                @include main-font();
-				font-size: 1.4em;
-				color:gray;
-                line-height: 1.3em;
-			}
-			.item-title {
-                @include header-font();
-				margin-top: 0.4em;
-				font-size: 2em;
-				color:black;
-                cursor: pointer;
-			}
-            .item-link {
-              font-size: 1.2em;
-            }
-			.item-tags {
-                @include title-font();
-                margin-bottom: 1em;
-				font-size: 1.4em;
-				cursor: pointer;
-				margin-right: 0.3em;
-				color:black;
-				border-radius: 2px;
-				margin-right:3px;
-            }
+
             .item-follow-button {
                 position: absolute;
                 top:20px;
                 right:10px;
                 opacity: 0;
             }
+
             .make-visible {
               opacity:1;
             }
+
             .not-displayed {
               display:none;
             }
+
             .displayed {
               display:block;
             }
 		}
-	}
-}
-@include keyframes(followButtonSlideUp) {
-  from {
-    opacity: 0;
-    @include transform(translateY(40%));
-  }
-  to {
-    opacity: 1;
-    @include transform(translateY(0%));
-  }
 }

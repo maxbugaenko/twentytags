@@ -8,26 +8,23 @@
         <? foreach ($this->alerts as $item):?>
                 <div class="alert-container">
                     <div class="entity">
-                        <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
                         <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>">
                             <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
                         </a>
+                        <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
                     </div>
                     <div class="data">
-                        <div class="data-title">
+                        <h3>
                             <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
                             <? if ($item->source == "youtube"):?>
                                 <span class="youtube">
                                     <i class="fa fa-youtube"></i>
                                 </span>
                             <? endif;?>
-                        </div>
-                        <div class="body">
+                        </h3>
+                        <p>
                             <?=$item->body?>
-                        </div>
-                        <div class="data-controls">
-                            <i class="btn-small fa fa-sort-asc"></i>
-                        </div>
+                        </p>
                     </div>
                 </div>
         <?endforeach?>

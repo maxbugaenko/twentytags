@@ -47,7 +47,7 @@
 
 .btn-small {
   @extend .btn-large;
-  font-size: 1.2em;
+  font-size: 0.8em;
   padding-left: .5em;
   padding-right: .5em;
 }
@@ -58,44 +58,40 @@
 }
 
 .facebook {
-  @extend %btn;
-  background-color: #44619c;
-  color: white;
-  box-shadow:0px 5px #35528c;
+  font-size: 1.5em;
+  color: #44619c;
+
   &:hover {
-    box-shadow:0px 7px #35528c;
+    color: #35528c;
   }
+
   &:active {
-    box-shadow:0px 0px #35528c;
+    color: #35528c;
   }
 }
 
 .twitter {
-  @extend %btn;
-  color: white;
-  background-color: #509abf;
-  box-shadow:0px 5px #074f73;
+  font-size: 1.5em;
+  color: #509abf;
 
   &:hover {
-    box-shadow:0px 7px #074f73;
+    color: #074f73;
   }
 
   &:active {
-    box-shadow:0px 0px #074f73;
+    color: #074f73;
   }
 }
 
 .google {
-  @extend %btn;
-  color: white;
-  background-color: #d42020;
-  box-shadow:0px 5px #a60000;
+  font-size: 1.5em;
+  color: #d42020;
 
   &:hover {
-    box-shadow:0px 7px #a60000;
+    color: #a60000;
   }
 
   &:active {
-    box-shadow:0px 0px #a60000;
+    color: #a60000;
   }
 }

@@ -25,6 +25,7 @@ a.link-underline {
 
 a.black-link {
   @include transition(all 0.2s ease);
+
   &:hover {
     @include transition(all 0.2s ease);
     color:black;

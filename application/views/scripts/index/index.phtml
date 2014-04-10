@@ -11,38 +11,25 @@
 ?>
 
 <div class="list-container">
-    <div class="list"'>
         <? if (!$this->user) $isLogged = "user-not-logged";?>
-        <? foreach ($this->paginator as $item):?>
-            <div class="item">
+        <? foreach ($this->entities as $item):?>
+            <article class="item">
                 <div class="item-image">
                     <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
                         <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
                     </a>
-                    <div class="item-info">
-                        <? if ($item->alerts > 0):?>
-                            <span class="item-badge-total" title="<?=$alertCount?> updates total">
-                                <?=$item->alerts?>
-                            </span>
-                        <?endif?>
+                    <p>
+                        <?=$item->alerts > 0 ? $item->alerts." total<br/>" : ""?>
                         <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
-                            <span class="item-badge-today" title="<?=$todayAlertCount?> new articles today">
-                                <?=$todayAlertCount?>
-                            </span>
+                                <?=$todayAlertCount?> today
                         <? endif ?>
-                    </div>
+                    </p>
                 </div>
                 <div class="item-content">
-                    <div class="item-title">
+                    <h3>
                         <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
-                        <? if ($item->link):?>
-<!--                            <a class="gray-link" href="<?=$item->link?>">
-                                <i title="<?=$item->title?> on the web" class="fa fa-arrow-right"></i>
-                            </a>
-                            -->
-                        <?endif?>
-                    </div>
-                    <div class="item-tags">
+                    </h3>
+                    <p>
                         <? if ($item->link):?>
                             <a class="red-link" href="<?=$item->link?>">
                                 <?=$item->link?>
@@ -52,10 +39,10 @@
                         <? foreach ($tagged as $tag):?>
                             <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
                         <? endforeach?>
-                    </div>
-                    <div class="item-description">
-                        <?=$item->description?>&#160;&#160;&#160;
-                    </div>
+                    </p>
+                    <p>
+                        <?=$item->description?>
+                    </p>
                 </div>
                 <? $isSaved = Model_Entity::isSaved($item);?>
                 <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
@@ -70,19 +57,13 @@
                                 ?>
                             </div>
                         <?endif?>
-                        <?=$isSaved ? "Unfollow":"Follow"?>
+                        <?=$isSaved ? "Unfollow" : "Follow"?>
                     </button>
                 </div>
-            </div>
+            </article>
         <?endforeach?>
     </div>
 </div>
 <script>
     $(".to-follow-button").FollowEntity();
-    /*window.onload = function(){
-        var $container = $('.list').masonry({
-            itemSelector: '.item',
-            columnWidth: '.column-width'
-        });
-    }*/
 </script>

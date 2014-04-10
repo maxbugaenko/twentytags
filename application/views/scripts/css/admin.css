@@ -53,32 +53,18 @@
   font-family: 'Cambria-Italic';
   src: url("http://img.yegor256.com/fonts/2A901D_3_0.eot");
   src: url("http://img.yegor256.com/fonts/2A901D_3_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_3_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_3_0.ttf") format("truetype"); }
-body {
+body, html {
   background-color: #fff;
   font-family: "Cambria", sans-serif;
   font-weight: 300;
-  padding: 0em;
-  margin: 0em;
+  padding: 0;
+  margin: 0;
   overflow-x: hidden; }
-
-html {
-  overflow-x: hidden; }
-
-h1 {
-  font-size: 2.5em;
-  font-family: "HNC", sans-serif;
-  font-weight: 300; }
 
 a,
 a:visited {
   text-decoration: none;
   color: black; }
-
-.wait {
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  color: lightgray; }
 
 .page-container, .slide-page-container-right {
   -webkit-transition: all 0.1s ease-in-out;
@@ -87,10 +73,19 @@ a:visited {
   position: relative;
   z-index: 10001;
   overflow-x: hidden;
+  line-height: 1.5em;
+  font-size: 1.5em;
   left: 0; }
 
 .slide-page-container-right {
   left: 240px; }
+
+.toTop {
+  position: fixed;
+  display: none;
+  bottom: 40px;
+  left: 40px;
+  width: 100px; }
 
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;

@@ -104,22 +104,12 @@ $dark-red: #dd1338;
 $light-red: #FF2E54;
 $dark-gray: #424242;
 
-body {
-	//background-color: #e6e6e6;
+body, html {
     background-color: #fff;
 	@include main-font();
-	padding: 0em;
-	margin: 0em;
+	padding: 0;
+	margin: 0;
     overflow-x: hidden;
-}
-
-html {
-  overflow-x: hidden;
-}
-
-h1 {
-	font-size: 2.5em;
-	@include title-font();
 }
 
 a,
@@ -128,22 +118,25 @@ a:visited {
   color:black;
 }
 
-.wait {
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  color: lightgray;
-}
-
 .page-container {
   @include transition(all .1s ease-in-out);
   position: relative;
   z-index: 10001;
   overflow-x: hidden;
+  line-height: 1.5em;
+  font-size: 1.5em;
   left: 0;
 }
 
 .slide-page-container-right {
   @extend .page-container;
   left: 240px;
+}
+
+.toTop {
+  position: fixed;
+  display: none;
+  bottom:40px;
+  left:40px;
+  width:100px;
 }

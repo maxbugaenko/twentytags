@@ -5,36 +5,35 @@
         ->appendHttpEquiv('pragma', 'no-cache')
         ->appendHttpEquiv('Cache-Control', 'no-cache')
         ->appendHttpEquiv('Content-Type', 'text/html; charset=UTF-8');
-		$this->includeJS('jquery.js');
-        $this->includeJS('masonry.js');
-        $this->includeJS('follow.js');
-		$this->includeCSS('layout.css');
+    $this->includeJS('jquery.js');
+    $this->includeJS('masonry.js');
+    $this->includeJS('follow.js');
+    $this->includeCSS('layout.css');
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
-	<?php echo $this->headTitle()?>
+    <?php echo $this->headTitle()?>
 	<?php echo $this->headMeta()?>
 	<?php echo $this->headLink()?>
 	<?php echo $this->headScript()?>
 	<?php echo $this->headStyle()?>
     <?php echo $this->headAnything()?>
 	<style>
-		@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
-	</style>
+        @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+    </style>
 </head> 
 <body>
     <div class="menu-panel" id="menu-panel">
-        <h3><i class="fa fa-check-circle"></i> Popular</h3>
         <ul class="menu">
             <?if (Model_User::isLoggedIn()):?>
-                <li><a class="<?=$this->mainTag == "I'm following" ? "current":""?>" href="<?=$this->url(array(), "following", false)?>"><i class="fa fa-tasks"></i> I'm following</a></li>
+                <li><a class="<?=$this->mainTag == "I'm following" ? "current":""?>" href="<?=$this->url(array(), "following", false)?>">I'm following</a></li>
             <?endif?>
-            <li><a class="<?=$this->mainTag == "What's hot" ? "current":""?>" href="<?=$this->url(array(), "browse", false)?>"><i class="fa fa-fire"></i> What's hot</a></li>
-            <li><a class="<?=$this->mainTag == "Startups" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Startups")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-rocket"></i> Startups</a></li>
-            <li><a class="<?=$this->mainTag == "Entreprenuers" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Entreprenuers")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-smile-o"></i> Entreprenuers</a></li>
-            <li><a class="<?=$this->mainTag == "Known people" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Known people")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-smile-o"></i> Known people</a></li>
-            <li><a class="<?=$this->mainTag == "Sportsmen" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Sportsmen")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-star"></i> Sportsmen</a></li>
-            <li><a class="<?=$this->mainTag == "Global trends" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Global trends")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><i class="fa fa-folder-open"></i> Global trends</a></li>
+            <li><a class="<?=$this->mainTag == "What's hot" ? "current":""?>" href="<?=$this->url(array(), "browse", false)?>">What's hot</a></li>
+            <li><a class="<?=$this->mainTag == "Startups" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Startups")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Startups</a></li>
+            <li><a class="<?=$this->mainTag == "Entreprenuers" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Entreprenuers")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Entreprenuers</a></li>
+            <li><a class="<?=$this->mainTag == "Known people" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Known people")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Known people</a></li>
+            <li><a class="<?=$this->mainTag == "Sportsmen" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Sportsmen")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Sportsmen</a></li>
+            <li><a class="<?=$this->mainTag == "Global trends" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Global trends")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Global trends</a></li>
         </ul>
         <div class="legal-notes">
             TWENTYTAGS.COM<br/>
@@ -42,7 +41,12 @@
         </div>
     </div>
     <div class="page-container" id="page-container">
-        <?=$this->partial("header/header.phtml", array("user"=>$this->user, "mainTag"=>$this->mainTag))?>
+        <?=$this->partial("header/header.phtml",
+            array(
+                "user" => $this->user,
+                "mainTag" => $this->mainTag)
+            )
+        ?>
         <?=$this->layout()->content?>
     </div>
     <!-- hit.ua -->

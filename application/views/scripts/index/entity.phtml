@@ -1,14 +1,11 @@
-<?$this->headTitle("TwentyTags - ".$this->entity->title)?>
 <?
-$this->headMeta()
-    ->appendName('keywords', $this->escape($this->entity->title))
-    ->appendName('description', $this->escape("News about ".$this->entity->title));
-$this->headAnything()->addHtml('<meta property="og:title" content="'.$this->escape($this->entity->title).'">');
-$this->headAnything()->addHtml('<meta property="og:description" content="'.$this->escape($this->entity->description).'">');
-$this->headAnything()->addHtml('<meta property="og:image" content="'.$this->staticFile("images/entities/".$this->entity->picture).'">');
-
+    $this->headTitle("TwentyTags - ".$this->entity->title);
+    $this->headMeta()->appendName('keywords', $this->escape($this->entity->title));
+    $this->headMeta()->appendName('description', $this->escape("News about ".$this->entity->title));
+    $this->headAnything()->addHtml('<meta property="og:title" content="'.$this->escape($this->entity->title).'">');
+    $this->headAnything()->addHtml('<meta property="og:description" content="'.$this->escape($this->entity->description).'">');
+    $this->headAnything()->addHtml('<meta property="og:image" content="'.$this->staticFile("images/entities/".$this->entity->picture).'">');
 ?>
-
 <div class="toTop">
     <button id="to-top-button" class="btn-small">
         <i class="fa fa-angle-double-up"></i> Up
@@ -16,72 +13,58 @@ $this->headAnything()->addHtml('<meta property="og:image" content="'.$this->stat
 </div>
 <div class="entity-container">
     <div class="entity">
-        <div class="item">
-            <div class="item-image">
-                <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
-            </div>
-            <div class="item-content">
-                <div class="item-title">
-                    <?=$this->entity->title?>
-                </div>
-                <div class="item-tags">
-                    <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
-                    <? foreach ($tagged as $tag):?>
-                        <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
-                    <? endforeach?><br/><br/>
-
-                    <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
-                       href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
-                        <i class="facebook fa fa-facebook-square"></i>
-                    </a>
-                    <a target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')"
-                       href="https://twitter.com/share">
-                        <i class="header-button twitter fa fa-twitter"></i>
-                    </a>
-                    <a target="_blank" onclick="return !window.open(this.href, 'Google+', 'width=640,height=300')"
-                       href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
-                        <i class="header-button google fa fa-google-plus-square"></i>
-                    </a>
-                </div>
-                <div class="item-description">
-                    <?=$this->entity->description?>
-                </div>
-                <button class="btn-large btn-red btn-wide"><i class="fa fa-check-square"></i> Follow</button>
-            </div>
-        </div>
+        <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
+        <h2><?=$this->entity->title?></h2>
+        <p>
+                <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
+                <? foreach ($tagged as $tag):?>
+                    <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
+                <? endforeach?>
+        </p>
+        <p>
+            <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
+               href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
+                <i class="facebook fa fa-facebook-square"></i>
+            </a>
+            <a target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')"
+               href="https://twitter.com/share">
+                <i class="twitter fa fa-twitter-square"></i>
+            </a>
+            <a target="_blank" onclick="return !window.open(this.href, 'Google+', 'width=640,height=300')"
+               href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
+                <i class="google fa fa-google-plus-square"></i>
+            </a>
+        </p>
+        <p>
+            <?=$this->entity->description?>
+        </p>
+        <button class="btn-large btn-red btn-wide"><i class="fa fa-check-square"></i> Follow</button>
     </div>
-    <div class="alerts <?if (count($this->dates) == 0) { echo "add-no-alerts-margin"; }?>">
-        <?if (count($this->dates) > 0):?>
-            <?foreach ($this->dates as $date):?>
-                <?$alerts = Model_Alert::retrieveByEntityAndDate($this->entity, $date->dates);?>
-                <div class="list">
-                    <? foreach ($alerts as $item):?>
-                        <div class="data">
-                            <div class="data-title">
-                                <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
-                                <? if ($item->source == "youtube"):?>
-                                    <span class="youtube">
-                                        <i class="fa fa-youtube"></i>
-                                    </span>
-                                <? endif;?>
-
-                            </div>
-                            <div class="body">
-                                <?=$item->body?> <span class="date"><?=date("F jS, Y",strtotime($item->added));?></span>
-                            </div>
-                            <div class="data-controls">
-                                <i class="btn-small fa fa-sort-asc"></i>
-                            </div>
-                        </div>
-                    <?endforeach?>
-                </div>
+    <div class="alerts <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
+        <?if (count($this->alerts) > 0):?>
+            <? foreach ($this->alerts as $item):?>
+                <article class="alert">
+                    <h3>
+                        <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
+                        <? if ($item->source == "youtube"):?>
+                            <i class="youtube fa fa-youtube"></i>
+                        <? endif;?>
+                    </h3>
+                    <p>
+                        <?=$item->body?>
+                    </p>
+                    <h6><?=date("F jS, Y",strtotime($item->added));?></h6>
+                </article>
             <?endforeach?>
         <?else:?>
             <div class="message">
-                <div class="message-title"><i class="fa fa-clock-o"></i><br/>There is no updates yet</div>
-                <div class="message-description">
+                <h1>
+                    <i class="fa fa-clock-o"></i><br/>
+                    There is no updates yet
+                </h1>
+                <p>
                     We've got to wait a little. Either follow this tag or get back later
-                </div>
+                </p>
             </div>
         <?endif?>
     </div>
