@@ -3,57 +3,56 @@
 }
 
 .list-container {
-    padding-top: 7em;
 	width: 60%;
 	margin: 0 auto;
 
-		.item {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-content: stretch;
-            align-items: stretch;
-            border-bottom: 1px solid lightgray;
-            padding-bottom: 1em;
-            padding-top: 1em;
+    .item {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: stretch;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 1em;
+        padding-top: 1em;
 
-            &:hover .item-follow-button {
-              opacity:1;
-            }
+        &:hover .item-follow-button {
+          opacity:1;
+        }
 
-            .item-image {
-              order: 0;
-              flex: 0 0 20%;
-              align-self: auto;
-              padding-right: 2em;
-              text-align: right;
-            }
+        .item-image {
+          order: 0;
+          flex: 0 0 20%;
+          align-self: auto;
+          padding-right: 2em;
+          text-align: right;
+        }
 
-			.item-content {
-                order: 0;
-                flex: 0 0 80%;
-                align-self: auto;
-			}
+        .item-content {
+            order: 0;
+            flex: 0 0 80%;
+            align-self: auto;
+        }
 
-            .item-follow-button {
-                position: absolute;
-                top:20px;
-                right:10px;
-                opacity: 0;
-            }
+        .item-follow-button {
+            position: absolute;
+            top:20px;
+            right:10px;
+            opacity: 0;
+        }
 
-            .make-visible {
-              opacity:1;
-            }
+        .make-visible {
+          opacity:1;
+        }
 
-            .not-displayed {
-              display:none;
-            }
+        .not-displayed {
+          display:none;
+        }
 
-            .displayed {
-              display:block;
-            }
-		}
+        .displayed {
+          display:block;
+        }
+    }
 }

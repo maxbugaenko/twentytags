@@ -75,7 +75,8 @@ a:visited {
   overflow-x: hidden;
   left: 0;
   line-height: 1.2em;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  padding-top: 5em; }
 
 .slide-page-container-right {
   left: 240px; }
@@ -96,14 +97,15 @@ h2, h3 {
   margin: 0; }
 
 h5 {
-  margin-top: .5em;
-  color: #424242; }
+  color: #424242;
+  margin: 0; }
 
 p {
   margin: 0; }
 
-p.description {
-  margin-top: 0.5em; }
+p.margins {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
 
 img {
   max-width: 100%; }

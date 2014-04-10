@@ -1,7 +1,6 @@
 .entity-container {
   width: 70%;
   margin: 0 auto;
-  padding-top: 7em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -14,9 +13,11 @@
     flex: 0 0 30%;
     align-self: auto;
     padding-right: 1em;
+    text-align: right;
 
     img {
       max-width: 100%;
+      margin-bottom: 2em;
     }
   }
 
@@ -30,6 +31,7 @@
     .alert {
       border-bottom: 1px solid lightgray;
       padding-top: 1em;
+      padding-bottom: 1em;
     }
   }
 }

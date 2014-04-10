@@ -75,7 +75,8 @@ a:visited {
   overflow-x: hidden;
   left: 0;
   line-height: 1.2em;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  padding-top: 5em; }
 
 .slide-page-container-right {
   left: 240px; }
@@ -96,14 +97,15 @@ h2, h3 {
   margin: 0; }
 
 h5 {
-  margin-top: .5em;
-  color: #424242; }
+  color: #424242;
+  margin: 0; }
 
 p {
   margin: 0; }
 
-p.description {
-  margin-top: 0.5em; }
+p.margins {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
 
 img {
   max-width: 100%; }
@@ -384,7 +386,6 @@ a.black-link {
   display: none; }
 
 .list-container {
-  padding-top: 7em;
   width: 60%;
   margin: 0 auto; }
   .list-container .item {
@@ -452,7 +453,6 @@ a.black-link {
 .entity-container {
   width: 70%;
   margin: 0 auto;
-  padding-top: 7em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -463,9 +463,11 @@ a.black-link {
     order: 0;
     flex: 0 0 30%;
     align-self: auto;
-    padding-right: 1em; }
+    padding-right: 1em;
+    text-align: right; }
     .entity-container .entity img {
-      max-width: 100%; }
+      max-width: 100%;
+      margin-bottom: 2em; }
   .entity-container .alerts {
     border-left: 1px solid lightgray;
     padding-left: 1em;
@@ -474,7 +476,8 @@ a.black-link {
     align-self: auto; }
     .entity-container .alerts .alert {
       border-bottom: 1px solid lightgray;
-      padding-top: 1em; }
+      padding-top: 1em;
+      padding-bottom: 1em; }
 
 .message {
   text-align: center; }
