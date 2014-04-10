@@ -40,6 +40,9 @@ class IndexController extends FaZend_Controller_Action {
      * @return void
      */
     public function feedAction() {
+        if (!Model_User::isLoggedIn()) {
+            $this->redirect("browse");
+        }
         $this->view->alerts = Model_Alert::retrieveByUser(Model_User::me(), 0);
         if (count($this->view->alerts) == 0) {
             $this->redirect("empty");

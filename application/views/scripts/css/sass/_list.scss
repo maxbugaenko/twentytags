@@ -16,6 +16,8 @@
             align-content: stretch;
             align-items: stretch;
             border-bottom: 1px solid lightgray;
+            padding-bottom: 1em;
+            padding-top: 1em;
 
             &:hover .item-follow-button {
               opacity:1;

@@ -38,7 +38,9 @@
         <p>
             <?=$this->entity->description?>
         </p>
-        <button class="btn-large btn-red btn-wide"><i class="fa fa-check-square"></i> Follow</button>
+        <button class="btn-large btn-wide">Follow</button>
+        <br/>
+        <br/>
     </div>
     <div class="alerts <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
         <?if (count($this->alerts) > 0):?>
@@ -53,7 +55,7 @@
                     <p>
                         <?=$item->body?>
                     </p>
-                    <h6><?=date("F jS, Y",strtotime($item->added));?></h6>
+                    <h5><?=date("F jS, Y",strtotime($item->added));?></h6>
                 </article>
             <?endforeach?>
         <?else:?>
