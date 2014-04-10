@@ -19,7 +19,7 @@
                         <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
                     </a>
                     <p>
-                        <?=$item->alerts > 0 ? "total ".$item->alerts."<br/>" : ""?>
+                        <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
                         <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
                                 today <?=$todayAlertCount?>
                         <? endif ?>
