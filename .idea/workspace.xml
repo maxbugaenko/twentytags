@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_list.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_list.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="32" selection-start="752" selection-end="752" vertical-scroll-proportion="-10.875" vertical-offset="427" max-vertical-offset="1625">
+            <state line="30" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.64205456" vertical-offset="350" max-vertical-offset="1600">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="23" selection-start="1898" selection-end="1898" vertical-scroll-proportion="0.57377046" vertical-offset="800" max-vertical-offset="6000">
+            <state line="60" column="23" selection-start="1898" selection-end="1898" vertical-scroll-proportion="-10.9375" vertical-offset="800" max-vertical-offset="6000">
               <folding />
             </state>
           </provider>
@@ -174,11 +174,11 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/layout.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
       </list>
     </option>
   </component>
@@ -914,13 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="32" selection-start="752" selection-end="752" vertical-scroll-proportion="-10.875" vertical-offset="427" max-vertical-offset="1625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="28" selection-start="1358" selection-end="1358" vertical-scroll-proportion="-17.5" vertical-offset="115" max-vertical-offset="1350">
@@ -935,6 +928,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="23" selection-start="1898" selection-end="1898" vertical-scroll-proportion="-10.9375" vertical-offset="800" max-vertical-offset="6000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="56" selection-start="1101" selection-end="1101" vertical-scroll-proportion="-7.03125" vertical-offset="325" max-vertical-offset="1850">
@@ -942,9 +942,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="23" selection-start="1898" selection-end="1898" vertical-scroll-proportion="0.57377046" vertical-offset="800" max-vertical-offset="6000">
+        <state line="30" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.64205456" vertical-offset="350" max-vertical-offset="1600">
           <folding />
         </state>
       </provider>
