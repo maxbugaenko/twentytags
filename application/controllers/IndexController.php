@@ -58,7 +58,7 @@ class IndexController extends FaZend_Controller_Action {
         if ($route == "following") {
             $this->view->mainTag = "I'm following";
             $this->view->entities = Model_Entity::retrieveSavedByUser(Model_User::me());
-            if (count($$this->view->entities) == 0) {
+            if (count($this->view->entities) == 0) {
                 $this->redirect("empty");
             }
         } else {
