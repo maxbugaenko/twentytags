@@ -30,11 +30,6 @@
                         <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
                     </h3>
                     <p>
-                        <? if ($item->link):?>
-                            <a class="red-link" href="<?=$item->link?>">
-                                <?=$item->link?>
-                            </a><br/>
-                        <?endif?>
                         <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
                         <? foreach ($tagged as $tag):?>
                             <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
@@ -42,6 +37,11 @@
                     </p>
                     <p class="margins">
                         <?=$item->description?>
+                        <? if ($item->link):?>
+                            <br/><a class="gray-link link-underline" href="<?=$item->link?>">
+                                <?=$item->link?>
+                            </a>
+                        <?endif?>
                     </p>
                 </div>
                 <? $isSaved = Model_Entity::isSaved($item);?>
