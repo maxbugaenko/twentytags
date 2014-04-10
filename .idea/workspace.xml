@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feed.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="feed.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="41" selection-start="1220" selection-end="1220" vertical-scroll-proportion="-14.375" vertical-offset="115" max-vertical-offset="1350">
+            <state line="19" column="64" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.59016395" vertical-offset="115" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -88,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_feed.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_feed.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.04012841" vertical-offset="0" max-vertical-offset="975">
+            <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.78125" vertical-offset="0" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -176,9 +176,9 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
       </list>
     </option>
   </component>
@@ -921,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="41" selection-start="1220" selection-end="1220" vertical-scroll-proportion="-14.375" vertical-offset="115" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="37" selection-start="3149" selection-end="3149" vertical-scroll-proportion="-10.9375" vertical-offset="1000" max-vertical-offset="2325">
@@ -944,7 +937,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_feed.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.04012841" vertical-offset="0" max-vertical-offset="975">
+        <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.78125" vertical-offset="0" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="64" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.59016395" vertical-offset="115" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
