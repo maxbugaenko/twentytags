@@ -102,6 +102,12 @@ h5 {
 p {
   margin: 0; }
 
+p.description {
+  margin-top: 0.5em; }
+
+img {
+  max-width: 100%; }
+
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;

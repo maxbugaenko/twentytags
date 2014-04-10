@@ -6,7 +6,7 @@
 </div>
 <div class="feed-container">
         <? foreach ($this->alerts as $item):?>
-                <div class="alert-container">
+                <article class="alert-container">
                     <div class="entity">
                         <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>">
                             <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
@@ -26,7 +26,7 @@
                             <?=$item->body?>
                         </p>
                     </div>
-                </div>
+                </article>
         <?endforeach?>
 </div>
 

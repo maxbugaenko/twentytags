@@ -102,6 +102,12 @@ h5 {
 p {
   margin: 0; }
 
+p.description {
+  margin-top: 0.5em; }
+
+img {
+  max-width: 100%; }
+
 .btn-icon, .btn-large, .btn-small, .btn-wide {
   cursor: pointer;
   padding: .2em;
@@ -399,9 +405,8 @@ a.black-link {
       flex: 0 0 20%;
       align-self: auto;
       padding-right: 2em;
-      padding-top: 2em; }
-      .list-container .item .item-image img {
-        max-width: 100%; }
+      padding-top: 2em;
+      text-align: right; }
     .list-container .item .item-content {
       order: 0;
       flex: 0 0 80%;
@@ -460,6 +465,8 @@ a.black-link {
     flex: 0 0 30%;
     align-self: auto;
     padding-right: 1em; }
+    .entity-container .entity img {
+      max-width: 100%; }
   .entity-container .alerts {
     border-left: 1px solid lightgray;
     padding-left: 1em;
