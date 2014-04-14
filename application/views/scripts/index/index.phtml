@@ -1,5 +1,9 @@
 <?$title = $this->mainTag == "What's hot" ? "What's hot":$this->mainTag;?>
-<?$this->headTitle("TwentyTags - ".$title)?>
+<?
+$this->headTitle("TwentyTags - ".$title);
+$this->headMeta()->appendName('keywords', "latest news, recent news, hitech news, IT news, sports news");
+$this->headMeta()->appendName('description', "Stay updated. Get rid of news noise and receive the right news");
+?>
 <?
     require_once('Model/Facebook/facebook.php');
     $config = array(
