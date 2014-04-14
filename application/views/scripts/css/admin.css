@@ -13,49 +13,9 @@
  * @copyright Copyright (c) twentytags.com, 2014
  * @version $Id$
 */
-@font-face {
-  font-family: "HNC";
-  font-weight: 100;
-  src: url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedUltraLight-b1643142.woff) format("woff"), url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedUltraLight-911598d6.ttf) format("truetype"); }
-@font-face {
-  font-family: "HNC";
-  font-weight: 200;
-  src: url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedThin-e8fd1378.woff) format("woff"), url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedThin-f9094e63.ttf) format("truetype"); }
-@font-face {
-  font-family: "HNC";
-  font-weight: 300;
-  src: url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedLight-bcd62347.woff) format("woff"), url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedLight-3a6fcb2e.ttf) format("truetype"); }
-@font-face {
-  font-family: "HNC";
-  font-weight: 400;
-  src: url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensed-a8bae095.woff) format("woff"), url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensed-59790d27.ttf) format("truetype"); }
-@font-face {
-  font-family: "HNC";
-  font-weight: 600;
-  src: url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedMedium-63796dcb.woff) format("woff"), url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedMedium-930f0aa0.ttf) format("truetype"); }
-@font-face {
-  font-family: "HNC";
-  font-weight: 700;
-  src: url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedBold-572a7194.woff) format("woff"), url(https://s.flipboard.com/mags/fonts/HelveticaNeueCondensedBold-b45199ea.ttf); }
-@font-face {
-  font-family: 'Cambria-BoldItalic';
-  src: url("http://img.yegor256.com/fonts/2A901D_0_0.eot");
-  src: url("http://img.yegor256.com/fonts/2A901D_0_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_0_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_0_0.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Cambria-Bold';
-  src: url("http://img.yegor256.com/fonts/2A901D_1_0.eot");
-  src: url("http://img.yegor256.com/fonts/2A901D_1_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_1_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_1_0.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Cambria';
-  src: url("http://img.yegor256.com/fonts/2A901D_2_0.eot");
-  src: url("http://img.yegor256.com/fonts/2A901D_2_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_2_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_2_0.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Cambria-Italic';
-  src: url("http://img.yegor256.com/fonts/2A901D_3_0.eot");
-  src: url("http://img.yegor256.com/fonts/2A901D_3_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2A901D_3_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2A901D_3_0.ttf") format("truetype"); }
 body, html {
   background-color: #fff;
-  font-family: "Cambria", sans-serif;
+  font-family: "Fira-Light", "Verdana", sans-serif;
   font-weight: 300;
   padding: 0;
   margin: 0;
@@ -93,19 +53,20 @@ h1 {
   font-weight: 400;
   font-size: 2.5em; }
 
-h2, h3 {
+h2, h5, h3, h5 {
+  font-family: "Fira-Regular", "Verdana", sans-serif;
+  font-weight: 300;
   margin: 0; }
 
 h5 {
-  color: #424242;
-  margin: 0; }
+  color: #424242; }
 
 p {
   margin: 0; }
 
-p.margins {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em; }
+.margins {
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 img {
   max-width: 100%; }
@@ -115,7 +76,7 @@ input.input-text, input.input-large, input.search-input {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-size: 1em;
-  font-family: "HNC", sans-serif;
+  font-family: "Fira-Regular", "Verdana", sans-serif;
   font-weight: 300;
   padding: 0.5em;
   border: 0;

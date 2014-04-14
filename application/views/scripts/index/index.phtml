@@ -18,7 +18,7 @@
                     <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
                         <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
                     </a>
-                    <p>
+                    <p class="margins">
                         <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
                         <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
                                 today <?=$todayAlertCount?>
