@@ -23,78 +23,66 @@
     @include transition(all 0.1s ease-in-out);
     @include animation-timing-function(ease);
     @include box-sizing(border-box);
-	margin-top: 0em;
-	color: black;
+    @include header-font();
 	padding-bottom: 1.5em;
 	padding-top: 1em;
-	text-align: center;
 	position: fixed;
-	top:0px;
-    left:0px;
+	top: 0;
+    left: 0;
 	z-index: 10000;
-//	background-color: rgba(245, 245, 245, 0.98);
-  	background-color: rgba(255, 255, 255, 0.98);
-	width:100%;
-    padding-right:5%;
-    padding-left:5%;
-	margin-left: auto;
-	margin-right: auto;
+  	background-color: rgba(255, 255, 255, .98);
+	width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: stretch;
     align-items: stretch;
+
     .controls-section {
-        @include box-sizing(border-box);
         order: 0;
-        flex: 0 0 50%;
+        flex: 0 0 30%;
         align-self: auto;
-        @include header-font();
-        text-align:left;
+        text-align: left;
     }
+
     .logo-section {
-      @include box-sizing(border-box);
       order: 1;
-      flex: 0 0 25%;
+      flex: 0 0 40%;
       align-self: auto;
-      @include header-font();
       font-size: 1.5em;
       white-space: nowrap;
-      text-align: center;
-      padding-left:2em;
       position: relative;
+      text-align: center;
+
       img {
         vertical-align: middle;
         border-radius: 5px;
         box-shadow: 0 5px 0 lightgray;
         width:30px;
       }
+
       span {
         vertical-align: middle
       }
-      i {
-        color:$red;
-      }
+
       a, a:visited {
-        left:0px;
-        position: absolute;
         color:$dark-gray;
         text-decoration: none;
       }
     }
+
     .profile-section {
-        @include box-sizing(border-box);
         order: 2;
-        flex: 0 3 25%;
+        flex: 0 3 30%;
         align-self: auto;
-        @include header-font();
-        color:$dark-gray;
         white-space: nowrap;
         text-align: right;
     }
 }
 .menu-container-slide-right {
   @extend .menu-container;
-  left:240px;
+  left: 240px;
 }
