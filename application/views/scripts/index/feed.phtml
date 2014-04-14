@@ -19,12 +19,10 @@
                                 </span>
                             <? endif;?>
                         </h3>
+                        <h5><?=date("F jS, Y",strtotime($item->added));?></h5>
                         <p class="margins">
                             <?=$item->body?>
                         </p>
-                        <h5>
-                            <?=date("F jS, Y",strtotime($item->added));?>
-                        </h5>
                     </div>
                 </article>
         <?endforeach?>
