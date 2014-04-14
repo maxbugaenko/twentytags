@@ -108,6 +108,7 @@ img {
   padding: .5em;
   outline: 0;
   border: 0;
+  font-size: 22px;
   white-space: nowrap;
   position: relative;
   background-color: #424242; }
@@ -413,30 +414,25 @@ a.black-link {
       align-self: auto; }
 
 .entity-container {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: stretch; }
+  width: 90%;
+  margin: 0 auto; }
   .entity-container .entity {
-    order: 0;
-    flex: 0 0 30%;
-    align-self: auto;
+    display: inline-block;
+    vertical-align: top;
     padding-right: 2em;
-    text-align: right; }
+    text-align: right;
+    width: 30%; }
     .entity-container .entity img {
       max-width: 100%;
       margin-bottom: 2em; }
   .entity-container .alerts {
     border-left: 1px solid lightgray;
+    box-sizing: border-box;
     padding-left: 2em;
-    order: 1;
-    flex: 0 0 70%;
-    align-self: auto; }
+    width: 65%;
+    display: inline-block; }
     .entity-container .alerts .alert {
+      width: 100%;
       border-bottom: 1px solid lightgray;
       padding-top: 1em;
       padding-bottom: 1em; }

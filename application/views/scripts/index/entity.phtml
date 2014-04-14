@@ -7,9 +7,7 @@
     $this->headAnything()->addHtml('<meta property="og:image" content="'.$this->staticFile("images/entities/".$this->entity->picture).'">');
 ?>
 <div class="toTop">
-    <button id="to-top-button" class="btn-small">
-        <i class="fa fa-angle-double-up"></i> Up
-    </button>
+        <i class="btn-icon fa fa-angle-double-up"></i>
 </div>
 <div class="entity-container">
     <div class="entity">
@@ -52,10 +50,10 @@
                             <i class="youtube fa fa-youtube"></i>
                         <? endif;?>
                     </h3>
+                    <h5><?=date("F jS, Y",strtotime($item->added));?></h5>
                     <p class="margins">
                         <?=$item->body?>
                     </p>
-                    <h5><?=date("F jS, Y",strtotime($item->added));?></h5>
                 </article>
             <?endforeach?>
         <?else:?>

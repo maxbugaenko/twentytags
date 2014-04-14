@@ -1,19 +1,13 @@
 .entity-container {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: stretch;
 
   .entity {
-    order: 0;
-    flex: 0 0 30%;
-    align-self: auto;
+    display: inline-block;
+    vertical-align: top;
     padding-right: 2em;
     text-align: right;
+    width: 30%;
 
     img {
       max-width: 100%;
@@ -23,12 +17,13 @@
 
   .alerts {
     border-left: 1px solid lightgray;
+    box-sizing: border-box;
     padding-left: 2em;
-    order: 1;
-    flex: 0 0 70%;
-    align-self: auto;
+    width: 65%;
+    display: inline-block;
 
     .alert {
+      width: 100%;
       border-bottom: 1px solid lightgray;
       padding-top: 1em;
       padding-bottom: 1em;
