@@ -18,6 +18,7 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
         <? if (!$this->user) $isLogged = "user-not-logged";?>
         <? foreach ($this->entities as $item):?>
             <article class="item">
+                <div class="shadow-bottom">&#160;</div>
                 <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
                     <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
                 </a>
