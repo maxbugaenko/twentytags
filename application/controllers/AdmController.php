@@ -39,10 +39,8 @@ class AdmController extends Fazend_Controller_Action {
      * Entity administration
      * */
     public function entityAction() {
-        $iterator = Model_Entity::retrieveAll();
+        $this->view->entities = Model_Entity::retrieveLast();
         $this->view->tags = Model_Tag::retrieveAll();
-        FaZend_Paginator::addPaginator($iterator, $this->view, $this->_getParamOrFalse('page'));
-        $this->view->paginator->setItemCountPerPage(100);
     }
 
     /*

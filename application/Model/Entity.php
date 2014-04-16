@@ -569,6 +569,20 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
      *
      * @return array Array of all entities
      */
+    public static function retrieveLast () {
+        return self::retrieve()
+            ->order("entity.id desc")
+            ->setRowClass('Model_Entity')
+            ->fetchAll();
+    }
+
+
+    /**
+     * Retrieves all entities stored in the database
+     * for creating the XML sitemap
+     *
+     * @return array Array of all entities
+     */
     public static function retrieveWithAlerts () {
         return self::retrieve()
             ->where("entity.alerts > ?", 0)

@@ -39,9 +39,12 @@
         <th width="30%">
             tags
         </th>
+        <th width="5%">
+            status
+        </th>
     </tr>
     </thead>
-    <? foreach ($this->paginator as $item) :?>
+    <? foreach ($this->entities as $item) :?>
         <tr>
             <td>
                 <?=$item?>
@@ -67,6 +70,9 @@
                 <? foreach ($this->tags as $tag):?>
                     <a style="cursor: pointer" onclick="tagEntity(<?=$item?>, <?=$tag?>)"><?=$tag->value?></a>&#160;&#160;<span id="<?=$item.$tag?>"></span><br/>
                 <? endforeach?>
+            </td>
+            <td>
+                <?=$this->partial('edit.phtml', array('element'=>'stat'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->status, 'column'=>'status', 'table'=>'Entity'))?>
             </td>
         </tr>
     <? endforeach ?>
