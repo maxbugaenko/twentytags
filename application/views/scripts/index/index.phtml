@@ -18,36 +18,27 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
         <? if (!$this->user) $isLogged = "user-not-logged";?>
         <? foreach ($this->entities as $item):?>
             <article class="item">
-                <div class="item-image">
-                    <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
-                        <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
-                    </a>
-                    <p class="margins">
-                        <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
-                        <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
-                                today <?=$todayAlertCount?>
-                        <? endif ?>
-                    </p>
-                </div>
-                <div class="item-content">
-                    <h3>
-                        <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
-                    </h3>
-                    <p>
-                        <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
-                        <? foreach ($tagged as $tag):?>
-                            <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
-                        <? endforeach?>
-                    </p>
-                    <p class="margins">
-                        <?=$item->description?>
-                        <? if ($item->link):?>
-                            <br/><a class="gray-link link-underline" href="<?=$item->link?>">
-                                <?=$item->link?>
-                            </a>
-                        <?endif?>
-                    </p>
-                </div>
+                <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
+                    <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
+                </a>
+                <h5>
+                    <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
+                </h5>
+                <p class="small">
+                    <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
+                    <? foreach ($tagged as $tag):?>
+                        <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
+                    <? endforeach?>
+                </p>
+                <p class="margins small">
+                    <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
+                    <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
+                        today <?=$todayAlertCount?>
+                    <? endif ?>
+                </p>
+                <p class="margins small">
+                    <?=$item->description?>
+                </p>
                 <? $isSaved = Model_Entity::isSaved($item);?>
                 <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
                     <button id="follow-<?=$item?>" class="to-follow-button btn-small <?=$isLogged?> <?=$isSaved ? " followed":""?>">

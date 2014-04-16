@@ -3,37 +3,33 @@
 }
 
 .list-container {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 
     .item {
         position: relative;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: stretch;
-        border-bottom: 1px solid lightgray;
-        padding-bottom: 1em;
-        padding-top: 1em;
+        border: 1px solid lightgray;
+        overflow: hidden;
+        padding: 1em;
+        float: left;
+        margin: .3em;
+        width: calc((100% - 3em) / 5);
+        height: 500px;
+        box-sizing: border-box;
 
         &:hover .item-follow-button {
           opacity:1;
         }
 
-        .item-image {
-          order: 0;
-          flex: 0 0 20%;
-          align-self: auto;
-          padding-right: 2em;
-          text-align: right;
+        img {
+          width: 40%;
         }
 
-        .item-content {
-            order: 0;
-            flex: 0 0 80%;
-            align-self: auto;
+        .right-top {
+          position: absolute;
+          top:50px;
+          right:10px;
+          opacity: 1;
         }
 
         .item-follow-button {

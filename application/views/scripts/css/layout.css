@@ -94,6 +94,10 @@ h5 {
 p {
   margin: 0; }
 
+p.small {
+  font-size: .7em;
+  line-height: 1.1em; }
+
 .margins {
   margin-top: 1em;
   margin-bottom: 1em; }
@@ -104,28 +108,27 @@ img {
 .btn-icon, .btn-large, .btn-small, .btn-wide {
   cursor: pointer;
   text-align: center;
-  color: #fff;
-  padding: .5em;
+  color: #424242;
+  padding: .4em;
   outline: 0;
-  border: 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
   font-size: 22px;
   white-space: nowrap;
-  position: relative;
-  background-color: #424242; }
+  position: relative; }
   .btn-icon:hover, .btn-large:hover, .btn-small:hover, .btn-wide:hover {
-    top: -2px;
-    box-shadow: 0 7px #d6d6d6; }
+    box-shadow: inset 0px 0px 1px lightgray; }
   .btn-icon:active, .btn-large:active, .btn-small:active, .btn-wide:active {
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     transition: all 0.1s;
-    box-shadow: 0 0 #d6d6d6;
-    top: 5px; }
+    box-shadow: inset 0px 1px 5px lightgray; }
 
 .btn-icon {
-  width: 30px; }
+  width: 25px; }
 
 .btn-large, .btn-small {
+  background-color: #fff;
   width: auto;
   padding-top: .3em;
   padding-bottom: .3em;
@@ -136,6 +139,7 @@ img {
   font-weight: 400; }
 
 .btn-small {
+  background-color: #fff;
   font-size: 0.8em;
   padding-left: .5em;
   padding-right: .5em; }
@@ -350,31 +354,27 @@ a.black-link {
   display: none; }
 
 .list-container {
-  width: 60%;
+  width: 100%;
   margin: 0 auto; }
   .list-container .item {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: stretch;
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 1em;
-    padding-top: 1em; }
+    border: 1px solid lightgray;
+    overflow: hidden;
+    padding: 1em;
+    float: left;
+    margin: .3em;
+    width: calc((100% - 3em) / 5);
+    height: 500px;
+    box-sizing: border-box; }
     .list-container .item:hover .item-follow-button {
       opacity: 1; }
-    .list-container .item .item-image {
-      order: 0;
-      flex: 0 0 20%;
-      align-self: auto;
-      padding-right: 2em;
-      text-align: right; }
-    .list-container .item .item-content {
-      order: 0;
-      flex: 0 0 80%;
-      align-self: auto; }
+    .list-container .item img {
+      width: 40%; }
+    .list-container .item .right-top {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      opacity: 1; }
     .list-container .item .item-follow-button {
       position: absolute;
       top: 20px;
