@@ -894,7 +894,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
             ->having('tagMatches = 1')
             ->setRowClass('Model_Entity')
             ->group('entity.id')
-            ->order('entity.id desc')
+            ->order(new Zend_Db_Expr('entity.alerts desc, entity.id desc'))
             ->fetchAll();
         return $ret;
     }
