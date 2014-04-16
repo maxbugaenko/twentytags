@@ -437,7 +437,7 @@ a.black-link {
     text-align: right;
     width: 30%; }
     .entity-container .entity img {
-      max-width: 100%;
+      max-width: 60%;
       margin-bottom: 2em; }
   .entity-container .alerts {
     border-left: 1px solid lightgray;
