@@ -11,18 +11,20 @@
 
 <script>
     $(document).ready(function() {
-        $("#add-tag-button").click(function() {
-            $.post(
-            "<?=$this->url(array('controller'=>'index', 'action'=>'addusertag'), 'default', true)?>",
-            { 'tag': $("#tag-value").val() },
-            function(data) {
-                if (data == "OK") {
-                    location.href = "following";
-                } else {
-                    $("#error-message").html(data);
-                }
+        $("#tag-value").keypress(function(event) {
+            if ( event.which == 13 ) {
+                $.post(
+                    "<?=$this->url(array('controller'=>'index', 'action'=>'addusertag'), 'default', true)?>",
+                    { 'tag': $("#tag-value").val() },
+                    function(data) {
+                        if (data == "OK") {
+                            location.href = "following";
+                        } else {
+                            $("#error-message").html(data);
+                        }
+                    }
+                )
             }
-            )
         });
     })
 </script>

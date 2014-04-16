@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/layout.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addtag.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="addtag.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtag.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="-4.6875" vertical-offset="0" max-vertical-offset="825">
+            <state line="16" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="0.46721312" vertical-offset="115" max-vertical-offset="875">
               <folding />
             </state>
           </provider>
@@ -81,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="49" selection-start="871" selection-end="871" vertical-scroll-proportion="0.20491803" vertical-offset="375" max-vertical-offset="1750">
+            <state line="20" column="49" selection-start="871" selection-end="871" vertical-scroll-proportion="-3.90625" vertical-offset="375" max-vertical-offset="1750">
               <folding />
             </state>
           </provider>
@@ -177,10 +175,10 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_buttons.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_inputs.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_message.scss" />
-        <option value="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
         <option value="$PROJECT_DIR$/application/Model/Entity.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
       </list>
     </option>
   </component>
@@ -952,13 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtag.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="-4.6875" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="0" selection-start="2163" selection-end="2163" vertical-scroll-proportion="-17.1875" vertical-offset="775" max-vertical-offset="6000">
@@ -982,7 +973,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="49" selection-start="871" selection-end="871" vertical-scroll-proportion="0.20491803" vertical-offset="375" max-vertical-offset="1750">
+        <state line="20" column="49" selection-start="871" selection-end="871" vertical-scroll-proportion="-3.90625" vertical-offset="375" max-vertical-offset="1750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtag.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="0.46721312" vertical-offset="115" max-vertical-offset="875">
           <folding />
         </state>
       </provider>
