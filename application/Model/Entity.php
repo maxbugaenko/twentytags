@@ -557,7 +557,8 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 	*/
 	public static function retrieveAll () {
 		return self::retrieve()
-            ->order('entity.id desc')
+            ->where('entity.alerts > ?', 0)
+            ->order(new Zend_Db_Expr('entity.alerts desc, entity.id desc'))
 			->setRowClass('Model_Entity')
 			->fetchAll();
 	}
