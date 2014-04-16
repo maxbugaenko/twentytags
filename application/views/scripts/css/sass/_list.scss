@@ -9,7 +9,7 @@
     .item {
         position: relative;
         border: 1px solid lightgray;
-        overflow: hidden;
+        overflow-y: scroll;
         padding: 1em;
         float: left;
         margin: .3em;
