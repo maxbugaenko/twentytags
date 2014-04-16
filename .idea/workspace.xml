@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/AdmController.php" afterPath="$PROJECT_DIR$/application/controllers/AdmController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Model/Entity.php" afterPath="$PROJECT_DIR$/application/Model/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/adm/entity.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/adm/entity.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/adm/moderation.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/adm/moderation.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/layouts/layout.phtml" afterPath="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,10 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moderation.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="9" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.8606557" vertical-offset="500" max-vertical-offset="2075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moderation.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/adm/moderation.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="4" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.9197432" vertical-offset="227" max-vertical-offset="950">
+            <state line="32" column="4" selection-start="1185" selection-end="1185" vertical-scroll-proportion="-17.90625" vertical-offset="227" max-vertical-offset="950">
               <folding />
             </state>
           </provider>
@@ -111,15 +117,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_buttons.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_buttons.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="-26.5625" vertical-offset="0" max-vertical-offset="2475">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -162,7 +159,6 @@
         <option value="$PROJECT_DIR$/../квартиры/appts" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_entity2.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_mixin.scss" />
-        <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/empty.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_links.scss" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
@@ -184,6 +180,7 @@
         <option value="$PROJECT_DIR$/application/Model/Entity.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/adm/entity.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/adm/moderation.phtml" />
+        <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
       </list>
     </option>
   </component>
@@ -686,7 +683,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42621776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28653294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -845,11 +842,6 @@
     <entry file="file://$PROJECT_DIR$/../квартиры/appts">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.03816794" vertical-offset="0" max-vertical-offset="655" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="30" selection-start="2696" selection-end="2710" vertical-scroll-proportion="-8.125" vertical-offset="790" max-vertical-offset="2075" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/js/follow.js">
@@ -1019,7 +1011,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/adm/moderation.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.9197432" vertical-offset="227" max-vertical-offset="950">
+        <state line="32" column="4" selection-start="1185" selection-end="1185" vertical-scroll-proportion="-17.90625" vertical-offset="227" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="9" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.8606557" vertical-offset="500" max-vertical-offset="2075">
           <folding />
         </state>
       </provider>
