@@ -42,15 +42,20 @@ class Model_Static_Functions {
         $filename = time().rand(1, 5000);
         file_put_contents($path.$filename, $pic);
         $imageType = exif_imagetype($path.$filename);
+        $extension = "";
         switch ($imageType) {
             case 1: $extension = ".gif"; break;
             case 2: $extension = ".jpg"; break;
             case 3: $extension = ".png"; break;
         }
+        if (!$extension) {
+            return "";
+        }
         $finalFilename = $filename.$extension;
         rename($path . $filename, $path . $finalFilename);
         return $finalFilename;
     }
+
     public static function dashString($string) {
         //Lower case everything
         $string = strtolower($string);

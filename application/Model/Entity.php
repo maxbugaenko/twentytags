@@ -558,7 +558,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 	public static function retrieveAll () {
 		return self::retrieve()
             ->where('entity.alerts > ?', 0)
-            ->order(new Zend_Db_Expr('entity.alerts desc, entity.id desc'))
+            ->order(new Zend_Db_Expr('entity.today desc, entity.alerts desc, entity.id desc'))
 			->setRowClass('Model_Entity')
 			->fetchAll();
 	}
@@ -683,6 +683,24 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
             ->where('entity.status = ?', Model_Entity::ENTITY_APPROVED)
             ->where('entity.alertsupdated < ?', new Zend_Db_Expr('NOW() - INTERVAL 1 HOUR'))
             ->orWhere('entity.alertsupdated is NULL')
+            ->order('entity.id desc')
+            ->limit($limit)
+            ->setRowClass('Model_Entity')
+            ->fetchAll();
+    }
+
+    /**
+     * Retrieves entities that
+     * have to be updated
+     *
+     * @return void
+     * @author fatboy
+     **/
+    public static function retrieveEntitiesAlertsForTodayUpdate($limit){
+        return self::retrieve()
+            ->where('entity.status = ?', Model_Entity::ENTITY_APPROVED)
+            ->where('entity.todayupdated < ?', new Zend_Db_Expr('NOW() - INTERVAL 1 HOUR'))
+            ->orWhere('entity.todayupdated is NULL')
             ->order('entity.id desc')
             ->limit($limit)
             ->setRowClass('Model_Entity')
@@ -908,7 +926,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
             ->having('tagMatches = 1')
             ->setRowClass('Model_Entity')
             ->group('entity.id')
-            ->order(new Zend_Db_Expr('entity.alerts desc, entity.id desc'))
+            ->order(new Zend_Db_Expr('entity.today desc, entity.alerts desc, entity.id desc'))
             ->fetchAll();
         return $ret;
     }
