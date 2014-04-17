@@ -33,9 +33,7 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
                 </p>
                 <p class="margins small">
                     <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
-                    <?if (($todayAlertCount = Model_Alert::retrieveTodayCountByEntity($item)) > 0) :?>
-                        today <?=$todayAlertCount?>
-                    <? endif ?>
+                    <?=$item->today > 0 ? "today ".$item->today : ""?>
                 </p>
                 <p class="margins small">
                     <?=$item->description?>
