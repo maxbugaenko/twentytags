@@ -7,7 +7,12 @@
                 <article class="alert-container">
                     <div class="entity">
                         <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>">
-                            <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
+                            <? if ($item->picture): ?>
+                                <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>"><br/>
+                                <h5><?=$item->entity->title?></h5>
+                            <? else: ?>
+                                <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
+                            <? endif ?>
                         </a>
                     </div>
                     <div class="data">

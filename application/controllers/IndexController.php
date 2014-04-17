@@ -91,6 +91,7 @@ class IndexController extends FaZend_Controller_Action {
     public function logoutAction() {
         Model_User::me()->logOut();
     }
+
     /**
      * Logs in and register facebook user
      * @return void
@@ -135,6 +136,8 @@ class IndexController extends FaZend_Controller_Action {
             }
         }
     }
+
+
 
     /**
      * Logs out facebook user
