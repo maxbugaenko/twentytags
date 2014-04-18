@@ -56,6 +56,9 @@ class IndexController extends FaZend_Controller_Action {
 	public function indexAction() {
         $route = Zend_Controller_Front::getInstance()->getRouter()->getCurrentRouteName();
         if ($route == "following") {
+            if (!Model_User::isLoggedIn()) {
+                $this->redirect("browse");
+            }
             $this->view->mainTag = "I'm following";
             $this->view->entities = Model_Entity::retrieveSavedByUser(Model_User::me());
             if (count($this->view->entities) == 0) {
@@ -131,6 +134,10 @@ class IndexController extends FaZend_Controller_Action {
                     $saved->save();
                     $this->redirect("following");
                 }
+                $redirect = $this->getRequest()->getParam("redirect");
+                if ($redirect) {
+                    $this->redirect($redirect);
+                }
             } catch(FacebookApiException $e) {
                 ;
             }
@@ -154,6 +161,9 @@ class IndexController extends FaZend_Controller_Action {
      * @return void
      */
     public function addtagAction() {
+        if (!Model_User::isLoggedIn()) {
+            $this->redirect("browse");
+        }
     }
 
     /**

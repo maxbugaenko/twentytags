@@ -19,7 +19,6 @@
                         if (data == "OK") {
                             $("#item-follow-button-" + entityID).toggleClass("make-visible");
                             $("#follow-"+entityID).toggleClass("followed");
-                            //$("#follow-"+entityID).toggleClass("header-button-auto-pressed");
                             if ($("#follow-"+entityID).hasClass("followed")) {
                                 $("#follow-"+entityID).html("Unfollow");
                             } else {

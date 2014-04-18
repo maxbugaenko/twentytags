@@ -6,6 +6,16 @@
     $this->headAnything()->addHtml('<meta property="og:description" content="'.$this->escape($this->entity->description).'">');
     $this->headAnything()->addHtml('<meta property="og:image" content="'.$this->staticFile("images/entities/".$this->entity->picture).'">');
 ?>
+<?
+require_once('Model/Facebook/facebook.php');
+$config = array(
+    'appId' => '706201236078444',
+    'secret' => 'fabe992657dcffefd59099502cdf0ce9',
+    'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
+);
+$facebook = new Facebook($config);
+?>
+
 <div class="toTop">
         <i class="btn-icon fa fa-angle-double-up"></i>
 </div>
@@ -36,7 +46,19 @@
         <p class="margins">
             <?=$this->entity->description?>
         </p>
-        <button class="btn-large">Follow</button>
+        <?if (!Model_User::isLoggedIn()): ?>
+            <?$isLogged = "user-not-logged";?>
+            <div class="login-urls" id="login-url-<?=$this->entity?>">
+                <?
+                $loginUrl = $facebook->getLoginUrl(array(
+                    "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$this->entity), "login", false)
+                ));
+                echo $loginUrl;
+                ?>
+            </div>
+
+        <?endif?>
+        <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-large">Follow</button>
         <br/>
         <br/>
     </div>
@@ -78,9 +100,12 @@
             $('.toTop').fadeOut();
         }
     });
+
     $(document).ready (function() {
         $("#to-top-button").click(function() {
             $('html, body').animate({ scrollTop: 0 }, 'slow');
         });
     });
+
+    $(".to-follow-button").FollowEntity();
 </script>
