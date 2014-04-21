@@ -15,7 +15,7 @@ $facebook = new Facebook($config);
     <div class="logo-section">
         <a href="<?=$this->url(array(), "browse", false)?>">
             <img src="<?=$this->staticFile("images/logo.png")?>"/>
-            <span>TwentyTags</span>
+            <span class="brand">TwentyTags</span>
         </a>
     </div>
     <div class="profile-section">
@@ -35,14 +35,12 @@ $facebook = new Facebook($config);
                     "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login"), "login", false)
                 ));
             ?>
-            Add tag
             <?
                 $addTagUrlWithLogin = $facebook->getLoginUrl(array(
                     "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "redirect"=>"addtag"), "login", false)
                 ));
             ?>
             <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="btn-icon fa fa-plus"></i>&#160;
-            Sign in
             <i title="Sign up with Facebook" onclick="location.href='<?=$loginUrl?>'" class="btn-icon fa fa-facebook-square"></i>
         <?endif?>
     </div>
