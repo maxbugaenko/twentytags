@@ -7,5 +7,5 @@ $config = array(
 );
 $facebook = new Facebook($config);
 $facebook->destroySession();
-Header("Location: ".WEBSITE_URL);
+Header("Location: ".$this->url(array(), "browse", true));
 ?>

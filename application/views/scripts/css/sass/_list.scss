@@ -19,12 +19,16 @@
 
         @media all and (max-width: $switch-orientation-point) {
           width: calc(100% - .6em);
-          height: 300px;
+          height: auto;
+          padding: .3em;
+          border: 0;
+          border-bottom: 1px solid lightgray;
         }
 
         &:hover .item-follow-button {
           opacity:1;
         }
+
 
         img {
           width: 40%;
@@ -32,7 +36,7 @@
           @media all and (max-width: $switch-orientation-point) {
             width: 30%;
             float: left;
-            margin: 0 1em 1em;
+            margin: 0 .5em .5em 0;
           }
         }
 
@@ -43,10 +47,9 @@
             opacity: 0;
 
             @media all and (max-width: $switch-orientation-point) {
-              top: 2px;
-              right: 2px;
               opacity: 1;
-              float:right;
+              float: right;
+              position: static;
             }
         }
 

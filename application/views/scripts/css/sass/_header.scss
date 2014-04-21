@@ -23,22 +23,35 @@
     @include animation-timing-function(ease);
     @include box-sizing(border-box);
     @include header-font();
-	padding-bottom: 1.5em;
-	padding-top: 1em;
 	position: fixed;
 	top: 0;
     left: 0;
 	z-index: 10000;
   	background-color: rgba(255, 255, 255, .98);
 	width: 100%;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding: 1em 5% 1.5em 5%;
     white-space: nowrap;
+
+    @media all and (max-width: $switch-orientation-point) {
+      padding: .3em 5% .5em 5%;
+      border-bottom: 1px solid lightgray;
+    }
 
     .controls-section {
       display: inline-block;
       width: 30%;
       text-align: left;
+
+      @media all and (max-width: $switch-orientation-point) {
+        width: 15%;
+      }
+
+      .main-tag {
+
+        @media all and (max-width: $switch-orientation-point) {
+          display: none;
+        }
+      }
     }
 
     .logo-section {
@@ -51,9 +64,11 @@
 
       img {
         vertical-align: middle;
-        border-radius: 5px;
-        box-shadow: 0 5px 0 lightgray;
         width:30px;
+
+        @media all and (max-width: $switch-orientation-point) {
+          width:30px;
+        }
       }
 
       .brand {
@@ -70,7 +85,7 @@
       }
 
       @media all and (max-width: $switch-orientation-point) {
-        width: 70%;
+        width: 30%;
         text-align: right;
       }
     }
@@ -82,14 +97,18 @@
       text-align: right;
 
       @media all and (max-width: $switch-orientation-point) {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        width: 55%;
         background-color: #fff;
         padding: 1em 0 1em 0;
-        text-align: left;
-        border-top: 1px solid lightgray;
+        text-align: right;
+      }
+    }
+
+    .main-tag {
+      display: none;
+
+      @media all and (max-width: $switch-orientation-point) {
+        display: block;
         text-align: center;
       }
     }

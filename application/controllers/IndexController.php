@@ -104,7 +104,8 @@ class IndexController extends FaZend_Controller_Action {
         $config = array(
             'appId' => '706201236078444',
             'secret' => 'fabe992657dcffefd59099502cdf0ce9',
-            'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
+            'allowSignedRequest' => false, // optional but should be set to false for non-canvas apps
+            'cookie' => true
         );
         $facebook = new Facebook($config);
         $user_id = $facebook->getUser();
@@ -139,11 +140,11 @@ class IndexController extends FaZend_Controller_Action {
                     $this->redirect($redirect);
                 }
             } catch(FacebookApiException $e) {
-                ;
+                echo "error";
+                exit;
             }
         }
     }
-
 
 
     /**

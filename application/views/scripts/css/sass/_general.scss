@@ -32,6 +32,10 @@ a:visited {
   line-height: 1.2em;
   font-size: 1.5em;
   padding-top: 5em;
+
+  @media all and (max-width: $switch-orientation-point) {
+    padding-top: 7em;
+  }
 }
 
 .slide-page-container-right {

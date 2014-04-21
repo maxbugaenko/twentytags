@@ -37,6 +37,9 @@ a:visited {
   line-height: 1.2em;
   font-size: 1.5em;
   padding-top: 5em; }
+  @media all and (max-width: 900px) {
+    .page-container, .slide-page-container-right {
+      padding-top: 7em; } }
 
 .slide-page-container-right {
   left: 240px; }

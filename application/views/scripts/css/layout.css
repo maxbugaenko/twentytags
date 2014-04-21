@@ -67,6 +67,9 @@ a:visited {
   line-height: 1.2em;
   font-size: 1.5em;
   padding-top: 5em; }
+  @media all and (max-width: 900px) {
+    .page-container, .slide-page-container-right {
+      padding-top: 7em; } }
 
 .slide-page-container-right {
   left: 240px; }
@@ -301,21 +304,28 @@ a.black-link {
   box-sizing: border-box;
   font-family: "HNC", sans-serif;
   font-weight: 400;
-  padding-bottom: 1.5em;
-  padding-top: 1em;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10000;
   background-color: rgba(255, 255, 255, 0.98);
   width: 100%;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding: 1em 5% 1.5em 5%;
   white-space: nowrap; }
+  @media all and (max-width: 900px) {
+    .menu-container, .menu-container-slide-right {
+      padding: .3em 5% .5em 5%;
+      border-bottom: 1px solid lightgray; } }
   .menu-container .controls-section, .menu-container-slide-right .controls-section {
     display: inline-block;
     width: 30%;
     text-align: left; }
+    @media all and (max-width: 900px) {
+      .menu-container .controls-section, .menu-container-slide-right .controls-section {
+        width: 15%; } }
+    @media all and (max-width: 900px) {
+      .menu-container .controls-section .main-tag, .menu-container-slide-right .controls-section .main-tag {
+        display: none; } }
   .menu-container .logo-section, .menu-container-slide-right .logo-section {
     display: inline-block;
     width: 30%;
@@ -325,9 +335,10 @@ a.black-link {
     text-align: center; }
     .menu-container .logo-section img, .menu-container-slide-right .logo-section img {
       vertical-align: middle;
-      border-radius: 5px;
-      box-shadow: 0 5px 0 lightgray;
       width: 30px; }
+      @media all and (max-width: 900px) {
+        .menu-container .logo-section img, .menu-container-slide-right .logo-section img {
+          width: 30px; } }
     .menu-container .logo-section .brand, .menu-container-slide-right .logo-section .brand {
       vertical-align: middle; }
       @media all and (max-width: 900px) {
@@ -338,7 +349,7 @@ a.black-link {
       text-decoration: none; }
     @media all and (max-width: 900px) {
       .menu-container .logo-section, .menu-container-slide-right .logo-section {
-        width: 70%;
+        width: 30%;
         text-align: right; } }
   .menu-container .profile-section, .menu-container-slide-right .profile-section {
     display: inline-block;
@@ -347,14 +358,15 @@ a.black-link {
     text-align: right; }
     @media all and (max-width: 900px) {
       .menu-container .profile-section, .menu-container-slide-right .profile-section {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        width: 55%;
         background-color: #fff;
         padding: 1em 0 1em 0;
-        text-align: left;
-        border-top: 1px solid lightgray;
+        text-align: right; } }
+  .menu-container .main-tag, .menu-container-slide-right .main-tag {
+    display: none; }
+    @media all and (max-width: 900px) {
+      .menu-container .main-tag, .menu-container-slide-right .main-tag {
+        display: block;
         text-align: center; } }
 
 .menu-container-slide-right {
@@ -379,7 +391,10 @@ a.black-link {
     @media all and (max-width: 900px) {
       .list-container .item {
         width: calc(100% - .6em);
-        height: 300px; } }
+        height: auto;
+        padding: .3em;
+        border: 0;
+        border-bottom: 1px solid lightgray; } }
     .list-container .item:hover .item-follow-button {
       opacity: 1; }
     .list-container .item img {
@@ -388,7 +403,7 @@ a.black-link {
         .list-container .item img {
           width: 30%;
           float: left;
-          margin: 0 1em 1em; } }
+          margin: 0 .5em .5em 0; } }
     .list-container .item .item-follow-button {
       position: absolute;
       top: 20px;
@@ -396,10 +411,9 @@ a.black-link {
       opacity: 0; }
       @media all and (max-width: 900px) {
         .list-container .item .item-follow-button {
-          top: 2px;
-          right: 2px;
           opacity: 1;
-          float: right; } }
+          float: right;
+          position: static; } }
     .list-container .item .make-visible {
       opacity: 1; }
     .list-container .item .not-displayed {

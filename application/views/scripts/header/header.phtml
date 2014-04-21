@@ -10,11 +10,11 @@ $facebook = new Facebook($config);
 
 <div class="menu-container" id="menu-container">
     <div class="controls-section">
-        <?=$this->mainTag?> <i id="tags-button" class="btn-icon fa fa-bars"></i>
+        <span class="main-tag"><?=$this->mainTag?></span> <i id="tags-button" class="btn-icon fa fa-bars"></i>
     </div>
     <div class="logo-section">
         <a href="<?=$this->url(array(), "browse", false)?>">
-            <img src="<?=$this->staticFile("images/logo.png")?>"/>
+            <img src="<?=$this->staticFile("images/logo.svg")?>"/>
             <span class="brand">TwentyTags</span>
         </a>
     </div>
@@ -43,6 +43,9 @@ $facebook = new Facebook($config);
             <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="btn-icon fa fa-plus"></i>&#160;
             <i title="Sign up with Facebook" onclick="location.href='<?=$loginUrl?>'" class="btn-icon fa fa-facebook-square"></i>
         <?endif?>
+    </div>
+    <div class="main-tag">
+        <?=$this->mainTag?>
     </div>
 </div>
 <script>
