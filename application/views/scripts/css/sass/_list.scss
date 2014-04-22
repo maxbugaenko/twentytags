@@ -11,7 +11,7 @@
         border-right: 1px solid lightgray;
         border-bottom: 1px solid lightgray;
         overflow: hidden;
-        padding: 1em;
+        padding: 2em 1em 2em 1em;
         float: left;
         margin: 0;
         width: calc((100%) / 5);
@@ -21,7 +21,7 @@
         @media all and (max-width: $switch-orientation-point) {
           width: calc(100%);
           height: auto;
-          padding: .3em;
+          padding: 2em .6em;
           border: 0;
           border-bottom: 1px solid lightgray;
         }
@@ -32,12 +32,10 @@
 
 
         img {
-          width: 100%;
+          max-width: 100%;
 
           @media all and (max-width: $switch-orientation-point) {
-            width: 50%;
-            float: left;
-            margin: 0 .5em .5em 0;
+            max-width: 100%;
           }
         }
 
