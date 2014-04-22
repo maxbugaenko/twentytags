@@ -44,6 +44,7 @@ class IndexController extends FaZend_Controller_Action {
             $this->redirect("browse");
         }
         $this->view->alerts = Model_Alert::retrieveByUser(Model_User::me(), 0);
+        $this->view->mainTag = "News feed";
         if (count($this->view->alerts) == 0) {
             $this->redirect("empty");
         }
@@ -171,6 +172,7 @@ class IndexController extends FaZend_Controller_Action {
         if (!Model_User::isLoggedIn()) {
             $this->redirect("browse");
         }
+        $this->view->mainTag = "Add tag";
     }
 
     /**
