@@ -66,10 +66,11 @@ a:visited {
   left: 0;
   line-height: 1.2em;
   font-size: 1.5em;
-  padding-top: 5em; }
+  padding-top: 3em; }
   @media all and (max-width: 900px) {
     .page-container, .slide-page-container-right {
-      padding-top: 6em; } }
+      padding-top: 4em;
+      font-size: 1.1em; } }
 
 .slide-page-container-right {
   left: 240px; }
@@ -176,7 +177,7 @@ img {
     color: #a60000; }
 
 .btn-header {
-  font-size: 1.4em;
+  font-size: 30px;
   color: #424242;
   padding: .6em .3em;
   cursor: pointer; }
