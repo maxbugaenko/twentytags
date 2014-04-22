@@ -39,7 +39,7 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
                 <p class="description margins small">
                     <?=$item->description?>
                 </p>
-                <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
+                <div id="item-follow-button-<?=$item?>" class="margins item-follow-button <?=$isSaved == true ? "make-visible":""?>">
                     <button id="follow-<?=$item?>" class="to-follow-button btn-small <?=$isLogged?> <?=$isSaved ? " followed":""?>">
                         <? if (!$this->user):?>
                             <div class="login-urls" id="login-url-<?=$item?>">

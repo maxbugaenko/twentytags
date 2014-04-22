@@ -1,13 +1,21 @@
 .entity-container {
   width: 80%;
   margin: 0 auto;
+  white-space: nowrap;
 
   .entity {
     display: inline-block;
     vertical-align: top;
     padding-right: 2em;
+    white-space: normal;
     text-align: right;
     width: 30%;
+
+    @media all and (max-width: $switch-orientation-point) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
 
     img {
       max-width: 60%;
@@ -22,7 +30,15 @@
     width: 65%;
     display: inline-block;
 
+    @media all and (max-width: $switch-orientation-point) {
+      display: block;
+      width: 100%;
+      padding-left: 0;
+      border: 0;
+    }
+
     .alert {
+      white-space: normal;
       width: 100%;
       border-bottom: 1px solid lightgray;
       padding-top: 1em;

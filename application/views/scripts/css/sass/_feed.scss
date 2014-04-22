@@ -1,24 +1,26 @@
 .feed-container {
   width: 60%;
   margin: 0 auto;
+  box-sizing: border-box;
+
+  @media all and (max-width: $switch-orientation-point) {
+    width: 90%;
+  }
 
   .alert-container {
     padding-bottom: 1em;
     padding-top: 1em;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: stretch;
     border-bottom: 1px solid lightgray;
+    white-space: nowrap;
+    box-sizing: border-box;
 
     .entity {
-      order: 0;
-      flex: 0 0 20%;
-      align-self: auto;
-      padding-right: 1.5em;
+      width: 20%;
+      white-space: normal;
+      display: inline-block;
+      box-sizing: border-box;
+      vertical-align: top;
 
       img {
         max-width: 100%;
@@ -26,9 +28,11 @@
     }
 
     .data {
-      order: 0;
-      flex: 0 0 80%;
-      align-self: auto;
+      width: 78%;
+      box-sizing: border-box;
+      display: inline-block;
+      white-space: normal;
+      padding-left: 1em;
     }
   }
 }

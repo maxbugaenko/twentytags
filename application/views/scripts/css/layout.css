@@ -176,7 +176,7 @@ img {
     color: #a60000; }
 
 .btn-header {
-  font-size: 2em;
+  font-size: 1.7em;
   color: #424242;
   padding: .3em .3em;
   cursor: pointer; }
@@ -330,7 +330,7 @@ a.black-link {
       .menu-container ul li img, .menu-container-slide-right ul li img {
         max-height: 100%; }
     .menu-container ul .logo-item, .menu-container-slide-right ul .logo-item {
-      width: 35px;
+      width: 30px;
       padding: 0 1em 0; }
 
 .main-tag {
@@ -366,7 +366,7 @@ a.black-link {
     .list-container .item:hover .item-follow-button {
       opacity: 1; }
     .list-container .item img {
-      width: 60%; }
+      width: 100%; }
       @media all and (max-width: 900px) {
         .list-container .item img {
           width: 50%;
@@ -410,39 +410,49 @@ a.black-link {
 
 .feed-container {
   width: 60%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-sizing: border-box; }
+  @media all and (max-width: 900px) {
+    .feed-container {
+      width: 90%; } }
   .feed-container .alert-container {
     padding-bottom: 1em;
     padding-top: 1em;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: stretch;
-    border-bottom: 1px solid lightgray; }
+    border-bottom: 1px solid lightgray;
+    white-space: nowrap;
+    box-sizing: border-box; }
     .feed-container .alert-container .entity {
-      order: 0;
-      flex: 0 0 20%;
-      align-self: auto;
-      padding-right: 1.5em; }
+      width: 20%;
+      white-space: normal;
+      display: inline-block;
+      box-sizing: border-box;
+      vertical-align: top; }
       .feed-container .alert-container .entity img {
         max-width: 100%; }
     .feed-container .alert-container .data {
-      order: 0;
-      flex: 0 0 80%;
-      align-self: auto; }
+      width: 78%;
+      box-sizing: border-box;
+      display: inline-block;
+      white-space: normal;
+      padding-left: 1em; }
 
 .entity-container {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  white-space: nowrap; }
   .entity-container .entity {
     display: inline-block;
     vertical-align: top;
     padding-right: 2em;
+    white-space: normal;
     text-align: right;
     width: 30%; }
+    @media all and (max-width: 900px) {
+      .entity-container .entity {
+        display: block;
+        width: 100%;
+        text-align: center; } }
     .entity-container .entity img {
       max-width: 60%;
       margin-bottom: 2em; }
@@ -452,7 +462,14 @@ a.black-link {
     padding-left: 2em;
     width: 65%;
     display: inline-block; }
+    @media all and (max-width: 900px) {
+      .entity-container .alerts {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        border: 0; } }
     .entity-container .alerts .alert {
+      white-space: normal;
       width: 100%;
       border-bottom: 1px solid lightgray;
       padding-top: 1em;
@@ -523,6 +540,9 @@ a.black-link {
   padding-bottom: 5%;
   text-align: center;
   width: 50%; }
+  @media all and (max-width: 900px) {
+    .message-container {
+      width: 100%; } }
   .message-container .button-block {
     padding-top: 1em;
     margin-right: auto;
