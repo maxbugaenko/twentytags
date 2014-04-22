@@ -36,9 +36,6 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
                     <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
                     <?=$item->today > 0 ? "today ".$item->today : ""?>
                 </p>
-                <p class="description margins small">
-                    <?=$item->description?>
-                </p>
                 <div id="item-follow-button-<?=$item?>" class="margins item-follow-button <?=$isSaved == true ? "make-visible":""?>">
                     <button id="follow-<?=$item?>" class="to-follow-button btn-small <?=$isLogged?> <?=$isSaved ? " followed":""?>">
                         <? if (!$this->user):?>
@@ -54,6 +51,9 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
                         <?=$isSaved ? "Unfollow" : "Follow"?>
                     </button>
                 </div>
+                <p class="description margins small">
+                    <?=$item->description?>
+                </p>
             </article>
         <?endforeach?>
     </div>

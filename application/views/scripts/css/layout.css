@@ -356,13 +356,13 @@ a.black-link {
     overflow: hidden;
     padding: 1em;
     float: left;
-    margin: .3em;
-    width: calc((100% - 3em) / 5);
-    height: 500px;
+    margin: 0;
+    width: calc((100%) / 5);
+    height: 600px;
     box-sizing: border-box; }
     @media all and (max-width: 900px) {
       .list-container .item {
-        width: calc(100% - .6em);
+        width: calc(100%);
         height: auto;
         padding: .3em;
         border: 0;
@@ -377,15 +377,8 @@ a.black-link {
           float: left;
           margin: 0 .5em .5em 0; } }
     .list-container .item .item-follow-button {
-      position: absolute;
-      top: 20px;
-      right: 10px;
-      opacity: 0; }
-      @media all and (max-width: 900px) {
-        .list-container .item .item-follow-button {
-          opacity: 1;
-          float: right;
-          position: static; } }
+      opacity: 1;
+      position: static; }
     .list-container .item .make-visible {
       opacity: 1; }
     .list-container .item .not-displayed {
