@@ -27,7 +27,7 @@
     <nav class="menu-panel" id="menu-panel">
         <ul class="menu">
             <?if (Model_User::isLoggedIn()):?>
-                <li><a class="<?=$this->mainTag == "I'm following" ? "current":""?>" href="<?=$this->url(array(), "following", false)?>">I'm following</a></li>
+                <li><a class="<?=$this->mainTag == $this->user->name ? "current":""?>" href="<?=$this->url(array(), "following", false)?>"><?=$this->user->name?></a></li>
             <?endif?>
             <li><a class="<?=$this->mainTag == "What's hot" ? "current":""?>" href="<?=$this->url(array(), "browse", false)?>">What's hot</a></li>
             <li><a class="<?=$this->mainTag == "Startups" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Startups")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Startups</a></li>

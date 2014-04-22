@@ -1,5 +1,5 @@
 $main-font: 'Fira-Light', 'Verdana', sans-serif;
-$title-font: 'Fira-Regular', 'Verdana', sans-serif;
+$title-font: 'HNC', 'Verdana', sans-serif;
 $header-font: 'HNC', sans-serif;
 $red: #f1103a;
 $gray: #BDBDBD;
@@ -59,6 +59,8 @@ h1 {
 h2, h3, h5 {
   @include title-font();
   margin: 0;
+  font-weight: 400;
+  color: $dark-gray;
 }
 
 h5 {

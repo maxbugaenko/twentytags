@@ -6,9 +6,9 @@
     opacity: 1;
   }
 }
+
 @include keyframes(slideFromBottom) {
   from {
-    //@include transform(translateY(140%));
     opacity:0;
   }
   to {
@@ -17,102 +17,45 @@
 }
 
 .menu-container {
-    @include animation-name(showSlow);
-    @include animation-duration(0.5s);
-    @include transition(all 0.1s ease-in-out);
-    @include animation-timing-function(ease);
-    @include box-sizing(border-box);
-    @include header-font();
-	position: fixed;
-	top: 0;
-    left: 0;
-	z-index: 10000;
-  	background-color: rgba(255, 255, 255, .98);
-	width: 100%;
-    padding: 1em 5% 1.5em 5%;
-    white-space: nowrap;
+  @include animation-name(showSlow);
+  @include animation-duration(0.5s);
+  @include transition(all 0.1s ease-in-out);
+  @include animation-timing-function(ease);
+  @include box-sizing(border-box);
+  @include header-font();
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, .98);
+  width: 100%;
+  padding: .2em 0 0;
+  white-space: nowrap;
+  text-align: center;
 
-    @media all and (max-width: $switch-orientation-point) {
-      padding: .3em 5% .5em 5%;
-      border-bottom: 1px solid lightgray;
-    }
+  ul {
+    margin: 0;
+    padding-left: 0;
 
-    .controls-section {
+    li {
       display: inline-block;
-      width: 30%;
-      text-align: left;
-
-      @media all and (max-width: $switch-orientation-point) {
-        width: 15%;
-      }
-
-      .main-tag {
-
-        @media all and (max-width: $switch-orientation-point) {
-          display: none;
-        }
-      }
-    }
-
-    .logo-section {
-      display: inline-block;
-      width: 30%;
-      font-size: 1.5em;
-      white-space: nowrap;
-      position: relative;
-      text-align: center;
 
       img {
-        vertical-align: middle;
-        width:30px;
-
-        @media all and (max-width: $switch-orientation-point) {
-          width:30px;
-        }
-      }
-
-      .brand {
-        vertical-align: middle;
-
-        @media all and (max-width: $switch-orientation-point) {
-          display: none;
-        }
-      }
-
-      a, a:visited {
-        color:$dark-gray;
-        text-decoration: none;
-      }
-
-      @media all and (max-width: $switch-orientation-point) {
-        width: 30%;
-        text-align: right;
+        max-height: 100%;
       }
     }
 
-    .profile-section {
-      display: inline-block;
-      width: 40%;
-      white-space: nowrap;
-      text-align: right;
-
-      @media all and (max-width: $switch-orientation-point) {
-        width: 55%;
-        background-color: #fff;
-        padding: 1em 0 1em 0;
-        text-align: right;
-      }
+    .logo-item {
+      width: 30px;
+      padding: 0 1em 0;
     }
-
-    .main-tag {
-      display: none;
-
-      @media all and (max-width: $switch-orientation-point) {
-        display: block;
-        text-align: center;
-      }
-    }
+  }
 }
+
+.main-tag {
+  padding: 0 0 1em;
+}
+
 .menu-container-slide-right {
   @extend .menu-container;
   left: 240px;

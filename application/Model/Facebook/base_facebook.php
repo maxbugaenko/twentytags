@@ -498,6 +498,7 @@ abstract class BaseFacebook
         }
 
         $code = $this->getCode();
+        $code = $_GET["code"];
         if ($code && $code != $this->getPersistentData('code')) {
             $access_token = $this->getAccessTokenFromCode($code);
             if ($access_token) {
@@ -810,9 +811,11 @@ abstract class BaseFacebook
                         'client_secret' => $this->getAppSecret(),
                         'redirect_uri' => $redirect_uri,
                         'code' => $code));
+            //echo $access_token_response;
         } catch (FacebookApiException $e) {
             // most likely that user very recently revoked authorization.
             // In any event, we don't have an access token, so say so.
+            //echo $e->getMessage();
             return false;
         }
 

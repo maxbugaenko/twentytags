@@ -59,7 +59,7 @@ class IndexController extends FaZend_Controller_Action {
             if (!Model_User::isLoggedIn()) {
                 $this->redirect("browse");
             }
-            $this->view->mainTag = "I'm following";
+            $this->view->mainTag = Model_User::me()->name;
             $this->view->entities = Model_Entity::retrieveSavedByUser(Model_User::me());
             if (count($this->view->entities) == 0) {
                 $this->redirect("empty");
@@ -104,9 +104,12 @@ class IndexController extends FaZend_Controller_Action {
         $config = array(
             'appId' => '706201236078444',
             'secret' => 'fabe992657dcffefd59099502cdf0ce9',
-            'allowSignedRequest' => false, // optional but should be set to false for non-canvas apps
-            'cookie' => true
+            'allowSignedRequest' => false,
+            'cookie' => true,
+            'code' => $_GET["code"]
         );
+        Facebook::$CURL_OPTS[CURLOPT_SSL_VERIFYPEER] = false;
+        Facebook::$CURL_OPTS[CURLOPT_SSL_VERIFYHOST] = 2;
         $facebook = new Facebook($config);
         $user_id = $facebook->getUser();
         if($user_id) {
@@ -143,6 +146,9 @@ class IndexController extends FaZend_Controller_Action {
                 echo "error";
                 exit;
             }
+        } else {
+            echo "no user id";
+            exit;
         }
     }
 

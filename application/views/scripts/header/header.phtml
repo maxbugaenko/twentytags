@@ -9,26 +9,28 @@ $facebook = new Facebook($config);
 ?>
 
 <div class="menu-container" id="menu-container">
-    <div class="controls-section">
-        <span class="main-tag"><?=$this->mainTag?></span> <i id="tags-button" class="btn-icon fa fa-bars"></i>
-    </div>
-    <div class="logo-section">
-        <a href="<?=$this->url(array(), "browse", false)?>">
-            <img src="<?=$this->staticFile("images/logo.svg")?>"/>
-            <span class="brand">TwentyTags</span>
-        </a>
-    </div>
-    <div class="profile-section">
-        <? if ($this->user):?>
-            <?=$this->user->name?>
-            <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
-            <?$followingUrl = $this->url(array(), "following", true);?>
-            <?$feedUrl = $this->url(array(), "feed", true);?>
-            <?$addTagUrl = $this->url(array(), "addtag", true);?>
-            <i onclick="location.href='<?=$feedUrl?>'" class="btn-icon fa fa-refresh"></i>
-            <i onclick="location.href='<?=$followingUrl?>'" class="btn-icon fa fa-th"></i>
-            <i onclick="location.href='<?=$addTagUrl?>'" class="btn-icon fa fa-plus"></i>
-            <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="btn-icon fa fa-external-link"></i>
+    <ul>
+        <li class="logo-item">
+            <a href="<?=$this->url(array(), $this->user ? "feed":"browse", false)?>">
+                <img src="<?=$this->staticFile("images/logo.svg")?>"/>
+            </a>
+        </li>
+        <li>
+            <i id="tags-button" class="btn-header fa fa-bars"></i>
+        </li>
+            <? if ($this->user):?>
+                <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
+                <?$followingUrl = $this->url(array(), "following", true);?>
+                <?$addTagUrl = $this->url(array(), "addtag", true);?>
+            <li>
+              <i onclick="location.href='<?=$followingUrl?>'" class="btn-header fa fa-th"></i>
+            </li>
+            <li>
+                <i onclick="location.href='<?=$addTagUrl?>'" class="btn-header fa fa-plus"></i>
+            </li>
+            <li>
+                <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="btn-header fa fa-external-link"></i>
+            </li>
         <?else:?>
             <?
                 $loginUrl = $facebook->getLoginUrl(array(
@@ -40,13 +42,15 @@ $facebook = new Facebook($config);
                     "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "redirect"=>"addtag"), "login", false)
                 ));
             ?>
-            <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="btn-icon fa fa-plus"></i>&#160;
-            <i title="Sign up with Facebook" onclick="location.href='<?=$loginUrl?>'" class="btn-icon fa fa-facebook-square"></i>
+            <li>
+                <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="btn-header fa fa-plus"></i>
+            </li>
+            <li>
+                <i title="Sign up with Facebook" onclick="location.href='<?=$loginUrl?>'" class="btn-header fa fa-facebook-square"></i>
+            </li>
         <?endif?>
-    </div>
-    <div class="main-tag">
-        <?=$this->mainTag?>
-    </div>
+    </ul>
+    <div class="main-tag"><?=$this->mainTag?></div>
 </div>
 <script>
     $("#tags-button").click(function() {

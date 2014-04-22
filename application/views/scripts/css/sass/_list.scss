@@ -8,7 +8,8 @@
 
     .item {
         position: relative;
-        border: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
         overflow: hidden;
         padding: 1em;
         float: left;
