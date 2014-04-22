@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/admin.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/layout.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_list.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_list.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="25" selection-start="542" selection-end="542" vertical-scroll-proportion="0.6404293" vertical-offset="56" max-vertical-offset="1422">
+            <state line="23" column="25" selection-start="542" selection-end="542" vertical-scroll-proportion="-4.313253" vertical-offset="56" max-vertical-offset="1422">
               <folding />
             </state>
           </provider>
@@ -92,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_general.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_general.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="18" selection-start="746" selection-end="746" vertical-scroll-proportion="-10.666667" vertical-offset="360" max-vertical-offset="1656">
+            <state line="36" column="18" selection-start="746" selection-end="746" vertical-scroll-proportion="0.45859873" vertical-offset="360" max-vertical-offset="1656">
               <folding />
             </state>
           </provider>
@@ -181,8 +177,8 @@
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
       </list>
     </option>
   </component>
@@ -1059,16 +1055,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="18" selection-start="746" selection-end="746" vertical-scroll-proportion="-10.666667" vertical-offset="360" max-vertical-offset="1656">
+        <state line="23" column="25" selection-start="542" selection-end="542" vertical-scroll-proportion="-4.313253" vertical-offset="56" max-vertical-offset="1422">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="542" selection-end="542" vertical-scroll-proportion="0.6404293" vertical-offset="56" max-vertical-offset="1422">
+        <state line="36" column="18" selection-start="746" selection-end="746" vertical-scroll-proportion="0.45859873" vertical-offset="360" max-vertical-offset="1656">
           <folding />
         </state>
       </provider>
