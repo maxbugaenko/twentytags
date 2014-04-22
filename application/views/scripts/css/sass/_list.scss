@@ -32,10 +32,10 @@
 
 
         img {
-          width: 40%;
+          width: 60%;
 
           @media all and (max-width: $switch-orientation-point) {
-            width: 30%;
+            width: 50%;
             float: left;
             margin: 0 .5em .5em 0;
           }

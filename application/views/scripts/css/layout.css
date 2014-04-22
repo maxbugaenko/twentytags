@@ -176,9 +176,9 @@ img {
     color: #a60000; }
 
 .btn-header {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #424242;
-  padding: .3em .5em;
+  padding: .3em .3em;
   cursor: pointer; }
   .btn-header:hover {
     color: #bdbdbd; }
@@ -330,7 +330,7 @@ a.black-link {
       .menu-container ul li img, .menu-container-slide-right ul li img {
         max-height: 100%; }
     .menu-container ul .logo-item, .menu-container-slide-right ul .logo-item {
-      width: 30px;
+      width: 35px;
       padding: 0 1em 0; }
 
 .main-tag {
@@ -366,10 +366,10 @@ a.black-link {
     .list-container .item:hover .item-follow-button {
       opacity: 1; }
     .list-container .item img {
-      width: 40%; }
+      width: 60%; }
       @media all and (max-width: 900px) {
         .list-container .item img {
-          width: 30%;
+          width: 50%;
           float: left;
           margin: 0 .5em .5em 0; } }
     .list-container .item .item-follow-button {
