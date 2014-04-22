@@ -377,7 +377,7 @@ a.black-link {
       @media all and (max-width: 900px) {
         .list-container .item img {
           width: 50%;
-          margin: 0 1em 1em;
+          margin: 0 1em 1em 0;
           float: left; } }
     .list-container .item .item-follow-button {
       opacity: 1;
