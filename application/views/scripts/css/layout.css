@@ -176,9 +176,9 @@ img {
     color: #a60000; }
 
 .btn-header {
-  font-size: 1.7em;
+  font-size: 1.4em;
   color: #424242;
-  padding: .3em .3em;
+  padding: .6em .3em;
   cursor: pointer; }
   .btn-header:hover {
     color: #bdbdbd; }
@@ -328,7 +328,7 @@ a.black-link {
     @media all and (max-width: 900px) {
       .menu-container ul, .menu-container-slide-right ul {
         border-bottom: 1px solid lightgray;
-        box-shadow: inset 0 -10px 30px #EDEDED; } }
+        background-color: rgba(0, 0, 0, 0.05); } }
     .menu-container ul li, .menu-container-slide-right ul li {
       display: inline-block; }
       .menu-container ul li img, .menu-container-slide-right ul li img {
@@ -338,7 +338,10 @@ a.black-link {
       padding: 0 1em 0; }
 
 .main-tag {
-  padding: 1em 0 1em; }
+  padding: .6em 0 .6em; }
+  @media all and (max-width: 900px) {
+    .main-tag {
+      border-bottom: 1px solid lightgray; } }
 
 .menu-container-slide-right {
   left: 240px; }
@@ -364,7 +367,7 @@ a.black-link {
       .list-container .item {
         width: calc(100%);
         height: auto;
-        padding: 2em .6em;
+        padding: 1em .6em;
         border: 0;
         border-bottom: 1px solid lightgray; } }
     .list-container .item:hover .item-follow-button {
@@ -373,7 +376,9 @@ a.black-link {
       max-width: 100%; }
       @media all and (max-width: 900px) {
         .list-container .item img {
-          max-width: 100%; } }
+          width: 50%;
+          margin: 0 1em 1em;
+          float: left; } }
     .list-container .item .item-follow-button {
       opacity: 1;
       position: static; }

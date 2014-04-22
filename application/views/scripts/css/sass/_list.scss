@@ -21,7 +21,7 @@
         @media all and (max-width: $switch-orientation-point) {
           width: calc(100%);
           height: auto;
-          padding: 2em .6em;
+          padding: 1em .6em;
           border: 0;
           border-bottom: 1px solid lightgray;
         }
@@ -35,7 +35,9 @@
           max-width: 100%;
 
           @media all and (max-width: $switch-orientation-point) {
-            max-width: 100%;
+            width: 50%;
+            margin: 0 1em 1em;
+            float: left;
           }
         }
 
