@@ -210,10 +210,14 @@ class IndexController extends FaZend_Controller_Action {
         $this->_helper->viewRenderer->setNoRender();
         $user = Model_User::me();
         $entity = $this->getRequest()->getParam("entity");
-        $saved = new Model_Saved();
-        $saved->user = $user;
-        $saved->entity = $entity;
-        $saved->save();
+        try {
+            Model_Saved::findByUserAndEntity($user, $entity);
+        } catch (Model_Saved_NoSuchSavedException $e) {
+            $saved = new Model_Saved();
+            $saved->user = $user;
+            $saved->entity = $entity;
+            $saved->save();
+        }
         echo "OK";
     }
 

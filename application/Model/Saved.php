@@ -33,4 +33,23 @@ class Model_Saved extends FaZend_Db_Table_ActiveRow_saved {
             ->fetchRow();
     }
 
+    /**
+     * Retrieves class by class name
+     * @return Model_Option class
+     */
+    public static function findByUserAndEntity($user, $entity) {
+        try {
+            $row = self::retrieve()
+                ->where('saved.user = ?', $user)
+                ->where('saved.entity = ?', $entity)
+                ->setRowClass('Model_Saved')
+                ->fetchRow();
+            return $row;
+        } catch (Model_Saved_NotFoundException $e) {
+            FaZend_Exception::raise('Model_Saved_NoSuchSaved',
+                "Tag '{$tagname}' doesn't exist", 'Exception');
+        }
+    }
+
+
 }
