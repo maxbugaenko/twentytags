@@ -212,7 +212,7 @@ class IndexController extends FaZend_Controller_Action {
         $entity = $this->getRequest()->getParam("entity");
         try {
             Model_Saved::findByUserAndEntity($user, $entity);
-        } catch (Model_Saved_NoSuchSavedException $e) {
+        } catch (Model_Saved_NoSuchSaved $e) {
             $saved = new Model_Saved();
             $saved->user = $user;
             $saved->entity = $entity;
