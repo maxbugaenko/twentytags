@@ -30,12 +30,11 @@ a:visited {
   overflow-x: hidden;
   left: 0;
   line-height: 1.2em;
-  font-size: 1.5em;
-  padding-top: 3em;
+  font-size: 1em;
+  padding-top: 5em;
 
   @media all and (max-width: $switch-orientation-point) {
-    padding-top: 4em;
-    font-size: 1.1em;
+    padding-top: 5em;
   }
 }
 
@@ -74,7 +73,7 @@ p {
 }
 
 p.small {
-  font-size: .7em;
+  font-size: 1em;
   line-height: 1.1em;
 }
 

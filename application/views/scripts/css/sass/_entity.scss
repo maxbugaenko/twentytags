@@ -3,6 +3,10 @@
   margin: 0 auto;
   white-space: nowrap;
 
+  @media all and (max-width: $switch-orientation-point) {
+    width: 95%;
+  }
+
   .entity {
     display: inline-block;
     vertical-align: top;

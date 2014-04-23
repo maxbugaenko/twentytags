@@ -65,12 +65,11 @@ a:visited {
   overflow-x: hidden;
   left: 0;
   line-height: 1.2em;
-  font-size: 1.5em;
-  padding-top: 3em; }
+  font-size: 1em;
+  padding-top: 5em; }
   @media all and (max-width: 900px) {
     .page-container, .slide-page-container-right {
-      padding-top: 4em;
-      font-size: 1.1em; } }
+      padding-top: 5em; } }
 
 .slide-page-container-right {
   left: 240px; }
@@ -101,7 +100,7 @@ p {
   margin: 0; }
 
 p.small {
-  font-size: .7em;
+  font-size: 1em;
   line-height: 1.1em; }
 
 .margins {
@@ -145,7 +144,7 @@ img {
 
 .btn-small {
   background-color: #fff;
-  font-size: 0.8em;
+  font-size: 20px;
   padding-left: .5em;
   padding-right: .5em; }
 
@@ -361,7 +360,7 @@ a.black-link {
     padding: 2em 1em 2em 1em;
     float: left;
     margin: 0;
-    width: calc((100%) / 5);
+    width: calc(100% / 6);
     height: 600px;
     box-sizing: border-box; }
     @media all and (max-width: 900px) {
@@ -428,9 +427,10 @@ a.black-link {
       white-space: normal;
       display: inline-block;
       box-sizing: border-box;
-      vertical-align: top; }
+      vertical-align: top;
+      text-align: right; }
       .feed-container .alert-container .entity img {
-        max-width: 100%; }
+        max-width: 80%; }
     .feed-container .alert-container .data {
       width: 78%;
       box-sizing: border-box;
@@ -442,6 +442,9 @@ a.black-link {
   width: 80%;
   margin: 0 auto;
   white-space: nowrap; }
+  @media all and (max-width: 900px) {
+    .entity-container {
+      width: 95%; } }
   .entity-container .entity {
     display: inline-block;
     vertical-align: top;

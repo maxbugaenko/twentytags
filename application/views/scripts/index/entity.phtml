@@ -66,12 +66,12 @@ $facebook = new Facebook($config);
         <?if (count($this->alerts) > 0):?>
             <? foreach ($this->alerts as $item):?>
                 <article class="alert">
-                    <h3>
+                    <h2>
                         <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
                         <? if ($item->source == "youtube"):?>
                             <i class="fa fa-youtube-play"></i>
                         <? endif;?>
-                    </h3>
+                    </h2>
                     <h5><?=date("F jS, Y",strtotime($item->added));?></h5>
                     <p class="margins">
                         <?=$item->body?>
@@ -80,10 +80,6 @@ $facebook = new Facebook($config);
             <?endforeach?>
         <?else:?>
             <div class="message">
-                <h1>
-                    <i class="fa fa-clock-o"></i><br/>
-                    There is no updates yet
-                </h1>
                 <p>
                     We've got to wait a little. Either follow this tag or get back later
                 </p>
