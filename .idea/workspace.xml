@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +91,7 @@
       <file leaf-file-name="_header.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="562" selection-end="562" vertical-scroll-proportion="0.7165605" vertical-offset="108" max-vertical-offset="1404">
+            <state line="31" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.7165605" vertical-offset="108" max-vertical-offset="1386">
               <folding />
             </state>
           </provider>
@@ -1073,7 +1072,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="562" selection-end="562" vertical-scroll-proportion="0.7165605" vertical-offset="108" max-vertical-offset="1404">
+        <state line="31" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.7165605" vertical-offset="108" max-vertical-offset="1386">
           <folding />
         </state>
       </provider>
