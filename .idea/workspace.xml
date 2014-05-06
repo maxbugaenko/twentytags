@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/layout.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/layout.css" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,7 +91,7 @@
       <file leaf-file-name="_entity.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="22" selection-start="535" selection-end="535" vertical-scroll-proportion="0.7452229" vertical-offset="0" max-vertical-offset="1098">
+            <state line="25" column="19" selection-start="510" selection-end="510" vertical-scroll-proportion="0.7165605" vertical-offset="0" max-vertical-offset="1098">
               <folding />
             </state>
           </provider>
@@ -1072,7 +1070,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_entity.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="535" selection-end="535" vertical-scroll-proportion="0.7452229" vertical-offset="0" max-vertical-offset="1098">
+        <state line="25" column="19" selection-start="510" selection-end="510" vertical-scroll-proportion="0.7165605" vertical-offset="0" max-vertical-offset="1098">
           <folding />
         </state>
       </provider>
