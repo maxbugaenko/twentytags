@@ -84,7 +84,7 @@ $facebook = new Facebook($config);
                 <p>
                     We've got to wait a little. Either follow this tag or get back later
                 </p>
-                <?if ($this->status == 0):?>
+                <?if ($this->entity->status == 0):?>
                     <div class="moderation">moderation</div>
                 <?endif?>
             </div>
