@@ -89,6 +89,11 @@ p.small {
 img {
   max-width: 100%; }
 
+a.big {
+  font-size: 3em;
+  border-bottom: 1px dashed;
+  color: #34495e; }
+
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;

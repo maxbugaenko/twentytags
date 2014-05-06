@@ -97,3 +97,9 @@ p.small {
 img {
   max-width: 100%;
 }
+
+a.big {
+  font-size: 3em;
+  border-bottom: 1px dashed;
+  color: $background-color;
+}

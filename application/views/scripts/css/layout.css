@@ -135,6 +135,11 @@ p.small {
 img {
   max-width: 100%; }
 
+a.big {
+  font-size: 3em;
+  border-bottom: 1px dashed;
+  color: #34495e; }
+
 .btn-icon, .btn-large, .btn-small, .btn-wide {
   cursor: pointer;
   text-align: center;
@@ -508,7 +513,7 @@ a.black-link {
   margin: 0 auto;
   padding-top: 10%;
   padding-bottom: 5%;
-  text-align: center;
+  text-align: left;
   width: 50%; }
   @media all and (max-width: 900px) {
     .message-container {
