@@ -388,7 +388,7 @@ a.black-link {
       /* IE6-9 */ }
 
 .feed-container {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   box-sizing: border-box; }
   @media all and (max-width: 900px) {
@@ -401,7 +401,7 @@ a.black-link {
     white-space: nowrap;
     box-sizing: border-box; }
     .feed-container .alert-container .entity {
-      width: 20%;
+      width: 10%;
       white-space: normal;
       display: inline-block;
       box-sizing: border-box;
@@ -410,7 +410,7 @@ a.black-link {
       .feed-container .alert-container .entity img {
         max-width: 80%; }
     .feed-container .alert-container .data {
-      width: 78%;
+      width: 88%;
       box-sizing: border-box;
       display: inline-block;
       white-space: normal;
