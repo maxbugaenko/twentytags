@@ -20,7 +20,6 @@ $facebook = new Facebook($config);
     <div class="message-container">
         <div>
             <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
-            <h2><?=$this->entity->title?></h2>
         </div>
         <div>
             <p class="margins">
@@ -37,7 +36,6 @@ $facebook = new Facebook($config);
 <div class="entity-container">
     <div class="entity">
         <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
-        <h1><?=$this->entity->title?></h1>
 <!--        <p>
                 <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
                 <? foreach ($tagged as $tag):?>
@@ -45,20 +43,6 @@ $facebook = new Facebook($config);
                 <? endforeach?>
         </p>
         -->
-        <p class="margins">
-            <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
-               href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
-                <i class="facebook fa fa-facebook-square"></i>
-            </a>
-            <a target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')"
-               href="https://twitter.com/share">
-                <i class="twitter fa fa-twitter-square"></i>
-            </a>
-            <a target="_blank" onclick="return !window.open(this.href, 'Google+', 'width=640,height=300')"
-               href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
-                <i class="google fa fa-google-plus-square"></i>
-            </a>
-        </p>
         <?if (!Model_User::isLoggedIn()): ?>
             <?$isLogged = "user-not-logged";?>
             <div class="login-urls" id="login-url-<?=$this->entity?>">
@@ -75,8 +59,20 @@ $facebook = new Facebook($config);
         <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
             <?=$isSaved ? "Unfollow" : "Follow"?>
         </button>
-        <br/>
-        <br/>
+        <p class="margins">
+            <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
+               href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
+                <i class="facebook fa fa-facebook-square"></i>
+            </a>
+            <a target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')"
+               href="https://twitter.com/share">
+                <i class="twitter fa fa-twitter-square"></i>
+            </a>
+            <a target="_blank" onclick="return !window.open(this.href, 'Google+', 'width=640,height=300')"
+               href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
+                <i class="google fa fa-google-plus-square"></i>
+            </a>
+        </p>
     </div>
     <div class="alerts <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
             <? foreach ($this->alerts as $item):?>
