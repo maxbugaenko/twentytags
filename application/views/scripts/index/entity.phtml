@@ -23,12 +23,13 @@ $facebook = new Facebook($config);
     <div class="entity">
         <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
         <h2><?=$this->entity->title?></h2>
-        <p>
+<!--        <p>
                 <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
                 <? foreach ($tagged as $tag):?>
                     <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
                 <? endforeach?>
         </p>
+        -->
         <p class="margins">
             <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
                href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">

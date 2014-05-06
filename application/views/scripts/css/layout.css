@@ -92,7 +92,8 @@ h2, h5, h3, h5 {
   font-weight: 300;
   margin: 0;
   font-weight: 400;
-  color: #424242; }
+  color: #424242;
+  line-height: 1.1em; }
 
 h5 {
   color: #424242; }
@@ -188,7 +189,7 @@ img {
   padding: .6em .3em;
   cursor: pointer; }
   .btn-header:hover {
-    color: #24506d; }
+    color: #fff; }
 
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;
@@ -280,11 +281,19 @@ a.black-link {
       .menu-container ul, .menu-container-slide-right ul {
         border-bottom: 1px solid lightgray;
         background-color: rgba(0, 0, 0, 0.05); } }
-    .menu-container ul li, .menu-container-slide-right ul li {
+    .menu-container ul li:nth-child(n+2), .menu-container-slide-right ul li:nth-child(n+2) {
       display: block;
-      padding: 0 2em 0 2em; }
-      .menu-container ul li img, .menu-container-slide-right ul li img {
+      padding: 1em 2em 1em 2em;
+      transition: all .2s ease;
+      cursor: pointer; }
+      .menu-container ul li:nth-child(n+2) img, .menu-container-slide-right ul li:nth-child(n+2) img {
         max-height: 100%; }
+      .menu-container ul li:nth-child(n+2):hover, .menu-container-slide-right ul li:nth-child(n+2):hover {
+        transition: all .2s ease;
+        background-color: #46627f; }
+      .menu-container ul li:nth-child(n+2):active, .menu-container-slide-right ul li:nth-child(n+2):active {
+        transition: all .2s ease;
+        background-color: #2b3c4e; }
     .menu-container ul .logo-item, .menu-container-slide-right ul .logo-item {
       width: 45px;
       padding: 1em 2em 2em 2em; }
