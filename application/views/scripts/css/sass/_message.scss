@@ -9,12 +9,17 @@
     width: 90%;
   }
 
-  .button-block {
-    padding-top: 1em;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    width:70%;
-  }
-
 }
+
+.message {
+  white-space: normal;
+  color: $background-color;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.moderation {
+  padding-top: 1em;
+  font-size: 5em;
+}
+

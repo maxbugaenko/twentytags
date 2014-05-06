@@ -59,7 +59,10 @@ $facebook = new Facebook($config);
             </div>
 
         <?endif?>
-        <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-large">Follow</button>
+        <? $isSaved = Model_Entity::isSaved($this->entity);?>
+        <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
+            <?=$isSaved ? "Unfollow" : "Follow"?>
+        </button>
         <br/>
         <br/>
     </div>
@@ -84,6 +87,9 @@ $facebook = new Facebook($config);
                 <p>
                     We've got to wait a little. Either follow this tag or get back later
                 </p>
+                <?if ($this->status == 0):?>
+                    <div class="moderation">moderation</div>
+                <?endif?>
             </div>
         <?endif?>
     </div>

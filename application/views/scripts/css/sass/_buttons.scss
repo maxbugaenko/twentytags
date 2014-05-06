@@ -1,21 +1,28 @@
 %btn {
   cursor: pointer;
   text-align: center;
-  color: $dark-gray;
+  color: #fff;
   padding: .4em;
   outline: 0;
-  border: 1px solid $gray;
+  //border: 1px solid $gray;
+  border: 0;
   border-radius: 3px;
   font-size: 22px;
   white-space: nowrap;
+  background-color: $background-color;
+  position: relative;
+  @include main-font();
+  //text-shadow: 0 2px 0 darken($background-color, 20);
 
   &:hover {
+    background-color: lighten($background-color, 5);
     box-shadow: inset 0px 0px 1px lightgray;
   }
 
   &:active {
     @include transition(all .1s);
-    box-shadow: inset 0px 1px 5px lightgray;
+    //box-shadow: inset 0px 1px 5px lightgray;
+    top: 2px;
   }
 }
 
@@ -30,19 +37,16 @@
 
 .btn-large {
   @extend %btn;
-  background-color: #fff;
   width: auto;
   padding-top: .3em;
   padding-bottom: .3em;
   padding-left: 1em;
   padding-right: 1em;
   font-size: 35px;
-  @include header-font();
 }
 
 .btn-small {
   @extend .btn-large;
-  background-color: #fff;
   font-size: 20px;
   padding-left: .5em;
   padding-right: .5em;
@@ -93,9 +97,9 @@
 }
 
 .btn-header {
-  font-size: 30px;
+  font-size: 35px;
   color: #fff;
-  padding: .6em .3em;
+  padding: .3em .3em;
   cursor: pointer;
 
   &:hover {
