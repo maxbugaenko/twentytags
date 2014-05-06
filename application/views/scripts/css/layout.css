@@ -394,10 +394,9 @@ a.black-link {
     .feed-container {
       width: 90%; } }
   .feed-container .alert-container {
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-top: 2em;
     position: relative;
-    border-bottom: 1px solid lightgray;
     white-space: nowrap;
     box-sizing: border-box; }
     .feed-container .alert-container .entity {
@@ -453,7 +452,6 @@ a.black-link {
     .entity-container .alerts .alert {
       white-space: normal;
       width: 100%;
-      border-bottom: 1px solid lightgray;
       padding-top: 1em;
       padding-bottom: 1em; }
 

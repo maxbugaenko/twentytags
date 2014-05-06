@@ -72,6 +72,18 @@ class AdmController extends Fazend_Controller_Action {
         Model_Tagged::create($entity, $tag);
         echo "OK";
     }
+
+    /**
+     * Tag entity
+     * @return void
+     */
+    public function deleteentityAction() {
+        $entity = new Model_Entity((int)$this->getRequest()->getParam('entity'));
+        $entity->delete();
+        $this->redirect("__fz/adm/moderation");
+    }
+
+
     /**
      * Update table action. Made for editables back-end
      * @return void

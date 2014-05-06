@@ -1,4 +1,6 @@
+
 <? foreach ($this->entities as $item) :?>
+    <h2><a href="<?=$this->url(array("action"=>"deleteentity", "entity"=>$item), "fz__adm", true)?>">delete <strong><?=$item->title?></strong></a></h2>
     <?=$this->forma(1)
         ->addBehavior('redirectUrl', '__fz/adm/moderation')
     ->addField('hidden', 'id')
