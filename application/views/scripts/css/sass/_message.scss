@@ -3,7 +3,8 @@
   padding-top: 10%;
   padding-bottom: 40%;
   text-align: left;
-  width: 50%;
+  width: 70%;
+  white-space: normal;
 
   @media all and (max-width: $switch-orientation-point) {
     width: 90%;

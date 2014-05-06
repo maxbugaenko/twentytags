@@ -138,7 +138,8 @@ img {
 a.big {
   font-size: 3em;
   border-bottom: 1px dashed;
-  color: #34495e; }
+  color: #34495e;
+  line-height: 1.1em; }
 
 .btn-icon, .btn-large, .btn-small, .btn-wide {
   cursor: pointer;
@@ -514,7 +515,8 @@ a.black-link {
   padding-top: 10%;
   padding-bottom: 40%;
   text-align: left;
-  width: 50%; }
+  width: 70%;
+  white-space: normal; }
   @media all and (max-width: 900px) {
     .message-container {
       width: 90%; } }

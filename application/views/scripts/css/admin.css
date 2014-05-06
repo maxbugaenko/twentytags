@@ -92,7 +92,8 @@ img {
 a.big {
   font-size: 3em;
   border-bottom: 1px dashed;
-  color: #34495e; }
+  color: #34495e;
+  line-height: 1.1em; }
 
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_message.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_message.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/layout.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/layout.css" />
@@ -63,19 +64,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_general.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_general.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="27" selection-start="1527" selection-end="1527" vertical-scroll-proportion="-21.925926" vertical-offset="1262" max-vertical-offset="1980">
+            <state line="104" column="21" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.9426752" vertical-offset="1280" max-vertical-offset="1998">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_message.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_message.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_message.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="79" selection-end="79" vertical-scroll-proportion="0.08598726" vertical-offset="0" max-vertical-offset="628">
+            <state line="7" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="576">
               <folding />
             </state>
           </provider>
@@ -102,7 +103,7 @@
       <file leaf-file-name="entity.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="93" selection-start="4489" selection-end="4489" vertical-scroll-proportion="-7.4444447" vertical-offset="1347" max-vertical-offset="2052">
+            <state line="84" column="33" selection-start="4319" selection-end="4319" vertical-scroll-proportion="-6.111111" vertical-offset="1347" max-vertical-offset="2052">
               <folding />
             </state>
           </provider>
@@ -178,9 +179,9 @@
         <option value="$PROJECT_DIR$/application/controllers/AdmController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/adm/moderation.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/empty.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_message.scss" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
       </list>
     </option>
   </component>
@@ -1047,13 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="27" selection-start="1527" selection-end="1527" vertical-scroll-proportion="-21.925926" vertical-offset="1262" max-vertical-offset="1980">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/empty.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="159" selection-end="247" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="234">
@@ -1063,14 +1057,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="93" selection-start="4489" selection-end="4489" vertical-scroll-proportion="-7.4444447" vertical-offset="1347" max-vertical-offset="2052">
+        <state line="84" column="33" selection-start="4319" selection-end="4319" vertical-scroll-proportion="-6.111111" vertical-offset="1347" max-vertical-offset="2052">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_message.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="79" selection-end="79" vertical-scroll-proportion="0.08598726" vertical-offset="0" max-vertical-offset="628">
+        <state line="7" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="21" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.9426752" vertical-offset="1280" max-vertical-offset="1998">
           <folding />
         </state>
       </provider>
