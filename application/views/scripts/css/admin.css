@@ -15,7 +15,7 @@
 */
 body, html {
   background-color: #fff;
-  font-family: "Fira-Light", "Verdana", sans-serif;
+  font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300;
   padding: 0;
   margin: 0;
@@ -53,12 +53,13 @@ a:visited {
   width: 100px; }
 
 h1 {
-  font-family: "HNC", sans-serif;
+  font-family: "Cambria", sans-serif;
   font-weight: 400;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  line-height: 1em; }
 
 h2, h5, h3, h5 {
-  font-family: "HNC", "Verdana", sans-serif;
+  font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300;
   margin: 0;
   font-weight: 400;
@@ -93,7 +94,7 @@ input.input-text, input.input-large, input.search-input {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-size: 1em;
-  font-family: "HNC", "Verdana", sans-serif;
+  font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300;
   padding: 0.5em;
   border: 0;

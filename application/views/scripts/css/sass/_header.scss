@@ -24,7 +24,7 @@
 
     li:nth-child(n+2) {
       display: block;
-      padding: 1em 2em 1em 2em;
+      padding: 1em 1em 1em 1em;
       transition: all .2s ease;
       cursor: pointer;
       border-bottom: 1px solid lighten($background-color, 10);
@@ -46,7 +46,7 @@
 
     .logo-item {
       width: 60px;
-      padding: 1em 2em 2em 2em;
+      padding: 1em 1em 2em 1em;
     }
   }
 }

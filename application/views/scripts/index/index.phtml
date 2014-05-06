@@ -32,7 +32,7 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
                 </p>
                 -->
                 <? $isSaved = Model_Entity::isSaved($item);?>
-                <p class="margins small">
+                <p class="small">
                     <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
                     <?=$item->today > 0 ? "today ".$item->today : ""?>
                 </p>

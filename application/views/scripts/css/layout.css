@@ -43,9 +43,25 @@
 @font-face {
   font-family: 'Fira-Light';
   src: url('<?=$this->staticFile("fonts/fira/FiraSansOT-Light.otf")?>') format("opentype"); }
+@font-face {
+  font-family: 'Cambria-BoldItalic';
+  src: url("http://img.yegor256.com/fonts/2AACA7_0_0.eot");
+  src: url("http://img.yegor256.com/fonts/2AACA7_0_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2AACA7_0_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2AACA7_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Cambria-Bold';
+  src: url("http://img.yegor256.com/fonts/2AACA7_1_0.eot");
+  src: url("http://img.yegor256.com/fonts/2AACA7_1_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2AACA7_1_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2AACA7_1_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Cambria';
+  src: url("http://img.yegor256.com/fonts/2AACA7_2_0.eot");
+  src: url("http://img.yegor256.com/fonts/2AACA7_2_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2AACA7_2_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2AACA7_2_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Cambria-Italic';
+  src: url("http://img.yegor256.com/fonts/2AACA7_3_0.eot");
+  src: url("http://img.yegor256.com/fonts/2AACA7_3_0.eot?#iefix") format("embedded-opentype"), url("http://img.yegor256.com/fonts/2AACA7_3_0.woff") format("woff"), url("http://img.yegor256.com/fonts/2AACA7_3_0.ttf") format("truetype"); }
 body, html {
   background-color: #fff;
-  font-family: "Fira-Light", "Verdana", sans-serif;
+  font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300;
   padding: 0;
   margin: 0;
@@ -83,12 +99,13 @@ a:visited {
   width: 100px; }
 
 h1 {
-  font-family: "HNC", sans-serif;
+  font-family: "Cambria", sans-serif;
   font-weight: 400;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  line-height: 1em; }
 
 h2, h5, h3, h5 {
-  font-family: "HNC", "Verdana", sans-serif;
+  font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300;
   margin: 0;
   font-weight: 400;
@@ -130,7 +147,7 @@ img {
   white-space: nowrap;
   background-color: #34495e;
   position: relative;
-  font-family: "Fira-Light", "Verdana", sans-serif;
+  font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300; }
   .btn-icon:hover, .btn-large:hover, .btn-small:hover, .btn-wide:hover {
     background-color: #3d566e;
@@ -160,8 +177,10 @@ img {
 .btn-wide {
   width: 100%; }
 
+.facebook, .twitter, .google, .btn-red {
+  font-size: 2em; }
+
 .facebook {
-  font-size: 1.5em;
   color: #44619c; }
   .facebook:hover {
     color: #35528c; }
@@ -169,7 +188,6 @@ img {
     color: #35528c; }
 
 .twitter {
-  font-size: 1.5em;
   color: #509abf; }
   .twitter:hover {
     color: #074f73; }
@@ -177,7 +195,6 @@ img {
     color: #074f73; }
 
 .google, .btn-red {
-  font-size: 1.5em;
   color: #d42020; }
   .google:hover, .btn-red:hover {
     color: #a60000; }
@@ -197,7 +214,7 @@ input.input-text, input.input-large, input.search-input {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-size: 1em;
-  font-family: "HNC", "Verdana", sans-serif;
+  font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300;
   padding: 0.5em;
   border: 0;
@@ -263,7 +280,7 @@ a.black-link {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "HNC", sans-serif;
+  font-family: "Cambria", sans-serif;
   font-weight: 400;
   position: fixed;
   top: 0;
@@ -284,7 +301,7 @@ a.black-link {
         background-color: rgba(0, 0, 0, 0.05); } }
     .menu-container ul li:nth-child(n+2), .menu-container-slide-right ul li:nth-child(n+2) {
       display: block;
-      padding: 1em 2em 1em 2em;
+      padding: 1em 1em 1em 1em;
       transition: all .2s ease;
       cursor: pointer;
       border-bottom: 1px solid #46627f; }
@@ -298,7 +315,7 @@ a.black-link {
         background-color: #2b3c4e; }
     .menu-container ul .logo-item, .menu-container-slide-right ul .logo-item {
       width: 60px;
-      padding: 1em 2em 2em 2em; }
+      padding: 1em 1em 2em 1em; }
 
 .main-tag {
   padding: .6em 0 .6em; }
@@ -313,17 +330,15 @@ a.black-link {
   display: none; }
 
 .list-container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto; }
   .list-container .item {
     position: relative;
-    border-right: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
     overflow: hidden;
     padding: 2em 1em 2em 1em;
     float: left;
     margin: 0;
-    width: calc(100% / 6);
+    width: calc(100% / 5);
     height: 600px;
     box-sizing: border-box; }
     @media all and (max-width: 900px) {
@@ -453,7 +468,7 @@ a.black-link {
   width: 240px;
   height: 100%;
   position: fixed;
-  font-family: "Fira-Light", "Verdana", sans-serif;
+  font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300;
   z-index: 1000;
   top: 0;

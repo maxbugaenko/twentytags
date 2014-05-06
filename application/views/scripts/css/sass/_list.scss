@@ -3,18 +3,18 @@
 }
 
 .list-container {
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 
     .item {
         position: relative;
-        border-right: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
+   //     border-right: 1px solid lightgray;
+   //     border-bottom: 1px solid lightgray;
         overflow: hidden;
         padding: 2em 1em 2em 1em;
         float: left;
         margin: 0;
-        width: calc(100% / 6);
+        width: calc(100% / 5);
         height: 600px;
         box-sizing: border-box;
 

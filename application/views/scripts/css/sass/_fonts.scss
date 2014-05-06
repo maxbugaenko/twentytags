@@ -57,3 +57,43 @@
   src:
     url('<?=$this->staticFile("fonts/fira/FiraSansOT-Light.otf")?>') format('opentype');
 }
+
+@font-face {
+  font-family: 'Cambria-BoldItalic';
+  src:
+    url("http://img.yegor256.com/fonts/2AACA7_0_0.eot");
+  src:
+    url("http://img.yegor256.com/fonts/2AACA7_0_0.eot?#iefix") format("embedded-opentype"),
+    url("http://img.yegor256.com/fonts/2AACA7_0_0.woff") format("woff"),
+    url("http://img.yegor256.com/fonts/2AACA7_0_0.ttf") format("truetype")
+}
+
+@font-face {
+  font-family:'Cambria-Bold';
+  src:
+    url("http://img.yegor256.com/fonts/2AACA7_1_0.eot");
+  src:
+    url("http://img.yegor256.com/fonts/2AACA7_1_0.eot?#iefix") format("embedded-opentype"),
+    url("http://img.yegor256.com/fonts/2AACA7_1_0.woff") format("woff"),
+    url("http://img.yegor256.com/fonts/2AACA7_1_0.ttf") format("truetype")
+}
+
+@font-face {
+  font-family:'Cambria';
+  src:
+    url("http://img.yegor256.com/fonts/2AACA7_2_0.eot");
+  src:
+    url("http://img.yegor256.com/fonts/2AACA7_2_0.eot?#iefix") format("embedded-opentype"),
+    url("http://img.yegor256.com/fonts/2AACA7_2_0.woff") format("woff"),
+    url("http://img.yegor256.com/fonts/2AACA7_2_0.ttf") format("truetype")
+}
+
+@font-face {
+  font-family:'Cambria-Italic';
+  src:
+    url("http://img.yegor256.com/fonts/2AACA7_3_0.eot");
+  src:
+    url("http://img.yegor256.com/fonts/2AACA7_3_0.eot?#iefix") format("embedded-opentype"),
+    url("http://img.yegor256.com/fonts/2AACA7_3_0.woff") format("woff"),
+    url("http://img.yegor256.com/fonts/2AACA7_3_0.ttf") format("truetype")
+}

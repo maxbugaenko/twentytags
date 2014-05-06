@@ -57,8 +57,13 @@
   width: 100%;
 }
 
+
+%social {
+  font-size: 2em;
+}
+
 .facebook {
-  font-size: 1.5em;
+  @extend %social;
   color: #44619c;
 
   &:hover {
@@ -71,7 +76,7 @@
 }
 
 .twitter {
-  font-size: 1.5em;
+  @extend %social;
   color: #509abf;
 
   &:hover {
@@ -84,7 +89,7 @@
 }
 
 .google {
-  font-size: 1.5em;
+  @extend %social;
   color: #d42020;
 
   &:hover {

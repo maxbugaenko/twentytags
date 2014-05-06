@@ -22,7 +22,7 @@ $facebook = new Facebook($config);
 <div class="entity-container">
     <div class="entity">
         <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
-        <h2><?=$this->entity->title?></h2>
+        <h1><?=$this->entity->title?></h1>
 <!--        <p>
                 <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
                 <? foreach ($tagged as $tag):?>
@@ -44,9 +44,6 @@ $facebook = new Facebook($config);
                 <i class="google fa fa-google-plus-square"></i>
             </a>
         </p>
-        <p class="margins">
-            <?=$this->entity->description?>
-        </p>
         <?if (!Model_User::isLoggedIn()): ?>
             <?$isLogged = "user-not-logged";?>
             <div class="login-urls" id="login-url-<?=$this->entity?>">
@@ -60,7 +57,7 @@ $facebook = new Facebook($config);
 
         <?endif?>
         <? $isSaved = Model_Entity::isSaved($this->entity);?>
-        <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
+        <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-small <?=$isSaved ? " followed":""?>">
             <?=$isSaved ? "Unfollow" : "Follow"?>
         </button>
         <br/>
@@ -76,10 +73,10 @@ $facebook = new Facebook($config);
                             <i class="fa fa-youtube-play"></i>
                         <? endif;?>
                     </h2>
-                    <h5><?=date("F jS, Y",strtotime($item->added));?></h5>
-                    <p class="margins">
+                    <p>
                         <?=$item->body?>
                     </p>
+                    <h5><?=date("F jS, Y",strtotime($item->added));?></h5>
                 </article>
             <?endforeach?>
         <?else:?>
