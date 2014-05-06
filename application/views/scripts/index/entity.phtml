@@ -57,7 +57,7 @@ $facebook = new Facebook($config);
 
         <?endif?>
         <? $isSaved = Model_Entity::isSaved($this->entity);?>
-        <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-small <?=$isSaved ? " followed":""?>">
+        <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
             <?=$isSaved ? "Unfollow" : "Follow"?>
         </button>
         <br/>

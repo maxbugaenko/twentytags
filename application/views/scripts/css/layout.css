@@ -151,7 +151,7 @@ a.big {
   border-radius: 3px;
   font-size: 22px;
   white-space: nowrap;
-  background-color: #34495e;
+  background-color: #ed8836;
   position: relative;
   font-family: "Cambria", "Verdana", sans-serif;
   font-weight: 300; }
@@ -173,7 +173,7 @@ a.big {
   padding-bottom: .3em;
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 35px; }
+  font-size: 30px; }
 
 .btn-small {
   font-size: 20px;
@@ -434,7 +434,7 @@ a.black-link {
     padding-right: 2em;
     white-space: normal;
     text-align: right;
-    width: 30%; }
+    width: 20%; }
     @media all and (max-width: 900px) {
       .entity-container .entity {
         display: block;
@@ -447,7 +447,7 @@ a.black-link {
     border-left: 1px solid lightgray;
     box-sizing: border-box;
     padding-left: 2em;
-    width: 65%;
+    width: 75%;
     display: inline-block; }
     @media all and (max-width: 900px) {
       .entity-container .alerts {

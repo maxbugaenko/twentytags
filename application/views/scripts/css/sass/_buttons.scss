@@ -9,7 +9,7 @@
   border-radius: 3px;
   font-size: 22px;
   white-space: nowrap;
-  background-color: $background-color;
+  background-color: #ed8836;
   position: relative;
   @include main-font();
   //text-shadow: 0 2px 0 darken($background-color, 20);
@@ -42,7 +42,7 @@
   padding-bottom: .3em;
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .btn-small {

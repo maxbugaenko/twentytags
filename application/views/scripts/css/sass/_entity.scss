@@ -13,7 +13,7 @@
     padding-right: 2em;
     white-space: normal;
     text-align: right;
-    width: 30%;
+    width: 20%;
 
     @media all and (max-width: $switch-orientation-point) {
       display: block;
@@ -31,7 +31,7 @@
     border-left: 1px solid lightgray;
     box-sizing: border-box;
     padding-left: 2em;
-    width: 65%;
+    width: 75%;
     display: inline-block;
 
     @media all and (max-width: $switch-orientation-point) {
