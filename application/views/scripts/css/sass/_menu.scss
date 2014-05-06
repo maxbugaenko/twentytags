@@ -1,6 +1,6 @@
 .menu-panel {
   @include transition(all 0.1s ease-in-out);
-  background: $red;
+  background-color: $background-color;
   width: 240px;
   height: 100%;
   position: fixed;
@@ -10,17 +10,6 @@
   left: -240px;
   text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 
-  .legal-notes {
-    color: #bc0b0b;
-    letter-spacing: 1px;
-    line-height:1em;
-    font-weight: 800;
-    text-shadow: 0 1px rgba(255,255,255,0.2);
-    @include header-font();
-    padding:20px;
-    font-size:1.2em;
-  }
-
   .menu {
     list-style: none;
     padding-left: 0em;
@@ -29,7 +18,7 @@
     li {
 
       .current {
-        background: $dark-red;
+        background-color: darken($background-color, 5);
       }
     }
 
@@ -40,18 +29,18 @@
       line-height: 3;
       padding: 0 20px;
       cursor: pointer;
-      background: #f1103a;
-      border-bottom: 1px solid #dd1338;
+      background-color: $background-color;
+      border-bottom: 1px solid lighten($background-color, 5);
       @include transition(all 0.2s ease-in-out);
 
       &:hover{
         @include transition(all 0.2s ease-in-out);
-        background: $dark-red;
+        background-color: lighten($background-color, 5);
       }
 
       &:active {
         @include transition(all 0.1s ease-in-out);
-        background: $light-red;
+        background-color: darken($background-color, 8);
       }
     }
   }

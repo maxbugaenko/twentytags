@@ -13,7 +13,6 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
     );
     $facebook = new Facebook($config);
 ?>
-
 <div class="list-container">
         <? if (!$this->user) $isLogged = "user-not-logged";?>
         <? foreach ($this->entities as $item):?>
@@ -22,15 +21,16 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
                 <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
                     <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
                 </a>
-                <h2>
+                <h2 class="margin-top">
                     <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
                 </h2>
-                <p class="small">
+<!--                <p class="small">
                     <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
                     <? foreach ($tagged as $tag):?>
                         <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
                     <? endforeach?>
                 </p>
+                -->
                 <? $isSaved = Model_Entity::isSaved($item);?>
                 <p class="margins small">
                     <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>

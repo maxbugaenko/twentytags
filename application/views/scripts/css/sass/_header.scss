@@ -1,26 +1,5 @@
-@include keyframes(showSlow) {
-  from {
-    opacity:0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@include keyframes(slideFromBottom) {
-  from {
-    opacity:0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .menu-container {
-  @include animation-name(showSlow);
-  @include animation-duration(0.5s);
   @include transition(all 0.1s ease-in-out);
-  @include animation-timing-function(ease);
   @include box-sizing(border-box);
   @include header-font();
   position: fixed;
@@ -28,7 +7,8 @@
   left: 0;
   z-index: 10000;
   background-color: rgba(255, 255, 255, .98);
-  width: 100%;
+  background: lighten($background-color, 7);
+  height: 100%;
   padding: 0 0 0 0;
   white-space: nowrap;
   text-align: center;
@@ -39,12 +19,12 @@
 
     @media all and (max-width: $switch-orientation-point) {
       border-bottom: 1px solid lightgray;
-//      box-shadow: inset 0 -10px 30px #EDEDED;
       background-color: rgba(0, 0, 0, .05);
     }
 
     li {
-      display: inline-block;
+      display: block;
+      padding: 0 2em 0 2em;
 
       img {
         max-height: 100%;
@@ -52,8 +32,8 @@
     }
 
     .logo-item {
-      width: 30px;
-      padding: 0 1em 0;
+      width: 45px;
+      padding: 1em 2em 2em 2em;
     }
   }
 }

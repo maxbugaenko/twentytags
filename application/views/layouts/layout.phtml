@@ -36,10 +36,6 @@
             <li><a class="<?=$this->mainTag == "Sportsmen" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Sportsmen")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Sportsmen</a></li>
             <li><a class="<?=$this->mainTag == "Global trends" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Global trends")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Global trends</a></li>
         </ul>
-        <div class="legal-notes">
-            TWENTYTAGS.COM<br/>
-            COPYRIGHT 2014
-        </div>
     </nav>
     <div class="page-container" id="page-container">
         <?=$this->partial("header/header.phtml",
