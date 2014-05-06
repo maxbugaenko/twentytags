@@ -251,17 +251,12 @@ a.red-link, a.gray-link, a.link-underline {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  color: black; }
+  color: #34495e; }
   a.red-link:hover, a.gray-link:hover, a.link-underline:hover {
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    color: #f1103a; }
-  a.red-link:hover, a.gray-link:hover, a.link-underline:hover {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    color: #ff2e54; }
+    color: #46627f; }
 
 a.gray-link {
   color: gray; }
@@ -432,9 +427,10 @@ a.black-link {
     display: inline-block;
     vertical-align: top;
     padding-right: 2em;
+    border-right: 1px solid lightgray;
     white-space: normal;
     text-align: right;
-    width: 20%; }
+    width: 22%; }
     @media all and (max-width: 900px) {
       .entity-container .entity {
         display: block;
@@ -444,7 +440,6 @@ a.black-link {
       max-width: 60%;
       margin-bottom: 2em; }
   .entity-container .alerts {
-    border-left: 1px solid lightgray;
     box-sizing: border-box;
     padding-left: 2em;
     width: 75%;
@@ -517,6 +512,11 @@ a.black-link {
   text-align: left;
   width: 70%;
   white-space: normal; }
+  .message-container div {
+    float: left;
+    margin-right: 2em; }
+  .message-container img {
+    width: 200px; }
   @media all and (max-width: 900px) {
     .message-container {
       width: 90%; } }

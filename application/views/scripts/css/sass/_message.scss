@@ -6,6 +6,15 @@
   width: 70%;
   white-space: normal;
 
+  div {
+    float:left;
+    margin-right: 2em;
+  }
+
+  img {
+    width: 200px;
+  }
+
   @media all and (max-width: $switch-orientation-point) {
     width: 90%;
   }

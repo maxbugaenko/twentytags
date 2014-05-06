@@ -11,9 +11,10 @@
     display: inline-block;
     vertical-align: top;
     padding-right: 2em;
+    border-right: 1px solid lightgray;
     white-space: normal;
     text-align: right;
-    width: 20%;
+    width: 22%;
 
     @media all and (max-width: $switch-orientation-point) {
       display: block;
@@ -28,7 +29,6 @@
   }
 
   .alerts {
-    border-left: 1px solid lightgray;
     box-sizing: border-box;
     padding-left: 2em;
     width: 75%;

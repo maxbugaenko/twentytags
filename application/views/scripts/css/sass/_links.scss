@@ -1,15 +1,10 @@
 a.red-link {
   @include transition(all 0.2s ease);
-  color:black;
+  color: $background-color;
 
   &:hover {
     @include transition(all 0.2s ease);
-    color:$red;
-  }
-
-  &:hover {
-    @include transition(all 0.2s ease);
-    color:$light-red;
+    color: lighten($background-color, 10);
   }
 }
 

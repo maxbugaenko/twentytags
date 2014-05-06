@@ -16,6 +16,21 @@ $config = array(
 $facebook = new Facebook($config);
 ?>
 
+<?if ($this->entity->alerts == 0):?>
+    <div class="message-container">
+        <div>
+            <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
+            <h2><?=$this->entity->title?></h2>
+        </div>
+        <div>
+            <p class="margins">
+                No news yet. We've got to wait a little. Either follow this tag or get back later
+            </p>
+            <a class="big" href="<?=$this->url(array(), "browse", false)?>">browse other tags</a>
+        </div>
+    </div>
+<?else:?>
+
 <div class="toTop">
     <i id="to-top-button" class="btn-icon fa fa-angle-double-up"></i>
 </div>
@@ -64,7 +79,6 @@ $facebook = new Facebook($config);
         <br/>
     </div>
     <div class="alerts <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
-        <?if (count($this->alerts) > 0):?>
             <? foreach ($this->alerts as $item):?>
                 <article class="alert">
                     <h2>
@@ -79,16 +93,9 @@ $facebook = new Facebook($config);
                     <h5><?=date("F jS, Y",strtotime($item->added));?></h5>
                 </article>
             <?endforeach?>
-        <?else:?>
-            <div class="message-container">
-                <p class="margins">
-                    No news yet. We've got to wait a little. Either follow this tag or get back later
-                </p>
-                <a class="big" href="<?=$this->url(array(), "browse", false)?>">browse other tags</a>
-            </div>
-        <?endif?>
     </div>
 </div>
+<?endif?>
 <script>
     $(document).scroll(function () {
         var y = $(this).scrollTop();
