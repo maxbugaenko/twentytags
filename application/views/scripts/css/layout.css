@@ -414,7 +414,8 @@ a.black-link {
       box-sizing: border-box;
       display: inline-block;
       white-space: normal;
-      padding-left: 1em; }
+      padding-left: 1em;
+      text-transform: lowercase; }
 
 .entity-container {
   width: 80%;
@@ -454,7 +455,8 @@ a.black-link {
       white-space: normal;
       width: 100%;
       padding-top: 1em;
-      padding-bottom: 1em; }
+      padding-bottom: 1em;
+      text-transform: lowercase; }
 
 .message {
   text-align: center; }
