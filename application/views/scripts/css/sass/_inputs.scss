@@ -3,18 +3,20 @@ input.input-text {
 	font-size: 1em;
 	@include title-font();
 	padding: 0.5em;
-	border: 0;
-//	border-radius: 5px;
-    border: 1px solid lightgray;
-	color:gray;
+	border-radius: 5px;
+	color: $background-color;
+    border: 0;
 	outline: 0;
+    background-color: lighten($background-color, 60);
+
 	&:hover {
 		@include transition(all 0.5s ease);
-		box-shadow: 0px 0px 2px lightgray;
+        background-color: lighten($background-color, 50);
 	}
+
 	&:focus {
 		@include transition(all 0.4s ease);
-		box-shadow: 0px 0px 5px lightgray;
+        background-color: lighten($background-color, 55);
 	}
 }
 input.input-large {
@@ -28,4 +30,20 @@ input.input-large {
   width:300px;
   padding:0em;
   border: 10px solid black;
+}
+
+::-webkit-input-placeholder {
+  color: lighten($background-color, 5);
+}
+
+::-moz-placeholder {
+  color: lighten($background-color, 5);
+}
+
+:-ms-input-placeholder {
+  color: lighten($background-color, 5);
+}
+
+input:-moz-placeholder {
+  color: lighten($background-color, 5);
 }
