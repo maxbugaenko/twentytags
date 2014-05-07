@@ -11,17 +11,21 @@ $facebook = new Facebook($config);
 <div class="menu-container" id="menu-container">
     <ul>
         <li class="logo-item">
-            <a href="<?=$this->url(array(), $this->user ? "feed":"browse", false)?>">
+            <a href="<?=$this->url(array(), "browse", false)?>">
                 <img src="<?=$this->staticFile("images/logo.svg")?>"/>
             </a>
         </li>
         <li>
             <i id="tags-button" class="btn-header fa fa-bars"></i>
         </li>
-            <? if ($this->user):?>
+        <? if ($this->user):?>
                 <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
                 <?$followingUrl = $this->url(array(), "following", true);?>
                 <?$addTagUrl = $this->url(array(), "addtag", true);?>
+                <?$feedUrl = $this->url(array(), "feed", true);?>
+            <li>
+                <i onclick="location.href='<?=$feedUrl?>'" class="btn-header fa fa-repeat"></i>
+            </li>
             <li>
               <i onclick="location.href='<?=$followingUrl?>'" class="btn-header fa fa-th"></i>
             </li>

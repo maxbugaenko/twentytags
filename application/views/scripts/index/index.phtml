@@ -14,6 +14,7 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
     $facebook = new Facebook($config);
 ?>
 <div class="list-container">
+    <h2><?=$this->mainTag?></h2>
         <? if (!$this->user) $isLogged = "user-not-logged";?>
         <? foreach ($this->entities as $item):?>
             <article class="item">
