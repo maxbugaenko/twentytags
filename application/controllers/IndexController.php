@@ -60,11 +60,12 @@ class IndexController extends FaZend_Controller_Action {
         if ($ent) {
             $entity = new Model_Entity((int)$ent);
             $alerts = Model_Alert::retrieveByEntity($entity, $offset);
+            $mode = "entity";
         } else {
             $alerts = Model_Alert::retrieveByUser(Model_User::me(), $offset);
         }
         if (count($alerts) > 0) {
-            echo $this->view->partial("partials/morealerts.phtml", array("alerts" => $alerts, "mode" => "entity"));
+            echo $this->view->partial("partials/morealerts.phtml", array("alerts" => $alerts, "mode" => $mode));
         } else {
             echo "FINISH";
         }

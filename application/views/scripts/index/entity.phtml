@@ -92,8 +92,8 @@ $facebook = new Facebook($config);
         if (y > $(document).height() - $(window).height()) {
             if (new Date().getTime() - now > 1000) {
                 var offset = $(window).data("offset");
-                var url = "<?=$this->url(array('controller' => 'index', 'action' => 'morealerts', "mode" => "entity"), 'default', true)?>";
-                var loadUrl = url + '/offset/' + offset;
+                var url = "<?=$this->url(array('controller' => 'index', 'action' => 'morealerts'), 'default', true)?>";
+                var loadUrl = url + '/offset/' + offset + '/entity/' + <?=$this->entity?>;
                 loadMore(
                     $("article:last-child"),
                     loadUrl
