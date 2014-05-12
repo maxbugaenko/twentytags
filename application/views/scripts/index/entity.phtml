@@ -56,7 +56,9 @@ $facebook = new Facebook($config);
             <?=$isSaved ? "Unfollow" : "Follow"?>
         </button>
     </div>
-    <div class="span4">
+    <div class="span3">
+    </div>
+    <div class="span2">
         <p class="margins">
             <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
                href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
@@ -74,7 +76,7 @@ $facebook = new Facebook($config);
     </div>
 </article>
 <div class="padding-large <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
-    <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts));?>
+    <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts, "mode"=> "entity"));?>
 </div>
 <?endif?>
 
@@ -90,10 +92,10 @@ $facebook = new Facebook($config);
         if (y > $(document).height() - $(window).height()) {
             if (new Date().getTime() - now > 1000) {
                 var offset = $(window).data("offset");
-                var url = "<?=$this->url(array('controller' => 'index', 'action' => 'morealerts'), 'default', true)?>";
+                var url = "<?=$this->url(array('controller' => 'index', 'action' => 'morealerts', "mode" => "entity"), 'default', true)?>";
                 var loadUrl = url + '/offset/' + offset;
                 loadMore(
-                    $(".feed-container > .alert-container:last-child"),
+                    $("article:last-child"),
                     loadUrl
                 );
                 now = new Date().getTime();

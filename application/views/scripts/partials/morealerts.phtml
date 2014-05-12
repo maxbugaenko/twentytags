@@ -1,7 +1,12 @@
 <? foreach ($this->alerts as $item):?>
     <article class="container margins">
         <div class="span1">
-            <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>">
+            <? if ($this->mode == "entity"):?>
+                <? $imgUrl = $item->link?>
+            <? else: ?>
+                <? $imgUrl = $this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>
+            <?endif?>
+            <a class="red-link" title="<?=$item->entity->title?>" href="<?=$imgUrl?>">
                 <? if ($item->picture): ?>
                     <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>"><br/>
                 <? else: ?>
@@ -9,7 +14,7 @@
                 <? endif ?>
             </a>
         </div>
-        <div class="span11">
+        <div class="span9">
             <h2>
                 <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
                 <? if ($item->source == "youtube"):?>
@@ -21,6 +26,10 @@
             <p>
                 <?=$item->body?>
             </p>
+        </div>
+        <div class="span1">
+        </div>
+        <div class="span1">
             <p class="gray"><?=date("F jS, Y",strtotime($item->added));?></p>
         </div>
     </article>

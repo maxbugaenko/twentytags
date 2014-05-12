@@ -56,9 +56,15 @@ class IndexController extends FaZend_Controller_Action {
         $this->_helper->layout->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
         $offset = $this->getRequest()->getParam("offset");
-        $alerts = Model_Alert::retrieveByUser(Model_User::me(), $offset);
+        $ent = $this->getRequest()->getParam("entity");
+        if ($ent) {
+            $entity = new Model_Entity((int)$ent);
+            $alerts = Model_Alert::retrieveByEntity($entity, $offset);
+        } else {
+            $alerts = Model_Alert::retrieveByUser(Model_User::me(), $offset);
+        }
         if (count($alerts) > 0) {
-            echo $this->view->partial("partials/morealerts.phtml", array("alerts" => $alerts));
+            echo $this->view->partial("partials/morealerts.phtml", array("alerts" => $alerts, "mode" => "entity"));
         } else {
             echo "FINISH";
         }

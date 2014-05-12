@@ -231,6 +231,9 @@ a.big {
 .no-padding {
   padding: 0; }
 
+.gray {
+  color: lightgray; }
+
 .btn-icon, .btn-large, .btn-small, .btn-wide {
   cursor: pointer;
   text-align: center;
