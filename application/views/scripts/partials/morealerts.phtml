@@ -1,0 +1,27 @@
+<? foreach ($this->alerts as $item):?>
+    <article class="container margins">
+        <div class="span1">
+            <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>">
+                <? if ($item->picture): ?>
+                    <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>"><br/>
+                <? else: ?>
+                    <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
+                <? endif ?>
+            </a>
+        </div>
+        <div class="span11">
+            <h2>
+                <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
+                <? if ($item->source == "youtube"):?>
+                    <span class="youtube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </span>
+                <? endif;?>
+            </h2>
+            <p>
+                <?=$item->body?>
+            </p>
+            <p class="gray"><?=date("F jS, Y",strtotime($item->added));?></p>
+        </div>
+    </article>
+<?endforeach?>

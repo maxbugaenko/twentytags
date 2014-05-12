@@ -1,0 +1,66 @@
+<!--
+ *
+ * FaZend Framework
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt. It is also available
+ * through the world-wide-web at this URL: http://www.fazend.com/license
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@fazend.com so we can send you a copy immediately.
+ *
+-->
+
+<?php if ($this->pageCount > 1): ?>
+    <div class="paginationControl">
+
+        <!-- Previous page link -->
+        <?php if (isset($this->previous)): ?>
+            <a class="errors" href="<?php echo $this->url(array('page'=>$this->previous));?>?<?=Model_Search_Query::makeStringQuery()?>">пред</a>
+        <?php else: ?>
+            <span class="errors" style="color: grey;">пред</span>
+        <?php endif; ?>
+
+        &#32;
+
+        <!-- Numbered page links -->
+        <?php foreach ($this->pagesInRange as $page): ?>
+            <?php if ($page != $this->current): ?>
+                <a class="errors" href="<?php echo $this->url(array('page'=>$page), 'search');?>?<?=Model_Search_Query::makeStringQuery()?>"><?php echo $page;?></a>
+            <?php else: ?>
+                <span class="errors" style="color: white;background:#268af0;padding-left:10px;padding-right:10px;"><b><?php echo $page; ?></b></span>
+            <?php endif; ?>
+            &#32;
+        <?php endforeach; ?>
+
+        &#32;
+
+        <!-- Next page link -->
+        <?php if (isset($this->next)): ?>
+            <a class="errors" href="<?php echo $this->url(array('page'=>$this->next), 'search');?>?<?=Model_Search_Query::makeStringQuery()?>">след</a>
+        <?php else: ?>
+            <span class="errors" style="color: gray;">след</span>
+        <?php endif; ?>
+
+        <br/>
+        <!-- First page link -->
+        <?php if (isset($this->previous)): ?>
+            <a class="errors" href="<?php echo $this->url(array('page'=>$this->first), 'search');?>?<?=Model_Search_Query::makeStringQuery()?>">
+                первая
+            </a>
+        <?php else: ?>
+            <span style="color:gray;"  class="errors disabled">первая</span>
+        <?php endif; ?>
+
+        <!-- Last page link -->
+        <?php if (isset($this->next)): ?>
+            <a class="errors" href="<?php echo $this->url(array('page'=>$this->last), 'search');?>?<?=Model_Search_Query::makeStringQuery()?>">
+                последняя
+            </a>
+        <?php else: ?>
+            <span style="color:gray;" class="errors disabled">последняя</span>
+        <?php endif; ?>
+
+
+    </div>
+<?php endif;?>

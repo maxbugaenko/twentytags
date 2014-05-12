@@ -2,37 +2,11 @@
 <div class="toTop">
     <i id="to-top-button" class="btn-icon fa fa-angle-double-up"></i>
 </div>
-<div class="feed-container">
-        <? foreach ($this->alerts as $item):?>
-                <article class="alert-container">
-                    <div class="entity">
-                        <a class="red-link" title="<?=$item->entity->title?>" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>">
-                            <? if ($item->picture): ?>
-                                <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>"><br/>
-                            <? else: ?>
-                                <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">
-                            <? endif ?>
-                        </a>
-                    </div>
-                    <div class="data">
-                        <h2>
-                            <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
-                            <? if ($item->source == "youtube"):?>
-                                <span class="youtube">
-                                    <i class="fa fa-youtube-play"></i>
-                                </span>
-                            <? endif;?>
-                        </h2>
-                        <p>
-                            <?=$item->body?>
-                        </p>
-                        <p class="gray"><?=date("F jS, Y",strtotime($item->added));?></p>
-                    </div>
-                </article>
-        <?endforeach?>
+<div class="padding-large">
+    <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts));?>
 </div>
-
 <script>
+    var now = new Date().getTime();
     $(document).scroll(function () {
         var y = $(this).scrollTop();
         if (y > 800) {
@@ -40,8 +14,21 @@
         } else {
             $('.toTop').fadeOut();
         }
+        if (y > $(document).height() - $(window).height()) {
+            if (new Date().getTime() - now > 1000) {
+                var offset = $(window).data("offset");
+                var url = "<?=$this->url(array('controller' => 'index', 'action' => 'morealerts'), 'default', true)?>";
+                var loadUrl = url + '/offset/' + offset;
+                loadMore(
+                    $("article:last-child"),
+                    loadUrl
+                );
+                now = new Date().getTime();
+            }
+        }
     });
     $(document).ready (function() {
+        $(window).data("offset", "20");
         $("#to-top-button").click(function() {
             $('html, body').animate({ scrollTop: 0 }, 'slow');
         });

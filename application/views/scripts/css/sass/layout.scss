@@ -14,6 +14,7 @@
  * @version $Id$
 */
 @import "bourbon/bourbon";
+@import "containers";
 @import "fonts";
 @import "mixin";
 @import "general";
@@ -22,7 +23,5 @@
 @import "links";
 @import "header";
 @import "list";
-@import "feed";
-@import "entity";
 @import "menu";
 @import "message";

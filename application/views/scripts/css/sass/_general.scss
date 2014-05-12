@@ -10,6 +10,12 @@ $dark-gray: #424242;
 $switch-orientation-point: "900px";
 $switch-header-orientation-point: "900px";
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body, html {
   background-color: #fff;
   @include main-font();
@@ -94,6 +100,15 @@ p.small {
   margin-top: .5em;
 }
 
+.margin-bottom-large {
+  margin-bottom: 2.5em;
+}
+
+.padding-large {
+  padding: 2em;
+}
+
+
 img {
   max-width: 100%;
 }
@@ -103,4 +118,8 @@ a.big {
   border-bottom: 1px dashed;
   color: $background-color;
   line-height: 1.1em;
+}
+
+.no-padding {
+  padding: 0;
 }

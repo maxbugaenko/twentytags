@@ -48,6 +48,20 @@ class IndexController extends FaZend_Controller_Action {
         if (count($this->view->alerts) == 0) {
             $this->redirect("empty");
         }
+        //FaZend_Paginator::addPaginator($alerts, $this->view, $this->_getParamOrFalse('page'));
+        //$this->view->paginator->setItemCountPerPage(10);
+    }
+
+    public function morealertsAction() {
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        $offset = $this->getRequest()->getParam("offset");
+        $alerts = Model_Alert::retrieveByUser(Model_User::me(), $offset);
+        if (count($alerts) > 0) {
+            echo $this->view->partial("partials/morealerts.phtml", array("alerts" => $alerts));
+        } else {
+            echo "FINISH";
+        }
     }
 
     /**
@@ -161,7 +175,7 @@ class IndexController extends FaZend_Controller_Action {
     public function entityAction() {
         $entity = new Model_Entity((int)$this->getRequest()->getParam("id"));
         $this->view->entity = $entity;
-        $this->view->alerts = Model_Alert::retrieveByEntity($entity);
+        $this->view->alerts = Model_Alert::retrieveByEntity($entity, 20);
     }
 
     /**

@@ -13,6 +13,11 @@
  * @copyright Copyright (c) twentytags.com, 2014
  * @version $Id$
 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 body, html {
   background-color: #fff;
   font-family: "Cambria", "Verdana", sans-serif;
@@ -86,6 +91,12 @@ p.small {
 .margin-bottom {
   margin-top: .5em; }
 
+.margin-bottom-large {
+  margin-bottom: 2.5em; }
+
+.padding-large {
+  padding: 2em; }
+
 img {
   max-width: 100%; }
 
@@ -94,6 +105,9 @@ a.big {
   border-bottom: 1px dashed;
   color: #34495e;
   line-height: 1.1em; }
+
+.no-padding {
+  padding: 0; }
 
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;

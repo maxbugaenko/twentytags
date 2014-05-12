@@ -33,16 +33,12 @@ $facebook = new Facebook($config);
 <div class="toTop">
     <i id="to-top-button" class="btn-icon fa fa-angle-double-up"></i>
 </div>
-<div class="entity-container">
-    <div class="entity">
-        <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
-<!--        <p>
-                <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
-                <? foreach ($tagged as $tag):?>
-                    <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
-                <? endforeach?>
+<article class="container  padding-large" style="border-bottom: 1px solid lightgray">
+    <div class="span7">
+        <h1><?=$this->entity->title?></h1>
+        <p class="margins">
+            <?=$this->entity->description?>
         </p>
-        -->
         <?if (!Model_User::isLoggedIn()): ?>
             <?$isLogged = "user-not-logged";?>
             <div class="login-urls" id="login-url-<?=$this->entity?>">
@@ -56,9 +52,11 @@ $facebook = new Facebook($config);
 
         <?endif?>
         <? $isSaved = Model_Entity::isSaved($this->entity);?>
-        <button id="follow-<?=$this->entity?>" class="to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
+        <button id="follow-<?=$this->entity?>" class="margins to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
             <?=$isSaved ? "Unfollow" : "Follow"?>
         </button>
+    </div>
+    <div class="span4">
         <p class="margins">
             <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
                href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
@@ -74,25 +72,14 @@ $facebook = new Facebook($config);
             </a>
         </p>
     </div>
-    <div class="alerts <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
-            <? foreach ($this->alerts as $item):?>
-                <article class="alert">
-                    <h2>
-                        <a class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
-                        <? if ($item->source == "youtube"):?>
-                            <i class="fa fa-youtube-play"></i>
-                        <? endif;?>
-                    </h2>
-                    <p>
-                        <?=$item->body?>
-                    </p>
-                    <h5><?=date("F jS, Y",strtotime($item->added));?></h5>
-                </article>
-            <?endforeach?>
-    </div>
+</article>
+<div class="padding-large <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
+    <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts));?>
 </div>
 <?endif?>
+
 <script>
+    var now = new Date().getTime();
     $(document).scroll(function () {
         var y = $(this).scrollTop();
         if (y > 800) {
@@ -100,13 +87,24 @@ $facebook = new Facebook($config);
         } else {
             $('.toTop').fadeOut();
         }
+        if (y > $(document).height() - $(window).height()) {
+            if (new Date().getTime() - now > 1000) {
+                var offset = $(window).data("offset");
+                var url = "<?=$this->url(array('controller' => 'index', 'action' => 'morealerts'), 'default', true)?>";
+                var loadUrl = url + '/offset/' + offset;
+                loadMore(
+                    $(".feed-container > .alert-container:last-child"),
+                    loadUrl
+                );
+                now = new Date().getTime();
+            }
+        }
     });
-
     $(document).ready (function() {
+        $(window).data("offset", "20");
         $("#to-top-button").click(function() {
             $('html, body').animate({ scrollTop: 0 }, 'slow');
         });
     });
-
     $(".to-follow-button").FollowEntity();
 </script>

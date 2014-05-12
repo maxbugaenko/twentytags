@@ -52,9 +52,10 @@ class Model_Alert extends FaZend_Db_Table_ActiveRow_alert {
     /**
      * Retrieves options by name
      */
-    public static function retrieveByEntity (Model_Entity $entity) {
+    public static function retrieveByEntity (Model_Entity $entity, $offset) {
         return self::retrieve()
             ->where('alert.entity = ?', $entity)
+            ->limit(20, $offset)
             ->order('alert.added desc')
             ->setRowClass('Model_Alert')
             ->fetchAll();
@@ -68,7 +69,7 @@ class Model_Alert extends FaZend_Db_Table_ActiveRow_alert {
             ->join('entity', 'entity.id = alert.entity', array())
             ->join('saved', 'saved.entity = entity.id', array())
             ->where('saved.user = ?', $user)
-            ->limit(50, $offset)
+            ->limit(20, $offset)
             ->order('alert.added desc')
             ->setRowClass('Model_Alert')
             ->fetchAll();
