@@ -25,9 +25,9 @@
         </div>
         <div class="span1">
             <? if ($item->source == "youtube"):?>
-                <h2>
-                    <i class="fa fa-play-circle-o"></i>
-                </h2>
+                <h1>
+                    <a class="red-link" <?=$target?> title="<?=$item->entity->title?>" href="<?=$imgUrl?>"><i class="fa fa-play-circle-o"></i></a>
+                </h1>
             <? endif;?>
         </div>
         <div class="span1">
