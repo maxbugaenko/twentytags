@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/js/masonry.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/admin.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/layout.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/layout.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="feed.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="feed.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="139" selection-end="167" vertical-scroll-proportion="0.1879085" vertical-offset="0" max-vertical-offset="943">
+            <state line="5" column="0" selection-start="139" selection-end="167" vertical-scroll-proportion="-3.8333333" vertical-offset="0" max-vertical-offset="943">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="morealerts.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="morealerts.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="44" selection-start="83" selection-end="83" vertical-scroll-proportion="-0.76666665" vertical-offset="0" max-vertical-offset="966">
+            <state line="18" column="35" selection-start="904" selection-end="904" vertical-scroll-proportion="0.6388889" vertical-offset="23" max-vertical-offset="966">
               <folding />
             </state>
           </provider>
@@ -51,7 +48,7 @@
       <file leaf-file-name="_general.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="-4.6" vertical-offset="2047" max-vertical-offset="3197">
+            <state line="95" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0" vertical-offset="2047" max-vertical-offset="3197">
               <folding />
             </state>
           </provider>
@@ -60,7 +57,7 @@
       <file leaf-file-name="loadmore.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/js/loadmore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="47" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="4" column="47" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -69,7 +66,7 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="109" selection-start="2391" selection-end="2391" vertical-scroll-proportion="-17.333334" vertical-offset="699" max-vertical-offset="6601">
+            <state line="67" column="109" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0" vertical-offset="1541" max-vertical-offset="6923">
               <folding />
             </state>
           </provider>
@@ -78,7 +75,7 @@
       <file leaf-file-name="_header.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="-17.633333" vertical-offset="575" max-vertical-offset="1610">
+            <state line="48" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1610">
               <folding />
             </state>
           </provider>
@@ -87,10 +84,8 @@
       <file leaf-file-name="entity.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="84" selection-start="4474" selection-end="4474" vertical-scroll-proportion="-8.9" vertical-offset="1918" max-vertical-offset="2714">
-              <folding>
-                <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="95" column="84" selection-start="4474" selection-end="4474" vertical-scroll-proportion="0.0" vertical-offset="1918" max-vertical-offset="2714">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,7 +93,7 @@
       <file leaf-file-name="Alert.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/Model/Alert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="74" selection-start="1742" selection-end="1742" vertical-scroll-proportion="-4.6" vertical-offset="759" max-vertical-offset="3036">
+            <state line="54" column="74" selection-start="1742" selection-end="1742" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="3381">
               <folding />
             </state>
           </provider>
@@ -107,7 +102,7 @@
       <file leaf-file-name="_menu.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_menu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="337" selection-end="337" vertical-scroll-proportion="-11.5" vertical-offset="0" max-vertical-offset="1334">
+            <state line="15" column="23" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1334">
               <folding />
             </state>
           </provider>
@@ -174,9 +169,9 @@
         <option value="$PROJECT_DIR$/application/views/scripts/js/loadmore.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
+        <option value="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" />
       </list>
     </option>
   </component>
@@ -747,10 +742,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32768363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33094555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33595988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -759,6 +753,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32768363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -783,6 +778,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="84" selection-start="4474" selection-end="4474" vertical-scroll-proportion="0.0" vertical-offset="1918" max-vertical-offset="2714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Model/Alert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="74" selection-start="1742" selection-end="1742" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="3381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="560" column="0" selection-start="16089" selection-end="16089" vertical-scroll-proportion="0.0" vertical-offset="11925" max-vertical-offset="14150" />
@@ -850,9 +873,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_mixin.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="213" selection-end="213" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
+        <state line="13" column="1" selection-start="213" selection-end="213" vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtag.phtml">
@@ -869,9 +890,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/Model/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="2290" selection-end="2745" vertical-scroll-proportion="0.0" vertical-offset="2034" max-vertical-offset="4716">
-          <folding />
-        </state>
+        <state line="113" column="0" selection-start="2290" selection-end="2745" vertical-scroll-proportion="0.0" vertical-offset="2034" max-vertical-offset="4716" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/Model/Saved.php">
@@ -883,23 +902,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/AdmController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="26" selection-start="2404" selection-end="2404" vertical-scroll-proportion="-6.7777777" vertical-offset="1275" max-vertical-offset="1944">
-          <folding />
-        </state>
+        <state line="81" column="26" selection-start="2404" selection-end="2404" vertical-scroll-proportion="-6.7777777" vertical-offset="1275" max-vertical-offset="1944" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/adm/moderation.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/deploy/database/2 entity.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <folding />
-        </state>
+        <state line="16" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/deploy/database/16 tag.sql">
@@ -909,16 +922,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/deploy/database/17 tagged.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="53" selection-start="488" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
+        <state line="10" column="53" selection-start="488" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/empty.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="159" selection-end="247" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="159" selection-end="247" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="234" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_buttons.scss">
@@ -937,70 +946,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_links.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="172" selection-end="172" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
+        <state line="6" column="40" selection-start="172" selection-end="172" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_message.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="183" selection-end="183" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="738">
-          <folding />
-        </state>
+        <state line="10" column="19" selection-start="183" selection-end="183" vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="738" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/header/header.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="51" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-18.148148" vertical-offset="108" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="26" column="51" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-18.148148" vertical-offset="108" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_inputs.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="1104" max-vertical-offset="1265">
-          <folding />
-        </state>
+        <state line="48" column="0" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="1104" max-vertical-offset="1265" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="24" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0" vertical-offset="368" max-vertical-offset="1587">
-          <folding>
-            <marker date="1399459318000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399459318000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399459318000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399459318000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399459318000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399459318000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399459318000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399459318000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/pagination.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="14" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.0" vertical-offset="1495" max-vertical-offset="1633">
-          <folding>
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1399474027000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/js/follow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="737" selection-end="1437" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="874">
-          <folding />
-        </state>
+        <state line="29" column="0" selection-start="737" selection-end="1437" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="874" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.ini">
@@ -1040,21 +1020,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_menu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="337" selection-end="337" vertical-scroll-proportion="-11.5" vertical-offset="0" max-vertical-offset="1334">
+        <state line="15" column="23" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="-17.633333" vertical-offset="575" max-vertical-offset="1610">
+        <state line="48" column="0" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.0" vertical-offset="575" max-vertical-offset="1610">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/Model/Alert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="74" selection-start="1742" selection-end="1742" vertical-scroll-proportion="-4.6" vertical-offset="759" max-vertical-offset="3036">
+        <state line="54" column="74" selection-start="1742" selection-end="1742" vertical-scroll-proportion="0.0" vertical-offset="1242" max-vertical-offset="3381">
           <folding />
         </state>
       </provider>
@@ -1068,37 +1048,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/entity.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="84" selection-start="4474" selection-end="4474" vertical-scroll-proportion="-8.9" vertical-offset="1918" max-vertical-offset="2714">
-          <folding>
-            <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="95" column="84" selection-start="4474" selection-end="4474" vertical-scroll-proportion="0.0" vertical-offset="1918" max-vertical-offset="2714">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="109" selection-start="2391" selection-end="2391" vertical-scroll-proportion="-17.333334" vertical-offset="699" max-vertical-offset="6601">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="44" selection-start="83" selection-end="83" vertical-scroll-proportion="-0.76666665" vertical-offset="0" max-vertical-offset="966">
+        <state line="67" column="109" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0" vertical-offset="1541" max-vertical-offset="6923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="-4.6" vertical-offset="2047" max-vertical-offset="3197">
+        <state line="95" column="0" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.0" vertical-offset="2047" max-vertical-offset="3197">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="139" selection-end="167" vertical-scroll-proportion="0.1879085" vertical-offset="0" max-vertical-offset="943">
+        <state line="5" column="0" selection-start="139" selection-end="167" vertical-scroll-proportion="-3.8333333" vertical-offset="0" max-vertical-offset="943">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="35" selection-start="904" selection-end="904" vertical-scroll-proportion="0.6388889" vertical-offset="23" max-vertical-offset="966">
           <folding />
         </state>
       </provider>
