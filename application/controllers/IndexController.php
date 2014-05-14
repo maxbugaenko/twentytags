@@ -182,7 +182,7 @@ class IndexController extends FaZend_Controller_Action {
     public function entityAction() {
         $entity = new Model_Entity((int)$this->getRequest()->getParam("id"));
         $this->view->entity = $entity;
-        $this->view->alerts = Model_Alert::retrieveByEntity($entity, 20);
+        $this->view->alerts = Model_Alert::retrieveByEntity($entity, 0);
     }
 
     /**
