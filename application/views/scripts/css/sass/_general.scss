@@ -73,6 +73,11 @@ h2, h3, h5 {
   line-height: 1.1em;
 }
 
+.description-color {
+  color: lighten($dark-gray, 40);
+  font-size: .8em;
+}
+
 h5 {
   @extend h2;
   color: $dark-gray;
@@ -131,4 +136,8 @@ a.big {
 
 .gray {
   color: lightgray;
+}
+
+.lower {
+  text-transform: lowercase;
 }

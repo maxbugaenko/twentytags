@@ -71,6 +71,10 @@ h2, h5, h3, h5 {
   color: #424242;
   line-height: 1.1em; }
 
+.description-color {
+  color: #a8a8a8;
+  font-size: .8em; }
+
 h5 {
   color: #424242; }
 
@@ -114,6 +118,9 @@ a.big {
 
 .gray {
   color: lightgray; }
+
+.lower {
+  text-transform: lowercase; }
 
 input.input-text, input.input-large, input.search-input {
   -webkit-transition: all 0.5s ease;

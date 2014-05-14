@@ -193,6 +193,10 @@ h2, h5, h3, h5 {
   color: #424242;
   line-height: 1.1em; }
 
+.description-color {
+  color: #a8a8a8;
+  font-size: .8em; }
+
 h5 {
   color: #424242; }
 
@@ -236,6 +240,9 @@ a.big {
 
 .gray {
   color: lightgray; }
+
+.lower {
+  text-transform: lowercase; }
 
 .btn-icon, .btn-large, .btn-small, .btn-wide {
   cursor: pointer;
