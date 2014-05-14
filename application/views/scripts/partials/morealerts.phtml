@@ -1,6 +1,6 @@
 <? foreach ($this->alerts as $item):?>
     <article class="container margins-medium">
-        <div class="span1">
+        <div class="span2">
             <? if ($this->mode == "entity"):?>
                 <? $imgUrl = $item->link?>
                 <? $target = "target='_blank'";?>
@@ -15,7 +15,7 @@
                 <? endif ?>
             </a>
         </div>
-        <div class="span8">
+        <div class="span7">
             <h2 class="lower">
                 <a target="_blank" class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
                 <span class="description-color"><?=$item->body?></span>
