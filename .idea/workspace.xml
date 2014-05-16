@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e94105f-0453-414b-b513-3d587af6714b" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/js/masonry.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/layouts/layout.phtml" afterPath="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="morealerts.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="morealerts.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="104" selection-start="817" selection-end="817" vertical-scroll-proportion="0.48856208" vertical-offset="0" max-vertical-offset="1035">
+            <state line="13" column="104" selection-start="817" selection-end="817" vertical-scroll-proportion="-9.966666" vertical-offset="0" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
@@ -71,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="19" selection-start="4441" selection-end="4441" vertical-scroll-proportion="-8.433333" vertical-offset="1541" max-vertical-offset="2714">
+            <state line="8" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.3006536" vertical-offset="0" max-vertical-offset="2691">
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -180,8 +180,8 @@
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_general.scss" />
-        <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" />
+        <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
       </list>
     </option>
   </component>
@@ -1056,15 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="19" selection-start="4441" selection-end="4441" vertical-scroll-proportion="-8.433333" vertical-offset="1541" max-vertical-offset="2714">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_list.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="401" selection-end="465" vertical-scroll-proportion="-13.033334" vertical-offset="92" max-vertical-offset="1863">
@@ -1074,8 +1065,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="104" selection-start="817" selection-end="817" vertical-scroll-proportion="0.48856208" vertical-offset="0" max-vertical-offset="1035">
+        <state line="13" column="104" selection-start="817" selection-end="817" vertical-scroll-proportion="-9.966666" vertical-offset="0" max-vertical-offset="1035">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.3006536" vertical-offset="0" max-vertical-offset="2691">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
