@@ -89,7 +89,7 @@ $facebook = new Facebook($config);
         } else {
             $('.toTop').fadeOut();
         }
-        if (y > $(document).height() - $(window).height()) {
+        if (y >= ($(document).height() - $(window).height())) {
             if (new Date().getTime() - now > 1000) {
                 var offset = $(window).data("offset");
                 var url = "<?=$this->url(array('controller' => 'index', 'action' => 'morealerts'), 'default', true)?>";
