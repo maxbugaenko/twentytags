@@ -555,10 +555,11 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 	 *
 	 * @return array Array of all entities
 	*/
-	public static function retrieveAll () {
+	public static function retrieveAll ($offset) {
 		return self::retrieve()
             ->where('entity.alerts > ?', 0)
             ->order(new Zend_Db_Expr('entity.today desc, entity.alerts desc, entity.id desc'))
+            ->limit(20, $offset)
 			->setRowClass('Model_Entity')
 			->fetchAll();
 	}
@@ -915,7 +916,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
      * @return void
      * @author fatboy
      **/
-    public static function retrieveByTag(Model_Tag $tag) {
+    public static function retrieveByTag(Model_Tag $tag, $offset) {
         $ret = self::retrieve(false)
             ->from('entity', array('entity.*',
                 'tagMatches' => new Zend_Db_Expr('count(*)')))
@@ -927,6 +928,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
             ->setRowClass('Model_Entity')
             ->group('entity.id')
             ->order(new Zend_Db_Expr('entity.today desc, entity.alerts desc, entity.id desc'))
+            ->limit(20, $offset)
             ->fetchAll();
         return $ret;
     }

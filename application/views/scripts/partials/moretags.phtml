@@ -1,0 +1,50 @@
+<?
+require_once('Model/Facebook/facebook.php');
+$config = array(
+    'appId' => '706201236078444',
+    'secret' => 'fabe992657dcffefd59099502cdf0ce9',
+    'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
+);
+$facebook = new Facebook($config);
+?>
+<? foreach ($this->entities as $item):?>
+    <article class="item">
+        <div class="shadow-bottom">&#160;</div>
+        <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
+            <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
+        </a>
+        <h2 class="margin-top">
+            <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
+        </h2>
+        <!--                <p class="small">
+                    <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
+                    <? foreach ($tagged as $tag):?>
+                        <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
+                    <? endforeach?>
+                </p>
+                -->
+        <? $isSaved = Model_Entity::isSaved($item);?>
+        <p class="small">
+            <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
+            <?=$item->today > 0 ? "today ".$item->today : ""?>
+        </p>
+        <div id="item-follow-button-<?=$item?>" class="margins item-follow-button <?=$isSaved == true ? "make-visible":""?>">
+            <button id="follow-<?=$item?>" class="to-follow-button btn-small <?=$isLogged?> <?=$isSaved ? " followed":""?>">
+                <? if (!$this->user):?>
+                    <div class="login-urls" id="login-url-<?=$item?>">
+                        <?
+                        $loginUrl = $facebook->getLoginUrl(array(
+                            "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$item), "login", false)
+                        ));
+                        echo $loginUrl;
+                        ?>
+                    </div>
+                <?endif?>
+                <?=$isSaved ? "Unfollow" : "Follow"?>
+            </button>
+        </div>
+        <p class="description margins small">
+            <?=$item->description?>
+        </p>
+    </article>
+<?endforeach?>

@@ -71,6 +71,27 @@ class IndexController extends FaZend_Controller_Action {
         }
     }
 
+    public function moretagsAction() {
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        $offset = $this->getRequest()->getParam("offset");
+        $tagParam = $this->getRequest()->getParam("tag");
+        if ($tagParam) {
+            $tag = new Model_Tag((int)$tagParam);
+            if ($tag->exists()) {
+                $entities = Model_Entity::retrieveByTag($tag, $offset);
+            }
+        } else {
+            $entities = Model_Entity::retrieveAll($offset);
+        }
+        if (count($entities) > 0) {
+            echo $this->view->partial("partials/moretags.phtml", array("entities" => $entities));
+        } else {
+            echo "FINISH";
+        }
+    }
+
+
     /**
 	* Lists all available entities
 	* @return void
@@ -90,10 +111,11 @@ class IndexController extends FaZend_Controller_Action {
             $tag = new Model_Tag((int)$this->getRequest()->getParam('id'));
             if ($tag->exists()) {
                 $this->view->mainTag = $tag->value;
-                $this->view->entities = Model_Entity::retrieveByTag($tag);
+                $this->view->tag = $tag;
+                $this->view->entities = Model_Entity::retrieveByTag($tag, 0);
             } else {
                 $this->view->mainTag = "What's hot";
-                $this->view->entities = Model_Entity::retrieveAll();
+                $this->view->entities = Model_Entity::retrieveAll(0);
             }
         }
 	}

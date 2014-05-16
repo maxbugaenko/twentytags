@@ -1,64 +1,42 @@
-<?$title = $this->mainTag == "What's hot" ? "What's hot":$this->mainTag;?>
+<?$title = $this->mainTag == "What's hot" ? "What's hot" : $this->mainTag;?>
 <?
 $this->headTitle("TwentyTags - ".$title);
 $this->headMeta()->appendName('keywords', "latest news, recent news, hitech news, IT news, sports news");
 $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Receive the right news");
 ?>
-<?
-    require_once('Model/Facebook/facebook.php');
-    $config = array(
-        'appId' => '706201236078444',
-        'secret' => 'fabe992657dcffefd59099502cdf0ce9',
-        'allowSignedRequest' => false // optional but should be set to false for non-canvas apps
-    );
-    $facebook = new Facebook($config);
-?>
 <div class="list-container">
     <h2><?=$this->mainTag?></h2>
-        <? if (!$this->user) $isLogged = "user-not-logged";?>
-        <? foreach ($this->entities as $item):?>
-            <article class="item">
-                <div class="shadow-bottom">&#160;</div>
-                <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
-                    <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
-                </a>
-                <h2 class="margin-top">
-                    <a class="red-link" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
-                </h2>
-<!--                <p class="small">
-                    <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
-                    <? foreach ($tagged as $tag):?>
-                        <a class="gray-link link-underline" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
-                    <? endforeach?>
-                </p>
-                -->
-                <? $isSaved = Model_Entity::isSaved($item);?>
-                <p class="small">
-                    <?=$item->alerts > 0 ? "articles ".$item->alerts."<br/>" : ""?>
-                    <?=$item->today > 0 ? "today ".$item->today : ""?>
-                </p>
-                <div id="item-follow-button-<?=$item?>" class="margins item-follow-button <?=$isSaved == true ? "make-visible":""?>">
-                    <button id="follow-<?=$item?>" class="to-follow-button btn-small <?=$isLogged?> <?=$isSaved ? " followed":""?>">
-                        <? if (!$this->user):?>
-                            <div class="login-urls" id="login-url-<?=$item?>">
-                                <?
-                                $loginUrl = $facebook->getLoginUrl(array(
-                                    "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$item), "login", false)
-                                ));
-                                echo $loginUrl;
-                                ?>
-                            </div>
-                        <?endif?>
-                        <?=$isSaved ? "Unfollow" : "Follow"?>
-                    </button>
-                </div>
-                <p class="description margins small">
-                    <?=$item->description?>
-                </p>
-            </article>
-        <?endforeach?>
-    </div>
+    <? if (!$this->user) $isLogged = "user-not-logged";?>
+    <?=$this->partial("partials/moretags.phtml",
+        array("entities" => $this->entities))?>
 </div>
 <script>
     $(".to-follow-button").FollowEntity();
+
+    var now = new Date().getTime();
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+            $('.toTop').fadeIn();
+        } else {
+            $('.toTop').fadeOut();
+        }
+        if (y >= ($(document).height() - $(window).height())) {
+            if (new Date().getTime() - now > 1000) {
+                var offset = $(window).data("offset");
+                var url = "<?=$this->url(array('controller' => 'index', 'action' => 'moretags'), 'default', true)?>";
+                var loadUrl = url + '/offset/' + offset + '/tag/' + '<?=$this->tag?>';
+                loadMore(
+                    $("article:last-child"),
+                    loadUrl
+                );
+                now = new Date().getTime();
+            }
+        }
+    });
+
+    $(document).ready (function() {
+        $(window).data("offset", "20");
+    });
+
 </script>
