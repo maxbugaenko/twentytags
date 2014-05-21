@@ -7,7 +7,11 @@ $config = array(
 );
 $facebook = new Facebook($config);
 ?>
-
+<div class="search-container">
+    <form action="<?=$this->url(array(), "browse")?>" method="get">
+        <input type="text" id="tag-value" name="key" class="f-span12 input-text" placeholder="Search tag & hit enter"><br/>
+    </form>
+</div>
 <div class="menu-container" id="menu-container">
     <ul>
         <li class="logo-item">

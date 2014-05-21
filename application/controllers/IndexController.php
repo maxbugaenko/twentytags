@@ -98,6 +98,7 @@ class IndexController extends FaZend_Controller_Action {
 	*/
 	public function indexAction() {
         $route = Zend_Controller_Front::getInstance()->getRouter()->getCurrentRouteName();
+        $keyword = $this->getRequest()->getParam("key");
         if ($route == "following") {
             if (!Model_User::isLoggedIn()) {
                 $this->redirect("browse");
@@ -107,6 +108,9 @@ class IndexController extends FaZend_Controller_Action {
             if (count($this->view->entities) == 0) {
                 $this->redirect("empty");
             }
+        } elseif ($keyword) {
+            $this->view->mainTag = $keyword;
+            $this->view->entities = Model_Entity::retrieveByKeyword($keyword, 20);
         } else {
             $tag = new Model_Tag((int)$this->getRequest()->getParam('id'));
             if ($tag->exists()) {

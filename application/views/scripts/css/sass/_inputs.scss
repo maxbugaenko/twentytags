@@ -25,11 +25,8 @@ input.input-large {
 }
 
 .search-input {
-  @extend .input-text;
-  float: right;
-  width:300px;
-  padding:0em;
-  border: 10px solid black;
+  @extend input.input-large;
+  width: 100%;
 }
 
 ::-webkit-input-placeholder {

@@ -88,5 +88,12 @@ class Model_Static_Functions {
     public static function killZombie ($txt) {
         unlink('/flags/'.$txt);
     }
+
+    function deleteSymbols($string) {
+        $filter = new Zend_Filter_StripTags();
+        $res = $filter->filter($string);
+        $parsed = str_replace('&nbsp;', ' ', $res);
+        return $parsed;
+    }
 }
 ?>

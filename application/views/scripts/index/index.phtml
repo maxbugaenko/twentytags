@@ -5,10 +5,9 @@ $this->headMeta()->appendName('keywords', "latest news, recent news, hitech news
 $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Receive the right news");
 ?>
 <div class="list-container">
-    <h2><?=$this->mainTag?></h2>
+    <!--<h2><?=$this->mainTag?></h2>-->
     <? if (!$this->user) $isLogged = "user-not-logged";?>
-    <?=$this->partial("partials/moretags.phtml",
-        array("entities" => $this->entities))?>
+    <?=$this->partial("partials/moretags.phtml", array("entities" => $this->entities))?>
 </div>
 <script>
     $(".to-follow-button").FollowEntity();

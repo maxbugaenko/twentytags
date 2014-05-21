@@ -42,7 +42,7 @@ a:visited {
   line-height: 1.2em;
   font-size: 1em;
   padding-left: 8em;
-  padding-top: 2em; }
+  padding-top: 5em; }
   @media all and (max-width: 900px) {
     .page-container, .slide-page-container-right {
       padding-top: 5em; } }
@@ -122,7 +122,7 @@ a.big {
 .lower {
   text-transform: lowercase; }
 
-input.input-text, input.input-large, input.search-input {
+input.input-text, input.input-large, .search-input {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -135,25 +135,22 @@ input.input-text, input.input-large, input.search-input {
   border: 0;
   outline: 0;
   background-color: #dae2ea; }
-  input.input-text:hover, input.input-large:hover, input.search-input:hover {
+  input.input-text:hover, input.input-large:hover, .search-input:hover {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
     background-color: #b9c8d8; }
-  input.input-text:focus, input.input-large:focus, input.search-input:focus {
+  input.input-text:focus, input.input-large:focus, .search-input:focus {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
     background-color: #c9d5e1; }
 
-input.input-large {
+input.input-large, .search-input {
   font-size: 30px; }
 
 .search-input {
-  float: right;
-  width: 300px;
-  padding: 0em;
-  border: 10px solid black; }
+  width: 100%; }
 
 ::-webkit-input-placeholder {
   color: #3d566e; }

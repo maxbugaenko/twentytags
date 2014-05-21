@@ -1,3 +1,15 @@
+.search-container {
+  hight: 100px;
+  padding: 1.5em;
+  width: 30%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: fade-out(lighten($background-color, 68), .2);
+  z-index: 1000;
+  text-align: right;
+}
+
 .menu-container {
   @include transition(all 0.1s ease-in-out);
   @include box-sizing(border-box);
