@@ -27,7 +27,7 @@ class CacheEntity extends FaZend_Cli_Abstract {
      */
     public function execute() {
         Model_Static_Functions::checkZombie("CacheEntity.flag");
-        $ents = Model_Entity::retrieveExpired($this->_get('limit'));
+        $ents = Model_Entity::retrieveExpired(50);
         echo "Caching entities (".count($ents).")\n";
         if (count($ents) > 0) {
             foreach ($ents as $entity) {
