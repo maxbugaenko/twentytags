@@ -55,7 +55,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_render-gradients.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_shape-size-stripper.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/js/masonry.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/js/loadmore.js" afterPath="$PROJECT_DIR$/application/views/scripts/js/loadmore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,7 +101,7 @@
       <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="9" selection-start="1046" selection-end="1046" vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="722">
+            <state line="3" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-0.89285713" vertical-offset="32" max-vertical-offset="684">
               <folding />
             </state>
           </provider>
@@ -108,7 +110,7 @@
       <file leaf-file-name="loadmore.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/js/loadmore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="35" selection-start="149" selection-end="149" vertical-scroll-proportion="0.11603054" vertical-offset="0" max-vertical-offset="655">
+            <state line="5" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.14503817" vertical-offset="0" max-vertical-offset="655">
               <folding />
             </state>
           </provider>
@@ -224,13 +226,13 @@
         <option value="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/empty.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/js/guppy.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/guppy-blog.scss" />
         <option value="$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_menus.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/js/loadmore.js" />
       </list>
     </option>
@@ -1195,14 +1197,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="9" selection-start="1046" selection-end="1046" vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="722">
+        <state line="3" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-0.89285713" vertical-offset="32" max-vertical-offset="684">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/js/loadmore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="149" selection-end="149" vertical-scroll-proportion="0.11603054" vertical-offset="0" max-vertical-offset="655">
+        <state line="5" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.14503817" vertical-offset="0" max-vertical-offset="655">
           <folding />
         </state>
       </provider>

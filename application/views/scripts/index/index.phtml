@@ -1,15 +1,14 @@
 <?$title = $this->mainTag == "What's hot" ? "Популярное" : $this->mainTag;?>
 <?
 $this->headTitle("TwentyTags - ".$title);
-$this->headMeta()->appendName('keywords', "latest news, recent news, hitech news, IT news, sports news");
-$this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Receive the right news");
+$this->headMeta()->appendName('keywords', "актуальные новости, новости, IT новости, политические новости");
+$this->headMeta()->appendName('description', "Подписывайся на то, что интересно");
 ?>
     <h1 class="info lower">#<?=$this->mainTag == "What's hot" ? "Популярное" : $this->mainTag;?></h1>
     <? if (!$this->user) $isLogged = "user-not-logged";?>
     <?=$this->partial("partials/moretags.phtml", array("entities" => $this->entities))?>
 <script>
     $(".to-follow-button").FollowEntity();
-
     var now = new Date().getTime();
     $(document).scroll(function () {
         var y = $(this).scrollTop();
@@ -29,5 +28,4 @@ $this->headMeta()->appendName('description', "Stay updated. Get rid of noise. Re
     $(document).ready (function() {
         $(window).data("offset", "20");
     });
-
 </script>
