@@ -7,63 +7,67 @@ $config = array(
 );
 $facebook = new Facebook($config);
 ?>
-<div class="search-container">
-    <form action="<?=$this->url(array(), "browse")?>" method="get">
-        <input type="text" id="tag-value" name="key" class="f-span12 input-text" placeholder="Search tag & hit enter"><br/>
-    </form>
-</div>
-<div class="menu-container" id="menu-container">
-    <ul>
-        <li class="logo-item">
-            <a href="<?=$this->url(array(), "browse", false)?>">
-                <img src="<?=$this->staticFile("images/logo.svg")?>"/>
-            </a>
+<nav class="menu-icon-info desktop-only animate-show-slow" id="menu-icons">
+    <li class="item-no-hover background-success">
+        <a href="<?=$this->url(array(), "browse", false)?>">
+            <img class="logo-image" src="<?=$this->staticFile("images/twentytags.svg")?>"/>
+        </a>
+    </li>
+    <? if ($this->user):?>
+        <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
+        <?$followingUrl = $this->url(array(), "following", true);?>
+        <?$addTagUrl = $this->url(array(), "addtag", true);?>
+        <?$feedUrl = $this->url(array(), "feed", true);?>
+        <li class="item-no-hover padding-around-small controls-text-color">
+            <button onclick="location.href='<?=$feedUrl?>'" class="button-info button-medium capitalize">лента</button>
         </li>
-        <li>
-            <i id="tags-button" class="btn-header fa fa-bars"></i>
+        <li class="item-no-hover padding-around-small controls-text-color">
+            <button onclick="location.href='<?=$followingUrl?>'" class="button-info button-medium capitalize">мои теги</button>
         </li>
-        <? if ($this->user):?>
-                <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
-                <?$followingUrl = $this->url(array(), "following", true);?>
-                <?$addTagUrl = $this->url(array(), "addtag", true);?>
-                <?$feedUrl = $this->url(array(), "feed", true);?>
-            <li>
-                <i onclick="location.href='<?=$feedUrl?>'" class="btn-header fa fa-repeat"></i>
-            </li>
-            <li>
-              <i onclick="location.href='<?=$followingUrl?>'" class="btn-header fa fa-th"></i>
-            </li>
-            <li>
-                <i onclick="location.href='<?=$addTagUrl?>'" class="btn-header fa fa-plus"></i>
-            </li>
-            <li>
-                <i title="Sign out" onclick="location.href='<?=$logoutUrl?>'" class="btn-header fa fa-share"></i>
-            </li>
-        <?else:?>
-            <?
-                $loginUrl = $facebook->getLoginUrl(array(
-                    "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login"), "login", false)
-                ));
-            ?>
-            <?
-                $addTagUrlWithLogin = $facebook->getLoginUrl(array(
-                    "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "redirect"=>"addtag"), "login", false)
-                ));
-            ?>
-            <li>
-                <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="btn-header fa fa-plus"></i>
-            </li>
-            <li>
-                <i title="Sign up with Facebook" onclick="location.href='<?=$loginUrl?>'" class="btn-header fa fa-facebook-square"></i>
-            </li>
-        <?endif?>
-    </ul>
-    <!--<div class="main-tag"><?=$this->mainTag?></div>-->
-</div>
-<script>
-    $("#tags-button").click(function() {
-        $("#menu-panel").toggleClass("slide-menu-right");
-        $("#page-container").toggleClass("slide-page-container-right");
-        $("#menu-container").toggleClass("menu-container-slide-right");
-    });
-</script>
+        <li class="item-no-hover padding-around-small controls-text-color">
+            <button onclick="location.href='<?=$addTagUrl?>'" class="button-success button-medium capitalize"><i class="fa fa-plus-circle"></i> добавить</button>
+        </li>
+        <li class="item-no-hover padding-around-small controls-text-color opens-menu-outter">
+            <button class="button-info button-medium capitalize"><i class="fa fa-bars"></i> меню</button>
+        </li>
+        <li class="item-no-hover padding-vertical-large center">
+            <i id="icon-to-top" class="lighten-info large fa fa-arrow-up"></i>
+        </li>
+    <? else: ?>
+        <?
+        $loginUrl = $facebook->getLoginUrl(array(
+            "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login"), "login", false)
+        ));
+        ?>
+        <?
+        $addTagUrlWithLogin = $facebook->getLoginUrl(array(
+            "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "redirect"=>"addtag"), "login", false)
+        ));
+        ?>
+        <li class="item-no-hover padding-around-small controls-text-color">
+            <button onclick="location.href='<?=$addTagUrl?>'" class="button-success button-medium capitalize"><i class="fa fa-plus-circle"></i> добавить</button>
+        </li>
+        <li class="item-no-hover padding-around-small controls-text-color">
+            <button class="button-info button-medium opens-menu-outter capitalize"><i class="fa fa-bars"></i> меню</button>
+        </li>
+    <? endif;?>
+</nav>
+<nav class="container mobile-menu mobile-and-medium-only  lighten-background-success controls-text-color medium right">
+    <div class="mobile-span2 logo-image-mobile background-success padding-around-small">
+        <a href="<?=$this->url(array(), "browse", false)?>">
+            <img class="logo-image" src="<?=$this->staticFile("images/twentytags-mobile.svg")?>"/>
+        </a>
+    </div>
+    <div class="mobile-span3 padding-around-base lighten-background-success">
+        <i class="fa fa-bars opens-menu-outter"></i>
+    </div>
+    <div class="mobile-span2 padding-around-base  lighten-background-success">
+        <i class="fa fa-repeat"></i>
+    </div>
+    <div class="mobile-span2 padding-around-base  lighten-background-success">
+        <i class="fa fa-plus"></i>
+    </div>
+    <div class="mobile-span2 padding-around-base  lighten-background-success">
+        <i class="fa fa-folder-open"></i>
+    </div>
+</nav>

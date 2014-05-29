@@ -20,9 +20,9 @@
                             $("#item-follow-button-" + entityID).toggleClass("make-visible");
                             $("#follow-"+entityID).toggleClass("followed");
                             if ($("#follow-"+entityID).hasClass("followed")) {
-                                $("#follow-"+entityID).html("Unfollow");
+                                $("#follow-"+entityID).html("Отписаться");
                             } else {
-                                $("#follow-"+entityID).html("Follow");
+                                $("#follow-"+entityID).html("Подписаться");
                             }
                         }
                     }

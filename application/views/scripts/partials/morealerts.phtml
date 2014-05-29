@@ -1,39 +1,45 @@
 <? foreach ($this->alerts as $item):?>
-    <article class="container margins-medium">
-        <div class="span2">
-            <? if ($this->mode == "entity"):?>
-                <? $imgUrl = $item->link?>
-                <? $target = "target='_blank'";?>
-            <? else: ?>
-                <? $imgUrl = $this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>
-            <?endif?>
-            <a class="red-link" <?=$target?> title="<?=$item->entity->title?>" href="<?=$imgUrl?>">
-                <? if ($item->picture): ?>
-                    <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>"><br/>
+
+    <article class="container padding-vertical-medium">
+        <? $unit = "unit80";?>
+        <? if ($item->picture): ?>
+            <? $unit = "unit55";?>
+            <div class="unit25 right">
+                <? if ($this->mode == "entity"):?>
+                    <? $imgUrl = $item->link?>
+                    <? $target = "target='_blank'";?>
                 <? else: ?>
-                   <!-- <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">-->
-                <? endif ?>
-            </a>
-        </div>
-        <div class="span7">
-            <h2 class="lower">
-                <a target="_blank" class="red-link" href="<?=$item->link?>"><?=$item->title?></a>
-            </h2>
-            <p class="margins lower">
+                    <? $imgUrl = $this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>
+                <?endif?>
+                <a <?=$target?> title="<?=$item->entity->title?>" href="<?=$imgUrl?>">
+                    <? if ($item->picture): ?>
+                        <img src="<?=$this->staticFile("images/alerts/".$item->picture)?>"><br/>
+                    <? else: ?>
+                        <!-- <img src="<?=$this->staticFile("images/entities/".$item->entity->picture)?>">-->
+                    <? endif ?>
+                </a>
+            </div>
+        <?endif?>
+        <div class="<?=$unit?>">
+            <h3 class="info">
+                <? if (!$this->entity):?>
+                    <a class="lighten-info" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>"><?=$item->entity->title?></a> /
+                <? endif?>
+                <a target="_blank" href="<?=$item->link?>"><?=$item->title?></a>
+            </h3>
+            <p>
                 <?=$item->body?>
             </p>
         </div>
-        <div class="span1">
-        </div>
-        <div class="span1">
+        <div class="unit10 desktop-only">
             <? if ($item->source == "youtube"):?>
                 <h1>
-                    <a target="_blank" class="red-link" href="<?=$item->link?>"><i class="fa fa-play-circle-o"></i></a>
+                    <a class="no-underline" target="_blank" href="<?=$item->link?>"><i class="fa fa-play-circle-o large lighten-success"></i></a>
                 </h1>
             <? endif;?>
         </div>
-        <div class="span1">
-            <p class="gray"><?=date("F jS, Y",strtotime($item->added));?></p>
+        <div class="unit10 lighten-info small">
+            <?=date("m/j/Y",strtotime($item->added));?>
         </div>
     </article>
 <?endforeach?>

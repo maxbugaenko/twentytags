@@ -20,7 +20,7 @@ class Model_GAlerts_GAlertsManager {
 
     public static function createAlert($keyword, $type) {
         $ga = new Model_GAlerts_GAlerts("gozman.mark2014@gmail.com", "ghbdtn67");
-        $ga->create($keyword, "en", "happens", $type, "best", "feed");
+        $ga->create($keyword, "ru", "happens", $type, "best", "feed");
         $list = $ga->getList();
     }
     public static function retrieveFeedsByTerm($term) {

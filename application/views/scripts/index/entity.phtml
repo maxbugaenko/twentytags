@@ -30,54 +30,41 @@ $facebook = new Facebook($config);
     </div>
 <?else:?>
 
-<!--<div class="toTop">
-    <i id="to-top-button" class="btn-icon fa fa-angle-double-up"></i>
-</div>-->
-<article class="container  padding-large" style="border-bottom: 1px solid lightgray">
-    <div class="span7">
-        <h1><?=$this->entity->title?></h1>
-        <p class="margins">
-            <?=$this->entity->description?>
-        </p>
-        <?if (!Model_User::isLoggedIn()): ?>
-            <?$isLogged = "user-not-logged";?>
-            <div class="login-urls" id="login-url-<?=$this->entity?>">
-                <?
-                $loginUrl = $facebook->getLoginUrl(array(
-                    "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$this->entity), "login", false)
-                ));
-                echo $loginUrl;
-                ?>
-            </div>
+    <h1 class="info lower"><?=$this->entity->title?></h1>
+    <span class="badge-success">статей 180</span>&#160;<span class="badge-info">сегодня 7</span>
+    <br/><br/>
+    <a class="no-underline" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
+       href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
+        <i class="medium lighten-text fa fa-facebook-square"></i>
+    </a>
+    <a class="no-underline" target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')"
+       href="https://twitter.com/share">
+        <i class="medium lighten-text fa fa-twitter-square"></i>
+    </a>
+    <a class="no-underline" target="_blank" onclick="return !window.open(this.href, 'Google+', 'width=640,height=300')"
+       href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
+        <i class="medium lighten-text fa fa-google-plus-square"></i>
+    </a>
+    <p>
+        <?=$this->entity->description?>
+    </p>
+    <?if (!Model_User::isLoggedIn()): ?>
+        <?$isLogged = "user-not-logged";?>
+        <div class="login-urls" id="login-url-<?=$this->entity?>">
+            <?
+            $loginUrl = $facebook->getLoginUrl(array(
+                "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$this->entity), "login", false)
+            ));
+            echo $loginUrl;
+            ?>
+        </div>
 
-        <?endif?>
-        <? $isSaved = Model_Entity::isSaved($this->entity);?>
-        <button id="follow-<?=$this->entity?>" class="margins to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
-            <?=$isSaved ? "Unfollow" : "Follow"?>
-        </button>
-    </div>
-    <div class="span3">
-    </div>
-    <div class="span2">
-        <p class="margins">
-            <a target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
-               href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
-                <i class="facebook fa fa-facebook-square"></i>
-            </a>
-            <a target="_blank" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=300')"
-               href="https://twitter.com/share">
-                <i class="twitter fa fa-twitter-square"></i>
-            </a>
-            <a target="_blank" onclick="return !window.open(this.href, 'Google+', 'width=640,height=300')"
-               href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
-                <i class="google fa fa-google-plus-square"></i>
-            </a>
-        </p>
-    </div>
-</article>
-<div class="padding-large <?if (count($this->alerts) == 0) { echo "add-no-alerts-margin"; }?>">
-    <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts, "mode"=> "entity"));?>
-</div>
+    <?endif?>
+    <? $isSaved = Model_Entity::isSaved($this->entity);?>
+    <button id="follow-<?=$this->entity?>" class="button-warning f-span4 capitalize to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
+        <?=$isSaved ? "Отписаться" : "Подписаться"?>
+    </button>
+    <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts, "mode"=> "entity", "entity" => $this->entity));?>
 <?endif?>
 
 <script>

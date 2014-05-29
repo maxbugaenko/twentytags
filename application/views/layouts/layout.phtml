@@ -8,7 +8,9 @@
     $this->includeJS('jquery.js');
     $this->includeJS('loadmore.js');
     $this->includeJS('follow.js');
-    $this->includeCSS('layout.css');
+    $this->includeJS('guppy.js');
+    $this->includeCSS('guppy.css');
+    $this->includeCSS('guppy-blog.css');
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
@@ -19,32 +21,42 @@
 	<?php echo $this->headStyle()?>
     <?php echo $this->headAnything()?>
     <meta name="viewport" content="width=device-width"/>
-	<style>
+    <style>
         @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
     </style>
 </head> 
 <body>
-    <nav class="menu-panel" id="menu-panel">
-        <ul class="menu">
-            <?if (Model_User::isLoggedIn()):?>
-                <li><a class="<?=$this->mainTag == $this->user->name ? "current":""?>" href="<?=$this->url(array(), "following", false)?>"><?=$this->user->name?></a></li>
-            <?endif?>
-            <li><a class="<?=$this->mainTag == "What's hot" ? "current":""?>" href="<?=$this->url(array(), "browse", false)?>">What's hot</a></li>
-            <li><a class="<?=$this->mainTag == "Startups" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Startups")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Startups</a></li>
-            <li><a class="<?=$this->mainTag == "Entreprenuers" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Entreprenuers")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Entreprenuers</a></li>
-            <li><a class="<?=$this->mainTag == "Known people" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Known people")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Known people</a></li>
-            <li><a class="<?=$this->mainTag == "Sportsmen" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Sportsmen")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Sportsmen</a></li>
-            <li><a class="<?=$this->mainTag == "Global trends" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Global trends")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Global trends</a></li>
-        </ul>
-    </nav>
-    <div class="page-container" id="page-container">
-        <?=$this->partial("header/header.phtml",
+
+<ul class="menu-aside menu-vertical-tight darken-background-info controls-text-color capitalize">
+    <li class="item-no-hover padding-around-base">
+        <div class="button-iconed">
+            <i class="darken-info fa fa-search"></i>
+            <form action="<?=$this->url(array(), "browse")?>" method="get">
+                <input type="text" class="search-bar" placeholder="поиск"/>
+            </form>
+        </div>
+    </li>
+    <li class="item-no-hover padding-horizontal-base padding-vertical-small"><h3>Популярное</h3></li>
+    <li><a class="<?=$this->mainTag == "Политика" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Политика")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Политика</a></li>
+    <li><a class="<?=$this->mainTag == "Стартапы" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Стартапы")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Стартапы</a></li>
+    <li><a class="<?=$this->mainTag == "Предприниматели" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Предприниматели")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Предприниматели</a></li>
+    <li><a class="<?=$this->mainTag == "Известные люди" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Известные Люди")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Известные люди</a></li>
+    <li><a class="<?=$this->mainTag == "Тренды" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Тренды")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Тренды</a></li>
+    <li class="item-no-hover padding-vertical-medium">
+        <i class="close-button lighten-info large fa fa-arrow-left"></i>
+    </li>
+</ul>
+
+    <div class="page-container">
+        <div class="container shift2 padding-around-medium">
+            <?=$this->partial("header/header.phtml",
             array(
                 "user" => $this->user,
                 "mainTag" => $this->mainTag)
             )
         ?>
         <?=$this->layout()->content?>
+        </div>
     </div>
     <!-- hit.ua -->
     <a href='http://hit.ua/?x=115047' target='_blank'>
@@ -105,7 +117,5 @@
     </script>
     <noscript><div><img src="//mc.yandex.ru/watch/24930389" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-
-
     </body>
 </html>

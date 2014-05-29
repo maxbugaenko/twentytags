@@ -1,113 +1,94 @@
-%btn {
-  cursor: pointer;
-  text-align: center;
-  color: #fff;
-  padding: .4em;
-  outline: 0;
-  //border: 1px solid $gray;
-  border: 0;
-  border-radius: 3px;
-  font-size: 22px;
-  white-space: nowrap;
-  background-color: #ed8836;
-  position: relative;
-  @include main-font();
-  //text-shadow: 0 2px 0 darken($background-color, 20);
+%button {
+  @extend %control;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  font-size: $base-font-size;
+  padding: $base-font-size/1.2;
 
   &:hover {
-    background-color: lighten($background-color, 5);
-    box-shadow: inset 0px 0px 1px lightgray;
+    transition: all .3s ease;
   }
 
   &:active {
-    @include transition(all .1s);
-    //box-shadow: inset 0px 1px 5px lightgray;
     top: 2px;
   }
 }
 
-.btn-icon {
-  @extend %btn;
-  width: 25px;
+.button-medium {
+  @extend %button;
+  font-size: $base-font-size/1.2;
+  padding: $base-font-size/2;
 }
 
-.btn-red {
-  @extend .google;
+.button-small {
+  @extend %button;
+  font-size: $base-font-size/1.7;
+  padding: $base-font-size/3;
 }
 
-.btn-large {
-  @extend %btn;
-  width: auto;
-  padding-top: .3em;
-  padding-bottom: .3em;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-size: 30px;
+
+@each $control-kind in $controls-color-list {
+  .button-#{nth($control-kind, 1)} {
+    @extend %button;
+    @include shadow(nth($control-kind, 2));
+    background-color: nth($control-kind, 2);
+    color: $controls-text-color;
+
+    &:hover {
+      @include hover(nth($control-kind, 2));
+    }
+  }
+
+  .button-tag-#{nth($control-kind, 1)} {
+    @extend %button;
+    background-color: $controls-text-color;
+    color: gray;
+    border: 1px #d3d3d3 solid;
+
+    &:hover {
+      @include hover(nth($control-kind, 2));
+      @include transition(.1s);
+      border: 1px hover(nth($control-kind, 2)) solid;
+      color: #fff;
+    }
+  }
 }
 
-.btn-small {
-  @extend .btn-large;
-  font-size: 20px;
-  padding-left: .5em;
-  padding-right: .5em;
+.button-group {
+
+  & > div {
+    padding-right: 0;
+    padding-left: 0;
+
+    & > button {
+      border-radius: 0;
+    }
+  }
+
+  & > div:first-child button {
+    border-top-left-radius: $controls-border-radius;
+    border-bottom-left-radius: $controls-border-radius;
+  }
+
+  & > div:last-child button {
+    border-top-right-radius: $controls-border-radius;
+    border-bottom-right-radius: $controls-border-radius;
+  }
 }
 
-.btn-wide {
-  @extend %btn;
+.button-iconed {
+  position: relative;
   width: 100%;
-}
 
-
-%social {
-  font-size: 2em;
-}
-
-.facebook {
-  @extend %social;
-  color: #44619c;
-
-  &:hover {
-    color: #35528c;
+  i {
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: $base-font-size/1.5;
+    font-size: $base-font-size*2;
   }
 
-  &:active {
-    color: #35528c;
-  }
-}
-
-.twitter {
-  @extend %social;
-  color: #509abf;
-
-  &:hover {
-    color: #074f73;
-  }
-
-  &:active {
-    color: #074f73;
-  }
-}
-
-.google {
-  @extend %social;
-  color: #d42020;
-
-  &:hover {
-    color: #a60000;
-  }
-
-  &:active {
-    color: #a60000;
-  }
-}
-
-.btn-header {
-  font-size: 35px;
-  color: #fff;
-  padding: .3em .3em;
-  cursor: pointer;
-
-  &:hover {
-    color: #fff;
+  & input {
+    padding-left: $base-font-size*3;
   }
 }

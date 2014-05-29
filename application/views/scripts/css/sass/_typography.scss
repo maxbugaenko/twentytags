@@ -1,0 +1,205 @@
+.left {
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.large {
+  font-size: $base-font-size*3;
+}
+
+.big {
+  font-size: $base-font-size*2.3;
+}
+
+.medium {
+  font-size: $base-font-size*1.7;
+}
+
+.small {
+  font-size: $base-font-size*0.8;
+}
+
+.tight {
+  letter-spacing: -.1em;
+}
+
+.spread {
+  letter-spacing: .3em;
+}
+
+.upper {
+  text-transform: uppercase !important;
+}
+
+.lower {
+  text-transform: lowercase !important;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.no-wrap {
+  white-space: nowrap !important;
+}
+
+.no-underline {
+
+  &:hover {
+    border: 0;
+    text-decoration: none;
+  }
+}
+
+p {
+  padding: $base-font-size/2 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include h-font();
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+$sizes: (
+  small 0.7,
+  base 1,
+  medium 2,
+  big 4,
+  large 3,
+);
+
+$padding-or-margin: (
+  padding (
+    around: (top, right, bottom, left),
+    vertical: (top, bottom),
+    horizontal: (left, right)
+  ),
+  margin (
+    around: (top, right, bottom, left),
+    vertical: (top, bottom),
+    horizontal: (left, right)
+  )
+);
+
+/* generate padding classes */
+@each $kind in $padding-or-margin {
+  @each $direction in nth($kind, 2) {
+    @each $size in $sizes {
+      .#{nth($kind, 1)}-#{nth($direction, 1)}-#{nth($size, 1)} {
+        @each $side in nth($direction, 2) {
+          @include calc-prefixed(#{nth($kind, 1)}-#{nth($side, 1)}, #{$base-font-size} * nth($size, 2), !important);
+        }
+      }
+    }
+  }
+}
+
+$controls-color-list: (
+  success $success,
+  warning $warning,
+  info $info,
+  default $controls-default-color
+);
+
+@each $control-kind in $controls-color-list {
+  .background-#{nth($control-kind, 1)} {
+    background-color: nth($control-kind, 2);
+  }
+
+  .darken-background-#{nth($control-kind, 1)} {
+    background-color: darken(nth($control-kind, 2), 10);
+  }
+
+  .double-darken-background-#{nth($control-kind, 1)} {
+    background-color: darken(nth($control-kind, 2), 15);
+  }
+
+  .lighten-background-#{nth($control-kind, 1)} {
+    background-color: lighten(nth($control-kind, 2), 10);
+  }
+
+  .double-lighten-background-#{nth($control-kind, 1)} {
+    background-color: lighten(nth($control-kind, 2), 15);
+  }
+}
+
+@each $control-kind in $controls-color-list {
+  .#{nth($control-kind, 1)} {
+    color: nth($control-kind, 2) !important;
+  }
+
+  .darken-#{nth($control-kind, 1)} {
+    color: darken(nth($control-kind, 2), 10) !important;
+  }
+
+  .lighten-#{nth($control-kind, 1)} {
+    color: lighten(nth($control-kind, 2), 10) !important;
+  }
+}
+
+.light {
+  color: #ecf0f1;
+}
+
+.background-color {
+  background-color: $background-color !important;
+}
+
+.controls-text-color {
+  color: $controls-text-color !important;
+}
+
+.background-controls-text-color {
+  background-color: $controls-default-color !important;
+}
+
+.round-borders {
+  border-radius: $controls-border-radius !important;
+}
+
+.lighten-text {
+  color: lighten($text-color, 25) !important;
+}
+
+.double-lighten-text {
+  color: lighten($text-color, 45) !important;
+}
+
+.darken-text {
+  color: darken($text-color, 25) !important;
+}
+
+.double-darken-text {
+  color: darken($text-color, 45) !important;
+}
+
+.lighten-background {
+  background-color: lighten($background-color, 5) !important;
+}
+
+.double-lighten-background {
+  background-color: lighten($background-color, 10) !important;
+}
+
+.darken-background {
+  background-color: darken($background-color, 5) !important;
+}
+
+.double-darken-background {
+  background-color: darken($background-color, 10) !important;
+}

@@ -1,0 +1,69 @@
+//@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Orienta);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic);
+
+$main-font: "PT Sans";
+$h-font: "PT Sans";
+$base-font-size: 20px;
+
+$switch-orientation-point-medium: "1100px";
+$switch-orientation-point-mobile: "600px";
+
+@mixin main-font() {
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+@mixin h-font() {
+  font-family: $h-font;
+  font-weight: 700;
+}
+
+// dark blue theme
+$background-color: #34495e;
+$controls-depth: 4px;
+$controls-text-color: #ecf0f1;
+$controls-border-radius: 12px;
+$controls-default-color: lighten($background-color, 15);
+$success: #2a80b9;
+$warning: #ef7820;
+$info: #08bf55;
+$text-color: #ecf0f1;
+
+
+// brown theme
+$background-color: #393939;
+$controls-depth: 1px;
+$controls-text-color: #ecf0f1;
+$controls-border-radius: 9px;
+$controls-default-color: lighten($background-color, 15);
+$success: darken(#aad171, 15);
+$warning: darken(#ffd078, 30);
+$info: darken(#75adcc, 10);
+$text-color: #ecf0f1;
+
+// twentytags theme
+$menu-aside-width: 280px;
+$background-color: #fff;
+$controls-depth: 0px;
+$controls-text-color: #fbfbfb;
+$controls-border-radius: 4px;
+$controls-default-color: darken($background-color, 25);
+$success: #fd5559;
+$warning: #4abfb4;
+$info: lighten(#394e63, 20);
+$text-color: lighten(#4e4e4e, 20);
+
+
+// ukrainian theme
+/*$background-color: #2a7ab0;
+$controls-depth: 4px;
+$controls-text-color: #ecf0f1;
+$controls-border-radius: 7px;
+$controls-default-color: lighten($background-color, 10);
+$success: #c5bf14;
+$warning: #ca5656;
+$info: #08bf55;
+$text-color: #e3ecf2;*/
