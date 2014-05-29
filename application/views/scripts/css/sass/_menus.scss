@@ -184,5 +184,6 @@ li.item-no-hover {
   z-index: 1000010;
   top: 0;
   left: 0;
-//  height: 75px;
+  height: 79px;
+  @include transition();
 }

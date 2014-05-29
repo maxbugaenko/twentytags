@@ -25,10 +25,10 @@ $facebook = new Facebook($config);
             <button onclick="location.href='<?=$followingUrl?>'" class="button-info button-medium capitalize">мои теги</button>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color">
-            <button onclick="location.href='<?=$addTagUrl?>'" class="button-success button-medium capitalize"><i class="fa fa-plus-circle"></i> добавить</button>
+            <button onclick="location.href='<?=$addTagUrl?>'" class="button-info button-medium capitalize">добавить</button>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color opens-menu-outter">
-            <button class="button-info button-medium capitalize"><i class="fa fa-bars"></i> меню</button>
+            <button class="button-info button-medium capitalize">меню</button>
         </li>
         <li class="item-no-hover padding-vertical-large center">
             <i id="icon-to-top" class="lighten-info large fa fa-arrow-up"></i>
@@ -52,22 +52,22 @@ $facebook = new Facebook($config);
         </li>
     <? endif;?>
 </nav>
-<nav class="container mobile-menu mobile-and-medium-only  lighten-background-success controls-text-color medium right">
-    <div class="mobile-span2 logo-image-mobile background-success padding-around-small">
+<nav class="container mobile-menu mobile-and-medium-only  background-info controls-text-color medium right">
+    <div class="mobile-span2 logo-image-mobile background-success">
         <a href="<?=$this->url(array(), "browse", false)?>">
-            <img class="logo-image" src="<?=$this->staticFile("images/twentytags-mobile.svg")?>"/>
+            <img src="<?=$this->staticFile("images/twentytags-mobile.svg")?>"/>
         </a>
     </div>
-    <div class="mobile-span3 padding-around-base lighten-background-success">
+    <div class="mobile-span3 padding-around-base ">
         <i class="fa fa-bars opens-menu-outter"></i>
     </div>
-    <div class="mobile-span2 padding-around-base  lighten-background-success">
+    <div class="mobile-span2 padding-around-base ">
         <i class="fa fa-repeat"></i>
     </div>
-    <div class="mobile-span2 padding-around-base  lighten-background-success">
+    <div class="mobile-span2 padding-around-base ">
         <i class="fa fa-plus"></i>
     </div>
-    <div class="mobile-span2 padding-around-base  lighten-background-success">
+    <div class="mobile-span2 padding-around-base ">
         <i class="fa fa-folder-open"></i>
     </div>
 </nav>
