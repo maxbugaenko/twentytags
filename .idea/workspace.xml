@@ -108,7 +108,7 @@
       <file leaf-file-name="loadmore.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/js/loadmore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="192" selection-end="192" vertical-scroll-proportion="0.14503817" vertical-offset="0" max-vertical-offset="655">
+            <state line="4" column="35" selection-start="149" selection-end="149" vertical-scroll-proportion="0.11603054" vertical-offset="0" max-vertical-offset="655">
               <folding />
             </state>
           </provider>
@@ -1202,7 +1202,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/js/loadmore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="192" selection-end="192" vertical-scroll-proportion="0.14503817" vertical-offset="0" max-vertical-offset="655">
+        <state line="4" column="35" selection-start="149" selection-end="149" vertical-scroll-proportion="0.11603054" vertical-offset="0" max-vertical-offset="655">
           <folding />
         </state>
       </provider>
