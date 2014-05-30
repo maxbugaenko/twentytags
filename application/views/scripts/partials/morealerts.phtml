@@ -21,12 +21,10 @@
             </div>
         <?endif?>
         <div class="<?=$unit?>">
-            <h3 class="info">
                 <? if (!$this->entity):?>
-                    <a class="lighten-info" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>"><?=$item->entity->title?></a> /
+                    <a class="medium lower lighten-info" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>"><?=$item->entity->title?></a>
                 <? endif?>
-                <a target="_blank" href="<?=$item->link?>"><?=$item->title?></a>
-            </h3>
+                <a class="lower darken-info medium" target="_blank" href="<?=$item->link?>"><?=$item->title?></a>
             <p>
                 <?=$item->body?>
             </p>

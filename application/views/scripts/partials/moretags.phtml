@@ -17,9 +17,7 @@ $facebook = new Facebook($config);
 <!--            </a>-->
 <!--        </div>-->
         <div class="span7 no-padding padding-vertical-small">
-            <h2 class="info lower">
-                <a title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
-            </h2>
+                <a class="lower darken-info medium" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a><br/>
             <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
             <? foreach ($tagged as $tag):?>
                 <a class="info lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
