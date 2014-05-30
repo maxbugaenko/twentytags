@@ -58,15 +58,17 @@ class Model_Static_Functions {
 
     public static function dashString($string) {
         //Lower case everything
-        $string = strtolower($string);
+        //$string = strtolower($string);
         //change . to -
+        $string = str_replace(" ", "-", $string);
         $string = str_replace(".", "-", $string);
         //Make alphanumeric (removes all other characters)
-        $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+        //$string = preg_replace("/[^a-z0-9а-Я_\s-]/", "", $string);
         //Clean up multiple dashes or whitespaces
-        $string = preg_replace("/[\s-]+/", " ", $string);
+        //$string = preg_replace("/[\s-]+/", " ", $string);
         //Convert whitespaces and underscore to dash
-        $string = preg_replace("/[\s_]/", "-", $string);
+        //$string = preg_replace("/[\s_]/", "-", $string);
+//        echo $string;
         return $string;
     }
     public static function checkZombie($txt, $doCreate = true) {

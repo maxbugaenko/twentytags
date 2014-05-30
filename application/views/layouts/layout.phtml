@@ -42,6 +42,8 @@
     <li><a class="<?=$this->mainTag == "Предприниматели" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Предприниматели")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Предприниматели</a></li>
     <li><a class="<?=$this->mainTag == "Известные люди" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Известные Люди")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Известные люди</a></li>
     <li><a class="<?=$this->mainTag == "Тренды" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Тренды")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Тренды</a></li>
+    <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
+    <li><a href="<?=$logoutUrl?>">Выход</a></li>
     <li class="item-no-hover padding-vertical-medium">
         <i class="close-button lighten-info large fa fa-arrow-left"></i>
     </li>

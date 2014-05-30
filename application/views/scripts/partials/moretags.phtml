@@ -18,11 +18,11 @@ $facebook = new Facebook($config);
 <!--        </div>-->
         <div class="span9 no-padding padding-vertical-small">
                 <a class="lower darken-info medium" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
-            <? if ($item->alerts > 0):?>
-                <span class="warning"><b><?=$item->alerts?></b></span>&#160;
-            <?endif?>
+<!--            --><?// if ($item->alerts > 0):?>
+<!--                <span class="warning"><b>--><?//=$item->alerts?><!--</b></span>&#160;-->
+<!--            --><?//endif?>
             <? if ($item->today > 0):?>
-                <span class="success"><b><?=$item->today?></b></span>
+                <span class="warning"><b><?=$item->today?></b></span>
             <?endif?>
             <br/>
             <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
