@@ -55,7 +55,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_render-gradients.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_shape-size-stripper.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/js/masonry.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/layouts/layout.phtml" afterPath="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/js/loadmore.js" afterPath="$PROJECT_DIR$/application/views/scripts/js/loadmore.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -101,16 +101,16 @@
       <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-0.89285713" vertical-offset="32" max-vertical-offset="684">
+            <state line="27" column="35" selection-start="1333" selection-end="1333" vertical-scroll-proportion="-17.178572" vertical-offset="32" max-vertical-offset="684">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loadmore.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="loadmore.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/js/loadmore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.14503817" vertical-offset="0" max-vertical-offset="655">
+            <state line="4" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -152,10 +152,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="17" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-16.5" vertical-offset="317" max-vertical-offset="2413">
+            <state line="39" column="0" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.65960914" vertical-offset="336" max-vertical-offset="2318">
               <folding />
             </state>
           </provider>
@@ -215,7 +215,6 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_links.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/guppy.css" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_layouts.scss" />
-        <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/feed.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/guppy.scss" />
@@ -234,6 +233,7 @@
         <option value="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/index.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/js/loadmore.js" />
+        <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
       </list>
     </option>
   </component>
@@ -1167,13 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="17" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-16.5" vertical-offset="317" max-vertical-offset="2413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/header/header.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="70" selection-start="1690" selection-end="1690" vertical-scroll-proportion="-12.428572" vertical-offset="222" max-vertical-offset="1501">
@@ -1195,16 +1188,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/js/loadmore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="-0.89285713" vertical-offset="32" max-vertical-offset="684">
+        <state line="4" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/js/loadmore.js">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.14503817" vertical-offset="0" max-vertical-offset="655">
+        <state line="27" column="35" selection-start="1333" selection-end="1333" vertical-scroll-proportion="-17.178572" vertical-offset="32" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.65960914" vertical-offset="336" max-vertical-offset="2318">
           <folding />
         </state>
       </provider>
