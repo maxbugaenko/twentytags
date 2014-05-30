@@ -1,8 +1,8 @@
 .text-field {
   @extend %control;
   @include transition();
-  color: darken($controls-default-color, 20);
-  background-color: $controls-default-color;
+  color: darken($inputs-background, 20);
+  background-color: $inputs-background;
   cursor: text;
   text-align: center;
   font-size: $base-font-size;
@@ -10,26 +10,26 @@
 
   &:hover {
     transition: all .3s ease;
-    background-color: lighten($controls-default-color, 1);
+    background-color: lighten($inputs-background, 1);
   }
 
   &:focus {
     transition: all .3s ease;
-    background-color: lighten($controls-default-color, 5);
+    background-color: lighten($inputs-background, 5);
   }
 }
 
 ::-webkit-input-placeholder {
-  color: $background-color;
+  color: darken($inputs-background, 20);;
   text-align: center;
 }
 
 ::-moz-placeholder {
   text-align: center;
-  color: $background-color;
+  color: darken($inputs-background, 10);
 }
 
 :-ms-input-placeholder {
   text-align: center;
-  color: $background-color;
+  color: darken($inputs-background, 10);
 }

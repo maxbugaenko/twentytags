@@ -130,3 +130,12 @@ $i: 5;
   }
 }
 
+.desktop-and-medium-only {
+  display: inherit;
+
+  @media all and (max-width: $switch-orientation-point-mobile) {
+    display: none;
+    @include transition();
+  }
+}
+

@@ -569,6 +569,9 @@ h5 {
 .round-borders {
   border-radius: 4px !important; }
 
+.no-round-borders {
+  border-radius: 0 !important; }
+
 .lighten-text {
   color: #c1c1c1 !important; }
 
@@ -2289,6 +2292,16 @@ h5 {
       -o-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease; } }
 
+.desktop-and-medium-only {
+  display: inherit; }
+  @media all and (max-width: 600px) {
+    .desktop-and-medium-only {
+      display: none;
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease; } }
+
 .dropdown-menu-success, .dropdown-menu-warning, .dropdown-menu-info, .dropdown-menu-default {
   position: relative;
   cursor: pointer;
@@ -2688,9 +2701,9 @@ h5 {
   .button-iconed i {
     position: absolute;
     z-index: 10;
-    top: 20%;
+    top: 50%;
     left: 13.33333px;
-    font-size: 40px; }
+    border: 1px solid red; }
   .button-iconed input {
     padding-left: 60px; }
 
@@ -2699,30 +2712,30 @@ h5 {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  color: #8c8c8c;
-  background-color: #bfbfbf;
+  color: #bfbfbf;
+  background-color: #f2f2f2;
   cursor: text;
   text-align: center;
   font-size: 20px;
   padding: 16.66667px; }
   .text-field:hover {
     transition: all .3s ease;
-    background-color: #c2c2c2; }
+    background-color: whitesmoke; }
   .text-field:focus {
     transition: all .3s ease;
-    background-color: #cccccc; }
+    background-color: white; }
 
 ::-webkit-input-placeholder {
-  color: white;
+  color: #bfbfbf;
   text-align: center; }
 
 ::-moz-placeholder {
   text-align: center;
-  color: white; }
+  color: #d8d8d8; }
 
 :-ms-input-placeholder {
   text-align: center;
-  color: white; }
+  color: #d8d8d8; }
 
 .badge-success, .badge-warning, .badge-info, .badge-default {
   cursor: auto;

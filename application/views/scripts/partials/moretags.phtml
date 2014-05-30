@@ -10,33 +10,37 @@ $facebook = new Facebook($config);
 <? foreach ($this->entities as $item):?>
 
 
-    <article class="container padding-vertical-medium">
-        <div class="unit20 right">
-            <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
-                <img title="<?=$item->title?>" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
-            </a>
-        </div>
-        <div class="unit80">
+    <article class="container">
+<!--        <div class="mobile-span2 right desktop-and-medium-only">-->
+<!--            <a href="--><?//=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?><!--">-->
+<!--                <img title="--><?//=$item->title?><!--" src="--><?//=$this->staticFile("images/entities/".$item->picture)?><!--">-->
+<!--            </a>-->
+<!--        </div>-->
+        <div class="span7 no-padding padding-vertical-small">
             <h2 class="info lower">
                 <a title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
             </h2>
             <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
             <? foreach ($tagged as $tag):?>
-                <a class="info lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">#<?=$tag->value?></a>&#160;
+                <a class="info lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
             <? endforeach?>
-            <p class="small padding-vertical-small nowrap">
+<!--            <p>-->
+<!--                --><?//=$item->description?>
+<!--            </p>-->
+        </div>
+        <div class="mobile-span2 desktop-and-medium-only">
+            <p class="nowrap no-padding">
                 <? if ($item->alerts > 0):?>
-                    <span class="badge-info">статей <?=$item->alerts?></span>&#160;
+                    <span class="warning"><b><?=$item->alerts?></b></span>&#160;
                 <?endif?>
-                <? if ($item->today > 0):?>
-                    <span class="badge-success">сегодня <?=$item->today?></span>
+                <? if ($item->today > 0):?> /
+                    <span class="success"><b><?=$item->today?></b></span>
                 <?endif?>
             </p>
-            <p>
-                <?=$item->description?>
-            </p>
-            <div id="item-follow-button-<?=$item?>" class="margins item-follow-button <?=$isSaved == true ? "make-visible":""?>">
-                <button id="follow-<?=$item?>" class="button-warning button-medium f-span5 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed":""?>">
+        </div>
+        <div class="span3 no-padding">
+            <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
+                <button id="follow-<?=$item?>" class="button-success button-small f-span12 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed":""?>">
                     <? if (!$this->user):?>
                         <div class="login-urls" id="login-url-<?=$item?>">
                             <?

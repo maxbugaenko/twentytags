@@ -1,12 +1,14 @@
 <?$this->headTitle("TwentyTags - Add tag")?>
-<div class="message-container">
+
     <p class="margins">
         Добавьте тег, по которому Вы хотите получать новости
     </p>
-    <input type="text" id="tag-value" class="text-field f-span6 input-large" placeholder="Введите тег и нажмите Enter">
+    <div class="button-iconed">
+        <i class="fa fa-repeat"></i>
+        <input type="text" id="tag-value" class="text-field f-span6 input-large" placeholder="Введите тег и нажмите Enter">
+    </div>
     <p id="error-message">
     </p>
-</div>
 
 <script>
     $(document).ready(function() {

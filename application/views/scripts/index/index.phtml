@@ -4,7 +4,7 @@ $this->headTitle("TwentyTags - ".$title);
 $this->headMeta()->appendName('keywords', "актуальные новости, новости, IT новости, политические новости");
 $this->headMeta()->appendName('description', "Подписывайся на то, что интересно");
 ?>
-    <h1 class="info lower">#<?=$this->mainTag == "What's hot" ? "Популярное" : $this->mainTag;?></h1>
+    <h1 class="info lower"><?=$this->mainTag == "What's hot" ? "Популярное" : $this->mainTag;?></h1>
     <? if (!$this->user) $isLogged = "user-not-logged";?>
     <?=$this->partial("partials/moretags.phtml", array("entities" => $this->entities))?>
 <script>

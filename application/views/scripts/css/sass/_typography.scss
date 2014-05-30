@@ -172,6 +172,11 @@ $controls-color-list: (
   border-radius: $controls-border-radius !important;
 }
 
+.no-round-borders {
+  border-radius: 0 !important;
+}
+
+
 .lighten-text {
   color: lighten($text-color, 25) !important;
 }
