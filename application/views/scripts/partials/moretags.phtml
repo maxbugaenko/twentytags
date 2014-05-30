@@ -16,8 +16,15 @@ $facebook = new Facebook($config);
 <!--                <img title="--><?//=$item->title?><!--" src="--><?//=$this->staticFile("images/entities/".$item->picture)?><!--">-->
 <!--            </a>-->
 <!--        </div>-->
-        <div class="span7 no-padding padding-vertical-small">
-                <a class="lower darken-info medium" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a><br/>
+        <div class="span9 no-padding padding-vertical-small">
+                <a class="lower darken-info medium" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
+            <? if ($item->alerts > 0):?>
+                <span class="warning"><b><?=$item->alerts?></b></span>&#160;
+            <?endif?>
+            <? if ($item->today > 0):?>
+                <span class="success"><b><?=$item->today?></b></span>
+            <?endif?>
+            <br/>
             <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
             <? foreach ($tagged as $tag):?>
                 <a class="info lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
@@ -26,17 +33,8 @@ $facebook = new Facebook($config);
 <!--                --><?//=$item->description?>
 <!--            </p>-->
         </div>
-        <div class="mobile-span2 desktop-and-medium-only">
-            <p class="nowrap no-padding">
-                <? if ($item->alerts > 0):?>
-                    <span class="warning"><b><?=$item->alerts?></b></span>&#160;
-                <?endif?>
-                <? if ($item->today > 0):?> /
-                    <span class="success"><b><?=$item->today?></b></span>
-                <?endif?>
-            </p>
-        </div>
         <div class="span3 no-padding">
+            <? $isSaved = Model_Entity::isSaved($item);?>
             <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
                 <button id="follow-<?=$item?>" class="button-success button-small f-span12 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed":""?>">
                     <? if (!$this->user):?>

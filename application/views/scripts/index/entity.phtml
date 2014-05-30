@@ -17,39 +17,15 @@ $facebook = new Facebook($config);
 ?>
 
 <?if ($this->entity->alerts == 0):?>
-    <div class="message-container">
-        <div>
-            <img src="<?=$this->staticFile("images/entities/".$this->entity->picture)?>">
-        </div>
-        <div>
             <p class="margins">
-                No news yet. We've got to wait a little. Either follow this tag or get back later
+                Пока никаких новостей по этому тегу нет. Возможно нужно немного подождать
             </p>
-            <a class="big" href="<?=$this->url(array(), "browse", false)?>">browse other tags</a>
-        </div>
-    </div>
+            <a class="big info" href="<?=$this->url(array(), "browse", false)?>">популярные теги</a>
 <?else:?>
     <div class="container">
-        <div class="unit90 lighten-text">
-            <h1 class="info lower"><?=$this->entity->title?></h1>
+        <div class="unit60 lighten-text">
+            <h1 class="success lower"><?=$this->entity->title?></h1>
 <!--            статей <span class="success medium">180</span>&#160;сегодня <span class="warning medium">7</span>-->
-            <?if (!Model_User::isLoggedIn()): ?>
-                <?$isLogged = "user-not-logged";?>
-                <div class="login-urls" id="login-url-<?=$this->entity?>">
-                    <?
-                    $loginUrl = $facebook->getLoginUrl(array(
-                        "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$this->entity), "login", false)
-                    ));
-                    echo $loginUrl;
-                    ?>
-                </div>
-            <?endif?>
-            <? $isSaved = Model_Entity::isSaved($this->entity);?>
-            <button id="follow-<?=$this->entity?>" class="button-success f-span4 capitalize to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
-                <?=$isSaved ? "Отписаться" : "Подписаться"?>
-            </button>
-        </div>
-        <div class="unit10 no-wrap">
             <a class="no-underline" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
                href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
                 <i class="medium lighten-text fa fa-facebook"></i>
@@ -62,6 +38,23 @@ $facebook = new Facebook($config);
                href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
                 <i class="medium lighten-text fa fa-google-plus"></i>
             </a>
+        </div>
+        <div class="unit40 no-wrap right">
+            <?if (!Model_User::isLoggedIn()): ?>
+                <?$isLogged = "user-not-logged";?>
+                <div class="login-urls" id="login-url-<?=$this->entity?>">
+                    <?
+                    $loginUrl = $facebook->getLoginUrl(array(
+                        "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$this->entity), "login", false)
+                    ));
+                    echo $loginUrl;
+                    ?>
+                </div>
+            <?endif?>
+            <? $isSaved = Model_Entity::isSaved($this->entity);?>
+            <button id="follow-<?=$this->entity?>" class="button-success button-medium f-span12 capitalize to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
+                <?=$isSaved ? "Отписаться" : "Подписаться"?>
+            </button>
         </div>
      </div>
 <!--    <p>-->

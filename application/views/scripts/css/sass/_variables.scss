@@ -51,7 +51,7 @@ $controls-depth: 0px;
 $controls-text-color: #fbfbfb;
 $controls-border-radius: 4px;
 $controls-default-color: darken($background-color, 25);
-$inputs-background: #f2f2f2;
+$inputs-background: darken(#f2f2f2, 5);
 $success: #fd5559;
 $warning: #4abfb4;
 $info: lighten(#394e63, 20);

@@ -2701,9 +2701,9 @@ h5 {
   .button-iconed i {
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 20%;
     left: 13.33333px;
-    border: 1px solid red; }
+    font-size: 30px; }
   .button-iconed input {
     padding-left: 60px; }
 
@@ -2712,30 +2712,30 @@ h5 {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  color: #bfbfbf;
-  background-color: #f2f2f2;
+  color: #b2b2b2;
+  background-color: #e5e5e5;
   cursor: text;
   text-align: center;
   font-size: 20px;
   padding: 16.66667px; }
   .text-field:hover {
     transition: all .3s ease;
-    background-color: whitesmoke; }
+    background-color: #e8e8e8; }
   .text-field:focus {
     transition: all .3s ease;
-    background-color: white; }
+    background-color: #f2f2f2; }
 
 ::-webkit-input-placeholder {
-  color: #bfbfbf;
+  color: #b2b2b2;
   text-align: center; }
 
 ::-moz-placeholder {
   text-align: center;
-  color: #d8d8d8; }
+  color: #cccccc; }
 
 :-ms-input-placeholder {
   text-align: center;
-  color: #d8d8d8; }
+  color: #cccccc; }
 
 .badge-success, .badge-warning, .badge-info, .badge-default {
   cursor: auto;

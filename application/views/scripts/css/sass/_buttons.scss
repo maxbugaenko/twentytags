@@ -83,9 +83,9 @@
   i {
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 20%;
     left: $base-font-size/1.5;
-    border: 1px solid red;
+    font-size: $base-font-size*1.5;
   }
 
   & input {

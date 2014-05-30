@@ -21,10 +21,12 @@
             </div>
         <?endif?>
         <div class="<?=$unit?>">
+            <h3>
                 <? if (!$this->entity):?>
-                    <a class="medium lower lighten-info" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>"><?=$item->entity->title?></a>
-                <? endif?>
-                <a class="lower darken-info medium" target="_blank" href="<?=$item->link?>"><?=$item->title?></a>
+                    <a class="lower lighten-info" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>"><?=$item->entity->title?></a>
+                <? endif?>&#160;&#160;
+                <a class="lower darken-info" target="_blank" href="<?=$item->link?>"><?=$item->title?></a>
+            </h3>
             <p>
                 <?=$item->body?>
             </p>
@@ -36,7 +38,7 @@
                 </h1>
             <? endif;?>
         </div>
-        <div class="unit10 lighten-warning">
+        <div class="unit10 lighten-info">
             <?=date("m/j/Y",strtotime($item->added));?>
         </div>
     </article>
