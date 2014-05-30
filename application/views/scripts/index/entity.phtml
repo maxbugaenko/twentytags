@@ -77,19 +77,13 @@ $facebook = new Facebook($config);
                 var offset = $(window).data("offset");
                 var url = "<?=$this->url(array('controller' => 'index', 'action' => 'morealerts'), 'default', true)?>";
                 var loadUrl = url + '/offset/' + offset + '/entity/' + <?=$this->entity?>;
-                loadMore(
-                    $("article:last-child"),
-                    loadUrl
-                );
+                loadMore(loadUrl);
                 now = new Date().getTime();
             }
         }
     });
     $(document).ready (function() {
         $(window).data("offset", "20");
-        $("#to-top-button").click(function() {
-            $('html, body').animate({ scrollTop: 0 }, 'slow');
-        });
     });
     $(".to-follow-button").FollowEntity();
 </script>

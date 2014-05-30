@@ -21,6 +21,7 @@
             </div>
         <?endif?>
         <div class="<?=$unit?>">
+            <h1><?=$item?></h1>
             <h3>
                 <? if (!$this->entity):?>
                     <a class="lower lighten-info" href="<?=$this->url(array("id"=>$item->entity, Model_Static_Functions::dashString($item->entity->title)=>""), "entity", false)?>"><?=$item->entity->title?></a>&#160;&#160;

@@ -60,6 +60,9 @@ class Model_Static_Functions {
         //Lower case everything
         //$string = strtolower($string);
         //change . to -
+        $string = str_replace(";", "-", $string);
+        $string = str_replace(",", "-", $string);
+        $string = str_replace(":", "-", $string);
         $string = str_replace(" ", "-", $string);
         $string = str_replace(".", "-", $string);
         //Make alphanumeric (removes all other characters)

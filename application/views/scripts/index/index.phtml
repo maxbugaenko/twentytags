@@ -18,7 +18,6 @@ $this->headMeta()->appendName('description', "Подписывайся на то
                 var url = "<?=$this->url(array('controller' => 'index', 'action' => 'moretags'), 'default', true)?>";
                 var loadUrl = url + '/offset/' + offset + '/tag/' + '<?=$this->tag?>';
                 loadMore(
-                    $("article:last-child"),
                     loadUrl
                 );
                 now = new Date().getTime();
