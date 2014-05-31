@@ -55,16 +55,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_render-gradients.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_shape-size-stripper.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/js/masonry.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/empty.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/empty.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/js/follow.js" afterPath="$PROJECT_DIR$/application/views/scripts/js/follow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/header/header.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/register.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/register.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/routes.ini" afterPath="$PROJECT_DIR$/application/config/routes.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,10 +78,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="header.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/header/header.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="38" selection-start="2613" selection-end="2613" vertical-scroll-proportion="-12.428572" vertical-offset="659" max-vertical-offset="1881">
+            <state line="79" column="61" selection-start="4061" selection-end="4061" vertical-scroll-proportion="0.59771985" vertical-offset="1134" max-vertical-offset="1748">
               <folding />
             </state>
           </provider>
@@ -150,10 +141,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="empty.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="empty.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/index/empty.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="97" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.3403909" vertical-offset="0" max-vertical-offset="614">
+            <state line="11" column="97" selection-start="1303" selection-end="1303" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -235,12 +226,12 @@
         <option value="$PROJECT_DIR$/application/views/scripts/js/follow.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
         <option value="$PROJECT_DIR$/application/config/routes.ini" />
         <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/register.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/empty.phtml" />
+        <option value="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
       </list>
     </option>
   </component>
@@ -1190,16 +1181,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/header/header.phtml">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/empty.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="38" selection-start="2613" selection-end="2613" vertical-scroll-proportion="-12.428572" vertical-offset="659" max-vertical-offset="1881">
+        <state line="11" column="97" selection-start="1303" selection-end="1303" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/empty.phtml">
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/header/header.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="97" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.3403909" vertical-offset="0" max-vertical-offset="614">
+        <state line="79" column="61" selection-start="4061" selection-end="4061" vertical-scroll-proportion="0.59771985" vertical-offset="1134" max-vertical-offset="1748">
           <folding />
         </state>
       </provider>

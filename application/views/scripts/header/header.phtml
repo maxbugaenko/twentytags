@@ -7,6 +7,7 @@ $config = array(
 );
 $facebook = new Facebook($config);
 ?>
+<?$addTagUrlWithLogin = $this->url(array("mode"=>"addtag"), "register", true);?>
 <nav class="menu-icon-info desktop-only animate-show-slow" id="menu-icons">
     <li class="item-no-hover background-success">
         <a href="<?=$this->url(array(), "browse", false)?>">
@@ -38,14 +39,6 @@ $facebook = new Facebook($config);
             <i id="icon-to-top" class="lighten-success medium icon-up-open"></i>
         </li>
     <? else: ?>
-        <?
-        $loginUrl = $facebook->getLoginUrl(array(
-            "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login"), "login", false)
-        ));
-        ?>
-        <?
-        $addTagUrlWithLogin = $this->url(array("mode"=>"addtag"), "register", true);
-        ?>
         <li class="item-no-hover padding-around-small controls-text-color center">
             <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>
             <span class="small">разделы</span>
@@ -84,7 +77,7 @@ $facebook = new Facebook($config);
         </div>
     <?else:?>
         <div class="mobile-span4 padding-around-base right">
-            <i onclick="location.href='<?=$addTagUrl?>'" class="icon-plus-1"></i>
+            <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="icon-plus-1"></i>
         </div>
         <div class="mobile-span2 padding-around-base ">
             <i onclick="location.href='<?=$this->url(array(), "register", true)?>'" class="icon-key-2"></i>
