@@ -234,6 +234,7 @@ class IndexController extends FaZend_Controller_Action {
      * @return void
      */
     public function registerAction() {
+        $this->view->mode = $this->getRequest()->getParam("mode");
     }
 
 
@@ -272,6 +273,7 @@ class IndexController extends FaZend_Controller_Action {
         $this->_helper->viewRenderer->setNoRender();
         $nickname = $this->getRequest()->getParam("nickname");
         $tag = $this->getRequest()->getParam("tag");
+        $mode = $this->getRequest()->getParam("mode");
         if ($nickname != "") {
             try {
                 $user = Model_User::findByNickname($nickname);
@@ -281,6 +283,10 @@ class IndexController extends FaZend_Controller_Action {
                     $saved->user = $user;
                     $saved->entity = $tag;
                     $saved->save();
+                }
+                if ($mode == "addtag") {
+                    echo "ADDTAG";
+                    exit;
                 }
                 echo "OK";
             } catch (Model_User_NicknameNotFound $ex) {
@@ -297,6 +303,10 @@ class IndexController extends FaZend_Controller_Action {
                         $saved->user = $user;
                         $saved->entity = $tag;
                         $saved->save();
+                    }
+                    if ($mode == "addtag") {
+                        echo "ADDTAG";
+                        exit;
                     }
                     echo "OK";
                 } catch (Exception $ex) {

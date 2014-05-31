@@ -1,5 +1,8 @@
 <?$this->headTitle("TwentyTags - Регистрация")?>
-<h1 class="info exo">Регистрация или вход</h1>
+<? if ($this->mode == "addtag"):?>
+    <p class="medium lighten-text">Вы хотите добавить тег, но Вы не зарегистрированы или не вошли</p>
+<?endif?>
+<h1 class="info">Регистрация или вход</h1>
 <p class="lighten-text">
     Для регистрации просто придумайте ник. Для входа введите его. Потом нажмите <span class="warning code">Enter</span>
 </p>
@@ -15,10 +18,15 @@
             if (event.which == 13) {
                 $.post(
                     "<?=$this->url(array('controller'=>'index', 'action'=>'registeruser'), 'default', true)?>",
-                    { 'nickname': $("#nick-value").val() },
+                    {
+                        'nickname': $("#nick-value").val(),
+                        'mode': '<?=$this->mode?>'
+                    },
                     function(data) {
                         if (data == "OK") {
                             location.href = "following";
+                        } else if (data == "ADDTAG") {
+                            location.href = "<?=$this->url(array(), 'addtag', true)?>";
                         } else {
                             $("#error-message").html(data);
                         }

@@ -44,16 +44,14 @@ $facebook = new Facebook($config);
         ));
         ?>
         <?
-        $addTagUrlWithLogin = $facebook->getLoginUrl(array(
-            "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "redirect"=>"addtag"), "login", false)
-        ));
+        $addTagUrlWithLogin = $this->url(array("mode"=>"addtag"), "register", true);
         ?>
         <li class="item-no-hover padding-around-small controls-text-color center">
             <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>
             <span class="small">разделы</span>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color center">
-            <i onclick="location.href='<?=$addTagUrl?>'" class="icon-plus-1 medium"></i><br/>
+            <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="icon-plus-1 medium"></i><br/>
             <span class="small">новый тег</span>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color center">

@@ -1,10 +1,12 @@
 <?$this->headTitle("TwentyTags - ".Model_User::me()->nickname)?>
+<h1 class="info">привет, <?=Model_User::me()->nickname?>!</h1>
 <p class="lighten-text">
-    Вы ни на что не подписаны. Попробуйте эти разделы
+    Здесь пока пусто. Пока попробуйте эти разделы
 </p>
     <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Политика")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Политика</a><br/>
     <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Стартапы")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Стартапы</a><br/>
     <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Предприниматели")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Предприниматели</a><br/>
     <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Известные Люди")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Известные люди</a><br/>
     <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Тренды")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Тренды</a><br/>
-
+<br/>
+<button class="button-info f-span4" onclick="location.href='<?=$this->url(array(), "addtag", true)?>'">добавить свой тег</button>

@@ -55,7 +55,7 @@ $facebook = new Facebook($config);
                 </div>
             <?endif?>
             <? $isSaved = Model_Entity::isSaved($this->entity);?>
-            <button id="follow-<?=$this->entity?>" class="button-success button-medium f-span12 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed":""?>">
+            <button id="follow-<?=$this->entity?>" class="button-success button-medium f-span12 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed button-default":""?>">
                 <?=$isSaved ? "Отписаться" : "Подписаться"?>
             </button>
         </div>

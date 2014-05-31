@@ -39,7 +39,7 @@ $facebook = new Facebook($config);
                 <?$isLogged = "user-not-logged";?>
             <?endif?>
             <div id="item-follow-button-<?=$item?>" class="item-follow-button <?=$isSaved == true ? "make-visible":""?>">
-                <button id="follow-<?=$item?>" class="button-success button-small f-span12 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed":""?>">
+                <button id="follow-<?=$item?>" class="button-success button-small f-span12 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed button-default":""?>">
                     <? if (!$this->user):?>
                         <div class="login-urls" id="login-url-<?=$item?>">
                             <?
