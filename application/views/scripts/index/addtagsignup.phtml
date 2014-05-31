@@ -1,0 +1,34 @@
+<?$this->headTitle("TwentyTags - Регистрация")?>
+<p class="medium lighten-text">Вы хотите подписаться на тег <span class="success exo"><?=$this->tag->title?></span>, но Вы не зарегистрированы или не вошли</p>
+<br/>
+<p class="lighten-text">
+    Для регистрации просто придумайте ник. Для входа введите его. Потом нажмите <span class="warning code">Enter</span>
+</p>
+<div class="button-iconed">
+    <i class="icon-user lighten-text"></i>
+    <input type="text" autocomplete="off" id="nick-value" class="text-field f-span6" placeholder="Никнейм">
+</div>
+<p id="error-message" class="lighten-success">
+</p>
+<script>
+    $(document).ready(function() {
+        $("#nick-value").keypress(function(event) {
+            if (event.which == 13) {
+                $.post(
+                    "<?=$this->url(array('controller'=>'index', 'action'=>'registeruser'), 'default', true)?>",
+                    {
+                        'nickname': $("#nick-value").val(),
+                        'tag': '<?=$this->tag?>'
+                    },
+                    function(data) {
+                        if (data == "OK") {
+                            location.href = "<?=$this->url(array(), 'following', true)?>";
+                        } else {
+                            $("#error-message").html(data);
+                        }
+                    }
+                )
+            }
+        });
+    })
+</script>

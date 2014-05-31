@@ -9,6 +9,7 @@
     $this->includeJS('loadmore.js');
     $this->includeJS('follow.js');
     $this->includeJS('guppy.js');
+    $this->includeCSS('fontello.css');
     $this->includeCSS('guppy.css');
     $this->includeCSS('guppy-blog.css');
 ?>
@@ -30,7 +31,7 @@
 <ul class="menu-aside menu-vertical-tight darken-background-info controls-text-color capitalize">
     <li class="item-no-hover padding-around-base">
         <div class="button-iconed">
-            <i class="darken-info fa fa-search"></i>
+            <i class="darken-info icon-search"></i>
             <form action="<?=$this->url(array(), "browse")?>" method="get">
                 <input type="text" name="key" class="search-bar" placeholder="поиск"/>
             </form>
@@ -45,7 +46,7 @@
     <?$logoutUrl = $this->url(array("action"=>"logout"), "logout", false);?>
     <li><a href="<?=$logoutUrl?>">Выход</a></li>
     <li class="item-no-hover padding-vertical-medium">
-        <i class="close-button lighten-info large fa fa-arrow-left"></i>
+        <i class="close-button lighten-success medium icon-left-open"></i>
     </li>
 </ul>
 

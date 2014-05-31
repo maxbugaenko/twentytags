@@ -2697,41 +2697,42 @@ h5 {
 
 .button-iconed {
   position: relative;
+  padding: 0;
   width: 100%; }
   .button-iconed i {
     position: absolute;
     z-index: 10;
-    top: 20%;
-    left: 13.33333px;
-    font-size: 30px; }
+    top: .3em;
+    left: .3em;
+    font-size: 1.5em; }
   .button-iconed input {
-    padding-left: 60px; }
+    padding-left: 3.5em; }
 
 .text-field {
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  color: #b2b2b2;
-  background-color: #e5e5e5;
+  color: #bababa;
+  background-color: #ededed;
   cursor: text;
   font-size: 20px;
   padding: 16.66667px; }
   .text-field:hover {
     transition: all .3s ease;
-    background-color: #e8e8e8; }
+    background-color: #efefef; }
   .text-field:focus {
     transition: all .3s ease;
-    background-color: #f2f2f2; }
+    background-color: #fafafa; }
 
 ::-webkit-input-placeholder {
-  color: #b2b2b2; }
+  color: #bababa; }
 
 ::-moz-placeholder {
-  color: #cccccc; }
+  color: lightgray; }
 
 :-ms-input-placeholder {
-  color: #cccccc; }
+  color: lightgray; }
 
 .badge-success, .badge-warning, .badge-info, .badge-default {
   cursor: auto;

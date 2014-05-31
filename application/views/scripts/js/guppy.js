@@ -75,9 +75,9 @@
         $(this).click(function() {
             $("#overlay").removeClass("active");
             $(".modal-window").removeClass("active");
+            $("[class^=menu-icon]").removeClass("menu-icon-slide-right");
             $(".menu-aside").removeClass("active");
             $(".menu-aside").css({left: -$(".menu-aside").width()});
-            $("[class^=menu-icon]").removeClass("menu-icon-slide-right");
             $(".page-container").removeClass("page-container-slide-right");
             $("body, html").removeClass("hidden");
         });

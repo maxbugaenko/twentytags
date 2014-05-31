@@ -219,8 +219,23 @@ class IndexController extends FaZend_Controller_Action {
         if (!Model_User::isLoggedIn()) {
             $this->redirect("browse");
         }
-        $this->view->mainTag = "Add tag";
     }
+
+    /**
+     * Add tag page
+     * @return void
+     */
+    public function addtagsignupAction() {
+        $this->view->tag = new Model_Entity((int)$this->getRequest()->getParam("tag"));
+    }
+
+    /**
+     * Add tag page
+     * @return void
+     */
+    public function registerAction() {
+    }
+
 
     /**
      * Add tag page
@@ -245,6 +260,51 @@ class IndexController extends FaZend_Controller_Action {
             echo "OK";
         } else {
            echo "Your tag is empty";
+        }
+    }
+
+    /**
+     * Add tag page
+     * @return void
+     */
+    public function registeruserAction() {
+        $this->_helper->layout->disableLayout();
+        $this->_helper->viewRenderer->setNoRender();
+        $nickname = $this->getRequest()->getParam("nickname");
+        $tag = $this->getRequest()->getParam("tag");
+        if ($nickname != "") {
+            try {
+                $user = Model_User::findByNickname($nickname);
+                $user->logIn();
+                if ($tag) {
+                    $saved = new Model_Saved();
+                    $saved->user = $user;
+                    $saved->entity = $tag;
+                    $saved->save();
+                }
+                echo "OK";
+            } catch (Model_User_NicknameNotFound $ex) {
+                $user = new Model_User();
+                $user->nickname = $nickname;
+                $user->email = $nickname."@twentytags.com";
+                $user->name = $nickname;
+                $user->password = "password";
+                try {
+                    $user->save();
+                    $user->logIn();
+                    if ($tag) {
+                        $saved = new Model_Saved();
+                        $saved->user = $user;
+                        $saved->entity = $tag;
+                        $saved->save();
+                    }
+                    echo "OK";
+                } catch (Exception $ex) {
+                    echo "Произошла ошибка";
+                }
+            }
+        } else {
+            echo "Введите никнейм";
         }
     }
 

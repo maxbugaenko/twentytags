@@ -1,11 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,100&subset=latin,cyrillic);
 $code-font: "Source Code Pro";
 @import "variables";
 @import "highlight";
+@import "mixins";
+@import "controls";
+@import "inputs";
 
 .code {
   font-family: $code-font;
   font-weight: 300;
+}
+
+.exo {
+  font-family: "Exo 2";
+  font-weight: 400;
 }
 
 .bold {
@@ -13,16 +22,14 @@ $code-font: "Source Code Pro";
 }
 
 .search-bar {
+  @extend .text-field;
   background-color: darken($info, 3) !important;
   text-align: left !important;
-  box-sizing: border-box;
   color: darken($info, 14) !important;
   width: 100%;
   border-radius: $controls-border-radius;
-  padding: $base-font-size;
   border: 0;
   outline: 0;
-  font-size: $base-font-size;
   position: relative;
 }
 
@@ -45,7 +52,7 @@ $code-font: "Source Code Pro";
 }
 
 .logo-image {
-  width: 150px !important;
+  width: 100px !important;
 }
 
 .logo-image-mobile {

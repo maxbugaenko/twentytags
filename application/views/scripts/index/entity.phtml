@@ -16,15 +16,16 @@ $config = array(
 $facebook = new Facebook($config);
 ?>
 
-<?if ($this->entity->alerts == 0):?>
-            <p class="margins">
-                Пока никаких новостей по этому тегу нет. Возможно нужно немного подождать
-            </p>
-            <a class="big info" href="<?=$this->url(array(), "browse", false)?>">популярные теги</a>
-<?else:?>
     <div class="container">
         <div class="unit60 lighten-text">
             <h1 class="success lower"><?=$this->entity->title?></h1>
+            <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
+            <p class="no-padding">
+            <? foreach ($tagged as $tag):?>
+                <a class="success lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
+            <? endforeach?>
+            </p>
+            <p>
 <!--            статей <span class="success medium">180</span>&#160;сегодня <span class="warning medium">7</span>-->
             <a class="no-underline" target="_blank" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=300')"
                href="http://www.facebook.com/sharer/sharer.php?u=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
@@ -38,6 +39,7 @@ $facebook = new Facebook($config);
                href="https://plus.google.com/share?url=http://twentytags.com<?=$this->url(array("id"=>$this->entity, Model_Static_Functions::dashString($this->entity->title)=>""), "entity", false)?>">
                 <i class="medium lighten-text fa fa-google-plus"></i>
             </a>
+            </p>
         </div>
         <div class="unit40 no-wrap right">
             <?if (!Model_User::isLoggedIn()): ?>
@@ -47,19 +49,30 @@ $facebook = new Facebook($config);
                     $loginUrl = $facebook->getLoginUrl(array(
                         "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "follow"=>$this->entity), "login", false)
                     ));
+                    $loginUrl = $this->url(array("tag"=>$this->entity), "addtagsignup", true);
                     echo $loginUrl;
                     ?>
                 </div>
             <?endif?>
             <? $isSaved = Model_Entity::isSaved($this->entity);?>
-            <button id="follow-<?=$this->entity?>" class="button-success button-medium f-span12 capitalize to-follow-button <?=$isLogged?> btn-large <?=$isSaved ? " followed":""?>">
+            <button id="follow-<?=$this->entity?>" class="button-success button-medium f-span12 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed":""?>">
                 <?=$isSaved ? "Отписаться" : "Подписаться"?>
             </button>
         </div>
      </div>
-<!--    <p>-->
-<!--        --><?//=$this->entity->description?>
-<!--    </p>-->
+
+<?if ($this->entity->alerts == 0):?>
+    <div class="container padding-around-small">
+    <p class="lighten-text">
+        Пока никаких новостей по этому тегу нет. Посмотрите пока другие разделы. Возможно Вам будет интересно
+    </p>
+    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Политика")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Политика</a><br/>
+    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Стартапы")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Стартапы</a><br/>
+    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Предприниматели")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Предприниматели</a><br/>
+    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Известные Люди")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Известные люди</a><br/>
+    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Тренды")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Тренды</a><br/>
+    </div>
+<?else:?>
     <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts, "mode"=> "entity", "entity" => $this->entity));?>
 <?endif?>
 

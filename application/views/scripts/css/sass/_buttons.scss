@@ -78,17 +78,18 @@
 
 .button-iconed {
   position: relative;
+  padding: 0;
   width: 100%;
 
   i {
     position: absolute;
     z-index: 10;
-    top: 20%;
-    left: $base-font-size/1.5;
-    font-size: $base-font-size*1.5;
+    top: .3em;
+    left: .3em;
+    font-size: 1.5em;
   }
 
   & input {
-    padding-left: $base-font-size*3;
+    padding-left: 3.5em;
   }
 }

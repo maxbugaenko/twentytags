@@ -18,20 +18,24 @@ $facebook = new Facebook($config);
         <?$followingUrl = $this->url(array(), "following", true);?>
         <?$addTagUrl = $this->url(array(), "addtag", true);?>
         <?$feedUrl = $this->url(array(), "feed", true);?>
-        <li class="item-no-hover padding-around-small controls-text-color">
-            <button onclick="location.href='<?=$feedUrl?>'" class="button-info button-medium capitalize">лента</button>
+        <li class="item-no-hover padding-around-small controls-text-color center">
+            <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>
+            <span class="small">разделы</span>
         </li>
-        <li class="item-no-hover padding-around-small controls-text-color">
-            <button onclick="location.href='<?=$followingUrl?>'" class="button-info button-medium capitalize">мои теги</button>
+        <li class="item-no-hover padding-around-small controls-text-color center">
+            <i onclick="location.href='<?=$feedUrl?>'" class="icon-cw medium"></i><br/>
+            <span class="small">новости</span>
         </li>
-        <li class="item-no-hover padding-around-small controls-text-color">
-            <button onclick="location.href='<?=$addTagUrl?>'" class="button-info button-medium capitalize">добавить</button>
+        <li class="item-no-hover padding-around-small controls-text-color center">
+            <i onclick="location.href='<?=$followingUrl?>'" class="icon-vcard medium"></i><br/>
+            <span class="small">мои теги</span>
         </li>
-        <li class="item-no-hover padding-around-small controls-text-color opens-menu-outter">
-            <button class="button-info button-medium capitalize">меню</button>
+        <li class="item-no-hover padding-around-small controls-text-color center">
+            <i onclick="location.href='<?=$addTagUrl?>'" class="icon-plus-1 medium"></i><br/>
+            <span class="small">новый тег</span>
         </li>
         <li class="item-no-hover padding-vertical-large center">
-            <i id="icon-to-top" class="lighten-info large fa fa-arrow-up"></i>
+            <i id="icon-to-top" class="lighten-success medium icon-up-open"></i>
         </li>
     <? else: ?>
         <?
@@ -44,17 +48,20 @@ $facebook = new Facebook($config);
             "redirect_uri" => WEBSITE_URL.$this->url(array("action"=>"login", "redirect"=>"addtag"), "login", false)
         ));
         ?>
-        <li class="item-no-hover padding-around-small controls-text-color">
-            <button onclick="location.href='<?=$addTagUrl?>'" class="button-info button-medium capitalize"><i class="fa fa-bolt"></i> Войти</button>
+        <li class="item-no-hover padding-around-small controls-text-color center">
+            <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>
+            <span class="small">разделы</span>
         </li>
-        <li class="item-no-hover padding-around-small controls-text-color">
-            <button onclick="location.href='<?=$addTagUrl?>'" class="button-info button-medium capitalize"><i class="fa fa-plus-circle"></i> Добавить</button>
+        <li class="item-no-hover padding-around-small controls-text-color center">
+            <i onclick="location.href='<?=$addTagUrl?>'" class="icon-plus-1 medium"></i><br/>
+            <span class="small">новый тег</span>
         </li>
-        <li class="item-no-hover padding-around-small controls-text-color">
-            <button class="button-info button-medium opens-menu-outter capitalize"><i class="fa fa-bars"></i> меню</button>
+        <li class="item-no-hover padding-around-small controls-text-color center">
+            <i onclick="location.href='<?=$this->url(array(), "register", true)?>'" class="icon-key-2 medium"></i><br/>
+            <span class="small">вход</span>
         </li>
         <li class="item-no-hover padding-vertical-large center">
-            <i id="icon-to-top" class="lighten-info large fa fa-arrow-up"></i>
+            <i id="icon-to-top" class="lighten-success medium icon-up-open"></i>
         </li>
     <? endif;?>
 </nav>
@@ -65,15 +72,24 @@ $facebook = new Facebook($config);
         </a>
     </div>
     <div class="mobile-span3 padding-around-base ">
-        <i class="fa fa-bars opens-menu-outter"></i>
+        <i class="icon-th-list-1 opens-menu-outter"></i>
     </div>
-    <div class="mobile-span2 padding-around-base ">
-        <i class="fa fa-repeat"></i>
-    </div>
-    <div class="mobile-span2 padding-around-base ">
-        <i class="fa fa-plus"></i>
-    </div>
-    <div class="mobile-span2 padding-around-base ">
-        <i class="fa fa-folder-open"></i>
-    </div>
+    <? if ($this->user):?>
+        <div class="mobile-span2 padding-around-base ">
+            <i onclick="location.href='<?=$feedUrl?>'" class="icon-cw"></i>
+        </div>
+        <div class="mobile-span2 padding-around-base ">
+            <i onclick="location.href='<?=$addTagUrl?>'"  class="icon-plus-1"></i>
+        </div>
+        <div class="mobile-span2 padding-around-base ">
+            <i onclick="location.href='<?=$followingUrl?>'" class="icon-vcard"></i>
+        </div>
+    <?else:?>
+        <div class="mobile-span4 padding-around-base right">
+            <i onclick="location.href='<?=$addTagUrl?>'" class="icon-plus-1"></i>
+        </div>
+        <div class="mobile-span2 padding-around-base ">
+            <i onclick="location.href='<?=$this->url(array(), "register", true)?>'" class="icon-key-2"></i>
+        </div>
+    <?endif?>
 </nav>
