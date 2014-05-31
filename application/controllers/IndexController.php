@@ -128,6 +128,9 @@ class IndexController extends FaZend_Controller_Action {
      * @return void
      */
     public function emptyAction() {
+        if (!Model_User::isLoggedIn()) {
+            $this->redirect("browse");
+        }
     }
     /**
      * Empty profile page

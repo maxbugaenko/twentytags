@@ -55,7 +55,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_render-gradients.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_shape-size-stripper.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/js/masonry.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/controllers/IndexController.php" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,15 +91,6 @@
         <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="22" column="33" selection-start="867" selection-end="867" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="513">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="morealerts.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="206" selection-start="1356" selection-end="1356" vertical-scroll-proportion="-16.964285" vertical-offset="0" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -161,10 +152,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="moretags.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="133" column="0" selection-start="4644" selection-end="4644" vertical-scroll-proportion="0.31921825" vertical-offset="2065" max-vertical-offset="7334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moretags.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="24" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.43322477" vertical-offset="228" max-vertical-offset="1425">
+            <state line="26" column="24" selection-start="1306" selection-end="1306" vertical-scroll-proportion="-9.5" vertical-offset="228" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
@@ -220,7 +220,6 @@
         <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml" />
         <option value="$PROJECT_DIR$/application/config/routes.ini" />
-        <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/register.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/addtag.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/empty.phtml" />
@@ -234,6 +233,7 @@
         <option value="$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php" />
         <option value="$PROJECT_DIR$/application/Model/GAlerts/GAlerts.php" />
         <option value="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" />
+        <option value="$PROJECT_DIR$/application/controllers/IndexController.php" />
       </list>
     </option>
   </component>
@@ -1077,13 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="309" column="0" selection-start="10196" selection-end="10196" vertical-scroll-proportion="-19.214285" vertical-offset="5067" max-vertical-offset="7277">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/settings.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642">
@@ -1200,7 +1193,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.43322477" vertical-offset="228" max-vertical-offset="1425">
+        <state line="26" column="24" selection-start="1306" selection-end="1306" vertical-scroll-proportion="-9.5" vertical-offset="228" max-vertical-offset="1425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="0" selection-start="4644" selection-end="4644" vertical-scroll-proportion="0.31921825" vertical-offset="2065" max-vertical-offset="7334">
           <folding />
         </state>
       </provider>
