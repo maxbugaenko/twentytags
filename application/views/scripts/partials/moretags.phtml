@@ -16,15 +16,17 @@ $facebook = new Facebook($config);
 <!--                <img title="--><?//=$item->title?><!--" src="--><?//=$this->staticFile("images/entities/".$item->picture)?><!--">-->
 <!--            </a>-->
 <!--        </div>-->
-        <div class="span9 no-padding padding-vertical-small">
-                <a class="lower darken-info medium" title="<?=$item->title?>" href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>"><?=$item->title?></a>
+        <div class="mobile-span9">
+                <h3 class="lower darken-info " title="<?=$item->title?>"><a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
+                    <i class="icon-hash small warning"></i>
+                    <?=$item->title?>
+                    <? if ($item->today > 0):?>
+                        <span class="warning"><b><?=$item->today?></b></span>
+                    <?endif?>
+                </h3>
 <!--            --><?// if ($item->alerts > 0):?>
 <!--                <span class="warning"><b>--><?//=$item->alerts?><!--</b></span>&#160;-->
 <!--            --><?//endif?>
-            <? if ($item->today > 0):?>
-                <span class="warning medium exo"><b><?=$item->today?></b></span>
-            <?endif?>
-            <br/>
             <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
             <? foreach ($tagged as $tag):?>
                 <a class="info lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
@@ -33,7 +35,7 @@ $facebook = new Facebook($config);
 <!--                --><?//=$item->description?>
 <!--            </p>-->
         </div>
-        <div class="span3 no-padding padding-vertical-small">
+        <div class="mobile-span3 right">
             <? $isSaved = Model_Entity::isSaved($item);?>
             <?if (!Model_User::isLoggedIn()): ?>
                 <?$isLogged = "user-not-logged";?>
@@ -51,7 +53,8 @@ $facebook = new Facebook($config);
                             ?>
                         </div>
                     <?endif?>
-                    <?=$isSaved ? "Отписаться" : "Подписаться"?>
+                    <i class="icon-tag"></i>
+                    <span class="desktop-and-medium-only"><?=$isSaved ? "Отписаться" : "Подписаться"?></span>
                 </button>
             </div>
         </div>

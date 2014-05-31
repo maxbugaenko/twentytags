@@ -607,9 +607,24 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
             ->fetchAll();
     }
 
+    /**
+     * Retrieves all entities stored in the database
+     * for creating the XML sitemap
+     *
+     * @return array Array of all entities
+     */
+    public static function retrieveEntitiesToAdd() {
+        return self::retrieve()
+            ->where('entity.status = ?', 0)
+            ->order('entity.id desc')
+            ->limit(20)
+            ->setRowClass('Model_Entity')
+            ->fetchAll();
+    }
 
 
-	/**
+
+    /**
 	 * Retrieves all entities stored in the database
 	 * for creating the XML sitemap
 	 *

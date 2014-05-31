@@ -20,9 +20,9 @@
                             $("#item-follow-button-" + entityID).toggleClass("make-visible");
                             $("#follow-"+entityID).toggleClass("followed");
                             if ($("#follow-"+entityID).hasClass("followed")) {
-                                $("#follow-"+entityID).html("Отписаться").addClass("button-default");
+                                $("#follow-"+entityID).html("<i class='icon-tag'></i><span class='desktop-and-medium-only'>Отписаться</span>").addClass("button-default");
                             } else {
-                                $("#follow-"+entityID).html("Подписаться").removeClass("button-default");;
+                                $("#follow-"+entityID).html("<i class='icon-tag'></i><span class='desktop-and-medium-only'>Подписаться</span>").removeClass("button-default");;
                             }
                         }
                     }

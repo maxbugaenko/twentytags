@@ -17,12 +17,12 @@ $facebook = new Facebook($config);
 ?>
 
     <div class="container">
-        <div class="unit60 lighten-text">
-            <h1 class="success lower"><?=$this->entity->title?></h1>
+        <div class="mobile-span9 lighten-text">
+            <h1 class="info lower"><i class="icon-hash warning"></i><?=$this->entity->title?></h1>
             <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($this->entity);?>
             <p class="no-padding">
             <? foreach ($tagged as $tag):?>
-                <a class="success lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
+                <a class="info lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
             <? endforeach?>
             </p>
             <p>
@@ -41,7 +41,7 @@ $facebook = new Facebook($config);
             </a>
             </p>
         </div>
-        <div class="unit40 no-wrap right">
+        <div class="mobile-span3 no-wrap right">
             <?if (!Model_User::isLoggedIn()): ?>
                 <?$isLogged = "user-not-logged";?>
                 <div class="login-urls" id="login-url-<?=$this->entity?>">
@@ -56,7 +56,8 @@ $facebook = new Facebook($config);
             <?endif?>
             <? $isSaved = Model_Entity::isSaved($this->entity);?>
             <button id="follow-<?=$this->entity?>" class="button-success button-medium f-span12 capitalize to-follow-button <?=$isLogged?> <?=$isSaved ? " followed button-default":""?>">
-                <?=$isSaved ? "Отписаться" : "Подписаться"?>
+                <i class="icon-tag"></i>
+                <span class="desktop-and-medium-only"><?=$isSaved ? "Отписаться" : "Подписаться"?></span>
             </button>
         </div>
      </div>

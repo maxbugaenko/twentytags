@@ -155,7 +155,7 @@ class Model_GAlerts_GAlerts {
         $state=curl_getinfo($ch);
 
         if (!($state['http_code']==200)) {
-            throw new GAlertException('Cannot delete the alert, bad response from server:'.json_encode($state));
+            throw new Model_GAlertException('Cannot delete the alert, bad response from server:'.json_encode($state));
         }
 
         return true;
