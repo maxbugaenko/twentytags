@@ -17,12 +17,14 @@ $facebook = new Facebook($config);
 <!--            </a>-->
 <!--        </div>-->
         <div class="mobile-span9">
-                <h3 class="lower darken-info " title="<?=$item->title?>"><a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
-                    <i class="icon-hash small warning"></i>
-                    <?=$item->title?>
-                    <? if ($item->today > 0):?>
-                        <span class="warning"><b><?=$item->today?></b></span>
-                    <?endif?>
+                <h3 class="lower darken-info " title="<?=$item->title?>">
+                    <a href="<?=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?>">
+                        <i class="icon-hash small warning"></i>
+                        <?=$item->title?>
+                        <? if ($item->today > 0):?>
+                            <span class="warning"><b><?=$item->today?></b></span>
+                        <?endif?>
+                    </a>
                 </h3>
 <!--            --><?// if ($item->alerts > 0):?>
 <!--                <span class="warning"><b>--><?//=$item->alerts?><!--</b></span>&#160;-->
