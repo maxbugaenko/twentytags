@@ -208,3 +208,13 @@ $controls-color-list: (
 .double-darken-background {
   background-color: darken($background-color, 10) !important;
 }
+
+@each $control-kind in $controls-color-list {
+  .hover-#{nth($control-kind, 1)} {
+
+    &:hover {
+      @include transition(.1s);
+      color: nth($control-kind, 2);
+    }
+  }
+}

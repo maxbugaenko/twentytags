@@ -1,16 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
-@import url(http://fonts.googleapis.com/css?family=Orienta);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic);
-/*$background-color: #2a7ab0;
-$controls-depth: 4px;
-$controls-text-color: #ecf0f1;
-$controls-border-radius: 7px;
-$controls-default-color: lighten($background-color, 10);
-$success: #c5bf14;
-$warning: #ca5656;
-$info: #08bf55;
-$text-color: #e3ecf2;*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic);
 .dropdown-small, .dropdown-medium, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default, .button-medium, .button-small, .button-success, .button-tag-success, .button-warning, .button-tag-warning, .button-info, .button-tag-info, .button-default, .button-tag-default, .text-field, .badge-success, .badge-warning, .badge-info, .badge-default {
   position: relative;
   border-radius: 4px;
@@ -30,16 +18,16 @@ $text-color: #e3ecf2;*/
   text-align: center; }
 
 .large {
-  font-size: 60px; }
+  font-size: 54px; }
 
 .big {
-  font-size: 46px; }
+  font-size: 41.4px; }
 
 .medium {
-  font-size: 34px; }
+  font-size: 30.6px; }
 
 .small {
-  font-size: 16px; }
+  font-size: 14.4px; }
 
 .tight {
   letter-spacing: -.1em; }
@@ -64,399 +52,399 @@ $text-color: #e3ecf2;*/
   text-decoration: none; }
 
 p {
-  padding: 10px 0; }
+  padding: 9px 0; }
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: "PT Sans";
-  font-weight: 700; }
+  font-family: "Open Sans";
+  font-weight: 600; }
 
 .no-padding {
   padding: 0 !important; }
 
 /* generate padding classes */
 .padding-around-small {
-  padding-top: -webkit-calc(20px * 0.7) !important;
-  padding-top: -moz-calc(20px * 0.7) !important;
-  padding-top: -o-calc(20px * 0.7) !important;
-  padding-top: calc(20px * 0.7) !important;
-  padding-right: -webkit-calc(20px * 0.7) !important;
-  padding-right: -moz-calc(20px * 0.7) !important;
-  padding-right: -o-calc(20px * 0.7) !important;
-  padding-right: calc(20px * 0.7) !important;
-  padding-bottom: -webkit-calc(20px * 0.7) !important;
-  padding-bottom: -moz-calc(20px * 0.7) !important;
-  padding-bottom: -o-calc(20px * 0.7) !important;
-  padding-bottom: calc(20px * 0.7) !important;
-  padding-left: -webkit-calc(20px * 0.7) !important;
-  padding-left: -moz-calc(20px * 0.7) !important;
-  padding-left: -o-calc(20px * 0.7) !important;
-  padding-left: calc(20px * 0.7) !important; }
+  padding-top: -webkit-calc(18px * 0.7) !important;
+  padding-top: -moz-calc(18px * 0.7) !important;
+  padding-top: -o-calc(18px * 0.7) !important;
+  padding-top: calc(18px * 0.7) !important;
+  padding-right: -webkit-calc(18px * 0.7) !important;
+  padding-right: -moz-calc(18px * 0.7) !important;
+  padding-right: -o-calc(18px * 0.7) !important;
+  padding-right: calc(18px * 0.7) !important;
+  padding-bottom: -webkit-calc(18px * 0.7) !important;
+  padding-bottom: -moz-calc(18px * 0.7) !important;
+  padding-bottom: -o-calc(18px * 0.7) !important;
+  padding-bottom: calc(18px * 0.7) !important;
+  padding-left: -webkit-calc(18px * 0.7) !important;
+  padding-left: -moz-calc(18px * 0.7) !important;
+  padding-left: -o-calc(18px * 0.7) !important;
+  padding-left: calc(18px * 0.7) !important; }
 
 .padding-around-base {
-  padding-top: -webkit-calc(20px * 1) !important;
-  padding-top: -moz-calc(20px * 1) !important;
-  padding-top: -o-calc(20px * 1) !important;
-  padding-top: calc(20px * 1) !important;
-  padding-right: -webkit-calc(20px * 1) !important;
-  padding-right: -moz-calc(20px * 1) !important;
-  padding-right: -o-calc(20px * 1) !important;
-  padding-right: calc(20px * 1) !important;
-  padding-bottom: -webkit-calc(20px * 1) !important;
-  padding-bottom: -moz-calc(20px * 1) !important;
-  padding-bottom: -o-calc(20px * 1) !important;
-  padding-bottom: calc(20px * 1) !important;
-  padding-left: -webkit-calc(20px * 1) !important;
-  padding-left: -moz-calc(20px * 1) !important;
-  padding-left: -o-calc(20px * 1) !important;
-  padding-left: calc(20px * 1) !important; }
+  padding-top: -webkit-calc(18px * 1) !important;
+  padding-top: -moz-calc(18px * 1) !important;
+  padding-top: -o-calc(18px * 1) !important;
+  padding-top: calc(18px * 1) !important;
+  padding-right: -webkit-calc(18px * 1) !important;
+  padding-right: -moz-calc(18px * 1) !important;
+  padding-right: -o-calc(18px * 1) !important;
+  padding-right: calc(18px * 1) !important;
+  padding-bottom: -webkit-calc(18px * 1) !important;
+  padding-bottom: -moz-calc(18px * 1) !important;
+  padding-bottom: -o-calc(18px * 1) !important;
+  padding-bottom: calc(18px * 1) !important;
+  padding-left: -webkit-calc(18px * 1) !important;
+  padding-left: -moz-calc(18px * 1) !important;
+  padding-left: -o-calc(18px * 1) !important;
+  padding-left: calc(18px * 1) !important; }
 
 .padding-around-medium {
-  padding-top: -webkit-calc(20px * 2) !important;
-  padding-top: -moz-calc(20px * 2) !important;
-  padding-top: -o-calc(20px * 2) !important;
-  padding-top: calc(20px * 2) !important;
-  padding-right: -webkit-calc(20px * 2) !important;
-  padding-right: -moz-calc(20px * 2) !important;
-  padding-right: -o-calc(20px * 2) !important;
-  padding-right: calc(20px * 2) !important;
-  padding-bottom: -webkit-calc(20px * 2) !important;
-  padding-bottom: -moz-calc(20px * 2) !important;
-  padding-bottom: -o-calc(20px * 2) !important;
-  padding-bottom: calc(20px * 2) !important;
-  padding-left: -webkit-calc(20px * 2) !important;
-  padding-left: -moz-calc(20px * 2) !important;
-  padding-left: -o-calc(20px * 2) !important;
-  padding-left: calc(20px * 2) !important; }
+  padding-top: -webkit-calc(18px * 2) !important;
+  padding-top: -moz-calc(18px * 2) !important;
+  padding-top: -o-calc(18px * 2) !important;
+  padding-top: calc(18px * 2) !important;
+  padding-right: -webkit-calc(18px * 2) !important;
+  padding-right: -moz-calc(18px * 2) !important;
+  padding-right: -o-calc(18px * 2) !important;
+  padding-right: calc(18px * 2) !important;
+  padding-bottom: -webkit-calc(18px * 2) !important;
+  padding-bottom: -moz-calc(18px * 2) !important;
+  padding-bottom: -o-calc(18px * 2) !important;
+  padding-bottom: calc(18px * 2) !important;
+  padding-left: -webkit-calc(18px * 2) !important;
+  padding-left: -moz-calc(18px * 2) !important;
+  padding-left: -o-calc(18px * 2) !important;
+  padding-left: calc(18px * 2) !important; }
 
 .padding-around-big {
-  padding-top: -webkit-calc(20px * 4) !important;
-  padding-top: -moz-calc(20px * 4) !important;
-  padding-top: -o-calc(20px * 4) !important;
-  padding-top: calc(20px * 4) !important;
-  padding-right: -webkit-calc(20px * 4) !important;
-  padding-right: -moz-calc(20px * 4) !important;
-  padding-right: -o-calc(20px * 4) !important;
-  padding-right: calc(20px * 4) !important;
-  padding-bottom: -webkit-calc(20px * 4) !important;
-  padding-bottom: -moz-calc(20px * 4) !important;
-  padding-bottom: -o-calc(20px * 4) !important;
-  padding-bottom: calc(20px * 4) !important;
-  padding-left: -webkit-calc(20px * 4) !important;
-  padding-left: -moz-calc(20px * 4) !important;
-  padding-left: -o-calc(20px * 4) !important;
-  padding-left: calc(20px * 4) !important; }
+  padding-top: -webkit-calc(18px * 4) !important;
+  padding-top: -moz-calc(18px * 4) !important;
+  padding-top: -o-calc(18px * 4) !important;
+  padding-top: calc(18px * 4) !important;
+  padding-right: -webkit-calc(18px * 4) !important;
+  padding-right: -moz-calc(18px * 4) !important;
+  padding-right: -o-calc(18px * 4) !important;
+  padding-right: calc(18px * 4) !important;
+  padding-bottom: -webkit-calc(18px * 4) !important;
+  padding-bottom: -moz-calc(18px * 4) !important;
+  padding-bottom: -o-calc(18px * 4) !important;
+  padding-bottom: calc(18px * 4) !important;
+  padding-left: -webkit-calc(18px * 4) !important;
+  padding-left: -moz-calc(18px * 4) !important;
+  padding-left: -o-calc(18px * 4) !important;
+  padding-left: calc(18px * 4) !important; }
 
 .padding-around-large {
-  padding-top: -webkit-calc(20px * 3) !important;
-  padding-top: -moz-calc(20px * 3) !important;
-  padding-top: -o-calc(20px * 3) !important;
-  padding-top: calc(20px * 3) !important;
-  padding-right: -webkit-calc(20px * 3) !important;
-  padding-right: -moz-calc(20px * 3) !important;
-  padding-right: -o-calc(20px * 3) !important;
-  padding-right: calc(20px * 3) !important;
-  padding-bottom: -webkit-calc(20px * 3) !important;
-  padding-bottom: -moz-calc(20px * 3) !important;
-  padding-bottom: -o-calc(20px * 3) !important;
-  padding-bottom: calc(20px * 3) !important;
-  padding-left: -webkit-calc(20px * 3) !important;
-  padding-left: -moz-calc(20px * 3) !important;
-  padding-left: -o-calc(20px * 3) !important;
-  padding-left: calc(20px * 3) !important; }
+  padding-top: -webkit-calc(18px * 3) !important;
+  padding-top: -moz-calc(18px * 3) !important;
+  padding-top: -o-calc(18px * 3) !important;
+  padding-top: calc(18px * 3) !important;
+  padding-right: -webkit-calc(18px * 3) !important;
+  padding-right: -moz-calc(18px * 3) !important;
+  padding-right: -o-calc(18px * 3) !important;
+  padding-right: calc(18px * 3) !important;
+  padding-bottom: -webkit-calc(18px * 3) !important;
+  padding-bottom: -moz-calc(18px * 3) !important;
+  padding-bottom: -o-calc(18px * 3) !important;
+  padding-bottom: calc(18px * 3) !important;
+  padding-left: -webkit-calc(18px * 3) !important;
+  padding-left: -moz-calc(18px * 3) !important;
+  padding-left: -o-calc(18px * 3) !important;
+  padding-left: calc(18px * 3) !important; }
 
 .padding-vertical-small {
-  padding-top: -webkit-calc(20px * 0.7) !important;
-  padding-top: -moz-calc(20px * 0.7) !important;
-  padding-top: -o-calc(20px * 0.7) !important;
-  padding-top: calc(20px * 0.7) !important;
-  padding-bottom: -webkit-calc(20px * 0.7) !important;
-  padding-bottom: -moz-calc(20px * 0.7) !important;
-  padding-bottom: -o-calc(20px * 0.7) !important;
-  padding-bottom: calc(20px * 0.7) !important; }
+  padding-top: -webkit-calc(18px * 0.7) !important;
+  padding-top: -moz-calc(18px * 0.7) !important;
+  padding-top: -o-calc(18px * 0.7) !important;
+  padding-top: calc(18px * 0.7) !important;
+  padding-bottom: -webkit-calc(18px * 0.7) !important;
+  padding-bottom: -moz-calc(18px * 0.7) !important;
+  padding-bottom: -o-calc(18px * 0.7) !important;
+  padding-bottom: calc(18px * 0.7) !important; }
 
 .padding-vertical-base {
-  padding-top: -webkit-calc(20px * 1) !important;
-  padding-top: -moz-calc(20px * 1) !important;
-  padding-top: -o-calc(20px * 1) !important;
-  padding-top: calc(20px * 1) !important;
-  padding-bottom: -webkit-calc(20px * 1) !important;
-  padding-bottom: -moz-calc(20px * 1) !important;
-  padding-bottom: -o-calc(20px * 1) !important;
-  padding-bottom: calc(20px * 1) !important; }
+  padding-top: -webkit-calc(18px * 1) !important;
+  padding-top: -moz-calc(18px * 1) !important;
+  padding-top: -o-calc(18px * 1) !important;
+  padding-top: calc(18px * 1) !important;
+  padding-bottom: -webkit-calc(18px * 1) !important;
+  padding-bottom: -moz-calc(18px * 1) !important;
+  padding-bottom: -o-calc(18px * 1) !important;
+  padding-bottom: calc(18px * 1) !important; }
 
 .padding-vertical-medium {
-  padding-top: -webkit-calc(20px * 2) !important;
-  padding-top: -moz-calc(20px * 2) !important;
-  padding-top: -o-calc(20px * 2) !important;
-  padding-top: calc(20px * 2) !important;
-  padding-bottom: -webkit-calc(20px * 2) !important;
-  padding-bottom: -moz-calc(20px * 2) !important;
-  padding-bottom: -o-calc(20px * 2) !important;
-  padding-bottom: calc(20px * 2) !important; }
+  padding-top: -webkit-calc(18px * 2) !important;
+  padding-top: -moz-calc(18px * 2) !important;
+  padding-top: -o-calc(18px * 2) !important;
+  padding-top: calc(18px * 2) !important;
+  padding-bottom: -webkit-calc(18px * 2) !important;
+  padding-bottom: -moz-calc(18px * 2) !important;
+  padding-bottom: -o-calc(18px * 2) !important;
+  padding-bottom: calc(18px * 2) !important; }
 
 .padding-vertical-big {
-  padding-top: -webkit-calc(20px * 4) !important;
-  padding-top: -moz-calc(20px * 4) !important;
-  padding-top: -o-calc(20px * 4) !important;
-  padding-top: calc(20px * 4) !important;
-  padding-bottom: -webkit-calc(20px * 4) !important;
-  padding-bottom: -moz-calc(20px * 4) !important;
-  padding-bottom: -o-calc(20px * 4) !important;
-  padding-bottom: calc(20px * 4) !important; }
+  padding-top: -webkit-calc(18px * 4) !important;
+  padding-top: -moz-calc(18px * 4) !important;
+  padding-top: -o-calc(18px * 4) !important;
+  padding-top: calc(18px * 4) !important;
+  padding-bottom: -webkit-calc(18px * 4) !important;
+  padding-bottom: -moz-calc(18px * 4) !important;
+  padding-bottom: -o-calc(18px * 4) !important;
+  padding-bottom: calc(18px * 4) !important; }
 
 .padding-vertical-large {
-  padding-top: -webkit-calc(20px * 3) !important;
-  padding-top: -moz-calc(20px * 3) !important;
-  padding-top: -o-calc(20px * 3) !important;
-  padding-top: calc(20px * 3) !important;
-  padding-bottom: -webkit-calc(20px * 3) !important;
-  padding-bottom: -moz-calc(20px * 3) !important;
-  padding-bottom: -o-calc(20px * 3) !important;
-  padding-bottom: calc(20px * 3) !important; }
+  padding-top: -webkit-calc(18px * 3) !important;
+  padding-top: -moz-calc(18px * 3) !important;
+  padding-top: -o-calc(18px * 3) !important;
+  padding-top: calc(18px * 3) !important;
+  padding-bottom: -webkit-calc(18px * 3) !important;
+  padding-bottom: -moz-calc(18px * 3) !important;
+  padding-bottom: -o-calc(18px * 3) !important;
+  padding-bottom: calc(18px * 3) !important; }
 
 .padding-horizontal-small {
-  padding-left: -webkit-calc(20px * 0.7) !important;
-  padding-left: -moz-calc(20px * 0.7) !important;
-  padding-left: -o-calc(20px * 0.7) !important;
-  padding-left: calc(20px * 0.7) !important;
-  padding-right: -webkit-calc(20px * 0.7) !important;
-  padding-right: -moz-calc(20px * 0.7) !important;
-  padding-right: -o-calc(20px * 0.7) !important;
-  padding-right: calc(20px * 0.7) !important; }
+  padding-left: -webkit-calc(18px * 0.7) !important;
+  padding-left: -moz-calc(18px * 0.7) !important;
+  padding-left: -o-calc(18px * 0.7) !important;
+  padding-left: calc(18px * 0.7) !important;
+  padding-right: -webkit-calc(18px * 0.7) !important;
+  padding-right: -moz-calc(18px * 0.7) !important;
+  padding-right: -o-calc(18px * 0.7) !important;
+  padding-right: calc(18px * 0.7) !important; }
 
 .padding-horizontal-base {
-  padding-left: -webkit-calc(20px * 1) !important;
-  padding-left: -moz-calc(20px * 1) !important;
-  padding-left: -o-calc(20px * 1) !important;
-  padding-left: calc(20px * 1) !important;
-  padding-right: -webkit-calc(20px * 1) !important;
-  padding-right: -moz-calc(20px * 1) !important;
-  padding-right: -o-calc(20px * 1) !important;
-  padding-right: calc(20px * 1) !important; }
+  padding-left: -webkit-calc(18px * 1) !important;
+  padding-left: -moz-calc(18px * 1) !important;
+  padding-left: -o-calc(18px * 1) !important;
+  padding-left: calc(18px * 1) !important;
+  padding-right: -webkit-calc(18px * 1) !important;
+  padding-right: -moz-calc(18px * 1) !important;
+  padding-right: -o-calc(18px * 1) !important;
+  padding-right: calc(18px * 1) !important; }
 
 .padding-horizontal-medium {
-  padding-left: -webkit-calc(20px * 2) !important;
-  padding-left: -moz-calc(20px * 2) !important;
-  padding-left: -o-calc(20px * 2) !important;
-  padding-left: calc(20px * 2) !important;
-  padding-right: -webkit-calc(20px * 2) !important;
-  padding-right: -moz-calc(20px * 2) !important;
-  padding-right: -o-calc(20px * 2) !important;
-  padding-right: calc(20px * 2) !important; }
+  padding-left: -webkit-calc(18px * 2) !important;
+  padding-left: -moz-calc(18px * 2) !important;
+  padding-left: -o-calc(18px * 2) !important;
+  padding-left: calc(18px * 2) !important;
+  padding-right: -webkit-calc(18px * 2) !important;
+  padding-right: -moz-calc(18px * 2) !important;
+  padding-right: -o-calc(18px * 2) !important;
+  padding-right: calc(18px * 2) !important; }
 
 .padding-horizontal-big {
-  padding-left: -webkit-calc(20px * 4) !important;
-  padding-left: -moz-calc(20px * 4) !important;
-  padding-left: -o-calc(20px * 4) !important;
-  padding-left: calc(20px * 4) !important;
-  padding-right: -webkit-calc(20px * 4) !important;
-  padding-right: -moz-calc(20px * 4) !important;
-  padding-right: -o-calc(20px * 4) !important;
-  padding-right: calc(20px * 4) !important; }
+  padding-left: -webkit-calc(18px * 4) !important;
+  padding-left: -moz-calc(18px * 4) !important;
+  padding-left: -o-calc(18px * 4) !important;
+  padding-left: calc(18px * 4) !important;
+  padding-right: -webkit-calc(18px * 4) !important;
+  padding-right: -moz-calc(18px * 4) !important;
+  padding-right: -o-calc(18px * 4) !important;
+  padding-right: calc(18px * 4) !important; }
 
 .padding-horizontal-large {
-  padding-left: -webkit-calc(20px * 3) !important;
-  padding-left: -moz-calc(20px * 3) !important;
-  padding-left: -o-calc(20px * 3) !important;
-  padding-left: calc(20px * 3) !important;
-  padding-right: -webkit-calc(20px * 3) !important;
-  padding-right: -moz-calc(20px * 3) !important;
-  padding-right: -o-calc(20px * 3) !important;
-  padding-right: calc(20px * 3) !important; }
+  padding-left: -webkit-calc(18px * 3) !important;
+  padding-left: -moz-calc(18px * 3) !important;
+  padding-left: -o-calc(18px * 3) !important;
+  padding-left: calc(18px * 3) !important;
+  padding-right: -webkit-calc(18px * 3) !important;
+  padding-right: -moz-calc(18px * 3) !important;
+  padding-right: -o-calc(18px * 3) !important;
+  padding-right: calc(18px * 3) !important; }
 
 .margin-around-small {
-  margin-top: -webkit-calc(20px * 0.7) !important;
-  margin-top: -moz-calc(20px * 0.7) !important;
-  margin-top: -o-calc(20px * 0.7) !important;
-  margin-top: calc(20px * 0.7) !important;
-  margin-right: -webkit-calc(20px * 0.7) !important;
-  margin-right: -moz-calc(20px * 0.7) !important;
-  margin-right: -o-calc(20px * 0.7) !important;
-  margin-right: calc(20px * 0.7) !important;
-  margin-bottom: -webkit-calc(20px * 0.7) !important;
-  margin-bottom: -moz-calc(20px * 0.7) !important;
-  margin-bottom: -o-calc(20px * 0.7) !important;
-  margin-bottom: calc(20px * 0.7) !important;
-  margin-left: -webkit-calc(20px * 0.7) !important;
-  margin-left: -moz-calc(20px * 0.7) !important;
-  margin-left: -o-calc(20px * 0.7) !important;
-  margin-left: calc(20px * 0.7) !important; }
+  margin-top: -webkit-calc(18px * 0.7) !important;
+  margin-top: -moz-calc(18px * 0.7) !important;
+  margin-top: -o-calc(18px * 0.7) !important;
+  margin-top: calc(18px * 0.7) !important;
+  margin-right: -webkit-calc(18px * 0.7) !important;
+  margin-right: -moz-calc(18px * 0.7) !important;
+  margin-right: -o-calc(18px * 0.7) !important;
+  margin-right: calc(18px * 0.7) !important;
+  margin-bottom: -webkit-calc(18px * 0.7) !important;
+  margin-bottom: -moz-calc(18px * 0.7) !important;
+  margin-bottom: -o-calc(18px * 0.7) !important;
+  margin-bottom: calc(18px * 0.7) !important;
+  margin-left: -webkit-calc(18px * 0.7) !important;
+  margin-left: -moz-calc(18px * 0.7) !important;
+  margin-left: -o-calc(18px * 0.7) !important;
+  margin-left: calc(18px * 0.7) !important; }
 
 .margin-around-base {
-  margin-top: -webkit-calc(20px * 1) !important;
-  margin-top: -moz-calc(20px * 1) !important;
-  margin-top: -o-calc(20px * 1) !important;
-  margin-top: calc(20px * 1) !important;
-  margin-right: -webkit-calc(20px * 1) !important;
-  margin-right: -moz-calc(20px * 1) !important;
-  margin-right: -o-calc(20px * 1) !important;
-  margin-right: calc(20px * 1) !important;
-  margin-bottom: -webkit-calc(20px * 1) !important;
-  margin-bottom: -moz-calc(20px * 1) !important;
-  margin-bottom: -o-calc(20px * 1) !important;
-  margin-bottom: calc(20px * 1) !important;
-  margin-left: -webkit-calc(20px * 1) !important;
-  margin-left: -moz-calc(20px * 1) !important;
-  margin-left: -o-calc(20px * 1) !important;
-  margin-left: calc(20px * 1) !important; }
+  margin-top: -webkit-calc(18px * 1) !important;
+  margin-top: -moz-calc(18px * 1) !important;
+  margin-top: -o-calc(18px * 1) !important;
+  margin-top: calc(18px * 1) !important;
+  margin-right: -webkit-calc(18px * 1) !important;
+  margin-right: -moz-calc(18px * 1) !important;
+  margin-right: -o-calc(18px * 1) !important;
+  margin-right: calc(18px * 1) !important;
+  margin-bottom: -webkit-calc(18px * 1) !important;
+  margin-bottom: -moz-calc(18px * 1) !important;
+  margin-bottom: -o-calc(18px * 1) !important;
+  margin-bottom: calc(18px * 1) !important;
+  margin-left: -webkit-calc(18px * 1) !important;
+  margin-left: -moz-calc(18px * 1) !important;
+  margin-left: -o-calc(18px * 1) !important;
+  margin-left: calc(18px * 1) !important; }
 
 .margin-around-medium {
-  margin-top: -webkit-calc(20px * 2) !important;
-  margin-top: -moz-calc(20px * 2) !important;
-  margin-top: -o-calc(20px * 2) !important;
-  margin-top: calc(20px * 2) !important;
-  margin-right: -webkit-calc(20px * 2) !important;
-  margin-right: -moz-calc(20px * 2) !important;
-  margin-right: -o-calc(20px * 2) !important;
-  margin-right: calc(20px * 2) !important;
-  margin-bottom: -webkit-calc(20px * 2) !important;
-  margin-bottom: -moz-calc(20px * 2) !important;
-  margin-bottom: -o-calc(20px * 2) !important;
-  margin-bottom: calc(20px * 2) !important;
-  margin-left: -webkit-calc(20px * 2) !important;
-  margin-left: -moz-calc(20px * 2) !important;
-  margin-left: -o-calc(20px * 2) !important;
-  margin-left: calc(20px * 2) !important; }
+  margin-top: -webkit-calc(18px * 2) !important;
+  margin-top: -moz-calc(18px * 2) !important;
+  margin-top: -o-calc(18px * 2) !important;
+  margin-top: calc(18px * 2) !important;
+  margin-right: -webkit-calc(18px * 2) !important;
+  margin-right: -moz-calc(18px * 2) !important;
+  margin-right: -o-calc(18px * 2) !important;
+  margin-right: calc(18px * 2) !important;
+  margin-bottom: -webkit-calc(18px * 2) !important;
+  margin-bottom: -moz-calc(18px * 2) !important;
+  margin-bottom: -o-calc(18px * 2) !important;
+  margin-bottom: calc(18px * 2) !important;
+  margin-left: -webkit-calc(18px * 2) !important;
+  margin-left: -moz-calc(18px * 2) !important;
+  margin-left: -o-calc(18px * 2) !important;
+  margin-left: calc(18px * 2) !important; }
 
 .margin-around-big {
-  margin-top: -webkit-calc(20px * 4) !important;
-  margin-top: -moz-calc(20px * 4) !important;
-  margin-top: -o-calc(20px * 4) !important;
-  margin-top: calc(20px * 4) !important;
-  margin-right: -webkit-calc(20px * 4) !important;
-  margin-right: -moz-calc(20px * 4) !important;
-  margin-right: -o-calc(20px * 4) !important;
-  margin-right: calc(20px * 4) !important;
-  margin-bottom: -webkit-calc(20px * 4) !important;
-  margin-bottom: -moz-calc(20px * 4) !important;
-  margin-bottom: -o-calc(20px * 4) !important;
-  margin-bottom: calc(20px * 4) !important;
-  margin-left: -webkit-calc(20px * 4) !important;
-  margin-left: -moz-calc(20px * 4) !important;
-  margin-left: -o-calc(20px * 4) !important;
-  margin-left: calc(20px * 4) !important; }
+  margin-top: -webkit-calc(18px * 4) !important;
+  margin-top: -moz-calc(18px * 4) !important;
+  margin-top: -o-calc(18px * 4) !important;
+  margin-top: calc(18px * 4) !important;
+  margin-right: -webkit-calc(18px * 4) !important;
+  margin-right: -moz-calc(18px * 4) !important;
+  margin-right: -o-calc(18px * 4) !important;
+  margin-right: calc(18px * 4) !important;
+  margin-bottom: -webkit-calc(18px * 4) !important;
+  margin-bottom: -moz-calc(18px * 4) !important;
+  margin-bottom: -o-calc(18px * 4) !important;
+  margin-bottom: calc(18px * 4) !important;
+  margin-left: -webkit-calc(18px * 4) !important;
+  margin-left: -moz-calc(18px * 4) !important;
+  margin-left: -o-calc(18px * 4) !important;
+  margin-left: calc(18px * 4) !important; }
 
 .margin-around-large {
-  margin-top: -webkit-calc(20px * 3) !important;
-  margin-top: -moz-calc(20px * 3) !important;
-  margin-top: -o-calc(20px * 3) !important;
-  margin-top: calc(20px * 3) !important;
-  margin-right: -webkit-calc(20px * 3) !important;
-  margin-right: -moz-calc(20px * 3) !important;
-  margin-right: -o-calc(20px * 3) !important;
-  margin-right: calc(20px * 3) !important;
-  margin-bottom: -webkit-calc(20px * 3) !important;
-  margin-bottom: -moz-calc(20px * 3) !important;
-  margin-bottom: -o-calc(20px * 3) !important;
-  margin-bottom: calc(20px * 3) !important;
-  margin-left: -webkit-calc(20px * 3) !important;
-  margin-left: -moz-calc(20px * 3) !important;
-  margin-left: -o-calc(20px * 3) !important;
-  margin-left: calc(20px * 3) !important; }
+  margin-top: -webkit-calc(18px * 3) !important;
+  margin-top: -moz-calc(18px * 3) !important;
+  margin-top: -o-calc(18px * 3) !important;
+  margin-top: calc(18px * 3) !important;
+  margin-right: -webkit-calc(18px * 3) !important;
+  margin-right: -moz-calc(18px * 3) !important;
+  margin-right: -o-calc(18px * 3) !important;
+  margin-right: calc(18px * 3) !important;
+  margin-bottom: -webkit-calc(18px * 3) !important;
+  margin-bottom: -moz-calc(18px * 3) !important;
+  margin-bottom: -o-calc(18px * 3) !important;
+  margin-bottom: calc(18px * 3) !important;
+  margin-left: -webkit-calc(18px * 3) !important;
+  margin-left: -moz-calc(18px * 3) !important;
+  margin-left: -o-calc(18px * 3) !important;
+  margin-left: calc(18px * 3) !important; }
 
 .margin-vertical-small {
-  margin-top: -webkit-calc(20px * 0.7) !important;
-  margin-top: -moz-calc(20px * 0.7) !important;
-  margin-top: -o-calc(20px * 0.7) !important;
-  margin-top: calc(20px * 0.7) !important;
-  margin-bottom: -webkit-calc(20px * 0.7) !important;
-  margin-bottom: -moz-calc(20px * 0.7) !important;
-  margin-bottom: -o-calc(20px * 0.7) !important;
-  margin-bottom: calc(20px * 0.7) !important; }
+  margin-top: -webkit-calc(18px * 0.7) !important;
+  margin-top: -moz-calc(18px * 0.7) !important;
+  margin-top: -o-calc(18px * 0.7) !important;
+  margin-top: calc(18px * 0.7) !important;
+  margin-bottom: -webkit-calc(18px * 0.7) !important;
+  margin-bottom: -moz-calc(18px * 0.7) !important;
+  margin-bottom: -o-calc(18px * 0.7) !important;
+  margin-bottom: calc(18px * 0.7) !important; }
 
 .margin-vertical-base {
-  margin-top: -webkit-calc(20px * 1) !important;
-  margin-top: -moz-calc(20px * 1) !important;
-  margin-top: -o-calc(20px * 1) !important;
-  margin-top: calc(20px * 1) !important;
-  margin-bottom: -webkit-calc(20px * 1) !important;
-  margin-bottom: -moz-calc(20px * 1) !important;
-  margin-bottom: -o-calc(20px * 1) !important;
-  margin-bottom: calc(20px * 1) !important; }
+  margin-top: -webkit-calc(18px * 1) !important;
+  margin-top: -moz-calc(18px * 1) !important;
+  margin-top: -o-calc(18px * 1) !important;
+  margin-top: calc(18px * 1) !important;
+  margin-bottom: -webkit-calc(18px * 1) !important;
+  margin-bottom: -moz-calc(18px * 1) !important;
+  margin-bottom: -o-calc(18px * 1) !important;
+  margin-bottom: calc(18px * 1) !important; }
 
 .margin-vertical-medium {
-  margin-top: -webkit-calc(20px * 2) !important;
-  margin-top: -moz-calc(20px * 2) !important;
-  margin-top: -o-calc(20px * 2) !important;
-  margin-top: calc(20px * 2) !important;
-  margin-bottom: -webkit-calc(20px * 2) !important;
-  margin-bottom: -moz-calc(20px * 2) !important;
-  margin-bottom: -o-calc(20px * 2) !important;
-  margin-bottom: calc(20px * 2) !important; }
+  margin-top: -webkit-calc(18px * 2) !important;
+  margin-top: -moz-calc(18px * 2) !important;
+  margin-top: -o-calc(18px * 2) !important;
+  margin-top: calc(18px * 2) !important;
+  margin-bottom: -webkit-calc(18px * 2) !important;
+  margin-bottom: -moz-calc(18px * 2) !important;
+  margin-bottom: -o-calc(18px * 2) !important;
+  margin-bottom: calc(18px * 2) !important; }
 
 .margin-vertical-big {
-  margin-top: -webkit-calc(20px * 4) !important;
-  margin-top: -moz-calc(20px * 4) !important;
-  margin-top: -o-calc(20px * 4) !important;
-  margin-top: calc(20px * 4) !important;
-  margin-bottom: -webkit-calc(20px * 4) !important;
-  margin-bottom: -moz-calc(20px * 4) !important;
-  margin-bottom: -o-calc(20px * 4) !important;
-  margin-bottom: calc(20px * 4) !important; }
+  margin-top: -webkit-calc(18px * 4) !important;
+  margin-top: -moz-calc(18px * 4) !important;
+  margin-top: -o-calc(18px * 4) !important;
+  margin-top: calc(18px * 4) !important;
+  margin-bottom: -webkit-calc(18px * 4) !important;
+  margin-bottom: -moz-calc(18px * 4) !important;
+  margin-bottom: -o-calc(18px * 4) !important;
+  margin-bottom: calc(18px * 4) !important; }
 
 .margin-vertical-large {
-  margin-top: -webkit-calc(20px * 3) !important;
-  margin-top: -moz-calc(20px * 3) !important;
-  margin-top: -o-calc(20px * 3) !important;
-  margin-top: calc(20px * 3) !important;
-  margin-bottom: -webkit-calc(20px * 3) !important;
-  margin-bottom: -moz-calc(20px * 3) !important;
-  margin-bottom: -o-calc(20px * 3) !important;
-  margin-bottom: calc(20px * 3) !important; }
+  margin-top: -webkit-calc(18px * 3) !important;
+  margin-top: -moz-calc(18px * 3) !important;
+  margin-top: -o-calc(18px * 3) !important;
+  margin-top: calc(18px * 3) !important;
+  margin-bottom: -webkit-calc(18px * 3) !important;
+  margin-bottom: -moz-calc(18px * 3) !important;
+  margin-bottom: -o-calc(18px * 3) !important;
+  margin-bottom: calc(18px * 3) !important; }
 
 .margin-horizontal-small {
-  margin-left: -webkit-calc(20px * 0.7) !important;
-  margin-left: -moz-calc(20px * 0.7) !important;
-  margin-left: -o-calc(20px * 0.7) !important;
-  margin-left: calc(20px * 0.7) !important;
-  margin-right: -webkit-calc(20px * 0.7) !important;
-  margin-right: -moz-calc(20px * 0.7) !important;
-  margin-right: -o-calc(20px * 0.7) !important;
-  margin-right: calc(20px * 0.7) !important; }
+  margin-left: -webkit-calc(18px * 0.7) !important;
+  margin-left: -moz-calc(18px * 0.7) !important;
+  margin-left: -o-calc(18px * 0.7) !important;
+  margin-left: calc(18px * 0.7) !important;
+  margin-right: -webkit-calc(18px * 0.7) !important;
+  margin-right: -moz-calc(18px * 0.7) !important;
+  margin-right: -o-calc(18px * 0.7) !important;
+  margin-right: calc(18px * 0.7) !important; }
 
 .margin-horizontal-base {
-  margin-left: -webkit-calc(20px * 1) !important;
-  margin-left: -moz-calc(20px * 1) !important;
-  margin-left: -o-calc(20px * 1) !important;
-  margin-left: calc(20px * 1) !important;
-  margin-right: -webkit-calc(20px * 1) !important;
-  margin-right: -moz-calc(20px * 1) !important;
-  margin-right: -o-calc(20px * 1) !important;
-  margin-right: calc(20px * 1) !important; }
+  margin-left: -webkit-calc(18px * 1) !important;
+  margin-left: -moz-calc(18px * 1) !important;
+  margin-left: -o-calc(18px * 1) !important;
+  margin-left: calc(18px * 1) !important;
+  margin-right: -webkit-calc(18px * 1) !important;
+  margin-right: -moz-calc(18px * 1) !important;
+  margin-right: -o-calc(18px * 1) !important;
+  margin-right: calc(18px * 1) !important; }
 
 .margin-horizontal-medium {
-  margin-left: -webkit-calc(20px * 2) !important;
-  margin-left: -moz-calc(20px * 2) !important;
-  margin-left: -o-calc(20px * 2) !important;
-  margin-left: calc(20px * 2) !important;
-  margin-right: -webkit-calc(20px * 2) !important;
-  margin-right: -moz-calc(20px * 2) !important;
-  margin-right: -o-calc(20px * 2) !important;
-  margin-right: calc(20px * 2) !important; }
+  margin-left: -webkit-calc(18px * 2) !important;
+  margin-left: -moz-calc(18px * 2) !important;
+  margin-left: -o-calc(18px * 2) !important;
+  margin-left: calc(18px * 2) !important;
+  margin-right: -webkit-calc(18px * 2) !important;
+  margin-right: -moz-calc(18px * 2) !important;
+  margin-right: -o-calc(18px * 2) !important;
+  margin-right: calc(18px * 2) !important; }
 
 .margin-horizontal-big {
-  margin-left: -webkit-calc(20px * 4) !important;
-  margin-left: -moz-calc(20px * 4) !important;
-  margin-left: -o-calc(20px * 4) !important;
-  margin-left: calc(20px * 4) !important;
-  margin-right: -webkit-calc(20px * 4) !important;
-  margin-right: -moz-calc(20px * 4) !important;
-  margin-right: -o-calc(20px * 4) !important;
-  margin-right: calc(20px * 4) !important; }
+  margin-left: -webkit-calc(18px * 4) !important;
+  margin-left: -moz-calc(18px * 4) !important;
+  margin-left: -o-calc(18px * 4) !important;
+  margin-left: calc(18px * 4) !important;
+  margin-right: -webkit-calc(18px * 4) !important;
+  margin-right: -moz-calc(18px * 4) !important;
+  margin-right: -o-calc(18px * 4) !important;
+  margin-right: calc(18px * 4) !important; }
 
 .margin-horizontal-large {
-  margin-left: -webkit-calc(20px * 3) !important;
-  margin-left: -moz-calc(20px * 3) !important;
-  margin-left: -o-calc(20px * 3) !important;
-  margin-left: calc(20px * 3) !important;
-  margin-right: -webkit-calc(20px * 3) !important;
-  margin-right: -moz-calc(20px * 3) !important;
-  margin-right: -o-calc(20px * 3) !important;
-  margin-right: calc(20px * 3) !important; }
+  margin-left: -webkit-calc(18px * 3) !important;
+  margin-left: -moz-calc(18px * 3) !important;
+  margin-left: -o-calc(18px * 3) !important;
+  margin-left: calc(18px * 3) !important;
+  margin-right: -webkit-calc(18px * 3) !important;
+  margin-right: -moz-calc(18px * 3) !important;
+  margin-right: -o-calc(18px * 3) !important;
+  margin-right: calc(18px * 3) !important; }
 
 .background-success {
   background-color: #fd5559; }
@@ -595,6 +583,34 @@ h5 {
 
 .double-darken-background {
   background-color: #e6e6e6 !important; }
+
+.hover-success:hover {
+  transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  color: #fd5559; }
+
+.hover-warning:hover {
+  transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  color: #4abfb4; }
+
+.hover-info:hover {
+  transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  color: #5f81a3; }
+
+.hover-default:hover {
+  transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  color: #bfbfbf; }
 
 .animate-show-slow {
   -webkit-animation-name: showSlow;
@@ -2307,7 +2323,7 @@ h5 {
   cursor: pointer;
   display: inline-block; }
   .dropdown-menu-success i, .dropdown-menu-warning i, .dropdown-menu-info i, .dropdown-menu-default i {
-    padding: 0 20px 0 0; }
+    padding: 0 18px 0 0; }
   .dropdown-menu-success > a:after, .dropdown-menu-warning > a:after, .dropdown-menu-info > a:after, .dropdown-menu-default > a:after {
     content: '';
     width: 0;
@@ -2328,7 +2344,7 @@ h5 {
     left: -50%;
     white-space: nowrap;
     border-radius: 4px;
-    padding: 0 0 20px;
+    padding: 0 0 18px;
     color: #fbfbfb; }
     .dropdown-menu-success ul li, .dropdown-menu-warning ul li, .dropdown-menu-info ul li, .dropdown-menu-default ul li {
       margin: 0;
@@ -2341,7 +2357,7 @@ h5 {
       .dropdown-menu-success ul li:active, .dropdown-menu-warning ul li:active, .dropdown-menu-info ul li:active, .dropdown-menu-default ul li:active {
         transition: all .2s ease; }
       .dropdown-menu-success ul li:not(.item-header):first-child, .dropdown-menu-warning ul li:not(.item-header):first-child, .dropdown-menu-info ul li:not(.item-header):first-child, .dropdown-menu-default ul li:not(.item-header):first-child, .dropdown-menu-success ul li.item-header:first-child + li, .dropdown-menu-warning ul li.item-header:first-child + li, .dropdown-menu-info ul li.item-header:first-child + li, .dropdown-menu-default ul li.item-header:first-child + li {
-        margin-top: 20px; }
+        margin-top: 18px; }
       .dropdown-menu-success ul li a:hover, .dropdown-menu-warning ul li a:hover, .dropdown-menu-info ul li a:hover, .dropdown-menu-default ul li a:hover {
         border: 0; }
   .active.dropdown-menu-success ul, .active.dropdown-menu-warning ul, .active.dropdown-menu-info ul, .active.dropdown-menu-default ul {
@@ -2387,7 +2403,7 @@ h5 {
   border-left: 0.43333em solid #febabb; }
 .dropdown-menu-success ul {
   background-color: #fd5559;
-  border-bottom: 0px solid #fd3c40; }
+  border-bottom: 3px solid #fd3c40; }
   .dropdown-menu-success ul li:hover {
     background-color: #fd3c40; }
   .dropdown-menu-success ul li:active {
@@ -2402,7 +2418,7 @@ h5 {
   border-left: 0.43333em solid #95dad3; }
 .dropdown-menu-warning ul {
   background-color: #4abfb4;
-  border-bottom: 0px solid #3fb1a6; }
+  border-bottom: 3px solid #3fb1a6; }
   .dropdown-menu-warning ul li:hover {
     background-color: #3fb1a6; }
   .dropdown-menu-warning ul li:active {
@@ -2417,7 +2433,7 @@ h5 {
   border-left: 0.43333em solid #a0b4c8; }
 .dropdown-menu-info ul {
   background-color: #5f81a3;
-  border-bottom: 0px solid #557494; }
+  border-bottom: 3px solid #557494; }
   .dropdown-menu-info ul li:hover {
     background-color: #557494; }
   .dropdown-menu-info ul li:active {
@@ -2432,7 +2448,7 @@ h5 {
   border-left: 0.43333em solid #f2f2f2; }
 .dropdown-menu-default ul {
   background-color: #bfbfbf;
-  border-bottom: 0px solid #b3b3b3; }
+  border-bottom: 3px solid #b3b3b3; }
   .dropdown-menu-default ul li:hover {
     background-color: #b3b3b3; }
   .dropdown-menu-default ul li:active {
@@ -2444,9 +2460,9 @@ h5 {
     pointer-events: none; }
 
 .dropdown-small, .dropdown-medium, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default {
-  font-size: 20px; }
+  font-size: 18px; }
   .dropdown-small div, .dropdown-medium div, .dropdown-success div, .dropdown-warning div, .dropdown-info div, .dropdown-default div {
-    padding: 16.66667px 120px 16.66667px 16.66667px; }
+    padding: 15px 108px 15px 15px; }
   .dropdown-small ul, .dropdown-medium ul, .dropdown-success ul, .dropdown-warning ul, .dropdown-info ul, .dropdown-default ul {
     width: 100%;
     padding: .5em 0;
@@ -2460,7 +2476,7 @@ h5 {
     white-space: nowrap;
     pointer-events: none; }
     .dropdown-small ul i, .dropdown-medium ul i, .dropdown-success ul i, .dropdown-warning ul i, .dropdown-info ul i, .dropdown-default ul i {
-      padding: 0 20px 0 0; }
+      padding: 0 18px 0 0; }
     .dropdown-small ul a, .dropdown-medium ul a, .dropdown-success ul a, .dropdown-warning ul a, .dropdown-info ul a, .dropdown-default ul a {
       text-decoration: none;
       color: inherit;
@@ -2512,22 +2528,22 @@ h5 {
       pointer-events: auto; }
 
 .dropdown-small {
-  font-size: 13.33333px; }
+  font-size: 12px; }
   .dropdown-small div {
-    padding: 4px 100px 4px 10px; }
+    padding: 3.6px 90px 3.6px 9px; }
 
 .dropdown-medium {
-  font-size: 16.66667px; }
+  font-size: 15px; }
   .dropdown-medium div {
-    padding: 6.66667px 80px 6.66667px 6.66667px; }
+    padding: 6px 72px 6px 6px; }
 
 .dropdown-success {
-  border-bottom: 0px solid #fd3c40;
+  border-bottom: 3px solid #fd3c40;
   background-color: #fd5559;
   color: #fbfbfb; }
   .dropdown-success ul {
     background-color: #fd5559;
-    border-bottom: 0px solid #fd3c40; }
+    border-bottom: 3px solid #fd3c40; }
     .dropdown-success ul li:hover {
       background-color: #fd3c40; }
     .dropdown-success ul li:active {
@@ -2538,12 +2554,12 @@ h5 {
     background-color: #fe878a; }
 
 .dropdown-warning {
-  border-bottom: 0px solid #3fb1a6;
+  border-bottom: 3px solid #3fb1a6;
   background-color: #4abfb4;
   color: #fbfbfb; }
   .dropdown-warning ul {
     background-color: #4abfb4;
-    border-bottom: 0px solid #3fb1a6; }
+    border-bottom: 3px solid #3fb1a6; }
     .dropdown-warning ul li:hover {
       background-color: #3fb1a6; }
     .dropdown-warning ul li:active {
@@ -2554,12 +2570,12 @@ h5 {
     background-color: #70ccc4; }
 
 .dropdown-info {
-  border-bottom: 0px solid #557494;
+  border-bottom: 3px solid #557494;
   background-color: #5f81a3;
   color: #fbfbfb; }
   .dropdown-info ul {
     background-color: #5f81a3;
-    border-bottom: 0px solid #557494; }
+    border-bottom: 3px solid #557494; }
     .dropdown-info ul li:hover {
       background-color: #557494; }
     .dropdown-info ul li:active {
@@ -2570,12 +2586,12 @@ h5 {
     background-color: #7f9bb6; }
 
 .dropdown-default {
-  border-bottom: 0px solid #b3b3b3;
+  border-bottom: 3px solid #b3b3b3;
   background-color: #bfbfbf;
   color: #fbfbfb; }
   .dropdown-default ul {
     background-color: #bfbfbf;
-    border-bottom: 0px solid #b3b3b3; }
+    border-bottom: 3px solid #b3b3b3; }
     .dropdown-default ul li:hover {
       background-color: #b3b3b3; }
     .dropdown-default ul li:active {
@@ -2588,23 +2604,23 @@ h5 {
 .button-medium, .button-small, .button-success, .button-tag-success, .button-warning, .button-tag-warning, .button-info, .button-tag-info, .button-default, .button-tag-default {
   text-transform: uppercase;
   transition: all .3s ease;
-  font-size: 20px;
-  padding: 16.66667px; }
+  font-size: 18px;
+  padding: 15px; }
   .button-medium:hover, .button-small:hover, .button-success:hover, .button-tag-success:hover, .button-warning:hover, .button-tag-warning:hover, .button-info:hover, .button-tag-info:hover, .button-default:hover, .button-tag-default:hover {
     transition: all .3s ease; }
   .button-medium:active, .button-small:active, .button-success:active, .button-tag-success:active, .button-warning:active, .button-tag-warning:active, .button-info:active, .button-tag-info:active, .button-default:active, .button-tag-default:active {
     top: 2px; }
 
 .button-medium {
-  font-size: 16.66667px;
-  padding: 10px; }
+  font-size: 15px;
+  padding: 9px; }
 
 .button-small {
-  font-size: 11.76471px;
-  padding: 6.66667px; }
+  font-size: 10.58824px;
+  padding: 6px; }
 
 .button-success {
-  border-bottom: 0px solid #fd3c40;
+  border-bottom: 3px solid #fd3c40;
   background-color: #fd5559;
   color: #fbfbfb; }
   .button-success:hover {
@@ -2624,7 +2640,7 @@ h5 {
     color: #fff; }
 
 .button-warning {
-  border-bottom: 0px solid #3fb1a6;
+  border-bottom: 3px solid #3fb1a6;
   background-color: #4abfb4;
   color: #fbfbfb; }
   .button-warning:hover {
@@ -2644,7 +2660,7 @@ h5 {
     color: #fff; }
 
 .button-info {
-  border-bottom: 0px solid #557494;
+  border-bottom: 3px solid #557494;
   background-color: #5f81a3;
   color: #fbfbfb; }
   .button-info:hover {
@@ -2664,7 +2680,7 @@ h5 {
     color: #fff; }
 
 .button-default {
-  border-bottom: 0px solid #b3b3b3;
+  border-bottom: 3px solid #b3b3b3;
   background-color: #bfbfbf;
   color: #fbfbfb; }
   .button-default:hover {
@@ -2716,8 +2732,8 @@ h5 {
   color: #bababa;
   background-color: #ededed;
   cursor: text;
-  font-size: 20px;
-  padding: 16.66667px; }
+  font-size: 18px;
+  padding: 15px; }
   .text-field:hover {
     transition: all .3s ease;
     background-color: #efefef; }
@@ -2767,17 +2783,17 @@ label.form-label {
   cursor: pointer;
   position: relative;
   top: .5em;
-  left: 50px; }
+  left: 45px; }
   label.form-label:before {
     content: '';
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     background-color: #bfbfbf;
     border: 10px solid #bfbfbf;
     border-radius: 4px;
-    top: -10px;
-    left: -60px; }
+    top: -9px;
+    left: -54px; }
   label.form-label:hover:before {
     background-color: #bfbfbf;
     border: 10px solid #e6e6e6; }
@@ -2979,7 +2995,7 @@ label.form-label {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    margin: 0 40px; }
+    margin: 0 36px; }
     @media all and (max-width: 600px) {
       .menu li, .menu-vertical li, .menu-vertical-spread li, .menu-vertical-tight li, .menu-aside li {
         transition: all 0.3s ease;
@@ -2987,7 +3003,7 @@ label.form-label {
         -o-transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
         display: block;
-        margin: 40px 0; } }
+        margin: 36px 0; } }
     .menu li a, .menu-vertical li a, .menu-vertical-spread li a, .menu-vertical-tight li a, .menu-aside li a {
       text-decoration: none;
       color: inherit;
@@ -3000,10 +3016,10 @@ label.form-label {
   margin: 0; }
 
 .menu-vertical-spread li {
-  padding: 20px 0 20px 0; }
+  padding: 18px 0 18px 0; }
 
 .menu-vertical-tight li {
-  padding: 10px 20px 10px 20px; }
+  padding: 9px 18px 9px 18px; }
 
 .menu-icon-success, .menu-icon-warning, .menu-icon-info, .menu-icon-default {
   transition: all 0.3s ease;
@@ -3091,16 +3107,16 @@ label.form-label {
     display: block; }
 
 li.item-success {
-  border-left: 0px solid #fd5559; }
+  border-left: 6px solid #fd5559; }
 
 li.item-warning {
-  border-left: 0px solid #4abfb4; }
+  border-left: 6px solid #4abfb4; }
 
 li.item-info {
-  border-left: 0px solid #5f81a3; }
+  border-left: 6px solid #5f81a3; }
 
 li.item-default {
-  border-left: 0px solid #bfbfbf; }
+  border-left: 6px solid #bfbfbf; }
 
 li.item-no-hover {
   cursor: default; }
@@ -3311,7 +3327,7 @@ li.item-no-hover {
   .tabs label.tab-label {
     cursor: pointer;
     display: inline-block;
-    padding: 20px;
+    padding: 18px;
     border-radius: 0; }
     .tabs label.tab-label:first-of-type {
       border-top-left-radius: 4px; }
@@ -3357,24 +3373,24 @@ table {
   table thead {
     background-color: #a1a1a1; }
     table thead th {
-      font-family: "PT Sans";
-      font-weight: 700; }
+      font-family: "Open Sans";
+      font-weight: 600; }
     table thead th:first-child {
       border-top-left-radius: 4px; }
     table thead th:last-child {
       border-top-right-radius: 4px; }
   table td,
   table th {
-    padding: 20px; }
+    padding: 18px; }
   table tbody tr:nth-child(odd) {
     background-color: #ababab; }
   table tbody tr:nth-child(even) {
     background-color: #a8a8a8; }
   table tbody tr:last-child > td:first-child {
     border-bottom-left-radius: 4px;
-    border-bottom: 0px solid #b3b3b3; }
+    border-bottom: 3px solid #b3b3b3; }
   table tbody tr:last-child > td {
-    border-bottom: 0px solid #b3b3b3; }
+    border-bottom: 3px solid #b3b3b3; }
   table tbody tr:last-child > td:last-child {
     border-bottom-right-radius: 4px; }
 
@@ -3425,7 +3441,7 @@ table {
     content: attr(title);
     position: absolute;
     white-space: nowrap;
-    padding: 20px;
+    padding: 18px;
     border-radius: 4px; }
 
 .tooltip-success:before {
@@ -3452,6 +3468,26 @@ table {
   top: -50%;
   left: 120%; }
 
+.alert-success {
+  background-color: rgba(253, 85, 89, 0.2);
+  border-left: 2px solid #fd5559;
+  padding: 18px; }
+
+.alert-warning {
+  background-color: rgba(74, 191, 180, 0.2);
+  border-left: 2px solid #4abfb4;
+  padding: 18px; }
+
+.alert-info {
+  background-color: rgba(95, 129, 163, 0.2);
+  border-left: 2px solid #5f81a3;
+  padding: 18px; }
+
+.alert-default {
+  background-color: rgba(191, 191, 191, 0.2);
+  border-left: 2px solid #bfbfbf;
+  padding: 18px; }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -3460,10 +3496,10 @@ table {
 body,
 html {
   background: white;
-  font-family: "PT Sans";
+  font-family: "Open Sans";
   font-weight: 400;
   color: #818181;
-  font-size: 20px; }
+  font-size: 18px; }
   body.hidden,
   html.hidden {
     overflow-x: hidden; }

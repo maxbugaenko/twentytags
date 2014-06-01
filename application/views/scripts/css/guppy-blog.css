@@ -1,18 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
-@import url(http://fonts.googleapis.com/css?family=Exo+2:400,100&subset=latin,cyrillic);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
-@import url(http://fonts.googleapis.com/css?family=Orienta);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic);
-/*$background-color: #2a7ab0;
-$controls-depth: 4px;
-$controls-text-color: #ecf0f1;
-$controls-border-radius: 7px;
-$controls-default-color: lighten($background-color, 10);
-$success: #c5bf14;
-$warning: #ca5656;
-$info: #08bf55;
-$text-color: #e3ecf2;*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic);
 .highlight {
   color: #818181;
   font-family: "Source Code Pro";
@@ -183,8 +170,8 @@ $text-color: #e3ecf2;*/
   color: #bababa;
   background-color: #ededed;
   cursor: text;
-  font-size: 20px;
-  padding: 16.66667px; }
+  font-size: 18px;
+  padding: 15px; }
   .text-field:hover, .search-bar:hover {
     transition: all .3s ease;
     background-color: #efefef; }
@@ -204,10 +191,6 @@ $text-color: #e3ecf2;*/
 .code {
   font-family: "Source Code Pro";
   font-weight: 300; }
-
-.exo {
-  font-family: "Exo 2";
-  font-weight: 400; }
 
 .bold {
   font-weight: 700; }

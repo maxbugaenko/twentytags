@@ -1,12 +1,9 @@
 //@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=latin,cyrillic);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
-@import url(http://fonts.googleapis.com/css?family=Orienta);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic);
 
-$main-font: "PT Sans";
-$h-font: "PT Sans";
-$base-font-size: 20px;
+$main-font: "Open Sans";
+$h-font: "Open Sans";
+$base-font-size: 18px;
 
 $switch-orientation-point-medium: "1100px";
 $switch-orientation-point-mobile: "600px";
@@ -18,7 +15,7 @@ $switch-orientation-point-mobile: "600px";
 
 @mixin h-font() {
   font-family: $h-font;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 // dark blue theme
@@ -47,7 +44,7 @@ $text-color: #ecf0f1;
 // twentytags theme
 $menu-aside-width: 280px;
 $background-color: #fff;
-$controls-depth: 0px;
+$controls-depth: 3px;
 $controls-text-color: #fbfbfb;
 $controls-border-radius: 4px;
 $controls-default-color: darken($background-color, 25);
@@ -56,15 +53,3 @@ $success: #fd5559;
 $warning: #4abfb4;
 $info: lighten(#394e63, 20);
 $text-color: lighten(#4e4e4e, 20);
-
-
-// ukrainian theme
-/*$background-color: #2a7ab0;
-$controls-depth: 4px;
-$controls-text-color: #ecf0f1;
-$controls-border-radius: 7px;
-$controls-default-color: lighten($background-color, 10);
-$success: #c5bf14;
-$warning: #ca5656;
-$info: #08bf55;
-$text-color: #e3ecf2;*/
