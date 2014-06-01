@@ -46,7 +46,7 @@ class IndexController extends FaZend_Controller_Action {
         $this->view->alerts = Model_Alert::retrieveByUser(Model_User::me(), 0);
         $this->view->mainTag = "News feed";
         if (count($this->view->alerts) == 0) {
-            $this->redirect("empty");
+            $this->redirect("emptyfeed");
         }
         //FaZend_Paginator::addPaginator($alerts, $this->view, $this->_getParamOrFalse('page'));
         //$this->view->paginator->setItemCountPerPage(10);
@@ -132,6 +132,17 @@ class IndexController extends FaZend_Controller_Action {
             $this->redirect("browse");
         }
     }
+
+    /**
+     * Empty profile page
+     * @return void
+     */
+    public function emptyfeedAction() {
+        if (!Model_User::isLoggedIn()) {
+            $this->redirect("browse");
+        }
+    }
+
     /**
      * Empty profile page
      * @return void

@@ -1,38 +1,43 @@
 <?$this->headTitle("TwentyTags - Регистрация")?>
-<? if ($this->mode == "addtag"):?>
-    <p class="medium lighten-text">Чтобы добавить тег, нужно войти</p>
-<?endif?>
-<h2 class="info">Регистрация или вход</h2>
-<p class="lighten-text">
-    Для регистрации просто придумайте ник. Для входа введите его. Потом нажмите <span class="warning code">Enter</span>
+<div class="container padding-around-medium">
+    <? if ($this->mode == "addtag"):?>
+        <p class="alert-success margin-vertical-base"><i class="icon-lock-open"></i> Чтобы добавить тег, нужно войти</p>
+    <?endif?>
+<h2 class="info">Регистрация и вход</h2>
+<p class="margin-vertical-base lighten-text">
+    Зарегистрируйтесь или войдите, используя свои данные
 </p>
 <div class="button-iconed">
     <i class="icon-user lighten-text"></i>
-    <input type="text" autocomplete="off" id="nick-value" class="text-field f-span6" placeholder="Никнейм">
+    <input type="text" autocomplete="off" id="nick-value" class="text-field f-span12" placeholder="Никнейм">
 </div>
+<div class="button-iconed">
+    <i class="icon-key-1 lighten-text"></i>
+    <input type="text" autocomplete="off" id="password-value" class="text-field f-span12" placeholder="Пароль">
+</div>
+<button id="submit-button" class="button-info f-span7">Подтвердить</button>
 <p id="error-message" class="lighten-success">
 </p>
+</div>
 <script>
     $(document).ready(function() {
-        $("#nick-value").keypress(function(event) {
-            if (event.which == 13) {
-                $.post(
-                    "<?=$this->url(array('controller'=>'index', 'action'=>'registeruser'), 'default', true)?>",
-                    {
-                        'nickname': $("#nick-value").val(),
-                        'mode': '<?=$this->mode?>'
-                    },
-                    function(data) {
-                        if (data == "OK") {
-                            location.href = "following";
-                        } else if (data == "ADDTAG") {
-                            location.href = "<?=$this->url(array(), 'addtag', true)?>";
-                        } else {
-                            $("#error-message").html(data);
-                        }
+        $("#submit-button").click(function(event) {
+            $.post(
+                "<?=$this->url(array('controller'=>'index', 'action'=>'registeruser'), 'default', true)?>",
+                {
+                    'nickname': $("#nick-value").val(),
+                    'mode': '<?=$this->mode?>'
+                },
+                function(data) {
+                    if (data == "OK") {
+                        location.href = "following";
+                    } else if (data == "ADDTAG") {
+                        location.href = "<?=$this->url(array(), 'addtag', true)?>";
+                    } else {
+                        $("#error-message").html(data);
                     }
-                )
-            }
+                }
+            )
         });
     })
 </script>

@@ -1,5 +1,6 @@
 <?$this->headTitle("TwentyTags - Добавьте тег")?>
-    <h2 class="info">добавьте тег, <?=Model_User::me()->nickname?></h2>
+<div class="container padding-around-medium">
+    <h2 class="info capitalize">добавьте тег, <?=Model_User::me()->nickname?></h2>
     <p class="lighten-text">
         Добавьте тег, по которому Вы хотите получать новости
     </p>
@@ -13,6 +14,7 @@
         После того, как Вы добавите тег, мы начнем получать по нему новости. Они будут появляться в разделе <span class="warning">Новости</span>. Также
         этот тег будет доступен любому пользователю нашего ресурса
     </p>
+</div>
 
 <script>
     $(document).ready(function() {
