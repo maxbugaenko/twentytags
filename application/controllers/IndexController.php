@@ -263,7 +263,7 @@ class IndexController extends FaZend_Controller_Action {
             $saved->save();
             echo "OK";
         } else {
-           echo "Your tag is empty";
+           echo "Введите какой нибудь тег";
         }
     }
 
