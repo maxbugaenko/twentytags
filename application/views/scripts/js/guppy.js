@@ -60,7 +60,7 @@
         $(this).click(function(){
             $("#overlay").toggleClass("active");
             $(".page-container").toggleClass("page-container-slide-right");
-            $("[class^=menu-icon]").toggleClass("menu-icon-slide-right");
+            $("[class^=menu-icon], .menu-mobile").toggleClass("menu-slide-right");
             $(".menu-aside").toggleClass("active");
             if ($(".menu-aside").hasClass("active")) {
                 $(".menu-aside").css({left: 0});
@@ -75,7 +75,7 @@
         $(this).click(function() {
             $("#overlay").removeClass("active");
             $(".modal-window").removeClass("active");
-            $("[class^=menu-icon]").removeClass("menu-icon-slide-right");
+            $("[class^=menu-icon], .menu-mobile").removeClass("menu-slide-right");
             $(".menu-aside").removeClass("active");
             $(".menu-aside").css({left: -$(".menu-aside").width()});
             $(".page-container").removeClass("page-container-slide-right");

@@ -3047,7 +3047,7 @@ label.form-label {
       text-decoration: none;
       color: inherit;
       border: 0; }
-  .menu-icon-slide-right.menu-icon-success, .menu-icon-slide-right.menu-icon-warning, .menu-icon-slide-right.menu-icon-info, .menu-icon-slide-right.menu-icon-default {
+  .menu-slide-right.menu-icon-success, .menu-slide-right.menu-icon-warning, .menu-slide-right.menu-icon-info, .menu-slide-right.menu-icon-default {
     transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -3139,7 +3139,7 @@ li.item-no-hover {
     -webkit-transition: all 0.2s ease;
     left: 220px; }
 
-.mobile-menu {
+.menu-mobile {
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -3149,6 +3149,12 @@ li.item-no-hover {
   z-index: 1000010;
   top: 0;
   left: 0; }
+  .menu-mobile.menu-slide-right {
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    left: 220px; }
 
 .tabs {
   margin: 0 auto;
