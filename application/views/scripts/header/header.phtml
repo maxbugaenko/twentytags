@@ -19,19 +19,19 @@ $facebook = new Facebook($config);
         <?$followingUrl = $this->url(array(), "following", true);?>
         <?$addTagUrl = $this->url(array(), "addtag", true);?>
         <?$feedUrl = $this->url(array(), "feed", true);?>
-        <li class="item-no-hover padding-around-small controls-text-color center">
+        <li class="item-no-hover padding-around-small light center">
             <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>
             <span class="small">разделы</span>
         </li>
-        <li class="item-no-hover padding-around-small controls-text-color center">
-            <i onclick="location.href='<?=$feedUrl?>'" class="icon-cw medium"></i><br/>
+        <li class="item-no-hover padding-around-small light center">
+            <i onclick="location.href='<?=$feedUrl?>'" class="light icon-cw medium"></i><br/>
             <span class="small">новости</span>
         </li>
-        <li class="item-no-hover padding-around-small controls-text-color center">
-            <i onclick="location.href='<?=$followingUrl?>'" class="icon-vcard medium"></i><br/>
+        <li class="item-no-hover padding-around-small light center">
+            <i onclick="location.href='<?=$followingUrl?>'" class="icon-tags medium"></i><br/>
             <span class="small">мои теги</span>
         </li>
-        <li class="item-no-hover padding-around-small controls-text-color center">
+        <li class="item-no-hover padding-around-small light center">
             <i onclick="location.href='<?=$addTagUrl?>'" class="icon-plus-1 medium"></i><br/>
             <span class="small">новый тег</span>
         </li>
@@ -41,7 +41,7 @@ $facebook = new Facebook($config);
     <? else: ?>
         <li class="item-no-hover padding-around-small controls-text-color center">
             <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>
-            <span class="small">разделы</span>
+            <span class="small light">разделы</span>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color center">
             <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="icon-plus-1 medium"></i><br/>
@@ -62,25 +62,18 @@ $facebook = new Facebook($config);
             <img src="<?=$this->staticFile("images/twentytags-mobile.svg")?>"/>
         </a>
     </div>
-    <div class="mobile-span3 padding-around-base ">
-        <i class="icon-th-list-1 opens-menu-outter"></i>
-    </div>
     <? if ($this->user):?>
-        <div class="mobile-span2 padding-around-base ">
+        <div class="mobile-span9 darken-info">
+            <i class="icon-th-list-1 opens-menu-outter"></i>
             <i onclick="location.href='<?=$feedUrl?>'" class="icon-cw"></i>
-        </div>
-        <div class="mobile-span2 padding-around-base ">
             <i onclick="location.href='<?=$addTagUrl?>'"  class="icon-plus-1"></i>
-        </div>
-        <div class="mobile-span2 padding-around-base ">
-            <i onclick="location.href='<?=$followingUrl?>'" class="icon-vcard"></i>
+            <i onclick="location.href='<?=$followingUrl?>'" class="icon-tags"></i>
         </div>
     <?else:?>
-        <div class="mobile-span4 padding-around-base right">
+        <div class="mobile-span9 darken-info">
+            <i class="icon-th-list-1 opens-menu-outter"></i>
             <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="icon-plus-1"></i>
-        </div>
-        <div class="mobile-span2 padding-around-base ">
-            <i onclick="location.href='<?=$this->url(array(), "register", true)?>'" class="icon-key-2"></i>
+            <i onclick="location.href='<?=$this->url(array(), "register", true)?>'" class="icon-lock-open"></i>
         </div>
     <?endif?>
 </nav>

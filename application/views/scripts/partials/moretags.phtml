@@ -10,7 +10,7 @@ $facebook = new Facebook($config);
 <? foreach ($this->entities as $item):?>
 
 
-    <article class="container">
+    <article class="container no-padding">
 <!--        <div class="mobile-span2 right desktop-and-medium-only">-->
 <!--            <a href="--><?//=$this->url(array("id"=>$item, Model_Static_Functions::dashString($item->title)=>""), "entity", false)?><!--">-->
 <!--                <img title="--><?//=$item->title?><!--" src="--><?//=$this->staticFile("images/entities/".$item->picture)?><!--">-->
@@ -33,9 +33,6 @@ $facebook = new Facebook($config);
             <? foreach ($tagged as $tag):?>
                 <a class="info lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
             <? endforeach?>
-<!--            <p>-->
-<!--                --><?//=$item->description?>
-<!--            </p>-->
         </div>
         <div class="mobile-span3 right">
             <? $isSaved = Model_Entity::isSaved($item);?>
@@ -60,10 +57,5 @@ $facebook = new Facebook($config);
                 </button>
             </div>
         </div>
-<!--        <div class="unit10 center medium lighten-text">-->
-<!--            <i class="fa fa-chevron-up lighten-success"></i><br/>-->
-<!--            <span class="small">170</span><br/>-->
-<!--            <i class="fa fa-chevron-down lighten-info"></i>-->
-<!--        </div>-->
     </article>
 <?endforeach?>

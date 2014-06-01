@@ -179,11 +179,10 @@ li.item-no-hover {
 }
 
 .mobile-menu {
+  @include transition();
   position: fixed;
   width: 100%;
   z-index: 1000010;
   top: 0;
   left: 0;
-  height: 79px;
-  @include transition();
 }

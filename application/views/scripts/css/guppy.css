@@ -3124,16 +3124,15 @@ li.item-no-hover {
     left: 280px; }
 
 .mobile-menu {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   position: fixed;
   width: 100%;
   z-index: 1000010;
   top: 0;
-  left: 0;
-  height: 79px;
-  transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease; }
+  left: 0; }
 
 .tabs {
   margin: 0 auto; }
