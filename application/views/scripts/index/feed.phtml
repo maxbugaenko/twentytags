@@ -1,5 +1,11 @@
 <?$this->headTitle("TwentyTags - Feed")?>
 <div class="padding-large">
+    <form action="<?=$this->url(array(), "browse")?>" method="get">
+        <div class="button-iconed">
+            <i class="icon-search lighten-text"></i>
+            <input type="text" name="key" id="tag-value" class="text-field f-span12 input-large" placeholder="Поиск тегов">
+        </div>
+    </form>
     <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts));?>
 </div>
 <script>

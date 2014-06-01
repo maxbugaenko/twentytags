@@ -100,5 +100,23 @@ class Model_Static_Functions {
         $parsed = str_replace('&nbsp;', ' ', $res);
         return $parsed;
     }
+
+    public static function cacheEntity(Model_Entity $entity) {
+        try {
+            $cache = Model_Entitycache::findByEntity($entity);
+        } catch (Model_Entitycache_EntityNotFound $e) {
+            $cache = new Model_Entitycache();
+        }
+        $tmp = "";
+        $cache->entity = $entity;
+        $cache->title = $entity->title;
+        $tags = Model_Tag::retrieveTaggedTagsByEntity($entity);
+        foreach ($tags as $tag) {
+            $tmp .= $tag->value.", ";
+        }
+        $cache->tags = $tmp;
+        $cache->description = $entity->description;
+        $cache->save();
+    }
 }
 ?>

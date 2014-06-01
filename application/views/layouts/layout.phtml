@@ -29,14 +29,15 @@
 <body>
 
 <ul class="menu-aside menu-vertical-tight darken-background-info controls-text-color capitalize">
-    <li class="item-no-hover padding-around-base">
-        <div class="button-iconed">
-            <i class="darken-info icon-search"></i>
-            <form action="<?=$this->url(array(), "browse")?>" method="get">
-                <input type="text" name="key" class="search-bar" placeholder="поиск"/>
-            </form>
-        </div>
-    </li>
+<!--    <li class="item-no-hover padding-around-base">-->
+<!--        <div class="button-iconed">-->
+<!--            <i class="darken-info icon-search"></i>-->
+<!--            <form action="--><?//=$this->url(array(), "browse")?><!--" method="get">-->
+<!--                <input type="text" name="key" class="search-bar" placeholder="поиск"/>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </li>-->
+    <li></li>
     <li class="item-no-hover padding-horizontal-base padding-vertical-small"><h3>Популярное</h3></li>
     <li><a class="<?=$this->mainTag == "Политика" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Политика")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Политика</a></li>
     <li><a class="<?=$this->mainTag == "Стартапы" ? "current":""?>" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Стартапы")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Стартапы</a></li>
@@ -48,7 +49,7 @@
         <li class="padding-vertical-medium item-no-hover"><a href="<?=$logoutUrl?>">Выход</a></li>
     <?endif?>
     <li class="item-no-hover padding-vertical-medium">
-        <i class="close-button lighten-success medium icon-left-open"></i>
+        <button class="capitalize button-info button-small left close-button f-span6"><i class="icon-left"></i>убрать</button>
     </li>
 </ul>
 

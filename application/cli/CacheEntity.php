@@ -31,23 +31,8 @@ class CacheEntity extends FaZend_Cli_Abstract {
         echo "Caching entities (".count($ents).")\n";
         if (count($ents) > 0) {
             foreach ($ents as $entity) {
-                $tagstring = "";
-                $tmp = "";
                 echo "caching ".$entity->title."\n";
-                try {
-                    $cache = Model_Entitycache::findByEntity($entity);
-                } catch (Model_Entitycache_EntityNotFound $e) {
-                    $cache = new Model_Entitycache();
-                }
-                $cache->entity = $entity;
-                $cache->title = $entity->title;
-                $tags = Model_Tag::retrieveTaggedTagsByEntity($entity);
-                foreach ($tags as $tag) {
-                    $tmp .= $tag->value.", ";
-                }
-                $cache->tags = $tmp;
-                $cache->description = $entity->description;
-                $cache->save();
+                Model_Static_Functions::cacheEntity($entity);
                 $entity->cached = new Zend_Db_Expr('NOW()');
                 $tit = $entity->title;
                 $entity->title = Model_Static_Functions::deleteSymbols($tit);

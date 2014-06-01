@@ -65,13 +65,9 @@ $facebook = new Facebook($config);
 <?if ($this->entity->alerts == 0):?>
     <div class="container padding-around-small">
     <p class="lighten-text">
-        Пока никаких новостей по этому тегу нет. Посмотрите пока другие разделы. Возможно Вам будет интересно
+        Пока никаких новостей по этому тегу нет. Посмотрите пока популярные разделы. Возможно Вам будет интересно
     </p>
-    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Политика")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Политика</a><br/>
-    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Стартапы")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Стартапы</a><br/>
-    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Предприниматели")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Предприниматели</a><br/>
-    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Известные Люди")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Известные люди</a><br/>
-    <a class="medium info" href="<?=$this->url(array("id"=>($tag = Model_Tag::findByValue("Тренды")), Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>">Тренды</a><br/>
+        <?=$this->partial("partials/chapters.phtml")?>
     </div>
 <?else:?>
     <?=$this->partial("partials/morealerts.phtml", array("alerts"=>$this->alerts, "mode"=> "entity", "entity" => $this->entity));?>

@@ -109,8 +109,16 @@ class IndexController extends FaZend_Controller_Action {
                 $this->redirect("empty");
             }
         } elseif ($keyword) {
-            $this->view->mainTag = $keyword;
             $this->view->entities = Model_Entity::retrieveByKeyword($keyword, 20);
+            if (count($this->view->entities) == 0) {
+                $this->view->message = true;
+                $entity = new Model_Entity();
+                $entity->title = $keyword;
+                $entity->description = "none";
+                $entity->save();
+                Model_Static_Functions::cacheEntity($entity);
+                $this->view->entities = Model_Entity::retrieveByKeyword($keyword, 20);
+            }
         } else {
             $tag = new Model_Tag((int)$this->getRequest()->getParam('id'));
             if ($tag->exists()) {
@@ -286,29 +294,38 @@ class IndexController extends FaZend_Controller_Action {
         $this->_helper->layout->disableLayout();
         $this->_helper->viewRenderer->setNoRender();
         $nickname = $this->getRequest()->getParam("nickname");
+        $password = $this->getRequest()->getParam("password");
         $tag = $this->getRequest()->getParam("tag");
         $mode = $this->getRequest()->getParam("mode");
-        if ($nickname != "") {
+        if ($nickname != "" && $password != "") {
             try {
                 $user = Model_User::findByNickname($nickname);
-                $user->logIn();
-                if ($tag) {
-                    $saved = new Model_Saved();
-                    $saved->user = $user;
-                    $saved->entity = $tag;
-                    $saved->save();
-                }
-                if ($mode == "addtag") {
-                    echo "ADDTAG";
+                if ($user->password  == $password) {
+                    $user->logIn();
+                    if ($tag) {
+                        $saved = new Model_Saved();
+                        $saved->user = $user;
+                        $saved->entity = $tag;
+                        $saved->save();
+                        echo "TAG_ADDED";
+                        exit;
+                    }
+                    if ($mode == "addtag") {
+                        echo "ADDTAG";
+                        exit;
+                    }
+                    echo "LOGGED_IN";
+                    exit;
+                } else {
+                    echo "Неверный пароль или такой никнейм уже существует";
                     exit;
                 }
-                echo "OK";
             } catch (Model_User_NicknameNotFound $ex) {
                 $user = new Model_User();
                 $user->nickname = $nickname;
                 $user->email = $nickname."@twentytags.com";
                 $user->name = $nickname;
-                $user->password = "password";
+                $user->password = $password;
                 try {
                     $user->save();
                     $user->logIn();
@@ -317,18 +334,20 @@ class IndexController extends FaZend_Controller_Action {
                         $saved->user = $user;
                         $saved->entity = $tag;
                         $saved->save();
+                        echo "TAG_ADDED";
+                        exit;
                     }
                     if ($mode == "addtag") {
                         echo "ADDTAG";
                         exit;
                     }
-                    echo "OK";
+                    echo "LOGGED_IN";
                 } catch (Exception $ex) {
                     echo "Произошла ошибка";
                 }
             }
         } else {
-            echo "Введите никнейм";
+            echo "Введите никнейм и пароль";
         }
     }
 

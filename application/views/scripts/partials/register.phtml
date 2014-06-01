@@ -1,0 +1,38 @@
+<div class="button-iconed">
+    <i class="icon-user lighten-text"></i>
+    <input type="text" autocomplete="off" id="nick-value" class="text-field f-span12" placeholder="Никнейм">
+</div>
+<div class="button-iconed">
+    <i class="icon-key-1 lighten-text"></i>
+    <input type="text" autocomplete="off" id="password-value" class="text-field f-span12" placeholder="Пароль">
+</div>
+<button id="submit-button" class="capitalize button-info f-span7">Подтвердить</button>
+<p id="error-message" class="lighten-success">
+</p>
+</div>
+<script>
+    $(document).ready(function() {
+        $("#submit-button").click(function(event) {
+            $.post(
+                "<?=$this->url(array('controller'=>'index', 'action'=>'registeruser'), 'default', true)?>",
+                {
+                    'nickname': $("#nick-value").val(),
+                    'password': $("#password-value").val(),
+                    'mode': '<?=$this->mode?>',
+                    'tag': '<?=$this->tag?>'
+                },
+                function(data) {
+                    if (data == "LOGGED_IN") {
+                        location.href = "<?=$this->url(array(), 'following', true)?>";
+                    } else if (data == "ADDTAG") {
+                        location.href = "<?=$this->url(array(), 'addtag', true)?>";
+                    } else if (data == "TAG_ADDED") {
+                        location.href = "<?=$this->url(array(), 'following', true)?>";
+                    } else {
+                        $("#error-message").html(data);
+                    }
+                }
+            )
+        });
+    })
+</script>

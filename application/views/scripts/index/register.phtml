@@ -1,43 +1,10 @@
 <?$this->headTitle("TwentyTags - Регистрация")?>
 <div class="container padding-around-base">
     <? if ($this->mode == "addtag"):?>
-        <p class="alert-success margin-vertical-base"><i class="icon-lock-open"></i> Чтобы добавить тег, нужно войти</p>
+        <p class="animate-slide-right-to-left alert-success margin-vertical-base"><i class="icon-lock-open"></i> Чтобы добавить тег, нужно войти</p>
     <?endif?>
-<h2 class="info">Регистрация и вход</h2>
+<!--<h2 class="info">Регистрация и вход</h2>-->
 <p class="margin-vertical-base lighten-text">
     Зарегистрируйтесь или войдите, используя свои данные
 </p>
-<div class="button-iconed">
-    <i class="icon-user lighten-text"></i>
-    <input type="text" autocomplete="off" id="nick-value" class="text-field f-span12" placeholder="Никнейм">
-</div>
-<div class="button-iconed">
-    <i class="icon-key-1 lighten-text"></i>
-    <input type="text" autocomplete="off" id="password-value" class="text-field f-span12" placeholder="Пароль">
-</div>
-<button id="submit-button" class="button-info f-span7">Подтвердить</button>
-<p id="error-message" class="lighten-success">
-</p>
-</div>
-<script>
-    $(document).ready(function() {
-        $("#submit-button").click(function(event) {
-            $.post(
-                "<?=$this->url(array('controller'=>'index', 'action'=>'registeruser'), 'default', true)?>",
-                {
-                    'nickname': $("#nick-value").val(),
-                    'mode': '<?=$this->mode?>'
-                },
-                function(data) {
-                    if (data == "OK") {
-                        location.href = "following";
-                    } else if (data == "ADDTAG") {
-                        location.href = "<?=$this->url(array(), 'addtag', true)?>";
-                    } else {
-                        $("#error-message").html(data);
-                    }
-                }
-            )
-        });
-    })
-</script>
+<?=$this->partial("partials/register.phtml", array("mode"=>$this->mode))?>

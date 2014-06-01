@@ -4,9 +4,19 @@ $this->headTitle("TwentyTags - ".$title);
 $this->headMeta()->appendName('keywords', "актуальные новости, новости, IT новости, политические новости");
 $this->headMeta()->appendName('description', "Подписывайся на то, что интересно");
 ?>
-    <h1 class="info lower padding-horizontal-base"><?=$this->mainTag == "What's hot" ? "Популярное" : $this->mainTag;?></h1>
-    <? if (!$this->user) $isLogged = "user-not-logged";?>
-    <?=$this->partial("partials/moretags.phtml", array("entities" => $this->entities))?>
+<form action="<?=$this->url(array(), "browse")?>" method="get">
+    <div class="button-iconed">
+        <i class="icon-search lighten-text"></i>
+        <input type="text" name="key" id="tag-value" class="text-field f-span12 input-large" placeholder="Поиск тегов">
+    </div>
+</form>
+<br/>
+<h2 class="info lower padding-horizontal-base"><?=$this->mainTag == "What's hot" ? "Популярное" : $this->mainTag;?></h2>
+<br/>
+<? if ($this->message):?>
+    <p class="lighten-text">Мы не знали про этот тег, но сейчас добавили. Скоро по нему появятся новости. Подпишитесь на него</p>
+<?endif?>
+<?=$this->partial("partials/moretags.phtml", array("entities" => $this->entities))?>
 <script>
     $(".to-follow-button").FollowEntity();
     var now = new Date().getTime();

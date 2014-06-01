@@ -3052,7 +3052,7 @@ label.form-label {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
-    left: 280px; }
+    left: 220px; }
 
 .menu-icon-success {
   background-color: #fd5559; }
@@ -3081,10 +3081,10 @@ label.form-label {
   -webkit-transition: all 0.3s ease;
   position: fixed;
   top: 0;
-  left: -280px;
+  left: -220px;
   z-index: 100001;
   height: 100%;
-  width: 280px; }
+  width: 220px; }
   .menu-aside li {
     cursor: pointer; }
     .menu-aside li:hover {
@@ -3137,7 +3137,7 @@ li.item-no-hover {
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
-    left: 280px; }
+    left: 220px; }
 
 .mobile-menu {
   transition: all 0.3s ease;
