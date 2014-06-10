@@ -56,7 +56,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_render-gradients.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_shape-size-stripper.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/js/masonry.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Model/Entity.php" afterPath="$PROJECT_DIR$/application/Model/Entity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,15 +97,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/layouts/admin.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="347" selection-end="379" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="665">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UpdateAlertsTotal.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/cli/UpdateAlertsTotal.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,7 +127,7 @@
       <file leaf-file-name="moretags.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="48" selection-start="1400" selection-end="1400" vertical-scroll-proportion="-11.535714" vertical-offset="190" max-vertical-offset="1273">
+            <state line="21" column="63" selection-start="1043" selection-end="1082" vertical-scroll-proportion="-7.464286" vertical-offset="190" max-vertical-offset="1273">
               <folding />
             </state>
           </provider>
@@ -151,10 +142,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Entity.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Entity.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="665" column="45" selection-start="19603" selection-end="19603" vertical-scroll-proportion="0.4616695" vertical-offset="12079" max-vertical-offset="18183">
+            <state line="665" column="45" selection-start="19603" selection-end="19603" vertical-scroll-proportion="-4.927273" vertical-offset="12079" max-vertical-offset="18183">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addtagsignup.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="84" selection-start="177" selection-end="177" vertical-scroll-proportion="0.06188925" vertical-offset="0" max-vertical-offset="614">
               <folding />
             </state>
           </provider>
@@ -212,7 +212,6 @@
         <option value="$PROJECT_DIR$/application/views/scripts/index/entity.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/register.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml" />
         <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/deploy/database/22 search.sql" />
         <option value="$PROJECT_DIR$/application/Model/Search.php" />
@@ -235,6 +234,7 @@
         <option value="$PROJECT_DIR$/application/views/scripts/adm/entity.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" />
         <option value="$PROJECT_DIR$/application/Model/Entity.php" />
+        <option value="$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml" />
       </list>
     </option>
   </component>
@@ -999,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="74" selection-start="503" selection-end="503" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="266">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/validators/ValidateCredentials.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="655">
@@ -1202,13 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="48" selection-start="1400" selection-end="1400" vertical-scroll-proportion="-11.535714" vertical-offset="190" max-vertical-offset="1273">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/cli/AddAlerts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="55" selection-start="995" selection-end="1016" vertical-scroll-proportion="-6.321429" vertical-offset="355" max-vertical-offset="1064">
@@ -1227,7 +1213,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="665" column="45" selection-start="19603" selection-end="19603" vertical-scroll-proportion="0.4616695" vertical-offset="12079" max-vertical-offset="18183">
+        <state line="665" column="45" selection-start="19603" selection-end="19603" vertical-scroll-proportion="-4.927273" vertical-offset="12079" max-vertical-offset="18183">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="63" selection-start="1043" selection-end="1082" vertical-scroll-proportion="-7.464286" vertical-offset="190" max-vertical-offset="1273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="84" selection-start="177" selection-end="177" vertical-scroll-proportion="0.06188925" vertical-offset="0" max-vertical-offset="614">
           <folding />
         </state>
       </provider>
