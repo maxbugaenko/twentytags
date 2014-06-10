@@ -617,7 +617,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
         return self::retrieve()
             ->where('entity.status = ?', 0)
             ->order('entity.id desc')
-            ->limit(20)
+            ->limit(1)
             ->setRowClass('Model_Entity')
             ->fetchAll();
     }

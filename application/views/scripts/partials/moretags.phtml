@@ -22,13 +22,13 @@ $facebook = new Facebook($config);
                         <i class="icon-hash small warning"></i>
                         <?=$item->title?>
                         <? if ($item->today > 0):?>
-                            <span class="warning"><b><?=$item->today?></b></span>
+                            <span class="success small"><b><?=$item->today?></b></span>
+                        <?endif?>
+                        <? if ($item->alerts > 0):?>
+                            <span class="warning small"><b><?=$item->alerts?></b></span>&#160;
                         <?endif?>
                     </a>
                 </h3>
-<!--            --><?// if ($item->alerts > 0):?>
-<!--                <span class="warning"><b>--><?//=$item->alerts?><!--</b></span>&#160;-->
-<!--            --><?//endif?>
             <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
             <? foreach ($tagged as $tag):?>
                 <a class="info lower" href="<?=$this->url(array("id"=>$tag, Model_Static_Functions::dashString($tag->value)=>""), "tags", false)?>"><?=$tag->value?></a>&#160;
