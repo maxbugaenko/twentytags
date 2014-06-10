@@ -106,17 +106,22 @@ class Model_GAlerts_GAlerts {
         $result = curl_exec($ch);
 
         $alerts=$this->parseAlerts($result);
+//        print_r($alerts);
         if (count($alerts)<=0) {
             throw new GAlertException('Cannot create the alert, alert not found after creation.');
         }
-
-        foreach ($alerts as $a) {
-            if ($a['term']==$query && $a['type']==$dest) {
-                return $a;
-            }
-        }
-
-        throw new GAlertException('Cannot create the alert, alert not found after creation.');
+//        foreach ($alerts as $a) {
+//            echo "query = " . $query."\n";
+//            echo "term = " . $a['term']."\n";
+//            echo "dest = " . $dest."\n";
+//            echo "type = " . $a['type']."\n";
+//            exit;
+//            if ($a['term']==$query && $a['type']==$dest) {
+//                return $a;
+//            }
+//        }
+//
+//        throw new GAlertException('Cannot create the alert, alert not found after creation.');
     }
 
     /**

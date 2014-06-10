@@ -7,6 +7,7 @@
                 var decoded = loginUrl.replace(/&amp;/g, '&');
                 location.href = decoded;
             } else {
+                $("#follow-"+entityID).find("i").attr("class", "icon-spin5 animate-spin");
                 if ($("#follow-"+entityID).hasClass("followed")) {
                     var url = "<?=$this->url(array('controller'=>'index', 'action'=>'unfollow'), 'default', true)?>";
                 } else {

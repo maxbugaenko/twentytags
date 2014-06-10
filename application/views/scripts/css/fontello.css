@@ -51,6 +51,7 @@
 }
 
 
+.icon-key:before { content: '\e800'; } /* '' */
 .icon-search:before { content: '\e801'; } /* '' */
 .icon-pencil:before { content: '\e802'; } /* '' */
 .icon-vcard:before { content: '\e803'; } /* '' */
@@ -82,4 +83,6 @@
 .icon-lock-open:before { content: '\e81d'; } /* '' */
 .icon-user:before { content: '\e81e'; } /* '' */
 .icon-arrows-cw:before { content: '\e81f'; } /* '' */
+.icon-info-circled:before { content: '\e820'; } /* '' */
 .icon-tags:before { content: '\e821'; } /* '' */
+.icon-spin5:before { content: '\e822'; } /* '' */

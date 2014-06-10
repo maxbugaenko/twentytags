@@ -56,9 +56,19 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_render-gradients.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/bourbon/helpers/_shape-size-stripper.scss" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/scripts/js/masonry.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/_menus.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/_menus.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/js/guppy.js" afterPath="$PROJECT_DIR$/application/views/scripts/js/guppy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/header/header.phtml" afterPath="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontello/fontello.eot" afterPath="$PROJECT_DIR$/public/fonts/fontello/fontello.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontello/fontello.ttf" afterPath="$PROJECT_DIR$/public/fonts/fontello/fontello.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontello/fontello.woff" afterPath="$PROJECT_DIR$/public/fonts/fontello/fontello.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/cli/AddAlerts.php" afterPath="$PROJECT_DIR$/application/cli/AddAlerts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Model/GAlerts/GAlerts.php" afterPath="$PROJECT_DIR$/application/Model/GAlerts/GAlerts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php" afterPath="$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/cookies.txt" afterPath="$PROJECT_DIR$/public/cookies.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/js/follow.js" afterPath="$PROJECT_DIR$/application/views/scripts/js/follow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/fontello.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/fontello.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/fontello/fontello.svg" afterPath="$PROJECT_DIR$/public/fonts/fontello/fontello.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/guppy-blog.css" afterPath="$PROJECT_DIR$/application/views/scripts/css/guppy-blog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/scripts/css/sass/guppy-blog.scss" afterPath="$PROJECT_DIR$/application/views/scripts/css/sass/guppy-blog.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="twentytags.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,91 +91,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="feed.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/feed.phtml">
+      <file leaf-file-name="register.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/register.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="684">
+            <state line="9" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="guppy.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/js/guppy.js">
+      <file leaf-file-name="follow.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/js/follow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="47" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.7398754" vertical-offset="988" max-vertical-offset="2223">
+            <state line="8" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/header/header.phtml">
+      <file leaf-file-name="GAlerts.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlerts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="33" selection-start="2982" selection-end="2982" vertical-scroll-proportion="-15.821428" vertical-offset="659" max-vertical-offset="1615">
+            <state line="108" column="2" selection-start="3918" selection-end="3918" vertical-scroll-proportion="-8.357142" vertical-offset="1818" max-vertical-offset="5814">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_menus.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_menus.scss">
+      <file leaf-file-name="AddAlerts.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/cli/AddAlerts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="9" selection-start="1392" selection-end="1392" vertical-scroll-proportion="-13.107142" vertical-offset="1286" max-vertical-offset="3762">
+            <state line="28" column="57" selection-start="1018" selection-end="1018" vertical-scroll-proportion="-6.321429" vertical-offset="355" max-vertical-offset="1064">
+              <folding>
+                <element signature="e#6#665#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GAlertsManager.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="2" selection-start="981" selection-end="981" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Functions.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/Model/Static/Functions.php">
+      <file leaf-file-name="register.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/register.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="0" selection-start="4066" selection-end="4066" vertical-scroll-proportion="-19.214285" vertical-offset="1742" max-vertical-offset="2413">
+            <state line="8" column="66" selection-start="444" selection-end="444" vertical-scroll-proportion="-3.607143" vertical-offset="51" max-vertical-offset="817">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/layouts/layout.phtml">
+      <file leaf-file-name="Entity.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1214" selection-end="1214" vertical-scroll-proportion="-13.571428" vertical-offset="247" max-vertical-offset="2527">
+            <state line="58" column="0" selection-start="1733" selection-end="2051" vertical-scroll-proportion="0.93811077" vertical-offset="241" max-vertical-offset="18164">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/scripts/index/index.phtml">
+      <file leaf-file-name="_animations.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_animations.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="316" selection-end="606" vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="855">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2679">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/Model/Search.php">
+      <file leaf-file-name="guppy-blog.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/guppy-blog.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="969" selection-end="969" vertical-scroll-proportion="-11.535714" vertical-offset="0" max-vertical-offset="494">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CacheEntity.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/cli/CacheEntity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-12.214286" vertical-offset="0" max-vertical-offset="684">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="24" selection-start="3970" selection-end="3970" vertical-scroll-proportion="-13.107142" vertical-offset="1495" max-vertical-offset="7904">
+            <state line="156" column="0" selection-start="3058" selection-end="3058" vertical-scroll-proportion="-63.32143" vertical-offset="1191" max-vertical-offset="3078">
               <folding />
             </state>
           </provider>
@@ -197,18 +200,12 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_inputs.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/js/loadmore.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_buttons.scss" />
-        <option value="$PROJECT_DIR$/application/views/scripts/js/follow.js" />
         <option value="$PROJECT_DIR$/application/views/scripts/partials/morealerts.phtml" />
         <option value="$PROJECT_DIR$/application/Model/Entity.php" />
-        <option value="$PROJECT_DIR$/application/cli/AddAlerts.php" />
-        <option value="$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php" />
-        <option value="$PROJECT_DIR$/application/Model/GAlerts/GAlerts.php" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/fontello.css" />
         <option value="$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/guppy.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/alerts.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_typography.scss" />
-        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/guppy-blog.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_alerts.scss" />
         <option value="$PROJECT_DIR$/application/config/routes.ini" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_layouts.scss" />
@@ -223,7 +220,6 @@
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/register.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/index/addtagsignup.phtml" />
-        <option value="$PROJECT_DIR$/application/views/scripts/partials/register.phtml" />
         <option value="$PROJECT_DIR$/application/views/layouts/layout.phtml" />
         <option value="$PROJECT_DIR$/application/deploy/database/22 search.sql" />
         <option value="$PROJECT_DIR$/application/Model/Search.php" />
@@ -235,6 +231,13 @@
         <option value="$PROJECT_DIR$/application/views/scripts/header/header.phtml" />
         <option value="$PROJECT_DIR$/application/views/scripts/css/sass/_menus.scss" />
         <option value="$PROJECT_DIR$/application/views/scripts/js/guppy.js" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/fontello.css" />
+        <option value="$PROJECT_DIR$/application/views/scripts/css/sass/guppy-blog.scss" />
+        <option value="$PROJECT_DIR$/application/views/scripts/partials/register.phtml" />
+        <option value="$PROJECT_DIR$/application/views/scripts/js/follow.js" />
+        <option value="$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php" />
+        <option value="$PROJECT_DIR$/application/Model/GAlerts/GAlerts.php" />
+        <option value="$PROJECT_DIR$/application/cli/AddAlerts.php" />
       </list>
     </option>
   </component>
@@ -832,14 +835,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="799" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36604583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36604583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -873,20 +876,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/guppy-blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="3443" max-vertical-offset="4085">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_inputs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_dropdowns.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5377">
@@ -911,13 +900,6 @@
     <entry file="file://$PROJECT_DIR$/application/views/scripts/index/settings.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/js/follow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="71" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="722">
           <folding />
         </state>
       </provider>
@@ -950,43 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1733" selection-end="2051" vertical-scroll-proportion="-20.571428" vertical-offset="241" max-vertical-offset="18164">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/cli/AddAlerts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="75" selection-start="1309" selection-end="1309" vertical-scroll-proportion="-13.107142" vertical-offset="298" max-vertical-offset="1083">
-          <folding>
-            <element signature="e#6#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlerts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="98" selection-start="3961" selection-end="4047" vertical-scroll-proportion="-23.75" vertical-offset="1406" max-vertical-offset="5719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="752" selection-end="905" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/fontello.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="49" selection-start="3448" selection-end="3448" vertical-scroll-proportion="0.0" vertical-offset="992" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_tooltips.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="277" selection-end="507" vertical-scroll-proportion="-18.321428" vertical-offset="0" max-vertical-offset="988">
@@ -997,13 +942,6 @@
     <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="215" column="29" selection-start="3672" selection-end="3672" vertical-scroll-proportion="-18.535715" vertical-offset="3566" max-vertical-offset="4294">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/guppy-blog.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="-0.6785714" vertical-offset="0" max-vertical-offset="1425">
           <folding />
         </state>
       </provider>
@@ -1120,20 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/register.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/register.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1161" selection-end="1161" vertical-scroll-proportion="-15.821428" vertical-offset="51" max-vertical-offset="817">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/moretags.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="21" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-16.964285" vertical-offset="247" max-vertical-offset="1273">
@@ -1227,7 +1151,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/scripts/js/guppy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="47" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.7398754" vertical-offset="988" max-vertical-offset="2223">
+        <state line="77" column="47" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="2223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/fontello.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="50" selection-start="3606" selection-end="3606" vertical-scroll-proportion="0.0" vertical-offset="1049" max-vertical-offset="1767">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/index/register.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="-6.107143" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/_animations.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2679">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/css/sass/guppy-blog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="0" selection-start="3058" selection-end="3058" vertical-scroll-proportion="-63.32143" vertical-offset="1191" max-vertical-offset="3078">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/partials/register.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="66" selection-start="444" selection-end="444" vertical-scroll-proportion="-3.607143" vertical-offset="51" max-vertical-offset="817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/scripts/js/follow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlertsManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="2" selection-start="981" selection-end="981" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Model/GAlerts/GAlerts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="2" selection-start="3918" selection-end="3918" vertical-scroll-proportion="-8.357142" vertical-offset="1818" max-vertical-offset="5814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/cli/AddAlerts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="57" selection-start="1018" selection-end="1018" vertical-scroll-proportion="-6.321429" vertical-offset="355" max-vertical-offset="1064">
+          <folding>
+            <element signature="e#6#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Model/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="1733" selection-end="2051" vertical-scroll-proportion="0.93811077" vertical-offset="241" max-vertical-offset="18164">
           <folding />
         </state>
       </provider>

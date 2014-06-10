@@ -26,7 +26,7 @@ class AddAlerts extends FaZend_Cli_Abstract {
      */
     public function execute() {
         Model_Static_Functions::checkZombie("AddAlerts.flag");
-        $entities = Model_Entity::retrieveEntitiesToAdd(20);
+        $entities = Model_Entity::retrieveEntitiesToAdd(10);
         if (count($entities) == 0) {
             echo "Nothing to update\n";
             Model_Static_Functions::killZombie("AddAlerts.flag");
@@ -45,7 +45,6 @@ class AddAlerts extends FaZend_Cli_Abstract {
             }
             $entity->status = 1;
             $entity->save();
-            exit;
         }
         Model_Static_Functions::killZombie("AddAlerts.flag");
     }
