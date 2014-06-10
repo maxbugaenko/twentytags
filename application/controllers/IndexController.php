@@ -115,6 +115,7 @@ class IndexController extends FaZend_Controller_Action {
                 $entity = new Model_Entity();
                 $entity->title = $keyword;
                 $entity->description = "none";
+                $entity->status = 0;
                 $entity->save();
                 Model_Static_Functions::cacheEntity($entity);
                 $this->view->entities = Model_Entity::retrieveByKeyword($keyword, 20);
