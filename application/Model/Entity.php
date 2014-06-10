@@ -613,11 +613,11 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
      *
      * @return array Array of all entities
      */
-    public static function retrieveEntitiesToAdd() {
+    public static function retrieveEntitiesToAdd($limit = 10) {
         return self::retrieve()
             ->where('entity.status = ?', 0)
             ->order('entity.id desc')
-            ->limit(1)
+            ->limit($limit)
             ->setRowClass('Model_Entity')
             ->fetchAll();
     }
@@ -663,6 +663,7 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 		return self::retrieve()
 		    ->where('entity.status = ?', Model_Entity::ENTITY_APPROVED)
             ->where('entity.cached < ?', new Zend_Db_Expr('NOW() - INTERVAL 1 DAY'))
+            ->orWhere('entity.cached is NULL')
             ->order('entity.id desc')
 		    ->limit($limit)
 			->setRowClass('Model_Entity')
