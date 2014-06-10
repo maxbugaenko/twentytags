@@ -1,29 +1,3 @@
-<?=$this->forma(1)
-    ->addBehavior('redirectUrl', '__fz/adm/entity')
-        ->addField('text', 'title')
-        ->fieldLabel("Entity title", true)
-        ->fieldAttrib('size', '40')
-    ->addField('textarea', 'description')
-        ->fieldLabel("Entity description", true)
-        ->fieldAttrib('size', '240')
-        ->fieldAttrib('rows', 7)
-    ->addField('textarea', 'link')
-        ->fieldLabel("Entity link", true)
-        ->fieldAttrib('size', '240')
-        ->fieldAttrib('rows', 3)
-    ->addField('textarea', 'picture')
-        ->fieldLabel("Entity picture URL", true)
-        ->fieldAttrib('size', '240')
-        ->fieldAttrib('rows', 7)
-    ->addField('textarea', 'keyword')
-        ->fieldLabel("Alert keyword", true)
-        ->fieldAttrib('size', '240')
-        ->fieldAttrib('rows', 2)
-    ->addField('submit')
-        ->fieldAction(array('Model_Entity', 'create'))
-        ->fieldValue("create entity")
-?>
-
 <table>
     <thead>
     <tr>
@@ -33,10 +7,10 @@
         <th width="10%">
             entity
         </th>
-        <th width="60%">
-            entity description
-        </th>
-        <th width="30%">
+<!--        <th width="60%">-->
+<!--            entity description-->
+<!--        </th>-->
+        <th width="80%">
             tags
         </th>
         <th width="5%">
@@ -50,25 +24,22 @@
                 <?=$item?>
             </td>
             <td>
-                <img width="100px" src="<?=$this->staticFile("images/entities/".$item->picture)?>">
-                <br/>
-                <?=$this->partial('edit.phtml', array('element'=>'title'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->title, 'column'=>'title', 'table'=>'Entity'))?>
-            </td>
-            <td>
-                <?=$this->partial('edit.phtml', array('element'=>'desc'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->description, 'column'=>'description', 'table'=>'Entity'))?>
-                <br/>
-                <?=$this->partial('edit.phtml', array('element'=>'link'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->link, 'column'=>'link', 'table'=>'Entity'))?>
-            </td>
-            <td>
-                <b>Tagged as</b><br/>
+<!--                <img width="100px" src="--><?//=$this->staticFile("images/entities/".$item->picture)?><!--">-->
+<!--                <br/>-->
+                <h2><?=$this->partial('edit.phtml', array('element'=>'title'.$item, 'id'=>$item, 'class'=>'success', 'text'=>$item->title, 'column'=>'title', 'table'=>'Entity'))?></h2>
                 <?$tagged = Model_Tag::retrieveTaggedTagsByEntity($item);?>
                 <? foreach ($tagged as $tag):?>
-                    <a href="#"><?=$tag->value?></a><br/>
+                    <a href="#"><?=$tag->value?></a>&#160;&#160;
                 <? endforeach?>
-                <br/><br/>
-                <b>All tags</b><br/>
+            </td>
+<!--            <td>-->
+<!--                --><?//=$this->partial('edit.phtml', array('element'=>'desc'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->description, 'column'=>'description', 'table'=>'Entity'))?>
+<!--                <br/>-->
+<!--                --><?//=$this->partial('edit.phtml', array('element'=>'link'.$item, 'id'=>$item, 'class'=>'', 'text'=>$item->link, 'column'=>'link', 'table'=>'Entity'))?>
+<!--            </td>-->
+            <td>
                 <? foreach ($this->tags as $tag):?>
-                    <a style="cursor: pointer" onclick="tagEntity(<?=$item?>, <?=$tag?>)"><?=$tag->value?></a>&#160;&#160;<span id="<?=$item.$tag?>"></span><br/>
+                    <a style="cursor: pointer" onclick="tagEntity(<?=$item?>, <?=$tag?>)"><?=$tag->value?></a>&#160;&#160;<span id="<?=$item.$tag?>"></span>&#160;&#160;
                 <? endforeach?>
             </td>
             <td>
@@ -77,6 +48,33 @@
         </tr>
     <? endforeach ?>
 </table>
+
+<?=$this->forma(1)
+    ->addBehavior('redirectUrl', '__fz/adm/entity')
+    ->addField('text', 'title')
+    ->fieldLabel("Entity title", true)
+    ->fieldAttrib('size', '40')
+    ->addField('textarea', 'description')
+    ->fieldLabel("Entity description", true)
+    ->fieldAttrib('size', '240')
+    ->fieldAttrib('rows', 7)
+    ->addField('textarea', 'link')
+    ->fieldLabel("Entity link", true)
+    ->fieldAttrib('size', '240')
+    ->fieldAttrib('rows', 3)
+    ->addField('textarea', 'picture')
+    ->fieldLabel("Entity picture URL", true)
+    ->fieldAttrib('size', '240')
+    ->fieldAttrib('rows', 7)
+    ->addField('textarea', 'keyword')
+    ->fieldLabel("Alert keyword", true)
+    ->fieldAttrib('size', '240')
+    ->fieldAttrib('rows', 2)
+    ->addField('submit')
+    ->fieldAction(array('Model_Entity', 'create'))
+    ->fieldValue("create entity")
+?>
+
 <script>
     function tagEntity(entity, tag) {
         var url = "<?=$this->url(array('action'=>'tagit'), 'fz__adm', true)?>";
