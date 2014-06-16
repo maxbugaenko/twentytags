@@ -1,0 +1,28 @@
+<table>
+    <thead>
+    <tr>
+        <th>
+            #
+        </th>
+        <th >
+            nickname
+        </th>
+        <th >
+            pass
+        </th>
+    </tr>
+    </thead>
+    <? foreach ($this->users as $item) :?>
+        <tr>
+            <td>
+                <?=$item?>
+            </td>
+            <td>
+                <?=$item->nickname?>
+            </td>
+            <td>
+                <?=$item->password?>
+            </td>
+        </tr>
+    <? endforeach ?>
+</table>

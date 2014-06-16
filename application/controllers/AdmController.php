@@ -46,6 +46,14 @@ class AdmController extends Fazend_Controller_Action {
     /*
      * Entity administration
      * */
+    public function userAction() {
+        $this->view->users = Model_User::retrieveAll();
+    }
+
+
+    /*
+     * Entity administration
+     * */
     public function moderationAction() {
         $this->view->entities = Model_Entity::retrieveForModeration();
     }
