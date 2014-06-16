@@ -99,6 +99,7 @@ class IndexController extends FaZend_Controller_Action {
 	public function indexAction() {
         $route = Zend_Controller_Front::getInstance()->getRouter()->getCurrentRouteName();
         $keyword = $this->getRequest()->getParam("key");
+        $this->view->isLanding = $this->getRequest()->getParam("landing");
         if ($route == "following") {
             if (!Model_User::isLoggedIn()) {
                 $this->redirect("browse");

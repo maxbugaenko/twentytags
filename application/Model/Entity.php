@@ -726,16 +726,17 @@ class Model_Entity extends FaZend_Db_Table_ActiveRow_entity {
 
 
     public static function retrieveByKeyword($keyword, $limit = 100) {
-    	return self::retrieve(false)
+    	$ret = self::retrieve(false)
     	    ->from('entity', array('entity.*', 'score' => new Zend_Db_Expr('MATCH (entitycache.title, entitycache.tags, entitycache.description) AGAINST ("'.$keyword.'")')))
     		->join('entitycache', 'entity.id = entitycache.entity', array())
     		->where (new Zend_Db_Expr('MATCH (entitycache.title, entitycache.tags, entitycache.description) AGAINST ("'.$keyword.'")'))
-    		->where('entity.status = ?', Model_Entity::ENTITY_APPROVED)
+    		//->where('entity.status = ?', Model_Entity::ENTITY_APPROVED)
     		// ->having('score > 1')
     		->order('score desc')
 			->limit($limit)
     		->setRowClass('Model_Entity')
     		->fetchAll();
+        return $ret;
 	}
 
 

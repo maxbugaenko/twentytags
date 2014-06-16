@@ -19,10 +19,10 @@ $facebook = new Facebook($config);
         <?$followingUrl = $this->url(array(), "following", true);?>
         <?$addTagUrl = $this->url(array(), "addtag", true);?>
         <?$feedUrl = $this->url(array(), "feed", true);?>
-        <li class="item-no-hover padding-around-small light center">
-            <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>
-            <span class="small">разделы</span>
-        </li>
+<!--        <li class="item-no-hover padding-around-small light center">-->
+<!--            <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>-->
+<!--            <span class="small">разделы</span>-->
+<!--        </li>-->
         <li class="item-no-hover padding-around-small light center">
             <i onclick="location.href='<?=$feedUrl?>'" class="light icon-cw medium"></i><br/>
             <span class="small">новости</span>
@@ -39,10 +39,10 @@ $facebook = new Facebook($config);
             <i id="icon-to-top" class="lighten-success medium icon-up-open"></i>
         </li>
     <? else: ?>
-        <li class="item-no-hover padding-around-small controls-text-color center">
-            <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>
-            <span class="small light">разделы</span>
-        </li>
+<!--        <li class="item-no-hover padding-around-small controls-text-color center">-->
+<!--            <i class="opens-menu-outter icon-th-list-1 medium"></i><br/>-->
+<!--            <span class="small light">разделы</span>-->
+<!--        </li>-->
         <li class="item-no-hover padding-around-small controls-text-color center">
             <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="icon-plus-1 medium"></i><br/>
             <span class="small">новый тег</span>
@@ -56,7 +56,7 @@ $facebook = new Facebook($config);
         </li>
     <? endif;?>
 </nav>
-<nav class="container menu-mobile mobile-and-medium-only  background-info controls-text-color medium right">
+<nav class="container menu-mobile mobile-and-medium-only background-info controls-text-color medium right">
     <div class="mobile-span2 logo-image-mobile background-success">
         <a href="<?=$this->url(array(), "browse", false)?>">
             <img src="<?=$this->staticFile("images/twentytags-mobile.svg")?>"/>
@@ -64,14 +64,14 @@ $facebook = new Facebook($config);
     </div>
     <? if ($this->user):?>
         <div class="mobile-span9 darken-info">
-            <i class="icon-th-list-1 opens-menu-outter"></i>
+<!--            <i class="icon-th-list-1 opens-menu-outter"></i>-->
             <i onclick="location.href='<?=$feedUrl?>'" class="icon-cw"></i>
             <i onclick="location.href='<?=$addTagUrl?>'"  class="icon-plus-1"></i>
             <i onclick="location.href='<?=$followingUrl?>'" class="icon-tags"></i>
         </div>
     <?else:?>
         <div class="mobile-span9 darken-info">
-            <i class="icon-th-list-1 opens-menu-outter"></i>
+<!--            <i class="icon-th-list-1 opens-menu-outter"></i>-->
             <i onclick="location.href='<?=$addTagUrlWithLogin?>'" class="icon-plus-1"></i>
             <i onclick="location.href='<?=$this->url(array(), "register", true)?>'" class="icon-lock-open"></i>
         </div>

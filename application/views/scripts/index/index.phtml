@@ -4,6 +4,21 @@ $this->headTitle("TwentyTags - ".$title);
 $this->headMeta()->appendName('keywords', "актуальные новости, новости, IT новости, политические новости");
 $this->headMeta()->appendName('description', "Подписывайся на то, что интересно");
 ?>
+<? if ($this->isLanding):?>
+    <h1 class="warning">Новый способ получать новости!</h1>
+    <ul class="warning">
+        <li>
+            1. ищите или добавляйте теги, интересные Вам
+        </li>
+        <li>
+            2. подписывайтесь на новости по ним
+        </li>
+        <li>
+            3. читайте ленту
+        </li>
+    </ul>
+    <br/>
+<? endif?>
 <form action="<?=$this->url(array(), "browse")?>" method="get">
     <div class="button-iconed">
         <i class="icon-search lighten-text"></i>

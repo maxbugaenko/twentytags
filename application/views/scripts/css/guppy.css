@@ -3565,3 +3565,6 @@ a {
 #icon-to-top {
   display: none;
   cursor: pointer; }
+
+ul {
+  list-style: none; }
